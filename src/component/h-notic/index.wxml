@@ -1,0 +1,3 @@
+<view class='notice-content'>
+  <view class='notice-text' style='width:{{tipsWidth}}rpx;--countWidth--:{{-tipsWidth}}rpx;--duration--:{{speed}}s;--left--:{{clientwidth}}rpx'>{{comTipsOpts.tipsContent}}</view>
+</view>

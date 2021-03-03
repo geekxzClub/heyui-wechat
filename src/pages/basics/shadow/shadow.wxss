@@ -1,0 +1,4 @@
+/* pages/basics/shadow/shadow.wxss */
+@import '/pages/tpl/top/index.wxss';
+
+

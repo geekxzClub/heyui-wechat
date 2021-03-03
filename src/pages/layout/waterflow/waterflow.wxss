@@ -1,0 +1,20 @@
+/* pages/layout/waterflow/waterflow.wxss */
+page{
+  background-color: #eee;
+}
+.list-masonry{
+  -moz-column-count: 2; /* Firefox */
+  -webkit-column-count: 2; /* Safari �� Chrome */
+  column-count: 2;      /* 将 div 元素中的文本分为2列，并规定列间1rem像素的间隔。 */
+
+  /* column-gap: 30rpx; */
+}
+.item-masonry{
+  background-color: #fff;
+  break-inside: avoid; 
+  /* box-sizing: border-box; */
+  margin-bottom: 20rpx;
+}
+.item-masonry image {
+  width: 100%;
+}

@@ -1,0 +1,69 @@
+<!--pages/nav/navbar/navbar.wxml-->
+<import src="/pages/tpl/top/index.wxml" />
+<template is="headers"></template>
+
+<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
+  <view class="h-bar h-bg-white h-corner-sm">
+    <view class="action h-text-sm">
+      <text class="heyui-titles h-text-blue h-text-bold"> 顶部导航</text>
+    </view>
+  </view>
+  
+  <view class="h-list menu card-menu m-tb">
+    <view class="h-bar h-bg-blue">
+      <view class="action">
+        <text class="heyui-back h-text-gray"></text> 返回
+      </view>
+      <view class="content h-text-bold">
+        标题党
+      </view>
+    </view>
+  </view>
+  <view class="h-list menu card-menu m-tb">
+    <view class="h-bar h-bg-blue">
+      <view class="action">
+        <text class="heyui-home text-gray"></text> 首页
+      </view>
+      <view class="content text-bold">
+        这就是一篇美好的文章
+      </view>
+      <view class="action">
+        <text class="heyui-appreciate h-text-grey"></text>
+        <text class="heyui-camera h-text-red"></text>
+      </view>
+    </view>
+  </view>
+  <view class="h-list menu card-menu m-tb">
+    <view class="h-bar h-bg-green">
+      <view class="action">
+        <text class="heyui-close"></text> 关闭
+      </view>
+      <view class="content text-bold">
+        颜色好绿呀
+      </view>
+    </view>
+  </view>
+  <view class="h-list menu card-menu m-tb">
+    <view class="h-bar h-bg-black search">
+      <view class="h-avatar h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
+      <view class="content">
+        Hey-UI
+      </view>
+      <view class="action">
+        <text class="heyui-more"></text>
+      </view>
+    </view>
+  </view>
+  <view class="h-list menu card-menu m-tb">
+    <view class="h-bar h-bg-blue search">
+      <view class="h-avatar h-corner-sm" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a6.jpg);"></view>
+      <view class="content">
+        Hey-UI
+      </view>
+      <view class="action">
+        <text class="heyui-more"></text>
+      </view>
+    </view>
+  </view>
+
+</view>

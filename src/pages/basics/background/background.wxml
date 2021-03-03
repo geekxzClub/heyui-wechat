@@ -1,0 +1,92 @@
+<!-- background.wxml -->
+<import src="/pages/tpl/top/index.wxml" />
+<template is="headers"></template>
+<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm">
+
+  <view class="h-bar h-bg-white h-corner-sm">
+    <view class="action h-text-sm">
+      <text class="heyui-titles h-text-blue h-text-bold"> 配色展示</text>
+    </view>
+  </view>
+  <view class="h-list menu p-b">    
+    <view class="h-bar h-bg-white p-l">
+      <text class="h-text-xs h-text-black"> 1. 主题色</text>
+    </view>
+    <view class="h-grid h-col-3 p-lr-sm">
+      <view class="p-sm">
+        <view class="h-bg-success p-sm h-text-center h-shadow-blur h-corner-sm">
+          <view class="h-text-sm">成功</view>
+          <view class="h-text-Hey">success</view>
+        </view>
+      </view>
+      <view class="p-sm">
+        <view class="h-bg-error p-sm h-text-center h-shadow-blur h-corner-sm">
+          <view class="h-text-sm">失败</view>
+          <view class="h-text-Hey">error</view>
+        </view>
+      </view>
+      <view class="p-sm">
+        <view class="h-bg-warning p-sm h-text-center h-shadow-blur h-corner-sm">
+          <view class="h-text-sm">警告</view>
+          <view class="h-text-Hey">warning</view>
+        </view>
+      </view>
+      <view class="p-sm">
+        <view class="h-bg-default p-sm h-text-center h-shadow-blur h-corner-sm">
+          <view class="h-text-sm">默认</view>
+          <view class="h-text-Hey">default</view>
+        </view>
+      </view>
+    </view>
+    <view class="h-bar h-bg-white p-l">
+      <text class="h-text-xs h-text-black"> 2. 渐变色</text>
+    </view>
+    <view class="p h-text-center h-text-Hey h-text-sm">
+      <view class="h-bg-gradual-red h-corner-sm p-tb m-b-sm">魅红 red</view>
+      <view class="h-bg-gradual-orange h-corner-sm p-tb m-b-sm">鎏金 orange</view>
+      <view class="h-bg-gradual-green h-corner-sm p-tb m-b-sm">翠绿 green</view>
+      <view class="h-bg-gradual-purple h-corner-sm p-tb m-b-sm">惑紫 purple</view>
+      <view class="h-bg-gradual-pink h-corner-sm p-tb m-b-sm">霞彩 pink</view>
+      <view class="h-bg-gradual-blue h-corner-sm p-tb">靛青 blue</view>
+    </view>
+    <view class="h-bar h-bg-white p-l">
+      <text class="h-text-xs h-text-black"> 3. 基础色</text>
+    </view>
+    <view class="p h-text-center h-text-Hey h-text-sm">
+      <view class="h-bg-red h-corner-sm p-tb m-b-sm">红色 red</view>
+      <view class="h-bg-orange h-corner-sm p-tb m-b-sm">桔橙 orange</view>
+      <view class="h-bg-yellow h-corner-sm p-tb m-b-sm">明黄 yellow</view>
+      <view class="h-bg-olive h-corner-sm p-tb m-b-sm">橄榄 olive</view>
+      <view class="h-bg-green h-corner-sm p-tb m-b-sm">森绿 green</view>
+      <view class="h-bg-cyan h-corner-sm p-tb m-b-sm">天青 cyan</view>
+      <view class="h-bg-blue h-corner-sm p-tb m-b-sm">海蓝 blue</view>
+      <view class="h-bg-purple h-corner-sm p-tb m-b-sm">姹紫 purple</view>
+      <view class="h-bg-mauve h-corner-sm p-tb m-b-sm">木槿 mauve</view>
+      <view class="h-bg-pink h-corner-sm p-tb m-b-sm">桃粉 pink</view>
+      <view class="h-bg-brown h-corner-sm p-tb m-b-sm">棕褐 brown</view>
+      <view class="h-bg-grey h-corner-sm p-tb m-b-sm">玄灰 grey</view>
+      <view class="h-bg-gray h-corner-sm p-tb m-b-sm">草灰 gray</view>
+      <view class="h-bg-black h-corner-sm p-tb m-b-sm">墨黑 black</view>
+      <view class="h-bg-white h-corner-sm p-tb">雅白 white</view>
+    </view>
+    <view class="h-bar h-bg-white p-l">
+      <text class="h-text-xs h-text-black"> 4. 淡色</text>
+    </view>
+    <view class="p h-text-center h-text-Hey h-text-sm">
+      <view class="h-bg-red-light h-corner-sm p-tb m-b-sm">红色 red</view>
+      <view class="h-bg-orange-light h-corner-sm p-tb m-b-sm">桔橙 orange</view>
+      <view class="h-bg-yellow-light h-corner-sm p-tb m-b-sm">明黄 yellow</view>
+      <view class="h-bg-olive-light h-corner-sm p-tb m-b-sm">橄榄 olive</view>
+      <view class="h-bg-green-light h-corner-sm p-tb m-b-sm">森绿 green</view>
+      <view class="h-bg-cyan-light h-corner-sm p-tb m-b-sm">天青 cyan</view>
+      <view class="h-bg-blue-light h-corner-sm p-tb m-b-sm">海蓝 blue</view>
+      <view class="h-bg-purple-light h-corner-sm p-tb m-b-sm">姹紫 purple</view>
+      <view class="h-bg-mauve-light h-corner-sm p-tb m-b-sm">木槿 mauve</view>
+      <view class="h-bg-pink-light h-corner-sm p-tb m-b-sm">桃粉 pink</view>
+      <view class="h-bg-brown-light h-corner-sm p-tb m-b-sm">棕褐 brown</view>
+      <view class="h-bg-grey-light h-corner-sm p-tb m-b-sm">玄灰 grey</view>
+    </view>
+
+  </view>
+
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "h-menu": "../../component/h-menu/index",
+    "h-menu-move": "../../component/h-menu-move/index"
+  }
+}

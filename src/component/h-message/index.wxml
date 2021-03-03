@@ -1,0 +1,3 @@
+<view class="container">
+  <view class='anit {{show?"show":""}}'>{{text}}</view>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/nav/menu/menu.wxml-->
+
+<!--bindmenuItemClick为按钮点击的时候的回调方法  mainmodel是显示的按钮，menulist为折叠的菜单的数组数据-->
+<h-menu bindmenuItemClick="menuItemClick" mainmodel="{{mainmodel}}" menulist ="{{menulist}}" ></h-menu>
+
+<h-menu-move bindmenuItemClick="menuItemClick" mainmodel="{{mainmodel}}" menulist ="{{menulist}}"></h-menu-move>

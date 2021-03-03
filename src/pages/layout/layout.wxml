@@ -1,0 +1,3 @@
+<!--pages/layout/layout.wxml-->
+<import src="../tpl/tpl.wxml" />
+<template is="header" data="{{componentList}}"></template>

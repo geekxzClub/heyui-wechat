@@ -1,0 +1,4 @@
+<scroll-view class='tree' scroll-top="{{top}}" scroll-y bindselectChange="selectChange" scroll-with-animation >
+  <!-- wx:if="{{tree.length}}" 保证下载tree结构完成后才开始渲染结构树 -->
+  <row members="{{tree}}" wx:if="{{tree.length&&initIds.length}}" init-ids="{{initIds}}" selected-id="{{selectedId}}"></row>
+</scroll-view>

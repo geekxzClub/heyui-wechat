@@ -1,0 +1,36 @@
+<!--pages/view/keyboard/keyboard.wxml-->
+    <view class="car-number m-t">
+        <view class="ordinary" wx:if="{{!isDefault}}">
+            <view class="whiteBorder">
+                <view class="nums">             
+                    <text wx:for="{{numLen}}" wx:for-index="index" wx:key="item"  class="item {{index === idx ? 'active' : ''}}">{{ result[index] }}</text>
+                    <text class="point"></text>
+                </view>
+            </view>
+        </view>
+        <view wx:else class="newEnergy">
+            <view class="whiteBorder">
+                <view class="nums">
+                    <text wx:for="{{numLen}}" wx:for-index="index" wx:key="item"  class="item {{index === idx ? 'active' : ''}}">{{ result[index] }}</text>
+                    <view class="point"></view>
+                </view>
+            </view>
+        </view>
+        <view class="h-flex h-justify-center p-tb">
+            <checkbox-group bindchange="checkboxChange">
+              <checkbox class="green round" value="1" checked="{{isDefault}}" />
+              <text class="p-lr">新能源车</text>
+            </checkbox-group>
+        </view>
+    </view>
+
+
+    <button class="h-btn h-btn-lg h-corner-lg block h-bg-blue m-lr">确认</button>
+    <view class="keyboard">
+        <h-car-number 
+            bind:handlekeyClick="_handleKeyClick"
+            bind:handleDeleteClick="_handleDeleteClick"
+            bind:handleToggleClick="_handleToggleClick"
+            isCityKeyboard="{{isCityKeyboard}}"
+        ></h-car-number>
+    </view>

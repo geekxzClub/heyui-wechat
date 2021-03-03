@@ -1,0 +1,12 @@
+<!--pages/tpl/tpl.wxml-->
+<template name="headers">
+  <view class="hey-ui-box">
+    <view class="m-lr">
+      <view class="h-text-lg h-text-white tit">
+        HeyUI组件库
+        <text class="h-text-sm">v1.0</text>
+      </view>
+      <view class="dec h-text-white h-text-xs">基于微信小程序原生语法 实现的CSS组件库</view>
+    </view>
+  </view>
+</template>

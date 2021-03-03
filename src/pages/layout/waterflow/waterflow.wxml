@@ -1,0 +1,12 @@
+<!--pages/layout/waterflow/waterflow.wxml-->
+<view class="h-bar h-bg-white">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-red h-text-bold"> 瀑布流</text>
+  </view>
+</view>
+<view class='list-masonry m-lr p-tb'>
+  <view class='item-masonry h-corner-sm h-shadow-lg p-sm' wx:for="{{note}}">
+    <image src='{{item.url}}' mode='widthFix'></image>
+    <view class=" h-text-center h-text-sm m-tb-s h-text-cut">{{item.title}}</view>
+  </view>
+</view>

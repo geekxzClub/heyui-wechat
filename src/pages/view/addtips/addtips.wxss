@@ -1,0 +1,4 @@
+/* pages/view/addtips/addtips.wxss */
+.h-arrow-green{
+  border-color:  transparent transparent var(--yellow)transparent;
+}

@@ -1,0 +1,7 @@
+/* pages/animation/transition/transition.wxss */
+@import "../../../hey-ui/animation.wxss";
+
+image[class*="gif-"] {
+  border-radius: 6rpx;
+  display: block;
+}

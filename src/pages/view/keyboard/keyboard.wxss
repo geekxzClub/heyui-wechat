@@ -1,0 +1,77 @@
+/* pages/view/keyboard/keyboard.wxss */
+.car-number {
+    width: 100%;
+}
+.car-number .ordinary{
+    background-color: #4590e1;
+}
+.car-number .newEnergy {
+    background-color: #31ddad;
+}
+.car-number .newEnergy,
+.car-number .ordinary{
+    width: 660rpx;
+    margin: 0 auto;
+    border-radius: 14rpx;
+    position: relative;
+    padding: 20rpx;
+}
+.car-number .newEnergy .whiteBorder,
+.car-number .ordinary .whiteBorder{
+    border: 6rpx solid #ffffff;
+    border-radius: 10rpx;
+    padding: 100rpx 0;
+}
+.car-number .newEnergy .nums,
+.car-number .ordinary .nums{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.car-number .newEnergy .nums .item,
+.car-number .ordinary .nums .item{
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 10rpx;
+    text-align: center;
+    line-height: 60rpx;
+    color: #ffffff;
+    margin: 0 10rpx;
+}
+
+.car-number .newEnergy .nums .item:nth-of-type(2),
+.car-number .ordinary .nums .item:nth-of-type(2){
+    margin-right: 20rpx;
+}
+.car-number .newEnergy .nums .item:nth-of-type(3)
+.car-number .ordinary .nums .item:nth-of-type(3){
+    margin-left: 20rpx;
+}
+
+
+.car-number .ordinary .nums .item{
+    background-color: #6fa6e7;
+}
+.car-number .newEnergy .nums .item{
+    background-color: #5ee1bf;
+}
+.car-number .newEnergy .nums .active ,
+.car-number .ordinary .nums .active {
+    border: 4rpx solid #ffffff;
+}
+.car-number .newEnergy .nums .point ,
+.car-number .ordinary .nums .point{
+    width: 10rpx;
+    height: 10rpx;
+    background-color: #ffffff;
+    border-radius: 50rpx;
+    margin-top: 25rpx;
+}
+.car-number .ordinary .nums .point {
+    position: absolute;
+    left: 30.4%;
+}
+.car-number .newEnergy .nums .point{
+    position: absolute;
+    left: 25%;
+}

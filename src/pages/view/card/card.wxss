@@ -1,0 +1,99 @@
+/* pages/view/card/card.wxss */
+/* 商品card */
+.h-goods-item{
+  height: 520rpx;
+  display: inline-block;
+}
+.h-grid.h-col-2>view{
+  width: 48%;
+}
+.h-grid .h-goods-item:nth-child(2n){
+  margin-left: 4%;
+}
+.h-goods-img{
+  width: 100%;
+  height: 330rpx;
+}
+.h-goods-img image{
+  width: 100%; 
+  height: 330rpx;
+}
+.h-goods-content{
+  width: 100%; 
+  height: 150rpx;
+  position: relative
+}
+.h-goods-content .h-good-tit{
+  width: 96%;
+  height: auto;
+  line-height: 40rpx;
+}
+.h-goods-content .h-price-sell{  
+  position: absolute;
+  bottom: -26rpx;
+  width: 96%;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+/* 活动Card */
+.h-active{
+  height: 560rpx;
+  display: inline-block;
+}
+.h-active-img{
+  width: 100%;
+  height: 330rpx;
+}
+.h-active-img image{
+  width: 100%; 
+  height: 330rpx;
+}
+
+
+.h-active-content{
+  width: 100%; 
+  height: 180rpx;
+  position: relative
+}
+.h-active-content .h-active-tit{
+  width: 420rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.h-active-content .h-active-time{
+  width: 96%;
+  height: 80rpx;
+  line-height: 60rpx;
+}
+.h-active-content .h-view-time{  
+  position: absolute;
+  bottom: -40rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+
+.h-status {
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 20px;
+  padding-right: 20rpx;
+  position: absolute;
+  right: 0rpx;
+  top: 40rpx;
+}
+.h-status::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-right: none;
+    border: 16px solid transparent;
+    border-left: 10px solid #ffffff;
+    left: 0;
+}

@@ -1,0 +1,50 @@
+<!--pages/form/textarea/textarea.wxml-->
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 基本案例</text>
+  </view>
+</view>
+<view class="h-form-group p-b">
+		<textarea class="h-border h-corner-md p-sm" maxlength="-1" placeholder="多行文本输入框"></textarea>
+</view>
+
+
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 带Label</text>
+  </view>
+</view>
+<view class="h-form-group h-align-start p-b">
+    <view class="h-text-gray label p-t-sm">文本框</view>
+		<textarea class="h-border h-corner-md p-sm" maxlength='140' placeholder="最大限制输入140个字体"></textarea>
+</view>
+
+
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 最大限制</text>
+  </view>
+</view>
+<view class="h-form-group p-b">
+		<textarea class="h-border h-corner-md p-sm" maxlength='140' placeholder="最大限制输入140个字体"></textarea>
+</view>
+
+
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 禁用</text>
+  </view>
+</view>
+<view class="h-form-group p-b">
+		<textarea class="h-border h-corner-md p-sm" maxlength="-1" disabled placeholder="说说您的想法"></textarea>
+</view>
+
+
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 不带Border</text>
+  </view>
+</view>
+<view class="h-form-group p-b">
+		<textarea class="h-corner-md p-sm" maxlength='140' placeholder="最大限制输入140个字体"></textarea>
+</view>

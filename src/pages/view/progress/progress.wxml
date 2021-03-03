@@ -1,0 +1,70 @@
+<!--pages/view/progress/progress.wxml-->
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 进度条形状</text>
+  </view>
+</view>
+<view class="p h-bg-white">
+  <view class="h-progress h-corner-lg">
+    <view class="h-bg-red" style="width:{{loading?'88.8%':''}};">88.8%</view>
+  </view>
+  <view class="h-progress h-corner-md m-t">
+    <view class="h-bg-red" style="width:{{loading?'66.6%':''}};">66.6%</view>
+  </view>
+  <view class="h-progress h-corner-sm m-t">
+    <view class="h-bg-red" style="width:{{loading?'88.8%':''}};">88.8%</view>
+  </view>
+  <view class="h-progress h-corner-xs m-t">
+    <view class="h-bg-red" style="width:{{loading?'66.6%':''}};">66.6%</view>
+  </view>  
+  <view class="h-progress h-corner-l m-t">
+    <view class="h-bg-red" style="width:{{loading?'88.8%':''}};">88.8%</view>
+  </view>
+</view>
+
+
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 进度条大小</text>
+  </view>
+</view>
+<view class="p h-bg-white">
+  <view class="h-progress">
+    <view class="h-bg-red" style="width:{{loading?'88.8%':''}};"></view>
+  </view>
+  <view class="h-progress m-t h-progress-sm">
+    <view class="h-bg-red" style="width:{{loading?'66.6%':''}};"></view>
+  </view>
+  <view class="h-progress m-t h-progress-xs">
+    <view class="h-bg-red" style="width:{{loading?'18.8%':''}};"></view>
+  </view>
+</view>
+
+
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 进度条条纹</text>
+  </view>
+</view>
+<view class="p h-bg-white">
+  <view class="h-progress h-progress-sm striped active h-corner-lg">
+    <view class="h-bg-green" style="width:{{loading?'60%':''}};">60%</view>
+  </view>
+  <view class="h-progress h-progress-sm striped h-corner-lg m-t">
+    <view class="h-bg-black" style="width:{{loading?'40%':''}};"></view>
+  </view>
+</view>
+
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 其他</text>
+  </view>
+</view>
+<view class="p h-bg-white p-b-xl">
+  <view class="h-flex m-t">
+    <view class="h-progress h-corner-lg">
+      <view class="h-bg-green" style="width:{{loading?'80%':''}};"></view>
+    </view>
+    <text class="m-l">80%</text>
+  </view>
+</view>

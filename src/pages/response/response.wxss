@@ -1,0 +1,2 @@
+/* pages/response/response.wxss */
+@import '/pages/tpl/tpl.wxss';

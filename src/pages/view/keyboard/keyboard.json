@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "添加车牌",
+  "usingComponents": {
+    "h-car-number": "/component/h-car-number/index"
+  }
+}
