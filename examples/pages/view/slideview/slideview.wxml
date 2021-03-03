@@ -1,50 +1,60 @@
 <!--pages/view/slideview/slideview.wxml-->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 两个操作</text>
-  </view>
-</view>
- <view class="h-list menu-avatar">
-  <view class="h-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{4}}" wx:key='item' bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
-    <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a{{index+1}}.jpg);"></view>
-    <view class="content">
-      <view class="h-text-grey">陈东东</view>
-      <view class="h-text-gray h-text-sm">
-        <text class="heyui-infofill h-text-red"></text> 消息未送达</view>
-    </view>
-    <view class="action">
-      <view class="h-text-grey h-text-s">22:20</view>
-      <view class="h-tag h-tag-sm h-bg-grey h-corner-lg">5</view>
-    </view>
-    <view class="move">
-      <view class="h-bg-grey" bindtap="reportBtn" data-type='置顶'>置顶</view>
-      <view class="h-bg-red" bindtap="reportBtn" data-type='删除'>删除</view>
-    </view>
-  </view>
-</view>
+<import src="/pages/tpl/top/index.wxml" />
+<template is="headers"></template>
 
+<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
+  <view class="h-bar h-bg-white h-corner-sm">
+    <view class="action h-text-sm">
+      <text class="heyui-titles h-text-blue h-text-bold"> 滑动操作展示</text>
+    </view>
+  </view>
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 两个操作</text>
+    </view>
+  </view>
+  <view class="h-list menu-avatar">
+    <view class="h-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{4}}" wx:key='item' bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
+      <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a{{index+1}}.jpg);"></view>
+      <view class="content">
+        <view class="h-text-grey">陈东东</view>
+        <view class="h-text-gray h-text-sm">
+          <text class="heyui-infofill h-text-red"></text> 消息未送达</view>
+      </view>
+      <view class="action">
+        <view class="h-text-grey h-text-s">22:20</view>
+        <view class="h-tag h-tag-sm h-bg-grey h-corner-lg">5</view>
+      </view>
+      <view class="move">
+        <view class="h-bg-grey" bindtap="reportBtn" data-type='置顶'>置顶</view>
+        <view class="h-bg-red" bindtap="reportBtn" data-type='删除'>删除</view>
+      </view>
+    </view>
+  </view>
 
-<view class="h-bar h-bg-white h-border-bottom m-t">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 三个操作</text>
-  </view>
-</view>
- <view class="h-list menu-avatar">
-  <view class="h-item {{modalName=='move-box-'+ index?'move-cur three':''}}" wx:for="{{4}}" wx:key='item' bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
-    <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a{{index+1}}.jpg);"></view>
-    <view class="content">
-      <view class="h-text-grey">陈东东</view>
-      <view class="h-text-gray h-text-sm">
-        <text class="heyui-infofill h-text-red"></text> 消息未送达</view>
-    </view>
-    <view class="action">
-      <view class="h-text-grey h-text-s">22:20</view>
-      <view class="h-tag h-tag-sm h-bg-grey h-corner-lg">5</view>
-    </view>
-    <view class="move three">
-      <view class="h-bg-blue" bindtap="reportBtn" data-type='分享'>分享</view>
-      <view class="h-bg-grey" bindtap="reportBtn" data-type='置顶'>置顶</view>
-      <view class="h-bg-red" bindtap="reportBtn" data-type='删除'>删除</view>
+  <view class="h-bar h-bg-white h-border-bottom m-t">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 三个操作</text>
     </view>
   </view>
+  <view class="h-list menu-avatar">
+    <view class="h-item {{modalName=='move-box-'+ index?'move-cur three':''}}" wx:for="{{4}}" wx:key='item' bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
+      <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a{{index+1}}.jpg);"></view>
+      <view class="content">
+        <view class="h-text-grey">陈东东</view>
+        <view class="h-text-gray h-text-sm">
+          <text class="heyui-infofill h-text-red"></text> 消息未送达</view>
+      </view>
+      <view class="action">
+        <view class="h-text-grey h-text-s">22:20</view>
+        <view class="h-tag h-tag-sm h-bg-grey h-corner-lg">5</view>
+      </view>
+      <view class="move three">
+        <view class="h-bg-blue" bindtap="reportBtn" data-type='分享'>分享</view>
+        <view class="h-bg-grey" bindtap="reportBtn" data-type='置顶'>置顶</view>
+        <view class="h-bg-red" bindtap="reportBtn" data-type='删除'>删除</view>
+      </view>
+    </view>
+  </view>
+
 </view>

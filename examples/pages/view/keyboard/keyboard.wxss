@@ -1,7 +1,9 @@
 /* pages/view/keyboard/keyboard.wxss */
+@import '/pages/tpl/top/index.wxss';
 .car-number {
     width: 100%;
 }
+
 .car-number .ordinary{
     background-color: #4590e1;
 }
@@ -13,14 +15,13 @@
     width: 660rpx;
     margin: 0 auto;
     border-radius: 14rpx;
-    position: relative;
     padding: 20rpx;
 }
 .car-number .newEnergy .whiteBorder,
 .car-number .ordinary .whiteBorder{
     border: 6rpx solid #ffffff;
     border-radius: 10rpx;
-    padding: 100rpx 0;
+    padding: 40rpx 0;
 }
 .car-number .newEnergy .nums,
 .car-number .ordinary .nums{

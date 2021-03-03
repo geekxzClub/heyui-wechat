@@ -1,1 +1,2 @@
 /* pages/view/loading/loading.wxss */
+@import '/pages/tpl/top/index.wxss';

@@ -1,222 +1,232 @@
 <!--pages/view/card/card.wxml-->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action p-l h-text-sm">
-    <text class="heyui-title h-text-blue"> 文章Card</text>
-  </view>
-</view>
+<import src="/pages/tpl/top/index.wxml" />
+<template is="headers"></template>
 
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action p-l h-text-sm">
-    <text class="heyui-title h-text-blue"> 活动Card</text>
+<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
+  <view class="h-bar h-bg-white h-corner-sm">
+    <view class="action h-text-sm">
+      <text class="heyui-titles h-text-blue h-text-bold"> 顶部导航</text>
+    </view>
   </view>
-</view>
-<view class="h-flex h-corner-tlr-sm p-t m-lr">
-  <view class="h-active h-flex-sub h-bg-white h-corner-sm h-shadow">
-    <view class="h-active-img">
-      <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/banner/banner3.jpg"></image>
-    </view>
-    <view class="h-active-content p-sm">      
-      <view class="h-status h-text-sm h-bg-gray h-text-white">已结束</view>
-      <view class="h-active-tit h-text-sm h-text-cut">2022年杭州亚运会官方用车几何C，全球设计孵化大赛</view>
-      <view class="h-active-time h-text-s h-text-gray">2020/09/01~2020/09/11</view>
-      <view class="h-view-time h-border-top p-lr-sm">
-        <view class="h-fl h-text-s h-text-gray">          
-          <text class="heyui-time"> 42天</text>
-        </view>
-        <view class="h-fr h-text-s h-text-gray">
-          <text class="heyui-attention"> 12313</text>
-          <text class="heyui-message m-l-sm"> 77454</text>
-          <text class="heyui-appreciate m-l-sm"> 77454</text>
-        </view>
-      </view>
-    </view>
-  </view>  
-</view>
-<view class="h-flex h-corner-tlr-sm p-t m-lr">
-  <view class="h-active h-flex-sub h-bg-white h-corner-sm h-shadow">
-    <view class="h-active-img">
-      <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/banner/banner2.jpg"></image>
-    </view>
-    <view class="h-active-content p-sm">      
-      <view class="h-status h-text-sm h-bg-warning h-text-white">还有12天</view>
-      <view class="h-active-tit h-text-sm h-text-cut">战“疫” 特别策划 | 煜见未来·云端相聚</view>
-      <view class="h-good-time h-text-s h-text-gray">2020/09/15~2020/09/30</view>
-      <view class="h-view-time h-border-top p-lr-sm">
-        <view class="h-fl h-text-s h-text-gray">          
-          <text class="heyui-time"> 12天</text>
-        </view>
-        <view class="h-fr h-text-s h-text-gray">
-          <text class="heyui-attention"> 12313</text>
-          <text class="heyui-message m-l-sm"> 77454</text>
-          <text class="heyui-appreciate m-l-sm"> 77454</text>
-        </view>
-      </view>
-    </view>
-  </view>  
-</view>
 
-<view class="h-flex p-t">
-  <view class="h-active h-flex-sub h-bg-white h-corner-sm h-shadow">
-    <view class="h-active-img">
-      <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/banner/banner2.jpg"></image>
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action p-l h-text-sm">
+      <text class="heyui-title h-text-blue"> 文章Card</text>
     </view>
-    <view class="h-active-content p-sm">      
-      <view class="h-status h-text-sm h-bg-warning h-text-white">还有12天</view>
-      <view class="h-active-tit h-text-sm h-text-cut">战“疫” 特别策划 | 煜见未来·云端相聚</view>
-      <view class="h-active-time h-text-s h-text-gray">2020/09/15~2020/09/30</view>
-      <view class="h-view-time h-border-top p-lr-sm">
-        <view class="h-fl h-text-s h-text-gray">          
-          <text class="heyui-time"> 12天</text>
-        </view>
-        <view class="h-fr h-text-s h-text-gray">
-          <text class="heyui-attention"> 12313</text>
-          <text class="heyui-message m-l-sm"> 77454</text>
-          <text class="heyui-appreciate m-l-sm"> 77454</text>
-        </view>
-      </view>
-    </view>
-  </view>  
-</view>
-<view class="h-flex p-t">
-  <view class="h-active h-flex-sub h-bg-white h-corner-sm h-shadow">
-    <view class="h-active-img">
-      <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/banner/banner3.jpg"></image>
-    </view>
-    <view class="h-active-content p-sm">      
-      <view class="h-status h-text-sm h-bg-gray h-text-white">已结束</view>
-      <view class="h-active-tit h-text-sm h-text-cut">2022年杭州亚运会官方用车几何C，全球设计孵化大赛</view>
-      <view class="h-active-time h-text-s h-text-gray">2020/09/01~2020/09/11</view>
-      <view class="h-view-time h-border-top p-lr-sm">
-        <view class="h-fl h-text-s h-text-gray">          
-          <text class="heyui-time"> 42天</text>
-        </view>
-        <view class="h-fr h-text-s h-text-gray">
-          <text class="heyui-attention"> 12313</text>
-          <text class="heyui-message m-l-sm"> 77454</text>
-          <text class="heyui-appreciate m-l-sm"> 77454</text>
-        </view>
-      </view>
-    </view>
-  </view> 
-</view>
+  </view>
 
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action p-l h-text-sm">
+      <text class="heyui-title h-text-blue"> 活动Card</text>
+    </view>
+  </view>
+  <view class="h-flex h-corner-tlr-sm p-t m-lr">
+    <view class="h-active h-flex-sub h-bg-white h-corner-sm h-shadow">
+      <view class="h-active-img">
+        <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/banner/banner3.jpg"></image>
+      </view>
+      <view class="h-active-content p-sm">      
+        <view class="h-status h-text-sm h-bg-gray h-text-white">已结束</view>
+        <view class="h-active-tit h-text-sm h-text-cut">2022年杭州亚运会官方用车几何C，全球设计孵化大赛</view>
+        <view class="h-active-time h-text-s h-text-gray">2020/09/01~2020/09/11</view>
+        <view class="h-view-time h-border-top p-lr-sm">
+          <view class="h-fl h-text-s h-text-gray">          
+            <text class="heyui-time"> 42天</text>
+          </view>
+          <view class="h-fr h-text-s h-text-gray">
+            <text class="heyui-attention"> 12313</text>
+            <text class="heyui-message m-l-sm"> 77454</text>
+            <text class="heyui-appreciate m-l-sm"> 77454</text>
+          </view>
+        </view>
+      </view>
+    </view>  
+  </view>
+  <view class="h-flex h-corner-tlr-sm p-t m-lr">
+    <view class="h-active h-flex-sub h-bg-white h-corner-sm h-shadow">
+      <view class="h-active-img">
+        <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/banner/banner2.jpg"></image>
+      </view>
+      <view class="h-active-content p-sm">      
+        <view class="h-status h-text-sm h-bg-warning h-text-white">还有12天</view>
+        <view class="h-active-tit h-text-sm h-text-cut">战“疫” 特别策划 | 煜见未来·云端相聚</view>
+        <view class="h-good-time h-text-s h-text-gray">2020/09/15~2020/09/30</view>
+        <view class="h-view-time h-border-top p-lr-sm">
+          <view class="h-fl h-text-s h-text-gray">          
+            <text class="heyui-time"> 12天</text>
+          </view>
+          <view class="h-fr h-text-s h-text-gray">
+            <text class="heyui-attention"> 12313</text>
+            <text class="heyui-message m-l-sm"> 77454</text>
+            <text class="heyui-appreciate m-l-sm"> 77454</text>
+          </view>
+        </view>
+      </view>
+    </view>  
+  </view>
 
+  <view class="h-flex p-t">
+    <view class="h-active h-flex-sub h-bg-white h-corner-sm h-shadow">
+      <view class="h-active-img">
+        <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/banner/banner2.jpg"></image>
+      </view>
+      <view class="h-active-content p-sm">      
+        <view class="h-status h-text-sm h-bg-warning h-text-white">还有12天</view>
+        <view class="h-active-tit h-text-sm h-text-cut">战“疫” 特别策划 | 煜见未来·云端相聚</view>
+        <view class="h-active-time h-text-s h-text-gray">2020/09/15~2020/09/30</view>
+        <view class="h-view-time h-border-top p-lr-sm">
+          <view class="h-fl h-text-s h-text-gray">          
+            <text class="heyui-time"> 12天</text>
+          </view>
+          <view class="h-fr h-text-s h-text-gray">
+            <text class="heyui-attention"> 12313</text>
+            <text class="heyui-message m-l-sm"> 77454</text>
+            <text class="heyui-appreciate m-l-sm"> 77454</text>
+          </view>
+        </view>
+      </view>
+    </view>  
+  </view>
+  <view class="h-flex p-t">
+    <view class="h-active h-flex-sub h-bg-white h-corner-sm h-shadow">
+      <view class="h-active-img">
+        <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/banner/banner3.jpg"></image>
+      </view>
+      <view class="h-active-content p-sm">      
+        <view class="h-status h-text-sm h-bg-gray h-text-white">已结束</view>
+        <view class="h-active-tit h-text-sm h-text-cut">2022年杭州亚运会官方用车几何C，全球设计孵化大赛</view>
+        <view class="h-active-time h-text-s h-text-gray">2020/09/01~2020/09/11</view>
+        <view class="h-view-time h-border-top p-lr-sm">
+          <view class="h-fl h-text-s h-text-gray">          
+            <text class="heyui-time"> 42天</text>
+          </view>
+          <view class="h-fr h-text-s h-text-gray">
+            <text class="heyui-attention"> 12313</text>
+            <text class="heyui-message m-l-sm"> 77454</text>
+            <text class="heyui-appreciate m-l-sm"> 77454</text>
+          </view>
+        </view>
+      </view>
+    </view> 
+  </view>
 
-<view class="h-bar h-bg-white h-border-bottom m-t">
-  <view class="action p-l h-text-sm">
-    <text class="heyui-title h-text-blue"> 评论Card</text>
+  <view class="h-bar h-bg-white h-border-bottom m-t">
+    <view class="action p-l h-text-sm">
+      <text class="heyui-title h-text-blue"> 评论Card</text>
+    </view>
   </view>
-</view>
-<view class="h-list menu-avatar menu comment h-bg-white">
-  <view class="h-item m-t">
-    <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
-    <view class="content p-l-sm p-b-sm">
-      <view class="h-text-grey">阿花</view>
-      <view class="h-text-gray text-content h-text-sm">
-        阿强，你被自己的光芒变的盲目。
-      </view>
-      <view class="h-bg-grey p-sm radius m-t-sm h-text-s">
-        <view class="h-flex">
-          <view>阿强：</view>
-          <view class="h-flex-sub">妹妹，你在帮他们给黑暗找借口吗?</view>
+  <view class="h-list menu-avatar menu comment h-bg-white">
+    <view class="h-item m-t">
+      <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
+      <view class="content p-l-sm p-b-sm">
+        <view class="h-text-grey">阿花</view>
+        <view class="h-text-gray text-content h-text-sm">
+          阿强，你被自己的光芒变的盲目。
+        </view>
+        <view class="h-bg-grey p-sm radius m-t-sm h-text-s">
+          <view class="h-flex">
+            <view>阿强：</view>
+            <view class="h-flex-sub">妹妹，你在帮他们给黑暗找借口吗?</view>
+          </view>
+        </view>
+        <view class="m-t-sm h-flex h-justify-between">
+          <view class="h-text-gray htext-sm">2020年09月09日</view>
+          <view>
+            <text class="heyui-appreciatefill h-text-red"></text>
+            <text class="heyui-messagefill h-text-gray m-l-sm"></text>
+          </view>
         </view>
       </view>
-      <view class="m-t-sm h-flex h-justify-between">
-        <view class="h-text-gray htext-sm">2020年09月09日</view>
-        <view>
-          <text class="heyui-appreciatefill h-text-red"></text>
-          <text class="heyui-messagefill h-text-gray m-l-sm"></text>
+    </view>
+    <view class="h-item m-t">
+      <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
+      <view class="content p-l-sm p-b-sm">
+        <view class="h-text-grey">阿花</view>
+        <view class="h-text-gray text-content h-text-sm">
+          阿强，你被自己的光芒变的盲目。
+        </view>
+        <view class="h-bg-grey p-sm radius m-t-sm h-text-s">
+          <view class="h-flex">
+            <view>阿强：</view>
+            <view class="h-flex-sub">妹妹，你在帮他们给黑暗找借口吗?</view>
+          </view>
+        </view>
+        <view class="m-t-sm h-flex h-justify-between">
+          <view class="h-text-gray htext-sm">2020年09月09日</view>
+          <view>
+            <text class="heyui-appreciatefill h-text-red"></text>
+            <text class="heyui-messagefill h-text-gray m-l-sm"></text>
+          </view>
         </view>
       </view>
     </view>
   </view>
-  <view class="h-item m-t">
-    <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
-    <view class="content p-l-sm p-b-sm">
-      <view class="h-text-grey">阿花</view>
-      <view class="h-text-gray text-content h-text-sm">
-        阿强，你被自己的光芒变的盲目。
-      </view>
-      <view class="h-bg-grey p-sm radius m-t-sm h-text-s">
-        <view class="h-flex">
-          <view>阿强：</view>
-          <view class="h-flex-sub">妹妹，你在帮他们给黑暗找借口吗?</view>
+  <view class="h-list menu-avatar menu card-menu comment h-bg-white m-t">
+    <view class="h-item m-t">
+      <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
+      <view class="content p-l-sm p-b-sm">
+        <view class="h-text-grey">阿花</view>
+        <view class="h-text-gray text-content h-text-sm">
+          阿强，你被自己的光芒变的盲目。
+        </view>
+        <view class="h-bg-grey p-sm radius m-t-sm h-text-s">
+          <view class="h-flex">
+            <view>阿强：</view>
+            <view class="h-flex-sub">妹妹，你在帮他们给黑暗找借口吗?</view>
+          </view>
+        </view>
+        <view class="m-t-sm h-flex h-justify-between">
+          <view class="h-text-gray htext-sm">2020年09月09日</view>
+          <view>
+            <text class="heyui-appreciatefill h-text-red"></text>
+            <text class="heyui-messagefill h-text-gray m-l-sm"></text>
+          </view>
         </view>
       </view>
-      <view class="m-t-sm h-flex h-justify-between">
-        <view class="h-text-gray htext-sm">2020年09月09日</view>
-        <view>
-          <text class="heyui-appreciatefill h-text-red"></text>
-          <text class="heyui-messagefill h-text-gray m-l-sm"></text>
+    </view>
+    <view class="h-item m-t">
+      <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
+      <view class="content p-l-sm p-b-sm">
+        <view class="h-text-grey">阿花</view>
+        <view class="h-text-gray text-content h-text-sm">
+          阿强，你被自己的光芒变的盲目。
+        </view>
+        <view class="h-bg-grey p-sm radius m-t-sm h-text-s">
+          <view class="h-flex">
+            <view>阿强：</view>
+            <view class="h-flex-sub">妹妹，你在帮他们给黑暗找借口吗?</view>
+          </view>
+        </view>
+        <view class="m-t-sm h-flex h-justify-between">
+          <view class="h-text-gray htext-sm">2020年09月09日</view>
+          <view>
+            <text class="heyui-appreciatefill h-text-red"></text>
+            <text class="heyui-messagefill h-text-gray m-l-sm"></text>
+          </view>
         </view>
       </view>
     </view>
   </view>
-</view>
-<view class="h-list menu-avatar menu card-menu comment h-bg-white m-t">
-  <view class="h-item m-t">
-    <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
-    <view class="content p-l-sm p-b-sm">
-      <view class="h-text-grey">阿花</view>
-      <view class="h-text-gray text-content h-text-sm">
-        阿强，你被自己的光芒变的盲目。
-      </view>
-      <view class="h-bg-grey p-sm radius m-t-sm h-text-s">
-        <view class="h-flex">
-          <view>阿强：</view>
-          <view class="h-flex-sub">妹妹，你在帮他们给黑暗找借口吗?</view>
-        </view>
-      </view>
-      <view class="m-t-sm h-flex h-justify-between">
-        <view class="h-text-gray htext-sm">2020年09月09日</view>
-        <view>
-          <text class="heyui-appreciatefill h-text-red"></text>
-          <text class="heyui-messagefill h-text-gray m-l-sm"></text>
-        </view>
-      </view>
-    </view>
-  </view>
-  <view class="h-item m-t">
-    <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
-    <view class="content p-l-sm p-b-sm">
-      <view class="h-text-grey">阿花</view>
-      <view class="h-text-gray text-content h-text-sm">
-        阿强，你被自己的光芒变的盲目。
-      </view>
-      <view class="h-bg-grey p-sm radius m-t-sm h-text-s">
-        <view class="h-flex">
-          <view>阿强：</view>
-          <view class="h-flex-sub">妹妹，你在帮他们给黑暗找借口吗?</view>
-        </view>
-      </view>
-      <view class="m-t-sm h-flex h-justify-between">
-        <view class="h-text-gray htext-sm">2020年09月09日</view>
-        <view>
-          <text class="heyui-appreciatefill h-text-red"></text>
-          <text class="heyui-messagefill h-text-gray m-l-sm"></text>
-        </view>
-      </view>
-    </view>
-  </view>
-</view>
 
-<view class="h-bar h-bg-white h-border-bottom m-t">
-  <view class="action p-l h-text-sm">
-    <text class="heyui-title h-text-blue"> 商品Card</text>
-  </view>
-</view>
-
-<view class="h-grid h-col-2 h-corner-tlr-sm m-lr p-b">
-  <view class="h-goods-item h-bg-white h-corner-xs h-shadow m-t" wx:for="{{goodsList}}" wx:key='item'>
-    <view class="h-goods-img">
-      <image mode="aspectFill" src="{{item.img}}"></image>
+  <view class="h-bar h-bg-white h-border-bottom m-t">
+    <view class="action p-l h-text-sm">
+      <text class="heyui-title h-text-blue"> 商品Card</text>
     </view>
-    <view class="h-goods-content p-sm">
-      <view class="h-good-tit h-text-sm h-text-cut2">{{item.title}}</view>
-      <view class="h-price-sell m-t-sm">
-        <text class="h-fl h-text-price h-text-md h-text-red">￥{{item.price}}</text>
-        <text class="h-fr h-text-sell h-texy-s h-text-gray m-r-sm">库存 {{item.store}}</text>
+  </view>
+
+  <view class="h-grid h-col-2 h-corner-tlr-sm m-lr p-b">
+    <view class="h-goods-item h-bg-white h-corner-xs h-shadow m-t" wx:for="{{goodsList}}" wx:key='item'>
+      <view class="h-goods-img">
+        <image mode="aspectFill" src="{{item.img}}"></image>
+      </view>
+      <view class="h-goods-content p-sm">
+        <view class="h-good-tit h-text-sm h-text-cut2">{{item.title}}</view>
+        <view class="h-price-sell m-t-sm">
+          <text class="h-fl h-text-price h-text-md h-text-red">￥{{item.price}}</text>
+          <text class="h-fr h-text-sell h-texy-s h-text-gray m-r-sm">库存 {{item.store}}</text>
+        </view>
       </view>
     </view>
   </view>
+
 </view>

@@ -1,1 +1,2 @@
 /* pages/view/slideview/slideview.wxss */
+@import '/pages/tpl/top/index.wxss';

@@ -1,116 +1,127 @@
 <!--pages/view/search/search.wxml-->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-red"> 卡片&通栏</text>
-  </view>
-</view>
-<view class="h-list menu m-tb">
-  <view class="h-bar h-bg-cyan search">
-    <view class="search-form">
-      <text class="heyui-search"></text>
-      <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
-    </view>
-    <view class="action">
-      <text class="heyui-close"></text>
-      <text>取消</text>
-    </view>
-  </view>
-</view>
-<view class="h-list menu card-menu m-tb">
-  <view class="h-bar search h-bg-white">
-    <view class="search-form round">
-      <text class="heyui-search"></text>
-      <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
-    </view>
-    <view class="action">
-      <button class="h-btn h-bg-green shadow-blur round">搜索</button>
-    </view>
-  </view>
-</view>
+<import src="/pages/tpl/top/index.wxml" />
+<template is="headers"></template>
 
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-red"> 颜色</text>
-  </view>
-</view>
-<view class="h-list menu card-menu m-tb">
-  <view class="h-bar search h-bg-white">
-    <view class="search-form round">
-      <text class="heyui-search"></text>
-      <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
-    </view>
-    <view class="action">
-      <button class="h-btn h-bg-green shadow-blur round">搜索</button>
+<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
+  <view class="h-bar h-bg-white h-corner-sm">
+    <view class="action h-text-sm">
+      <text class="heyui-titles h-text-blue h-text-bold"> 搜索展示</text>
     </view>
   </view>
-  <view class="h-bar search h-bg-white">
-    <view class="h-avatar h-corner-lg" style="background-image:url(http://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
-    <view class="search-form round">
-      <text class="heyui-search"></text>
-      <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
-    </view>
-    <view class="action">
-      <text>上海</text>
-      <text class="heyui-triangledownfill"></text>
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-red"> 卡片&通栏</text>
     </view>
   </view>
-  <view class="h-bar h-bg-cyan search">
-    <view class="search-form">
-      <text class="heyui-search"></text>
-      <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
-    </view>
-    <view class="action">
-      <text class="heyui-close"></text>
-      <text>取消</text>
+  <view class="h-list menu m-tb">
+    <view class="h-bar h-bg-cyan search">
+      <view class="search-form">
+        <text class="heyui-search"></text>
+        <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+      </view>
+      <view class="action">
+        <text class="heyui-close"></text>
+        <text>取消</text>
+      </view>
     </view>
   </view>
-</view>
+  <view class="h-list menu card-menu m-tb">
+    <view class="h-bar search h-bg-white">
+      <view class="search-form round">
+        <text class="heyui-search"></text>
+        <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+      </view>
+      <view class="action">
+        <button class="h-btn h-bg-green shadow-blur round">搜索</button>
+      </view>
+    </view>
+  </view>
 
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-red"> 样式</text>
-  </view>
-</view>
-<view class="h-list menu card-menu m-t p-b-lg">
-  <view class="h-bar search h-bg-white">
-    <view class="search-form h-corner-lg">
-      <text class="heyui-search"></text>
-      <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
-    </view>
-    <view class="action">
-      <button class="h-btn h-bg-green h-shadow-blur">搜索</button>
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-red"> 颜色</text>
     </view>
   </view>
-  <view class="h-bar search h-bg-white">
-    <view class="h-avatar h-corner-lg" style="background-image:url(http://oss.geekxz.com/hey-ui-oss/avatar/a8.jpg);"></view>
-    <view class="search-form h-corner-sm">
-      <text class="heyui-search"></text>
-      <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+  <view class="h-list menu card-menu m-tb">
+    <view class="h-bar search h-bg-white">
+      <view class="search-form round">
+        <text class="heyui-search"></text>
+        <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+      </view>
+      <view class="action">
+        <button class="h-btn h-bg-green shadow-blur round">搜索</button>
+      </view>
     </view>
-    <view class="action">
-      <text>上海</text>
-      <text class="heyui-triangledownfill"></text>
+    <view class="h-bar search h-bg-white">
+      <view class="h-avatar h-corner-lg" style="background-image:url(http://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
+      <view class="search-form round">
+        <text class="heyui-search"></text>
+        <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+      </view>
+      <view class="action">
+        <text>上海</text>
+        <text class="heyui-triangledownfill"></text>
+      </view>
+    </view>
+    <view class="h-bar h-bg-cyan search">
+      <view class="search-form">
+        <text class="heyui-search"></text>
+        <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+      </view>
+      <view class="action">
+        <text class="heyui-close"></text>
+        <text>取消</text>
+      </view>
     </view>
   </view>
-  <view class="h-bar h-bg-white search">
-    <view class="h-avatar h-corner-lg" style="background-image:url(http://oss.geekxz.com/hey-ui-oss/avatar/a9.jpg);"></view>
-    <view class="search-form h-corner-lg">
-      <text class="heyui-search"></text>
-      <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
-    </view>
-    <view class="action">
-      <text>上海</text>
-      <text class="heyui-triangledownfill"></text>
+
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-red"> 样式</text>
     </view>
   </view>
-  <view class="h-bar h-bg-white search">
-    <view class="search-form">
-      <text class="heyui-search"></text>
-      <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+  <view class="h-list menu card-menu m-t p-b-lg">
+    <view class="h-bar search h-bg-white">
+      <view class="search-form h-corner-lg">
+        <text class="heyui-search"></text>
+        <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+      </view>
+      <view class="action">
+        <button class="h-btn h-bg-green h-shadow-blur">搜索</button>
+      </view>
     </view>
-    <view class="action">
-      <text class="heyui-close"></text>
-      <text>取消</text>
+    <view class="h-bar search h-bg-white">
+      <view class="h-avatar h-corner-lg" style="background-image:url(http://oss.geekxz.com/hey-ui-oss/avatar/a8.jpg);"></view>
+      <view class="search-form h-corner-sm">
+        <text class="heyui-search"></text>
+        <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+      </view>
+      <view class="action">
+        <text>上海</text>
+        <text class="heyui-triangledownfill"></text>
+      </view>
+    </view>
+    <view class="h-bar h-bg-white search">
+      <view class="h-avatar h-corner-lg" style="background-image:url(http://oss.geekxz.com/hey-ui-oss/avatar/a9.jpg);"></view>
+      <view class="search-form h-corner-lg">
+        <text class="heyui-search"></text>
+        <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+      </view>
+      <view class="action">
+        <text>上海</text>
+        <text class="heyui-triangledownfill"></text>
+      </view>
+    </view>
+    <view class="h-bar h-bg-white search">
+      <view class="search-form">
+        <text class="heyui-search"></text>
+        <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+      </view>
+      <view class="action">
+        <text class="heyui-close"></text>
+        <text>取消</text>
+      </view>
     </view>
   </view>
+
 </view>

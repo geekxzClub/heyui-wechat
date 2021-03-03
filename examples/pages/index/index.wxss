@@ -19,7 +19,7 @@
   opacity: 1;
 }
 .h-component-item{
-  height: 240rpx;
+  height: 320rpx;
   display: flex;
   align-items: center;
   justify-content: center

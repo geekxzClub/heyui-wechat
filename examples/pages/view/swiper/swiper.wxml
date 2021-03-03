@@ -1,89 +1,98 @@
 <!--pages/view/swiper/swiper.wxml-->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 图片+视频</text>
+<import src="/pages/tpl/top/index.wxml" />
+<template is="headers"></template>
+
+<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
+  <view class="h-bar h-bg-white h-corner-sm">
+    <view class="action h-text-sm">
+      <text class="heyui-titles h-text-blue h-text-bold"> 轮播展示</text>
+    </view>
   </view>
-</view>
-<swiper class="screen-swiper square-dot" current="{{current}}" duration="500" bindchange="bannerChage">
-  <swiper-item wx:for="{{swiperList2}}" wx:key='item'>
-    <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
-      <video id="bannerVideo" src="{{item.url}}" autoplay objectFit='cover' controls wx:if="{{item.type=='video'}}"></video>
-  </swiper-item>
-</swiper>
 
-
-
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 卡片式</text>
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 图片+视频</text>
+    </view>
   </view>
-</view>
-<swiper class="card-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
-  <swiper-item wx:for="{{swiperList}}" wx:key='item' class="{{cardCur==index?'cur':''}}">
-    <view class="swiper-item">
+  <swiper class="screen-swiper square-dot" current="{{current}}" duration="500" bindchange="bannerChage">
+    <swiper-item wx:for="{{swiperList2}}" wx:key='item'>
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+        <video id="bannerVideo" src="{{item.url}}" autoplay objectFit='cover' controls wx:if="{{item.type=='video'}}"></video>
+    </swiper-item>
+  </swiper>
+
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 卡片式</text>
+    </view>
+  </view>
+  <swiper class="card-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+    <swiper-item wx:for="{{swiperList}}" wx:key='item' class="{{cardCur==index?'cur':''}}">
+      <view class="swiper-item">
+        <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+        <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+      </view>
+    </swiper-item>
+  </swiper>
+
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 全屏式</text>
+    </view>
+  </view>
+  <swiper class="screen-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+    <swiper-item wx:for="{{swiperList}}" wx:key='item'>
       <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
       <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </swiper-item>
+  </swiper>
+
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> Grid样式</text>
     </view>
-  </swiper-item>
-</swiper>
-
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 全屏式</text>
   </view>
-</view>
-<swiper class="screen-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
-  <swiper-item wx:for="{{swiperList}}" wx:key='item'>
-    <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
-    <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
-  </swiper-item>
-</swiper>
+  <swiper class="screen-swiper square-dot" indicator-dots="true" circular="true">
+    <swiper-item wx:for="{{swiperList}}" wx:key='item'>
+    <view class="h-list h-grid h-col-3 no-border m-tb card-menu">
+        <view class="h-item">
+          <view class="heyui-picfill h-text-yellow"></view>
+          <text>宫格</text>
+        </view>
+        <view class="h-item">
+          <view class="heyui-cardboardfill h-text-yellow"><view class="h-tag h-badge">99+</view></view>
+          <text>宫格</text>
+        </view>
+        <view class="h-item">
+          <view class="heyui-picfill h-text-yellow"><view class="h-tag h-badge"></view></view>
+          <text>宫格</text>
+        </view>
+        <view class="h-item">
+          <view class="heyui-picfill h-text-yellow"></view>
+          <text>宫格</text>
+        </view>
+        <view class="h-item">
+          <view class="heyui-picfill h-text-yellow"></view>
+          <text>宫格</text>
+        </view>
+        <view class="h-item">
+          <view class="heyui-picfill h-text-yellow"></view>
+          <text>宫格</text>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
 
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> Grid样式</text>
-  </view>
-</view>
-<swiper class="screen-swiper square-dot" indicator-dots="true" circular="true">
-  <swiper-item wx:for="{{swiperList}}" wx:key='item'>
-   <view class="h-list h-grid h-col-3 no-border m-tb card-menu">
-      <view class="h-item">
-        <view class="heyui-picfill h-text-yellow"></view>
-        <text>宫格</text>
-      </view>
-      <view class="h-item">
-        <view class="heyui-cardboardfill h-text-yellow"><view class="h-tag h-badge">99+</view></view>
-        <text>宫格</text>
-      </view>
-      <view class="h-item">
-        <view class="heyui-picfill h-text-yellow"><view class="h-tag h-badge"></view></view>
-        <text>宫格</text>
-      </view>
-      <view class="h-item">
-        <view class="heyui-picfill h-text-yellow"></view>
-        <text>宫格</text>
-      </view>
-      <view class="h-item">
-        <view class="heyui-picfill h-text-yellow"></view>
-        <text>宫格</text>
-      </view>
-      <view class="h-item">
-        <view class="heyui-picfill h-text-yellow"></view>
-        <text>宫格</text>
-      </view>
+  <view class="h-bar h-bg-white h-border-bottom m-t">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 不需要指示点Dot</text>
     </view>
-  </swiper-item>
-</swiper>
-
-
-<view class="h-bar h-bg-white h-border-bottom m-t">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 不需要指示点Dot</text>
   </view>
+  <swiper class="screen-swiper" circular="true" autoplay="true" interval="5000" duration="500">
+    <swiper-item wx:for="{{swiperList}}" wx:key='item'>
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </swiper-item>
+  </swiper>
+
 </view>
-<swiper class="screen-swiper" circular="true" autoplay="true" interval="5000" duration="500">
-  <swiper-item wx:for="{{swiperList}}" wx:key='item'>
-    <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
-    <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
-  </swiper-item>
-</swiper>

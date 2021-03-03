@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "h-table": "../../component/h-table/index"
+    "h-table": "/component/h-table/index"
   }
 }

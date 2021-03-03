@@ -1,25 +1,37 @@
 <!--pages/view/table/table.wxml-->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 居中</text>
+<import src="/pages/tpl/top/index.wxml" />
+<template is="headers"></template>
+
+<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
+  <view class="h-bar h-bg-white h-corner-sm">
+    <view class="action h-text-sm">
+      <text class="heyui-titles h-text-blue h-text-bold"> 头像展示</text>
+    </view>
   </view>
-</view>
-<view class="p">
-  <h-table config="{{config}}" h-tit-text="h-text-center p-tb-sm" h-td-text="h-text-center p-tb-sm"></h-table>
-</view>
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 靠左</text>
+
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 居中</text>
+    </view>
   </view>
-</view>
-<view class="p">
-  <h-table config="{{config}}" h-tit-text="h-text-left p-l-sm p-tb-sm" h-td-text="h-text-left p-l-sm  p-tb-sm"></h-table>
-</view>
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 靠右</text>
+  <view class="p">
+    <h-table config="{{config}}" h-tit-text="h-text-center p-tb-sm" h-td-text="h-text-center p-tb-sm"></h-table>
   </view>
-</view>
-<view class="p">
-  <h-table config="{{config}}" h-tit-text="h-text-right p-r-sm p-tb-sm" h-td-text="h-text-right p-r-sm  p-tb-sm"></h-table>
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-sm">
+      <text class="heyui-title h-text-blue"> 靠左</text>
+    </view>
+  </view>
+  <view class="p">
+    <h-table config="{{config}}" h-tit-text="h-text-left p-l-sm p-tb-sm" h-td-text="h-text-left p-l-sm  p-tb-sm"></h-table>
+  </view>
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-sm">
+      <text class="heyui-title h-text-blue"> 靠右</text>
+    </view>
+  </view>
+  <view class="p">
+    <h-table config="{{config}}" h-tit-text="h-text-right p-r-sm p-tb-sm" h-td-text="h-text-right p-r-sm  p-tb-sm"></h-table>
+  </view>
+
 </view>

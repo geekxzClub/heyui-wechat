@@ -1,4 +1,14 @@
 <!--pages/view/keyboard/keyboard.wxml-->
+<import src="/pages/tpl/top/index.wxml" />
+<template is="headers"></template>
+
+<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
+  <view class="h-bar h-bg-white h-corner-sm">
+    <view class="action h-text-sm">
+      <text class="heyui-titles h-text-blue h-text-bold"> 车牌展示</text>
+    </view>
+  </view>
+
     <view class="car-number m-t">
         <view class="ordinary" wx:if="{{!isDefault}}">
             <view class="whiteBorder">
@@ -23,14 +33,13 @@
             </checkbox-group>
         </view>
     </view>
-
-
-    <button class="h-btn h-btn-lg h-corner-lg block h-bg-blue m-lr">确认</button>
-    <view class="keyboard">
-        <h-car-number 
-            bind:handlekeyClick="_handleKeyClick"
-            bind:handleDeleteClick="_handleDeleteClick"
-            bind:handleToggleClick="_handleToggleClick"
-            isCityKeyboard="{{isCityKeyboard}}"
-        ></h-car-number>
-    </view>
+    <!-- <button class="h-btn h-btn-lg h-corner-lg h-bg-blue m-lr">确认</button> -->
+</view>
+<view class="keyboard">
+    <h-car-number 
+        bind:handlekeyClick="_handleKeyClick"
+        bind:handleDeleteClick="_handleDeleteClick"
+        bind:handleToggleClick="_handleToggleClick"
+        isCityKeyboard="{{isCityKeyboard}}"
+    ></h-car-number>
+</view>

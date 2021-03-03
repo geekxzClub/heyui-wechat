@@ -1,4 +1,5 @@
 /* pages/view/barrage/barrage.wxss */
+@import '/pages/tpl/top/index.wxss';
 view, text, scroll-view, swiper, button, form, input, textarea, label, navigator, image { box-sizing: border-box; }
 
 .clearfix { zoom: 1; clear:both;}
