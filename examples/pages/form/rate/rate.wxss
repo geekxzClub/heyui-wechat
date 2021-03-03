@@ -1,1 +1,2 @@
 /* pages/form/rate/rate.wxss */
+@import '/pages/tpl/top/index.wxss';

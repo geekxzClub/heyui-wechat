@@ -1,150 +1,158 @@
 <!--pages/form/input/input.wxml-->
+<import src="/pages/tpl/top/index.wxml" />
+<template is="headers"></template>
 
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 是否是卡片</text>
+<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
+  <view class="h-bar h-bg-white h-corner-sm">
+    <view class="action h-text-sm">
+      <text class="heyui-titles h-text-blue h-text-bold"> 输入框展示</text>
+    </view>
   </view>
-</view>
-<view class="h-list">
-  <form>
-    <view class="h-form-group">
-      <view class="title">邮件</view>
-      <input placeholder="两字短标题"></input>
+
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 是否是卡片</text>
     </view>
-    <view class="h-form-group">
-      <view class="title">输入框</view>
-      <input placeholder="三字标题"></input>
-    </view>
-    <view class="h-form-group">
-      <view class="title">收货地址</view>
-      <input placeholder="统一标题的宽度"></input>
-    </view>
-    <view class="h-form-group">
-      <view class="title">收货地址</view>
-      <input placeholder="输入框带个图标"></input>
-      <text class="heyui-locationfill text-orange"></text>
-    </view>
-    <view class="h-form-group">
-      <view class="title">验证码</view>
-      <input placeholder="输入框带个按钮"></input>
-      <button class="h-btn h-bg-green h-shadow">验证码</button>
-    </view>
-    <view class="h-form-group">
-      <view class="title">手机号码</view>
-      <input placeholder="输入框带标签"></input>
-      <view class="h-capsule">
-        <view class="h-tag h-bg-blue">
-          +86
-        </view>
-        <view class="h-tag h-line-blue">
-          中国大陆
+  </view>
+  <view class="h-list">
+    <form>
+      <view class="h-form-group">
+        <view class="title">邮件</view>
+        <input placeholder="两字短标题"></input>
+      </view>
+      <view class="h-form-group">
+        <view class="title">输入框</view>
+        <input placeholder="三字标题"></input>
+      </view>
+      <view class="h-form-group">
+        <view class="title">收货地址</view>
+        <input placeholder="统一标题的宽度"></input>
+      </view>
+      <view class="h-form-group">
+        <view class="title">收货地址</view>
+        <input placeholder="输入框带个图标"></input>
+        <text class="heyui-locationfill text-orange"></text>
+      </view>
+      <view class="h-form-group">
+        <view class="title">验证码</view>
+        <input placeholder="输入框带个按钮"></input>
+        <button class="h-btn h-bg-green h-shadow">验证码</button>
+      </view>
+      <view class="h-form-group">
+        <view class="title">手机号码</view>
+        <input placeholder="输入框带标签"></input>
+        <view class="h-capsule">
+          <view class="h-tag h-bg-blue">
+            +86
+          </view>
+          <view class="h-tag h-line-blue">
+            中国大陆
+          </view>
         </view>
       </view>
+    </form>
+  </view>
+  <view class="h-list menu card-menu m-tb">
+    <form>
+      <view class="h-form-group margin-top">
+        <view class="title h-text-blue h-text-right">邮件</view>
+        <input placeholder="两字短标题"></input>
+      </view>
+      <view class="h-form-group">
+        <view class="title">输入框</view>
+        <input placeholder="三字标题"></input>
+      </view>
+      <view class="h-form-group">
+        <view class="title">收货地址</view>
+        <input placeholder="统一标题的宽度"></input>
+      </view>
+      <view class="h-form-group">
+        <view class="title">收货地址</view>
+        <input placeholder="输入框带个图标"></input>
+        <text class="heyui-locationfill text-orange"></text>
+      </view>
+      <view class="h-form-group">
+        <view class="title">验证码</view>
+        <input placeholder="输入框带个按钮"></input>
+        <button class="h-btn h-bg-green h-shadow">验证码</button>
+      </view>
+      <view class="h-form-group">
+        <view class="title">手机号码</view>
+        <input placeholder="输入框带标签"></input>
+        <view class="h-capsule">
+          <view class="h-tag h-bg-blue">
+            +86
+          </view>
+          <view class="h-tag h-line-blue">
+            中国大陆
+          </view>
+        </view>
+      </view>
+    </form>
+  </view>
+
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 对齐方式</text>
     </view>
-  </form>
-</view>
-<view class="h-list menu card-menu m-tb">
-  <form>
+  </view>
+  <view class="h-list menu card-menu m-tb">
     <view class="h-form-group margin-top">
-      <view class="title h-text-blue h-text-right">邮件</view>
-      <input placeholder="两字短标题"></input>
+      <view class="title label-md h-text-blue h-text-left">左边</view>
+      <input placeholder="请输入内容"></input>
     </view>
     <view class="h-form-group">
-      <view class="title">输入框</view>
-      <input placeholder="三字标题"></input>
+      <view class="title label-md h-text-center">居中</view>
+      <input placeholder="请输入内容"></input>
     </view>
     <view class="h-form-group">
-      <view class="title">收货地址</view>
-      <input placeholder="统一标题的宽度"></input>
+      <view class="title label-md h-text-right">右边</view>
+      <input placeholder="请输入内容"></input>
+    </view>
+  </view>
+
+  <!-- <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action p-l h-text-xs">
+      <text class="heyui-title h-text-blue"> Label大小</text>
+    </view>
+  </view>
+  <view class="h-list menu card-menu m-tb">
+    <view class="h-form-group margin-top">
+      <view class="title label-sm h-text-blue h-text-left">俩字</view>
+      <input placeholder="请输入内容"></input>
     </view>
     <view class="h-form-group">
-      <view class="title">收货地址</view>
-      <input placeholder="输入框带个图标"></input>
-      <text class="heyui-locationfill text-orange"></text>
+      <view class="title label-md h-text-center">能四个字</view>
+      <input placeholder="请输入内容"></input>
     </view>
     <view class="h-form-group">
-      <view class="title">验证码</view>
-      <input placeholder="输入框带个按钮"></input>
-      <button class="h-btn h-bg-green h-shadow">验证码</button>
+      <view class="title label-lg h-text-right">五个字很好</view>
+      <input placeholder="请输入内容"></input>
     </view>
-    <view class="h-form-group">
-      <view class="title">手机号码</view>
-      <input placeholder="输入框带标签"></input>
-      <view class="h-capsule">
-        <view class="h-tag h-bg-blue">
-          +86
-        </view>
-        <view class="h-tag h-line-blue">
-          中国大陆
-        </view>
-      </view>
+  </view>
+
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 类型</text>
     </view>
-  </form>
-</view>
+  </view>
+  <view class="h-list menu card-menu m-tb">
+    <view class="h-form-group margin-top">
+      <view class="title label-sm h-text-blue h-text-left">随便</view>
+      <input type="text" placeholder="可以输入任何文本"></input>
+    </view>
+    <view class="h-form-group margin-top">
+      <view class="title label-sm h-text-blue h-text-left">数字</view>
+      <input type="number" placeholder="输入数字"></input>
+    </view>
+    <view class="h-form-group margin-top">
+      <view class="title label-sm h-text-blue h-text-left">小数</view>
+      <input type="digit" placeholder="输入带小数点"></input>
+    </view>
+    <view class="h-form-group margin-top">
+      <view class="title label-sm h-text-blue h-text-left">身份</view>
+      <input type="idcard" placeholder="输入身份证"></input>
+    </view>
+  </view> -->
 
-
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 对齐方式</text>
-  </view>
 </view>
-<view class="h-list menu card-menu m-tb">
-  <view class="h-form-group margin-top">
-    <view class="title label-md h-text-blue h-text-left">左边</view>
-    <input placeholder="请输入内容"></input>
-  </view>
-  <view class="h-form-group">
-    <view class="title label-md h-text-center">居中</view>
-    <input placeholder="请输入内容"></input>
-  </view>
-  <view class="h-form-group">
-    <view class="title label-md h-text-right">右边</view>
-    <input placeholder="请输入内容"></input>
-  </view>
-</view>
-
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action p-l h-text-sm">
-    <text class="heyui-title h-text-blue"> Label大小</text>
-  </view>
-</view>
-<view class="h-list menu card-menu m-tb">
-  <view class="h-form-group margin-top">
-    <view class="title label-sm h-text-blue h-text-left">俩字</view>
-    <input placeholder="请输入内容"></input>
-  </view>
-  <view class="h-form-group">
-    <view class="title label-md h-text-center">能四个字</view>
-    <input placeholder="请输入内容"></input>
-  </view>
-  <view class="h-form-group">
-    <view class="title label-lg h-text-right">五个字很好</view>
-    <input placeholder="请输入内容"></input>
-  </view>
-</view>
-
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 类型</text>
-  </view>
-</view>
-<view class="h-list menu card-menu m-tb">
-  <view class="h-form-group margin-top">
-    <view class="title label-sm h-text-blue h-text-left">随便</view>
-    <input type="text" placeholder="可以输入任何文本"></input>
-  </view>
-  <view class="h-form-group margin-top">
-    <view class="title label-sm h-text-blue h-text-left">数字</view>
-    <input type="number" placeholder="输入数字"></input>
-  </view>
-  <view class="h-form-group margin-top">
-    <view class="title label-sm h-text-blue h-text-left">小数</view>
-    <input type="digit" placeholder="输入带小数点"></input>
-  </view>
-  <view class="h-form-group margin-top">
-    <view class="title label-sm h-text-blue h-text-left">身份</view>
-    <input type="idcard" placeholder="输入身份证"></input>
-  </view>
-</view>
-
-

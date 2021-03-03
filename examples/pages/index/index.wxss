@@ -7,12 +7,6 @@
   border: 1px solid #f5ededd7;
 }
 
-
-
-
-
-
-
 .heyui-content {
   position: relative;
   top: -100rpx;

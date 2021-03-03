@@ -1,2 +1,3 @@
 /* pages/form/radio/radio.wxss */
+@import '/pages/tpl/top/index.wxss';
 

@@ -1,1 +1,2 @@
 /* pages/form/checkbox/checkbox.wxss */
+@import '/pages/tpl/top/index.wxss';

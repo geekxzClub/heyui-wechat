@@ -1,68 +1,78 @@
 <!--pages/form/switch/switch.wxml-->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 定义样式</text>
+<import src="/pages/tpl/top/index.wxml" />
+<template is="headers"></template>
+
+<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
+  <view class="h-bar h-bg-white h-corner-sm">
+    <view class="action h-text-sm">
+      <text class="heyui-titles h-text-blue h-text-bold"> 开关展示</text>
+    </view>
   </view>
-</view>
-<view class="h-form-group">
-  <view class="title">椭圆开关</view>
-  <switch></switch>
-</view>
-<view class="h-form-group">
-  <view class="title">方形开关</view>
-  <switch class="orange radius sm" checked></switch>
-</view>
 
-
-<view class="h-bar h-bg-white h-border-bottom m-t">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 开关颜色</text>
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 定义样式</text>
+    </view>
   </view>
-</view>
-<view class="h-form-group">
-  <view class="title">红色开关</view>
-  <switch class="red" checked></switch>
-</view>
-<view class="h-form-group">
-  <view class="title">绿色开关</view>
-  <switch class="green" checked></switch>
-</view>
-
-<view class="h-bar h-bg-white h-border-bottom m-t">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 开关位置</text>
+  <view class="h-form-group">
+    <view class="title">椭圆开关</view>
+    <switch></switch>
   </view>
-</view>
-<view class="h-form-group">
-  <switch class="pink" checked></switch>
-  <view class="title">左边开关</view>
-</view>
-<view class="h-form-group">
-  <view class="title">右边开关</view>
-  <switch class="blue" checked></switch>
-</view>
-
-<view class="h-bar h-bg-white h-border-bottom m-t">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 开关禁用</text>
+  <view class="h-form-group">
+    <view class="title">方形开关</view>
+    <switch class="orange radius sm" checked></switch>
   </view>
-</view>
-<view class="h-form-group">
-  <view class="title">我被封印啦</view>
-  <switch class="pink" disabled></switch>
-</view>
 
-
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 定义状态</text>
+  <view class="h-bar h-bg-white h-border-bottom m-t">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 开关颜色</text>
+    </view>
   </view>
-</view>
-<view class="h-form-group">
-  <view class="title">开关关闭</view>
-  <switch></switch>
-</view>
-<view class="h-form-group">
-  <view class="title">开关开启</view>
-  <switch class="orange radius sm" checked></switch>
+  <view class="h-form-group">
+    <view class="title">红色开关</view>
+    <switch class="red" checked></switch>
+  </view>
+  <view class="h-form-group">
+    <view class="title">绿色开关</view>
+    <switch class="green" checked></switch>
+  </view>
+
+  <view class="h-bar h-bg-white h-border-bottom m-t">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 开关位置</text>
+    </view>
+  </view>
+  <view class="h-form-group">
+    <switch class="pink" checked></switch>
+    <view class="title">左边开关</view>
+  </view>
+  <view class="h-form-group">
+    <view class="title">右边开关</view>
+    <switch class="blue" checked></switch>
+  </view>
+
+  <view class="h-bar h-bg-white h-border-bottom m-t">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 开关禁用</text>
+    </view>
+  </view>
+  <view class="h-form-group">
+    <view class="title">我被封印啦</view>
+    <switch class="pink" disabled></switch>
+  </view>
+
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="heyui-title h-text-blue"> 定义状态</text>
+    </view>
+  </view>
+  <view class="h-form-group">
+    <view class="title">开关关闭</view>
+    <switch></switch>
+  </view>
+  <view class="h-form-group">
+    <view class="title">开关开启</view>
+    <switch class="orange radius sm" checked></switch>
+  </view>
+
 </view>
