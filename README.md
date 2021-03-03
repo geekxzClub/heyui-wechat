@@ -11,7 +11,7 @@
 
 <div align="center">
     <span>Hey UI, not just an UI component library!</span><br/>
-    <strong>Hey UI 是基于微信小程序原生语法,实现的CSS UI框架,面向全层次的小程序开发者,低门槛开箱即用的前端 UI 解决方案.</strong>
+    <strong>Hey UI 是基于微信小程序原生语法,实现的CSS UI框架。</strong>
 </div>
 
 ---
