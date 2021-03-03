@@ -1,5 +1,4 @@
 <!--index.wxml-->
-
 <view class="hey-ui-box">
   <view class="m-lr">
     <view class="h-text-lg h-text-white tit">
@@ -42,7 +41,8 @@
       </view>
     </view>
   </view>
-</view>
-<view class="p-tb footer">
-  <view class="h-divder h-flex h-justify-center h-align-center h-text-gray">@ 极客小站工作室</view>
+
+  <view class="footer">
+    <view class="h-divder h-flex h-justify-center h-align-center h-text-gray">@ 极客小站工作室</view>
+  </view>
 </view>

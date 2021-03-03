@@ -3,13 +3,9 @@
   display: block;
 } */
 @import '/pages/tpl/tpl.wxss';
-.h-borderss{
-  border: 1px solid #f5ededd7;
-}
-
 .heyui-content {
   position: relative;
-  top: -100rpx;
+  top: -110rpx;
   opacity: 1;
 }
 .h-component-item{
@@ -40,5 +36,6 @@
   padding-top: 20rpx;
 }
 .footer{
-  margin-top: -100rpx;
+  height: 100rpx;
+  line-height: 80rpx;
 }

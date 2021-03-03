@@ -96,7 +96,7 @@
         "pagePath": "pages/plugin/plugin",
         "iconPath": "images/tabbar/plugin.png",
         "selectedIconPath": "images/tabbar/plugin_cur.png",
-        "text": "页面"
+        "text": "函数"
       },
       {
         "pagePath": "pages/about/index",
