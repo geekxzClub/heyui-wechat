@@ -1,0 +1,2 @@
+/* pages/response/dialog/dialog.wxss */
+@import '/pages/tpl/top/index.wxss';

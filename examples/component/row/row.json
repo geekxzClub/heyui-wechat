@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+  		"row": "/component/row/row"
+  }
+}

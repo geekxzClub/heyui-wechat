@@ -1,0 +1,2 @@
+/* pages/layout/gird/gird.wxss */
+@import '/pages/tpl/top/index.wxss';

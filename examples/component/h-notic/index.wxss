@@ -1,0 +1,27 @@
+.notice-content {
+  overflow: hidden;
+  position: relative;
+  height: 61rpx;
+  margin-left: 10rpx
+}
+
+.notice-text {
+  font-size: 28rpx;
+  line-height: 61rpx;
+  position: absolute;
+  color: #ffa321;
+  white-space: nowrap;
+  animation-name: around;
+  animation-duration: var(--duration--);  /*过渡时间*/
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+}
+
+@keyframes around {
+  0% {
+    left: var(--left--);
+  }
+  100% {
+    left: var(--countWidth--);
+  }
+}

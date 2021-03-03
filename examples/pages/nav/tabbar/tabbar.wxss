@@ -1,0 +1,2 @@
+/* pages/nav/tabbar/tabbar.wxss */
+@import '/pages/tpl/top/index.wxss';

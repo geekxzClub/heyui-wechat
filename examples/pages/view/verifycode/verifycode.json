@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "verifycode": "/component/h-verifycode/index"
+  }
+}

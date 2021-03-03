@@ -1,0 +1,15 @@
+<!--compenents/h-table.wxml-->
+<view class="h-table {{config.border?'h-table-border':''}}">
+  <view class='h-table-header' style='background-color:{{config.headbgcolor}}'>
+    <view wx:for="{{config.titles}}" wx:key="index" style="width:{{config.columnWidths[index]}}" class="h-table-header-column {{config.border?'h-table-header-column-border':''}} h-tit-text">
+      {{item}}
+    </view>
+  </view>
+  <view class='h-table-content'>
+    <view wx:for="{{config.content}}" wx:for-index="outIndex" wx:for-item="outItem" wx:key="item" class="h-table-content-row {{config.stripe?(outIndex%2 === 0 ? 'h-table-content-row-bg1':'h-table-content-row-bg2'):''}}">
+      <view wx:for="{{config.props}}" wx:key="item" style="width:{{config.columnWidths[index]}};" class="h-table-content-column {{config.border?'h-table-content-column-border':''}} h-td-text">
+        {{outItem[item]}}
+      </view>
+    </view>
+  </view>
+</view>

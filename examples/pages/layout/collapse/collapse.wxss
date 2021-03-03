@@ -1,0 +1,34 @@
+/* pages/layout/collapse/collapse.wxss */
+@import '/pages/tpl/top/index.wxss';
+.detail {
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  /* text-indent: 2em; */
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 30rpx;
+  border-radius:  0rpx 0rpx 20rpx 20rpx;
+}
+
+.h-list.menu>.h-item.h-down {
+	padding-right: 90rpx
+}
+
+.h-list.menu>.h-item.h-down:before {
+	position: absolute;
+	top: 0;
+	right: 30rpx;
+	bottom: 0;
+	display: block;
+	margin: auto;
+	width: 30rpx;
+	height: 30rpx;
+	color: var(--grey);
+	content: "\e661";
+	text-align: center;
+	font-size: 34rpx;
+	font-family: "heyui";
+	line-height: 30rpx
+}

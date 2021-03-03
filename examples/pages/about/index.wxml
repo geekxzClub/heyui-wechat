@@ -1,0 +1,139 @@
+<!--pages/about/about.wxml-->
+<view class="UCenter-bg">
+  <image src="/images/logo.jpg" class="png" mode="widthFix"></image>
+  <view class="h-text-lg h-text-black">HeyUI组件库
+    <text class="h-text-sm">v1.0</text>
+  </view>
+  <view class="m-t-sm h-text-black">
+    <text>By:陈东东</text>
+  </view>
+  <!-- <image src="https://raw.githubusercontent.com/weilanwl/HeyUI/master/demo/images/wave.gif" mode="scaleToFill" class="gif-wave"></image> -->
+</view>
+<view class="p h-flex h-text-center h-text-grey h-bg-white">
+  <view class="h-flex h-flex-sub h-flex-direction h-border-right">
+    <view class="h-text-md h-text-orange">{{visitTotal}}</view>
+    <view class="m-t-sm">
+      <text class="heyui-attentionfill"></text> View</view>
+  </view>
+  <view class="h-flex h-flex-sub h-flex-direction h-border-right">
+    <view class="text-md text-blue">{{starCount}}</view>
+    <view class="m-t-sm">
+      <text class="heyui-favorfill"></text> Star</view>
+  </view>
+  <view class="h-flex h-flex-sub h-flex-direction">
+    <view class="h-text-md h-text-green">{{forksCount}}</view>
+    <view class="m-t-sm">
+      <text class="heyui-fork"></text> Fork</view>
+  </view>
+</view>
+
+<view class="h-list menu card-menu m-tb">
+  <view class="h-item h-arrow">
+    <view class="content" bindtap="copyLink" data-link="https://github.com/geekxzClub">
+      <text class="heyui-github text-grey"></text>
+      <text class="text-grey">GitHub</text>
+    </view>
+  </view>
+  <view class="h-item h-arrow">
+    <navigator class="content" url="/pages/about/about/about" hover-class="none">
+      <image src="/images/logo.jpg" class="png" mode="aspectFit"></image>
+      <text class="text-grey">关于HeyUI组件库</text>
+    </navigator>
+  </view>
+  <view class="h-item h-arrow">
+    <navigator class="content" url="/pages/about/log/log" hover-class="none">
+      <text class="heyui-formfill text-green"></text>
+      <text class="text-grey">日志</text>
+    </navigator>
+  </view>
+  <view class="h-item h-arrow">
+    <view class="content" bindtap="showQrcode">
+      <text class="heyui-appreciatefill text-red"></text>
+      <text class="text-grey">赞赏支持</text>
+    </view>
+  </view>
+  <view class="h-item h-arrow">
+    <button class="h-btn content" open-type="feedback">
+      <text class="heyui-writefill text-cyan"></text>
+      <text class="text-grey">意见反馈</text>
+    </button>
+  </view>
+  <view class="h-item h-arrow">
+    <navigator class="content" url="/pages/about/test/list" hover-class="none">
+      <text class="heyui-creativefill text-orange"></text>
+      <text class="text-grey">Bug测试</text>
+    </navigator>
+  </view>
+</view>
+
+
+
+<view class='h-bg-white p-lg h-list menu card-menu m-t'>
+  <view class='h-text-center m-b h-text-sm h-text-grey'>贡献人员</view>
+  <view class='text-content'>
+    <!-- <view class="h-text-sm">Hi！开发者~欢迎使用HeyUI组件库！</view> -->
+    <view class='h-text-sm h-user'>
+      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-ltb-lg m-t-sm m-r-sm tit">策划</view>
+      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-lg m-t-sm m-r-sm p-lr">陈东东</view>
+    </view>
+    <view class='h-text-sm h-user'>
+      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-ltb-lg m-t-sm m-r-sm tit">设计</view>      
+      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-lg m-t-sm m-r-sm p-lr">陈东东</view>
+    </view>
+    <view class='h-text-sm h-user'>
+      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-ltb-lg m-t-sm m-r-sm tit">团队成员</view>
+      <view class="h-capsule h-capsule-round m-t-sm">
+        <view class="h-tag h-bg-blue">
+          设计
+        </view>
+        <view class="h-tag h-line-blue">
+          陈东东
+        </view>
+      </view>
+      
+    </view>
+    <view class='h-text-sm h-user'>
+      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-ltb-lg m-t-sm m-r-sm tit">贡献</view>
+      <view class="h-capsule h-capsule-round m-t-sm">
+        <view class="h-tag h-bg-blue">
+          前端
+        </view>
+        <view class="h-tag h-line-blue">
+          陈东东
+        </view>
+      </view>
+      <view class="h-capsule h-capsule-round m-t-sm">
+        <view class="h-tag h-bg-blue">
+          后端
+        </view>
+        <view class="h-tag h-line-blue">
+          陈东东
+        </view>
+      </view>
+      <view class="h-capsule h-capsule-round m-t-sm">
+        <view class="h-tag h-bg-blue">
+          设计
+        </view>
+        <view class="h-tag h-line-blue">
+          陈东东
+        </view>
+      </view>
+    </view>
+    
+    <view class='h-text-right h-text-s h-text-grey m-t-lg'>更多功能敬请期待！</view>
+  </view>
+</view>
+
+<view class='h-grid h-col-1 h-text-center h-text-dark4 h-qrcode'>
+  <view class="h-bg-img m-b-sm">
+    <image class="h-corner-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/geekxz_qrcode.jpg"></image>
+  </view>
+  <view class="h-text-s p-b-xm">关注极客小寨工作室</view>
+  <view class="h-text-s p-b">点击图片可保存二维码识别</view>
+</view>
+
+
+
+
+
+

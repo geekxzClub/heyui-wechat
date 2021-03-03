@@ -1,0 +1,72 @@
+<!--pages/response/message/message.wxml-->
+<view class="h-load h-bg-blue anit {{showMes? 'show' : ''}}">
+  <text class="heyui-roundcheck"> </text>
+  <text> 默认</text>
+</view>
+<view class="h-load h-bg-green anit {{showSuc? 'show' : ''}}">
+  <text class="heyui-roundcheck"> </text>
+  <text> 成功提醒</text>
+</view>
+<view class="h-load h-bg-red anit {{showErr? 'show' : ''}}">
+  <text class="heyui-roundclose"> </text>
+  <text> 错误提醒</text>
+</view>
+<view class="h-load h-bg-orange anit {{showWar? 'show' : ''}}">
+  <text class="heyui-notice"> </text>
+  <text> 警告提醒</text>
+</view>
+
+<import src="/pages/tpl/top/index.wxml" />
+<template is="headers"></template>
+
+<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
+  <view class="h-bar h-bg-white h-corner-sm">
+    <view class="action h-text-sm">
+      <text class="heyui-titles h-text-blue h-text-bold"> Message提示</text>
+    </view>
+  </view>
+
+
+
+<!-- 默认 -->
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 默认提示框</text>
+  </view>
+</view>
+<view class="p h-text-left h-text-s h-bg-white"> 
+  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showMes'>弹出提示</button> 
+</view>
+
+<!-- 成功 -->
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 成功提示框</text>
+  </view>
+</view>
+<view class="p h-text-left h-text-s h-bg-white"> 
+  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showMesSuc'>弹出提示</button> 
+</view>
+
+
+<!-- 失败 -->
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 失败提示框</text>
+  </view>
+</view>
+<view class="p h-text-left h-text-s h-bg-white"> 
+  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showMesErr'>弹出提示</button> 
+</view>
+
+<!-- 警告 -->
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 警告提示框</text>
+  </view>
+</view>
+<view class="p h-text-left h-text-s h-bg-white"> 
+  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showMesWar'>弹出提示</button> 
+</view>
+
+</view>

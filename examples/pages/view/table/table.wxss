@@ -1,0 +1,4 @@
+/* pages/view/table/table.wxss */
+page{
+  background-color: #fff;
+}

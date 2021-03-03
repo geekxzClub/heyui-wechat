@@ -1,0 +1,22 @@
+<view class="softKeyboard">
+    <!-- 地址键盘 -->
+    <view class="citykeyboard" wx:if="{{isCityKeyboard}}">
+        <view class="btnList" wx:for="{{city}}" wx:for-index="index" wx:key="item">
+            <view class="box" wx:for="{{item}}" wx:for-item="it" wx:key="it">
+                <view  hover-class="active" class="ABC" data-val="ABC"  bindtap="_handleToggleClick" wx:if="{{ it.name === 'ABC' }}">ABC</view>
+                <view  hover-class="active" class="delete" data-val="delete"  bindtap="_handleDeleteClick" wx:elif="{{ it.name === 'delete' }}" style="background-image: url(/component/h-car-number/images/dele.png);"></view>
+                <view  hover-class="active" wx:else data-val="{{ it.name }}" data-disabled="{{ it.dsb }}" class="{{ it.dsb ? 'disabled' : '' }}"  bindtap="_handleKeyClick">{{it.name}}</view>
+            </view>
+        </view>
+    </view>
+    <!-- 数字字母键盘 -->
+    <view wx:else class="letterKeyboard">
+        <view class="btnList" wx:for="{{letter}}" wx:for-index="index" wx:key="item">
+            <view class="box" wx:for="{{item}}" wx:for-item="it" wx:key="it">
+                <view  hover-class="active" class="back" data-val="back"  bindtap="_handleToggleClick" wx:if="{{ it.name === 'back' }}">返回</view>
+                <view  hover-class="active" class="delete" data-val="delete"  bindtap="_handleDeleteClick" wx:elif="{{ it.name === 'delete' }}" style="background-image: url(/component/h-car-number/images/dele.png);"></view>
+                <view  hover-class="active" wx:else data-val="{{ it.name }}"  data-disabled="{{ it.dsb }}" class="{{ it.dsb ? 'disabled' : '' }}"  bindtap="_handleKeyClick">{{it.name}}</view>
+            </view>
+        </view>
+    </view>
+</view>

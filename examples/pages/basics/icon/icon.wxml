@@ -1,0 +1,8 @@
+<!--pages/basics/icon/icon.wxml-->
+<view class="h-grid h-col-5">
+  <view class="m-tb h-text-center" wx:for="{{icon}}" wx:key='item'>
+    <button class="h-btn icon">
+      <text class="heyui-{{item.name}}"></text>
+    </button>
+  </view>
+</view>

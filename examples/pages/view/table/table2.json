@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "h-table": "../../component/h-tables/index"
+  }
+}

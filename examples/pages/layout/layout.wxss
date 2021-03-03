@@ -1,0 +1,3 @@
+/* pages/layout/layout.wxss */
+
+@import '/pages/tpl/tpl.wxss';

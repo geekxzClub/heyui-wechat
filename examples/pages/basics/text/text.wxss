@@ -1,0 +1,4 @@
+@import '/pages/tpl/top/index.wxss';
+.h-text-Hey text{
+  display: block;
+}

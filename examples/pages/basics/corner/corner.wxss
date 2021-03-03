@@ -1,0 +1,2 @@
+/* pages/basics/corner/corner.wxss */
+@import '/pages/tpl/top/index.wxss';

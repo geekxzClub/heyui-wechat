@@ -1,0 +1,8 @@
+<view class="h-box" wx:if="{{SHOW_TOP}}">
+  <view class='h-arrow h-arrow-class' style="margin-right:{{marRight}}px"></view>
+  <view class='h-body h-class'>
+     <view class="h-text">{{text}}</view>
+     <view class="h-split-line"></view>
+     <view class="h-cancle_btn h-tips-icon" bindtap="okHandler"></view>
+  </view>
+</view>

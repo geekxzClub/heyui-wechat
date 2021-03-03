@@ -1,0 +1,95 @@
+<!--pages/view/popup/popup.wxml-->
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 基本弹出层</text>
+  </view>
+</view>
+<view class="p h-text-left h-text-s h-bg-white"> 
+  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="popup">显示弹出层</button> 
+</view>
+<view class="h-modal {{modalName=='popup'?'show':''}}" bindtap="hideModal">
+  <view class="h-dialog h-text-center" catchtap>      
+      <view class='h-flex h-justify-center h-align-center' style="height:400rpx;">从中间弹出</view>
+  </view>
+</view>
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 左边弹出层</text>
+  </view>
+</view>
+<view class="p h-text-left h-text-s h-bg-white"> 
+  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="DrawerModalL">显示弹出层</button> 
+</view>
+<view class="h-modal drawer-modal h-justify-start {{modalName=='DrawerModalL'?'show':''}}" bindtap="hideModal">
+  <view class="h-dialog h-basis-lg" catchtap style="top:{{CustomBar}}px;height:calc(100vh - {{CustomBar}}px)">
+    <view class="h-list menu h-text-left">
+      <view class="h-item arrow" wx:for="{{6}}" wx:key="item">
+        <view class="content">
+          <view>Hey UI Item {{index +1}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 右边弹出层</text>
+  </view>
+</view>
+<view class="p h-text-left h-text-s h-bg-white"> 
+  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="DrawerModalR">显示弹出层</button> 
+</view>
+<view class="h-modal drawer-modal h-justify-end {{modalName=='DrawerModalR'?'show':''}}" bindtap="hideModal">
+  <view class="h-dialog h-basis-lg" catchtap style="top:{{CustomBar}}px;height:calc(100vh - {{CustomBar}}px)">
+    <view class="h-list menu h-text-left">
+      <view class="h-item arrow" wx:for="{{8}}" wx:key="item">
+        <view class="content">
+          <view>Item {{index +1}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 底部弹出层</text>
+  </view>
+</view>
+<view class="p h-text-left h-text-s h-bg-white"> 
+  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="popupB">显示弹出层</button> 
+</view>
+<view class="h-modal bottom-modal {{modalName=='popupB'?'show':''}}" bindtap="hideModal">
+  <view class="h-dialog" catchtap>
+    <!-- <view class="h-bar h-bg-white">
+      <view class="action text-green">确定</view>
+      <view class="action text-blue" bindtap="hideModal">取消</view>
+    </view> -->
+    <view class='h-flex h-justify-center h-align-center' style="height:400rpx;">
+      Modal 内容。
+    </view>
+  </view>
+</view>
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 顶部弹出层</text>
+  </view>
+</view>
+<view class="p h-text-left h-text-s h-bg-white"> 
+  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="popupT">显示弹出层</button> 
+</view>
+<view class="h-modal top-modal {{modalName=='popupT'?'show':''}}" bindtap="hideModal">
+  <view class="h-dialog" catchtap>
+    <!-- <view class="h-bar h-bg-white">
+      <view class="action text-green">确定</view>
+      <view class="action text-blue" bindtap="hideModal">取消</view>
+    </view> -->
+    <view class='h-flex h-justify-center h-align-center' style="height:400rpx;">
+      Modal 内容。
+    </view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+/* pages/view/pathview/pathview.wxss */
+.head-title {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+.item {
+  display: block;
+  margin: 20px 0 10px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.ps {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  color: #666;
+  font-size: 24rpx;
+}

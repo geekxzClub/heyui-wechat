@@ -1,0 +1,28 @@
+<!--pages/form/rate/rate.wxml-->
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="heyui-title h-text-blue"> 不同图标</text>
+  </view>
+</view>
+<view class="h-list menu">
+  <view class='h-item'>
+    <h-rate rate="2" disabled="true"></h-rate>
+  </view>
+  <view class='h-item'>
+    <h-rate rate="4" icon="heart" disabled="true"></h-rate>
+  </view>
+</view>
+
+
+<view class="h-list menu">
+  <view class='h-item'>
+    <h-rate bindchange="startRate" rate="{{rate}}">
+      <text class="h-text-sm m-l">{{ rate }}分</text>
+    </h-rate>
+  </view>
+  <view class='h-item'>
+    <h-rate bindchange="heartRate" icon="heart" rate="{{heart_rate}}">
+      <text class="h-text-sm m-l">{{ heart_rate }}分</text>
+    </h-rate>
+  </view>
+</view>
