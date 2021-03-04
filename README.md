@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="150" class="QR-img" src="http://heyui.geekxz.com/logo.png">
+    <img width="150" class="QR-img" src="https://github.com/geekxzClub/hey-ui/tree/master/static/logo.jpg">
 </p>
 
 
