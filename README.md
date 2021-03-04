@@ -85,7 +85,6 @@
   ```
   至此，Hey UI 已成功引入至你的项目中了！
 
-
 ## 讨论交流
 
 ![](http://heyui.geekxz.com/logo.png)
