@@ -2,7 +2,6 @@
     <img width="150" class="QR-img" src="https://oss.geekxz.com/hey-ui-oss/logo.jpg">
 </p>
 
-
 <div align="center">
     <span><a target="_blank" href="http://heyui.geekxz.com/component/basic/button.html">:memo: 中文文档</a></span>
     <span>|</span>
@@ -15,7 +14,6 @@
 </div>
 
 ---
-
 
 ## 目录
 
@@ -32,15 +30,29 @@
 
 ## 简介
 
-Hey UI 是基于微信小程序原生语法,实现的CSS UI框架,面向全层次的小程序开发者,低门槛开箱即用的前端 UI 解决方案
+Hey UI 是基于微信小程序原生语法,实现的CSS UI框架,面向全层次的小程序开发者,低门槛开箱即用的前端 UI 解决方案.
+
 
 ## 快速上手
 
+直接通过git下载 Hey UI 源代码，并将 src 目录（所有文件夹）拷贝到自己的项目中.
+```
+git clone https://github.com/geekxzClub/hey-ui.git
+```
+
+
 ### 安装
 
-下载源码解压获得`/src`，复制目录下的 `/hey-ui`,`/component`,`/libs` 文件夹到你的项目根目录
+1.初始化你的项目
 
-`App.wxss` 引入关键Css `main.wxss` `icon.wxss`
+使用微信开发正工具新建项目.
+
+2.按转Hey UI
+
+下载源码解压获得`/src`，复制目录下的 `/hey-ui`,`/component`,`/libs` 文件夹到你的项目根目录.
+
+`App.wxss` 引入关键Css `main.wxss`,`icon.wxss`.
+
 ```
 /**app.wxss**/
 @import "hey-ui/heyui.main.wxss";
@@ -51,6 +63,27 @@ Hey UI 是基于微信小程序原生语法,实现的CSS UI框架,面向全层�
 ....
 ```
 ### 引入
+
+1.引入核心的函数库
+
+在`js`中引入 `h-string.js`,`h-array.js`,`h-is.js`
+```
+import { HString } from '/libs/h-string.js';
+import { HArray } from '/libs/h-array.js';
+import { HIs } from '/libs/h-is.js';
+
+var Hstring = new HString();  //实例化 
+....
+```
+
+2.使用函数库
+
+```
+Hstring.toString()
+....
+
+```
+至此，Hey UI 已成功引入至你的项目中了！
 
 
 ## 讨论交流
