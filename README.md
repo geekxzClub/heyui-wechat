@@ -13,7 +13,6 @@
     <strong>Hey UI 是基于微信小程序原生语法,实现的CSS UI框架。</strong>
 </div>
 
----
 
 ## 目录
 
