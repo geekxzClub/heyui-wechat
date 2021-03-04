@@ -26,3 +26,9 @@
 .h-list.h-grid>.h-item [class*=heyui]{
   font-size: 36rpx;
 }
+
+
+.h-list.menu>.h-item .content{
+  line-height: 1.2em;
+  margin-left: 24rpx;
+}

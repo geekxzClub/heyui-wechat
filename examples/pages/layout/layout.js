@@ -9,37 +9,44 @@ Page({
       id: 1,
       icon: 'cardboardfill',
       type: 'flex',
-      text: 'Flex 弹性布局'
+      text_zh: '弹性布局',
+      text_en: 'Flex'
     }, {
       id: 2,
       icon: 'cardboardfill',
       type: 'grid',
-      text: 'Grid 栅格布局'
+      text_zh: '栅格布局',
+      text_en: 'Grid'
     }, {
       id: 3,
       icon: 'cardboardfill',
       type: 'float',
-      text: 'Float 浮动布局'
+      text_zh: '浮动布局',
+      text_en: 'Float'
       }, {
         id: 4,
         icon: 'cardboardfill',
         type: 'list',
-        text: 'List 列表'
+        text_zh: '列表',
+        text_en: 'List'
       }, {
       id: 5,
       icon: 'cardboardfill',
       type: 'indexlist',
-      text: 'IndexList 索引列表'
+      text_zh: '索引列表',
+      text_en: 'IndexList'
     }, {
       id: 6,
       icon: 'cardboardfill',
       type: 'collapse',
-      text: 'Collapse 折叠面板'
+      text_zh: '折叠面板',
+      text_en: 'Collapse'
     }, {
       id: 7,
       icon: 'cardboardfill',
       type: 'waterflow',
-      text: 'WaterFlow 瀑布流'
+      text_zh: '瀑布流',
+      text_en: 'WaterFlow'
     }],
   },
 

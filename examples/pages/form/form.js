@@ -9,42 +9,50 @@ Page({
       id: 1,
       icon: 'cardboardfill',
       type: 'input',
-      text: 'Input 单行输入框'
+      text_zh: '单行输入框',
+      text_en: 'Input'
     }, {
       id: 2,
       icon: 'cardboardfill',
       type: 'textarea',
-      text: 'Textarea 多行输入框'
+      text_zh: '多行输入框',
+      text_en: 'Textarea'
     }, {
       id: 3,
       icon: 'cardboardfill',
       type: 'radio',
-      text: 'Radio 单选'
+      text_zh: '单选框',
+      text_en: 'Radio'
     }, {
       id: 4,
       icon: 'cardboardfill',
       type: 'checkbox',
-      text: 'Checkbox 多选'
+      text_zh: '多选框',
+      text_en: 'Checkbox'
     }, {
       id: 5,
       icon: 'cardboardfill',
       type: 'switch',
-      text: 'Switch 开关'
+      text_zh: '开关',
+      text_en: 'Switch'
     }, {
       id: 6,
       icon: 'cardboardfill',
       type: 'select',
-      text: 'Select 选择框'
+      text_zh: '选择框',
+      text_en: 'Select'
     }, {
       id: 7,
       icon: 'cardboardfill',
-      type: 'imagepicker',
-        text: 'Imagepicker 图片选择器'
+      type: 'image',
+      text_zh: '图片选择器',
+      text_en: 'Imagepicker'
     }, {
       id: 8,
       icon: 'cardboardfill',
       type: 'rate',
-      text: 'Rate 评分'
+      text_zh: '评分',
+      text_en: 'Rate'
     }],
   },
 

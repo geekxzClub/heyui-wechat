@@ -36,9 +36,15 @@
     </view>
     <view class="h-list menu p-b">
       <view class="h-item h-arrow" wx:for="{{componentList}}" wx:key='item' bindtap="goToItem" data-type="{{item.type}}">
+        <view class="h-avatar h-avatar-sm" style="background-image:url('https://oss.geekxz.com/hey-ui-oss/icon/{{item.type}}.png');"></view>
         <view class="content">
-          <image src="/images/icon/{{item.type}}.png" class="png" mode="aspectFit"></image>
-          <text class="h-text-black"> {{item.text}}</text>
+          <!-- <image src="/images/icon/{{item.type}}.png" class="png" mode="aspectFit"></image> -->
+          <view class="h-text-darkGray">
+            <text class="h-text-cut h-text-xs h-text-bold">{{item.text_en}}</text>
+          </view>
+          <view class="h-text-grey h-text-sm h-flex">
+            <text class="h-text-cut h-text-s">{{item.text_zh}}</text>
+          </view>
         </view>
       </view>
     </view>

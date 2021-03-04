@@ -9,22 +9,26 @@ Page({
       id: 1,
       icon: 'cardboardfill',
       type: 'actionsheet',
-      text: 'ActionSheet 底部弹出操作菜单'
+      text_zh: '底部弹出操作菜单',
+      text_en: 'ActionSheet'
     }, {
         id: 2,
         icon: 'cardboardfill',
         type: 'toast',
-        text: 'Toast 提示'
+        text_zh: '提示',
+        text_en: 'Toast'
     }, {
       id: 3,
       icon: 'cardboardfill',
       type: 'message',
-      text: 'Message 消息提示'
+      text_zh: '消息提示',
+      text_en: 'Message'
     }, {
       id: 4,
       icon: 'cardboardfill',
       type: 'dialog',
-      text: 'Dialog 模态框'
+      text_zh: '模态框',
+      text_en: 'Dialog'
     }]
   },
 

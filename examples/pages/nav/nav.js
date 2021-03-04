@@ -9,17 +9,20 @@ Page({
       id: 1,
       icon: 'cardboardfill',
       type: 'navbar',
-      text: 'BavBar 顶部导航'
+      text_zh: '顶部导航',
+      text_en: 'BavBar'
     }, {
       id: 2,
       icon: 'cardboardfill',
-        type: 'tabbar',
-        text: 'TabBar 底部导航'
+      type: 'tabbar',
+      text_zh: '底部导航',
+      text_en: 'TabBar'
     }, {
       id: 3,
       icon: 'cardboardfill',
       type: 'tabs',
-      text: 'Tabs 选项卡'
+      text_zh: '选项卡',
+      text_en: 'Tabs'
     }
     // , {
     //   id: 4,

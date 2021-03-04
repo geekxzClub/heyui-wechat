@@ -9,42 +9,50 @@ Page({
       id: 1,
       icon: 'cardboardfill',
       type: 'color',
-      text: 'Color 颜色'
+      text_en: 'Color',
+      text_zh: '颜色'
     }, {
       id: 2,
       icon: 'cardboardfill',
       type: 'text',
-      text: 'Text 文字'
+      text_zh: '文字',
+      text_en: 'Text'
     }, {
       id: 3,
       icon: 'cardboardfill',
       type: 'shadow',
-      text: 'Shadow 阴影'
+      text_zh: '阴影',
+      text_en: 'Shadow'
     }, {
       id: 4,
       icon: 'cardboardfill',
       type: 'icon',
-      text: 'Icon 图标'
+      text_zh: '图标',
+      text_en: 'Icon'
     }, {
       id: 5,
       icon: 'cardboardfill',
       type: 'corner',
-      text: 'Corner 边角'
+      text_zh: '边角',
+      text_en: 'Corner'
     }, {
       id: 6,
       icon: 'cardboardfill',
       type: 'mp',
-      text: '内外边距'
+      text_zh: '内外边距',
+      text_en: 'Margin-Padding'
     }, {
       id: 7,
       icon: 'cardboardfill',
       type: 'button',
-      text: 'Button 按钮'
+      text_zh: '按钮',
+      text_en: 'Button'
       }, {
         id: 8,
         icon: 'cardboardfill',
         type: 'theme',
-        text: 'Theme 主题'
+        text_zh: '主题',
+        text_en: 'Theme'
       }],
   },
 

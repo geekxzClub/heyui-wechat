@@ -59,7 +59,7 @@
     "pages/layout/collapse/collapse",
 
     "pages/view/view",
-    "pages/view/avatab/avatab",
+    "pages/view/avatar/avatar",
     "pages/view/tag/tag",
     "pages/view/progress/progress",
     "pages/view/loading/loading",

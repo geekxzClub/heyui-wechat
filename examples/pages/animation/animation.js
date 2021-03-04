@@ -9,7 +9,8 @@ Page({
       id: 1,
       icon: 'cardboardfill',
       type: 'animation',
-      text: 'Animation 动画'
+      text_zh: '动画',
+      text_en: 'Animation'
     }]
   },
 
