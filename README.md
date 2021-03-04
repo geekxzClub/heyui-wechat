@@ -30,60 +30,60 @@
 
 ## 简介
 
-Hey UI 是基于微信小程序原生语法,实现的CSS UI框架,面向全层次的小程序开发者,低门槛开箱即用的前端 UI 解决方案.
+  Hey UI 是基于微信小程序原生语法,实现的CSS UI框架,面向全层次的小程序开发者,低门槛开箱即用的前端 UI 解决方案.
 
 
 ## 快速上手
 
-直接通过git下载 Hey UI 源代码，并将 src 目录（所有文件夹）拷贝到自己的项目中.
-```
-git clone https://github.com/geekxzClub/hey-ui.git
-```
+  直接通过git下载 Hey UI 源代码，并将 src 目录（所有文件夹）拷贝到自己的项目中.
+  ```
+  git clone https://github.com/geekxzClub/hey-ui.git
+  ```
 
 
 ### 安装
 
 1.初始化你的项目
 
-使用微信开发正工具新建项目.
+  使用微信开发正工具新建项目.
 
 2.按转Hey UI
 
-下载源码解压获得`/src`，复制目录下的 `/hey-ui`,`/component`,`/libs` 文件夹到你的项目根目录.
+  下载源码解压获得`/src`，复制目录下的 `/hey-ui`,`/component`,`/libs` 文件夹到你的项目根目录.
 
-`App.wxss` 引入关键Css `main.wxss`,`icon.wxss`.
+  `App.wxss` 引入关键Css `main.wxss`,`icon.wxss`.
 
-```
-/**app.wxss**/
-@import "hey-ui/heyui.main.wxss";
-@import "hey-ui/icon.wxss";
-/* 引入主题色 */
-@import "hey-ui/theme.wxss";
-@import "app.css"; /* 你的项目css */
-....
-```
+  ```
+  /**app.wxss**/
+  @import "hey-ui/heyui.main.wxss";
+  @import "hey-ui/icon.wxss";
+  /* 引入主题色 */
+  @import "hey-ui/theme.wxss";
+  @import "app.css"; /* 你的项目css */
+  ....
+  ```
 ### 引入
 
 1.引入核心的函数库
 
-在`js`中引入 `h-string.js`,`h-array.js`,`h-is.js`
-```
-import { HString } from '/libs/h-string.js';
-import { HArray } from '/libs/h-array.js';
-import { HIs } from '/libs/h-is.js';
+  在`js`中引入 `h-string.js`,`h-array.js`,`h-is.js`
+  ```
+  import { HString } from '/libs/h-string.js';
+  import { HArray } from '/libs/h-array.js';
+  import { HIs } from '/libs/h-is.js';
 
-var Hstring = new HString();  //实例化 
-....
-```
+  var Hstring = new HString();  //实例化 
+  ....
+  ```
 
 2.使用函数库
 
-```
-Hstring.toString()
-....
+  ```
+  Hstring.toString()
+  ....
 
-```
-至此，Hey UI 已成功引入至你的项目中了！
+  ```
+  至此，Hey UI 已成功引入至你的项目中了！
 
 
 ## 讨论交流
@@ -93,9 +93,9 @@ Hstring.toString()
 
 ## 贡献代码
 
-我们的代码基于 develop 分支开发，欢迎提交 Pull Request 进行代码贡献。
+  我们的代码基于 develop 分支开发，欢迎提交 Pull Request 进行代码贡献。
 
-在提交 Pull Request 之前，请详细阅读我们的[开发规范](http://heyui.geekxz.com/start/contribute.html)，否则可能因为 Commit 信息不规范等原因被关闭 Pull Request。
+  在提交 Pull Request 之前，请详细阅读我们的[开发规范](http://heyui.geekxz.com/start/contribute.html)，否则可能因为 Commit 信息不规范等原因被关闭 Pull Request。
 
 
 ## 开源协议
