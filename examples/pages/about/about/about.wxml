@@ -1,11 +1,67 @@
 <!--pages/about/about/index.wxml-->
-<view class='m h-bg-white p-xl radius h-shadow-lg h-corner-sm'>
-  <view class='h-text-center m-b h-text-lg  h-text-grey'>关于HeyUI组件库</view>
-  <view class='text-content h-text-sm'>
+<view class='h-bg-white p-lg h-list menu card-menu m-t'>
+  <view class='h-text-center m-b h-text-sm h-text-grey'>贡献人员</view>
+  <view class='text-content'>
+    <!-- <view class="h-text-sm">Hi！开发者~欢迎使用HeyUI组件库！</view> -->
+    <view class='h-text-sm h-user'>
+      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-ltb-lg m-t-sm m-r-sm tit">策划</view>
+      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-lg m-t-sm m-r-sm p-lr">陈东东</view>
+    </view>
+    <view class='h-text-sm h-user'>
+      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-ltb-lg m-t-sm m-r-sm tit">设计</view>      
+      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-lg m-t-sm m-r-sm p-lr">陈东东</view>
+    </view>
+    <view class='h-text-sm h-user'>
+      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-ltb-lg m-t-sm m-r-sm tit">团队成员</view>
+      <view class="h-capsule h-capsule-round m-t-sm">
+        <view class="h-tag h-bg-blue">
+          设计
+        </view>
+        <view class="h-tag h-line-blue">
+          陈东东
+        </view>
+      </view>
+      
+    </view>
+    <view class='h-text-sm h-user'>
+      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-ltb-lg m-t-sm m-r-sm tit">贡献</view>
+      <view class="h-capsule h-capsule-round m-t-sm">
+        <view class="h-tag h-bg-blue">
+          前端
+        </view>
+        <view class="h-tag h-line-blue">
+          陈东东
+        </view>
+      </view>
+      <view class="h-capsule h-capsule-round m-t-sm">
+        <view class="h-tag h-bg-blue">
+          后端
+        </view>
+        <view class="h-tag h-line-blue">
+          陈东东
+        </view>
+      </view>
+      <view class="h-capsule h-capsule-round m-t-sm">
+        <view class="h-tag h-bg-blue">
+          设计
+        </view>
+        <view class="h-tag h-line-blue">
+          陈东东
+        </view>
+      </view>
+    </view>    
+    <view class='h-text-right h-text-s h-text-grey m-t-lg'>更多功能敬请期待！</view>
+  </view>
+</view>
+
+<view class='m-lr m-t h-bg-white p-xl radius h-shadow-lg h-corner-sm'>
+  <view class='h-text-center m-b h-text-sm  h-text-grey'>关于HeyUI组件库</view>
+  <view class='text-content h-text-xs'>
     <view>Hi！开发者~欢迎使用HeyUI组件库！</view>
     <view class='m-t'>该项目是我个人开发的一款高颜值的微信小程序组件库。这个项目不仅有一些漂亮的基础元素，还有一些实用的组件。扩展中心也会不定期更新一些小程序的解决方案，或者你有一些好的想法可以在GitHub里提交给我，我会加入到扩展里。</view>
     <view class='m-t'>项目是开源的，不收取任何费用，如果这个项目有帮到你，或者你觉得很赞，可以在GitHub里扫描赞赏码支持一下！</view>
     <view class='m-t'>该项目你可以用到除组件库小程序的任何项目。作者我也是花了时间和精力的，我不希望你拷贝一份，做一些修改发布就变成了一个独立的项目，当然！扩展再发布是可以的，但前提是注明一下我这个原作者٩(๑❛ᴗ❛๑)۶</view>
-    <view class='m-t'>更多功能敬请期待！</view>
+    <view class='h-text-right h-text-s h-text-grey m-t-lg'>更多功能敬请期待！</view>
   </view>
 </view>
+<view class="p-b"></view>

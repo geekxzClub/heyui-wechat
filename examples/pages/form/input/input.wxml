@@ -11,7 +11,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 是否是卡片</text>
+      <text class="heyui-title h-text-black"> 是否是卡片</text>
     </view>
   </view>
   <view class="h-list">
@@ -55,7 +55,7 @@
   <view class="h-list menu card-menu m-tb">
     <form>
       <view class="h-form-group margin-top">
-        <view class="title h-text-blue h-text-right">邮件</view>
+        <view class="title h-text-black h-text-right">邮件</view>
         <input placeholder="两字短标题"></input>
       </view>
       <view class="h-form-group">
@@ -93,7 +93,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 对齐方式</text>
+      <text class="heyui-title h-text-black"> 对齐方式</text>
     </view>
   </view>
   <view class="h-list menu card-menu m-tb">
@@ -113,7 +113,7 @@
 
   <!-- <view class="h-bar h-bg-white h-border-bottom">
     <view class="action p-l h-text-xs">
-      <text class="heyui-title h-text-blue"> Label大小</text>
+      <text class="heyui-title h-text-black"> Label大小</text>
     </view>
   </view>
   <view class="h-list menu card-menu m-tb">
@@ -133,7 +133,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 类型</text>
+      <text class="heyui-title h-text-black"> 类型</text>
     </view>
   </view>
   <view class="h-list menu card-menu m-tb">

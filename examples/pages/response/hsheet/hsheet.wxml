@@ -9,9 +9,9 @@
     </view>
   </view>
 
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 基本使用</text>
+<view class="h-bar h-bg-white">
+  <view class="action">
+    <text class="h-text-xs h-text-black"> 1. 基本使用</text>
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
@@ -24,9 +24,9 @@
 </h-action-sheet>
 
 <!-- 举报 -->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 举报</text>
+<view class="h-bar h-bg-white">
+  <view class="action">
+    <text class="h-text-xs h-text-black"> 2. 举报</text>
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
@@ -42,9 +42,9 @@
 </h-action-sheet>
 
 <!-- 开放能力 -->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 开放能力</text>
+<view class="h-bar h-bg-white">
+  <view class="action">
+    <text class="h-text-xs h-text-black"> 3. 开放能力</text>
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
@@ -60,9 +60,9 @@
 
 
 <!-- 跳转能力 -->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 跳转能力</text>
+<view class="h-bar h-bg-white">
+  <view class="action">
+    <text class="h-text-xs h-text-black"> 4. 跳转能力</text>
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 

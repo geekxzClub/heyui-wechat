@@ -11,7 +11,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 居中</text>
+      <text class="heyui-title h-text-black"> 居中</text>
     </view>
   </view>
   <view class="p">
@@ -19,7 +19,7 @@
   </view>
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-sm">
-      <text class="heyui-title h-text-blue"> 靠左</text>
+      <text class="heyui-title h-text-black"> 靠左</text>
     </view>
   </view>
   <view class="p">
@@ -27,7 +27,7 @@
   </view>
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-sm">
-      <text class="heyui-title h-text-blue"> 靠右</text>
+      <text class="heyui-title h-text-black"> 靠右</text>
     </view>
   </view>
   <view class="p">

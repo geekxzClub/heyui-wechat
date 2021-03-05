@@ -9,253 +9,249 @@
     </view>
   </view>
 
+  <view class="h-bar h-bg-white">
+    <view class="action">
+      <text class="h-text-xs h-text-black"> 1. 菜单列表形状</text>
+    </view>
+  </view>
+  <view class="h-list menu m-t">
+    <view class="h-item h-arrow">
+      <view class="content">
+        <text class="heyui-circlefill text-grey"></text>
+        <text class="text-grey">图标 + 标题</text>
+      </view>
+    </view>
+  </view>
+  <view class="h-list menu card-menu m-t">
+    <view class="h-item h-arrow">
+      <view class="content">
+        <text class="heyui-circlefill text-grey"></text>
+        <text class="text-grey">图标 + 标题</text>
+      </view>
+    </view>
+  </view>
 
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-xs">
-    <text class="heyui-title h-text-blue"> 菜单列表形状</text>
-  </view>
-</view>
-<view class="h-list menu m-t">
-  <view class="h-item h-arrow">
-    <view class="content">
-      <text class="heyui-circlefill text-grey"></text>
-      <text class="text-grey">图标 + 标题</text>
+  <view class="h-bar h-bg-white m-t">
+    <view class="action">
+      <text class="h-text-xs h-text-black"> 2. 菜单列表</text>
     </view>
   </view>
-</view>
-<view class="h-list menu card-menu m-t">
-  <view class="h-item h-arrow">
-    <view class="content">
-      <text class="heyui-circlefill text-grey"></text>
-      <text class="text-grey">图标 + 标题</text>
+  <view class="h-list menu">
+    <view class="h-item h-arrow">
+      <view class="content">
+        <text class="heyui-circlefill h-text-grey"></text>
+        <text class="h-text-grey">图标 + 标题</text>
+      </view>
     </view>
-  </view>
-</view>
-
-
-<view class="h-bar h-bg-white h-border-bottom m-t">
-  <view class="action h-text-xs">
-    <text class="heyui-title h-text-blue"> 菜单列表</text>
-  </view>
-</view>
-<view class="h-list menu">
-  <view class="h-item h-arrow">
-    <view class="content">
-      <text class="heyui-circlefill h-text-grey"></text>
-      <text class="h-text-grey">图标 + 标题</text>
+    <view class="h-item">
+      <view class="content">
+        <image src="/images/logo.jpg" class="png" mode="aspectFit"></image>
+        <text class="h-text-grey">图片 + 标题</text>
+      </view>
     </view>
-  </view>
-  <view class="h-item">
-    <view class="content">
-      <image src="/images/logo.jpg" class="png" mode="aspectFit"></image>
-      <text class="h-text-grey">图片 + 标题</text>
+    <view class="h-item">
+      <view class="content">
+          <text class="heyui-emojiflashfill h-text-pink"></text>
+          <text class="h-text-grey">头像组</text>
+        </view>
+        <view class="action">
+          <view class="h-avatar-group">
+            <view class="h-avatar h-corner-lg sm" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
+            <view class="h-avatar h-corner-lg sm" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a6.jpg);"></view>
+            <view class="h-avatar h-corner-lg sm" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a5.jpg);"></view>
+            <view class="h-avatar h-corner-lg sm" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a4.jpg);"></view>
+          </view>
+          <text class="text-grey text-sm">4 人</text>
+        </view>
     </view>
-  </view>
-  <view class="h-item">
-    <view class="content">
-        <text class="heyui-emojiflashfill h-text-pink"></text>
-        <text class="h-text-grey">头像组</text>
+    <view class="h-item">
+      <view class="content">
+        <text class="heyui-btn h-text-green"></text>
+        <text class="h-text-grey">按钮</text>
       </view>
       <view class="action">
-        <view class="h-avatar-group">
-          <view class="h-avatar h-corner-lg sm" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
-          <view class="h-avatar h-corner-lg sm" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a6.jpg);"></view>
-          <view class="h-avatar h-corner-lg sm" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a5.jpg);"></view>
-          <view class="h-avatar h-corner-lg sm" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a4.jpg);"></view>
+        <button class="h-btn h-corner-sm h-bg-green h-shadow">
+          <text class="heyui-upload"> 上传</text></button>
+      </view>
+    </view>
+    <view class="h-item">
+      <view class="content">
+        <text class="heyui-warn h-text-green"></text>
+        <text class="h-text-grey">文本</text>
+      </view>
+      <view class="action">
+        <text class="h-text-grey h-text-s">小目标还没有实现！</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="m-t h-bar h-bg-white">
+    <view class="action">
+      <text class="h-text-xs h-text-black"> 3. 特殊功能菜单列表</text>
+    </view>
+  </view>
+  <view class="h-list menu card-menu m-tb">
+    <view class="h-item h-arrow">
+      <button class="h-btn content" open-type="contact">
+        <text class="heyui-btn text-olive"></text>
+        <text class="h-text-grey">Open-type 按钮</text>
+      </button>
+    </view>
+    <view class="h-item">
+      <navigator class="content" hover-class="none" url="/pages/layout/layout" open-type="redirect">
+        <text class="heyui-discoverfill h-text-orange"></text>
+        <text class="h-text-grey">Navigator 跳转</text>
+      </navigator>
+    </view>
+    
+  </view>
+
+  <view class="h-bar h-bg-white">
+    <view class="action">
+      <text class="h-text-xs h-text-black"> 4. 宫格形状</text>
+    </view>
+  </view>
+  <view class="h-list h-grid h-col-3 no-border card-menu">
+    <view class="h-item">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>宫格</text>
+    </view>
+    <view class="h-item">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>宫格</text>
+    </view>
+    <view class="h-item">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>宫格</text>
+    </view>
+    <view class="h-item">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>宫格</text>
+    </view>
+    <view class="h-item">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>宫格</text>
+    </view>
+    <view class="h-item">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>宫格</text>
+    </view>
+  </view>
+  <view class="h-list h-grid h-col-3 no-border card-menu">
+    <view class="h-item">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>宫格</text>
+    </view>
+    <view class="h-item">
+      <view class="heyui-cardboardfill h-text-yellow"><view class="h-tag h-badge">99+</view></view>
+      <text>宫格</text>
+    </view>
+    <view class="h-item">
+      <view class="heyui-picfill h-text-yellow"><view class="h-tag h-badge"></view></view>
+      <text>宫格</text>
+    </view>
+    <view class="h-item">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>宫格</text>
+    </view>
+    <view class="h-item">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>宫格</text>
+    </view>
+    <view class="h-item">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>宫格</text>
+    </view>
+  </view>
+
+  <view class="h-bar h-bg-white">
+    <view class="action">
+      <text class="h-text-xs h-text-black"> 5. 用户列表</text>
+    </view>
+  </view>
+  <view class="h-list menu-avatar">
+    <view class="h-item">
+      <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a5.jpg);"></view>
+      <view class="content">
+        <view class="h-text-grey h-text-sm">阿狗</view>
+        <view class="h-text-gray h-text-s h-flex">
+          <text class="h-text-cut">
+              <text class="heyui-infofill h-text-red"></text> 我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
+          </text>
         </view>
-        <text class="text-grey text-sm">4 人</text>
       </view>
-  </view>
-  <view class="h-item">
-    <view class="content">
-      <text class="heyui-btn h-text-green"></text>
-      <text class="h-text-grey">按钮</text>
-    </view>
-    <view class="action">
-      <button class="h-btn h-corner-sm h-bg-green h-shadow">
-        <text class="heyui-upload"> 上传</text></button>
-    </view>
-  </view>
-  <view class="h-item">
-    <view class="content">
-      <text class="heyui-warn h-text-green"></text>
-      <text class="h-text-grey">文本</text>
-    </view>
-    <view class="action">
-      <text class="h-text-grey h-text-s">小目标还没有实现！</text>
-    </view>
-  </view>
-</view>
-
-<view class="m-t h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-xs">
-    <text class="heyui-title h-text-blue"> 特殊功能菜单列表</text>
-  </view>
-</view>
-<view class="h-list menu card-menu m-tb">
-  <view class="h-item h-arrow">
-    <button class="h-btn content" open-type="contact">
-      <text class="heyui-btn text-olive"></text>
-      <text class="h-text-grey">Open-type 按钮</text>
-    </button>
-  </view>
-  <view class="h-item">
-    <navigator class="content" hover-class="none" url="/pages/layout/layout" open-type="redirect">
-      <text class="heyui-discoverfill h-text-orange"></text>
-      <text class="h-text-grey">Navigator 跳转</text>
-    </navigator>
-  </view>
-  
-</view>
-
-
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-xs">
-    <text class="heyui-title h-text-blue"> 宫格形状</text>
-  </view>
-</view>
-<view class="h-list h-grid h-col-3 no-border m-tb card-menu">
-  <view class="h-item">
-    <view class="heyui-picfill h-text-yellow"></view>
-    <text>宫格</text>
-  </view>
-  <view class="h-item">
-    <view class="heyui-picfill h-text-yellow"></view>
-    <text>宫格</text>
-  </view>
-  <view class="h-item">
-    <view class="heyui-picfill h-text-yellow"></view>
-    <text>宫格</text>
-  </view>
-  <view class="h-item">
-    <view class="heyui-picfill h-text-yellow"></view>
-    <text>宫格</text>
-  </view>
-  <view class="h-item">
-    <view class="heyui-picfill h-text-yellow"></view>
-    <text>宫格</text>
-  </view>
-  <view class="h-item">
-    <view class="heyui-picfill h-text-yellow"></view>
-    <text>宫格</text>
-  </view>
-</view>
-<view class="h-list h-grid h-col-3 no-border m-tb card-menu">
-  <view class="h-item">
-    <view class="heyui-picfill h-text-yellow"></view>
-    <text>宫格</text>
-  </view>
-  <view class="h-item">
-    <view class="heyui-cardboardfill h-text-yellow"><view class="h-tag h-badge">99+</view></view>
-    <text>宫格</text>
-  </view>
-  <view class="h-item">
-    <view class="heyui-picfill h-text-yellow"><view class="h-tag h-badge"></view></view>
-    <text>宫格</text>
-  </view>
-  <view class="h-item">
-    <view class="heyui-picfill h-text-yellow"></view>
-    <text>宫格</text>
-  </view>
-  <view class="h-item">
-    <view class="heyui-picfill h-text-yellow"></view>
-    <text>宫格</text>
-  </view>
-  <view class="h-item">
-    <view class="heyui-picfill h-text-yellow"></view>
-    <text>宫格</text>
-  </view>
-</view>
-
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-xs">
-    <text class="heyui-title h-text-blue"> 用户列表</text>
-  </view>
-</view>
-<view class="h-list menu-avatar">
-  <view class="h-item">
-    <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a5.jpg);"></view>
-    <view class="content">
-      <view class="h-text-grey h-text-sm">阿狗</view>
-      <view class="h-text-gray h-text-s h-flex">
-        <text class="h-text-cut">
-            <text class="heyui-infofill h-text-red"></text> 我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
-        </text>
+      <view class="action">
+        <view class="text-grey text-xs">22:20</view>
+        <!-- <view class="h-tag round bg-grey sm">5</view> -->
       </view>
     </view>
-    <view class="action">
-      <view class="text-grey text-xs">22:20</view>
-      <!-- <view class="h-tag round bg-grey sm">5</view> -->
+    <view class="h-item">
+      <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);">
+        <view class="h-tag h-badge">99+</view>
+      </view>
+      <view class="content">
+        <view class="h-text-grey">
+          <text class="h-text-cut">瓦洛兰之盾-塔里克</text>
+          <view class="h-tag h-tag-sm h-corner-lg h-bg-blue m-l-sm">战士</view>
+        </view>
+        <view class="h-text-gray h-text-s h-flex">
+          <text class="h-text-cut">塔里克是保护者星灵，用超乎寻常的力量守护着符文之地的生命、仁爱以及万物之美。塔里克由于渎职而被放逐，离开了祖国德玛西亚，前去攀登巨神峰寻找救赎，但他找到的却是来自星界的更高层的召唤。现在的塔里克与古代巨神族的神力相融合，以瓦洛兰之盾的身份，永不疲倦地警惕着阴险狡诈的虚空腐化之力。</text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="h-text-grey h-text-xs">22:20</view>
+        <view class="cuIcon-notice_forbid_fill h-text-gray"></view>
+      </view>
+    </view>
+    <view class="h-item ">
+      <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a2.jpg);"></view>
+      <view class="content">
+        <view class="h-text-pink">
+          <text class="h-text-cut h-text-sm">阿花</text>
+        </view>
+        <view class="h=text-gray h-text-sm h-flex">
+          <text class="h-text-cut h-text-s">阿狗，你被自己的光芒变的盲目！</text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="h-text-grey h-text-xs">22:20</view>
+        <view class="h-tag round bg-red sm">5</view>
+      </view>
+    </view>
+    <view class="h-item h-grayscale">
+      <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a3.jpg);"></view>
+      <view class="content">
+        <view>
+          <text class="h-text-cut h-text-sm">阿林</text>
+          <view class="h-tag h-corner-lg h-bg-orange h-tag-sm m-l-sm">断开连接...</view>
+        </view>
+        <view class="h-text-gray h-text-s h-flex">
+          <text class="h-text-cut"> 等我回来一个打十个</text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="h-text-grey h-text-xs">22:20</view>
+        <view class="h-tag h-tag-sm h-corner-lg h-bg-red">5</view>
+      </view>
+    </view>
+    <view class="h-item h-cur">
+      <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a8.jpg);">
+        <view class="h-tag h-badge"></view>
+      </view>
+      <view class="content">
+        <view>
+          <text class="h-text-cut h-text-sm">瓦罗兰大陆-阿强-新手保护营</text>
+          <view class="h-tag h-tag-sm h-corner-lg h-bg-orange m-l-sm">6人</view>
+        </view>
+        <view class="h-text-gray h-text-sm h-flex h-text-s">
+          <text class="h-text-cut"> 阿狗：<text class="heyui-locationfill h-text-orange h-text-s"></text> 传送中...</text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="h-text-grey h-text-xs">22:20</view>
+        <view class="heyui-notice_forbid_fill h-text-gray"></view>
+      </view>
     </view>
   </view>
-  <view class="h-item">
-    <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);">
-      <view class="h-tag h-badge">99+</view>
-    </view>
-    <view class="content">
-      <view class="h-text-grey">
-        <text class="h-text-cut">瓦洛兰之盾-塔里克</text>
-        <view class="h-tag h-tag-sm h-corner-lg h-bg-blue m-l-sm">战士</view>
-      </view>
-      <view class="h-text-gray h-text-s h-flex">
-        <text class="h-text-cut">塔里克是保护者星灵，用超乎寻常的力量守护着符文之地的生命、仁爱以及万物之美。塔里克由于渎职而被放逐，离开了祖国德玛西亚，前去攀登巨神峰寻找救赎，但他找到的却是来自星界的更高层的召唤。现在的塔里克与古代巨神族的神力相融合，以瓦洛兰之盾的身份，永不疲倦地警惕着阴险狡诈的虚空腐化之力。</text>
-      </view>
-    </view>
-    <view class="action">
-      <view class="h-text-grey h-text-xs">22:20</view>
-      <view class="cuIcon-notice_forbid_fill h-text-gray"></view>
-    </view>
-  </view>
-  <view class="h-item ">
-    <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a2.jpg);"></view>
-    <view class="content">
-      <view class="h-text-pink">
-        <text class="h-text-cut h-text-sm">阿花</text>
-      </view>
-      <view class="h=text-gray h-text-sm h-flex">
-        <text class="h-text-cut h-text-s">阿狗，你被自己的光芒变的盲目！</text>
-      </view>
-    </view>
-    <view class="action">
-      <view class="h-text-grey h-text-xs">22:20</view>
-      <view class="h-tag round bg-red sm">5</view>
-    </view>
-  </view>
-  <view class="h-item h-grayscale">
-    <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a3.jpg);"></view>
-    <view class="content">
-      <view>
-        <text class="h-text-cut h-text-sm">阿林</text>
-        <view class="h-tag h-corner-lg h-bg-orange h-tag-sm m-l-sm">断开连接...</view>
-      </view>
-      <view class="h-text-gray h-text-s h-flex">
-        <text class="h-text-cut"> 等我回来一个打十个</text>
-      </view>
-    </view>
-    <view class="action">
-      <view class="h-text-grey h-text-xs">22:20</view>
-      <view class="h-tag h-tag-sm h-corner-lg h-bg-red">5</view>
-    </view>
-  </view>
-  <view class="h-item h-cur">
-    <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a8.jpg);">
-      <view class="h-tag h-badge"></view>
-    </view>
-    <view class="content">
-      <view>
-        <text class="h-text-cut h-text-sm">瓦罗兰大陆-阿强-新手保护营</text>
-        <view class="h-tag h-tag-sm h-corner-lg h-bg-orange m-l-sm">6人</view>
-      </view>
-      <view class="h-text-gray h-text-sm h-flex h-text-s">
-        <text class="h-text-cut"> 阿狗：<text class="heyui-locationfill h-text-orange h-text-s"></text> 传送中...</text>
-      </view>
-    </view>
-    <view class="action">
-      <view class="h-text-grey h-text-xs">22:20</view>
-      <view class="heyui-notice_forbid_fill h-text-gray"></view>
-    </view>
-  </view>
-</view>
-
 
 </view>

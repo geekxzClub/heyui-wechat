@@ -35,12 +35,6 @@
     </view>
   </view>
   <view class="h-item h-arrow">
-    <navigator class="content" url="/pages/about/about/about" hover-class="none">
-      <image src="/images/logo.jpg" class="png" mode="aspectFit"></image>
-      <text class="text-grey">关于HeyUI组件库</text>
-    </navigator>
-  </view>
-  <view class="h-item h-arrow">
     <navigator class="content" url="/pages/about/log/log" hover-class="none">
       <text class="heyui-formfill text-green"></text>
       <text class="text-grey">日志</text>
@@ -59,70 +53,16 @@
     </button>
   </view>
   <view class="h-item h-arrow">
-    <navigator class="content" url="/pages/about/test/list" hover-class="none">
+    <navigator class="content" url="/pages/about/about/about" hover-class="none">
       <text class="heyui-creativefill text-orange"></text>
-      <text class="text-grey">Bug测试</text>
+      <text class="text-grey">关于heyui</text>
     </navigator>
   </view>
 </view>
 
 
 
-<view class='h-bg-white p-lg h-list menu card-menu m-t'>
-  <view class='h-text-center m-b h-text-sm h-text-grey'>贡献人员</view>
-  <view class='text-content'>
-    <!-- <view class="h-text-sm">Hi！开发者~欢迎使用HeyUI组件库！</view> -->
-    <view class='h-text-sm h-user'>
-      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-ltb-lg m-t-sm m-r-sm tit">策划</view>
-      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-lg m-t-sm m-r-sm p-lr">陈东东</view>
-    </view>
-    <view class='h-text-sm h-user'>
-      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-ltb-lg m-t-sm m-r-sm tit">设计</view>      
-      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-lg m-t-sm m-r-sm p-lr">陈东东</view>
-    </view>
-    <view class='h-text-sm h-user'>
-      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-ltb-lg m-t-sm m-r-sm tit">团队成员</view>
-      <view class="h-capsule h-capsule-round m-t-sm">
-        <view class="h-tag h-bg-blue">
-          设计
-        </view>
-        <view class="h-tag h-line-blue">
-          陈东东
-        </view>
-      </view>
-      
-    </view>
-    <view class='h-text-sm h-user'>
-      <view class="h-tag h-bg-blue-light h-text-s h-text-center h-corner-ltb-lg m-t-sm m-r-sm tit">贡献</view>
-      <view class="h-capsule h-capsule-round m-t-sm">
-        <view class="h-tag h-bg-blue">
-          前端
-        </view>
-        <view class="h-tag h-line-blue">
-          陈东东
-        </view>
-      </view>
-      <view class="h-capsule h-capsule-round m-t-sm">
-        <view class="h-tag h-bg-blue">
-          后端
-        </view>
-        <view class="h-tag h-line-blue">
-          陈东东
-        </view>
-      </view>
-      <view class="h-capsule h-capsule-round m-t-sm">
-        <view class="h-tag h-bg-blue">
-          设计
-        </view>
-        <view class="h-tag h-line-blue">
-          陈东东
-        </view>
-      </view>
-    </view>
-    
-    <view class='h-text-right h-text-s h-text-grey m-t-lg'>更多功能敬请期待！</view>
-  </view>
-</view>
+
 
 <view class='h-grid h-col-1 h-text-center h-text-dark4 h-qrcode'>
   <view class="h-bg-img m-b-sm">

@@ -11,7 +11,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 标签形状</text>
+      <text class="heyui-title h-text-black"> 标签形状</text>
     </view>
   </view>
   <view class="p h-bg-white">
@@ -23,7 +23,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 标签尺寸</text>
+      <text class="heyui-title h-text-black"> 标签尺寸</text>
     </view>
   </view>
   <view class="p h-bg-white">
@@ -34,7 +34,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 标签颜色</text>
+      <text class="heyui-title h-text-black"> 标签颜色</text>
     </view>
   </view>
   <view class="p h-bg-white h-flex h-flex-wrap">
@@ -48,7 +48,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 标签镂空</text>
+      <text class="heyui-title h-text-black"> 标签镂空</text>
     </view>
   </view>
   <view class="p h-bg-white h-flex h-flex-wrap">
@@ -59,7 +59,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 胶囊样式标签</text>
+      <text class="heyui-title h-text-black"> 胶囊样式标签</text>
     </view>
   </view>
   <view class="p h-bg-white h-flex h-flex-wrap">
@@ -107,7 +107,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 标签徽章</text>
+      <text class="heyui-title h-text-black"> 标签徽章</text>
     </view>
   </view>
   <view class="p h-bg-white h-flex h-justify-between h-align-center">

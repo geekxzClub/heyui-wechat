@@ -11,7 +11,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 头像形状</text>
+      <text class="heyui-title h-text-black"> 头像形状</text>
     </view>
   </view>
   <view class="p h-bg-white">
@@ -36,7 +36,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 头像尺寸</text>
+      <text class="heyui-title h-text-black"> 头像尺寸</text>
     </view>
   </view>
   <view class="p h-bg-white">
@@ -54,7 +54,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 头像颜色</text>
+      <text class="heyui-title h-text-black"> 头像颜色</text>
     </view>
   </view>
   <view class="p h-bg-white h-text-Hey">
@@ -65,7 +65,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 头像组合</text>
+      <text class="heyui-title h-text-black"> 头像组合</text>
     </view>
   </view>
 
@@ -86,7 +86,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 特别头像</text>
+      <text class="heyui-title h-text-black"> 特别头像</text>
     </view>
   </view>
 
@@ -101,7 +101,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 徽章头像</text>
+      <text class="heyui-title h-text-black"> 徽章头像</text>
     </view>
   </view>
   <view class="p h-bg-white h-flex h-justify-between h-align-center">

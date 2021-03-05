@@ -1,7 +1,7 @@
 <!--pages/view/comment/comment.wxml-->
 <view class="h-bar h-bg-white h-border-bottom">
   <view class="action p-l h-text-sm">
-    <text class="heyui-title h-text-blue"> 文章Card</text>
+    <text class="heyui-title h-text-black"> 文章Card</text>
   </view>
 </view>
 
@@ -11,7 +11,7 @@
 
 <view class="h-bar h-bg-white h-border-bottom m-t">
   <view class="action p-l h-text-sm">
-    <text class="heyui-title h-text-blue"> 评论Card</text>
+    <text class="heyui-title h-text-black"> 评论Card</text>
   </view>
 </view>
 <view class="h-list menu-avatar menu comment h-bg-white">

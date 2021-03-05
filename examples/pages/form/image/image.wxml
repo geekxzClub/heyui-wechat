@@ -11,7 +11,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 限制图片</text>
+      <text class="heyui-title h-text-black"> 限制图片</text>
     </view>
   </view>
   <view class="h-bar h-bg-white p">
@@ -39,7 +39,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 限制图片删除确认</text>
+      <text class="heyui-title h-text-black"> 限制图片删除确认</text>
     </view>
   </view>
   <view class="h-bar h-bg-white p">

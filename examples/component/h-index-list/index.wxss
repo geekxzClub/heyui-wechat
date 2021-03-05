@@ -24,22 +24,24 @@ image{
     vertical-align: middle;
 }
 .index-english{
-    position: absolute;
-    width: 60rpx;
+    position:fixed;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform:translate(-0%,-50%);
+    width: 46rpx;
     height: auto;
     right: 20rpx;
-    top: 0;
-    font-size: 28rpx;
+    font-size: 24rpx;
     background-color: rgba(255, 255, 255, 0.6);
     /* border: 2rpx solid rgba(0, 0, 0, 0.1); */
     box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 20rpx 0;
     border-radius: 50rpx;
 }
 .index-english view{
-    height: 15px;
-    margin: 15rpx 0;
+    height: 30rpx;
+    margin: 10rpx 0;
 }
 .index-name{
     text-align: center;

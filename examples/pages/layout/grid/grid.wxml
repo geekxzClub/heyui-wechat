@@ -9,13 +9,13 @@
     </view>
   </view>
 
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-xs">
-    <text class="heyui-title h-text-blue"> 等分列</text>
+<view class="h-bar h-bg-white">
+  <view class="action">
+    <text class="h-text-xs h-text-black"> 1. 等分列</text>
   </view>
 </view>
 <!-- 一 -->
-<view class="p h-text-center h-text-sm h-shadow-lg">
+<view class="h-text-center h-text-sm h-shadow-lg">
   <view class="h-corner-sm h-bg-white p-tb">
     <view class="h-grid h-col-1 m-lr">
       <view class="h-bg-red-light p">1</view>
@@ -24,8 +24,8 @@
   </view>
 </view>
 <!-- 两 -->
-<view class="p-lr h-text-center h-text-sm h-shadow-lg">
-  <view class="h-corner-sm h-bg-white p-tb">
+<view class="h-text-center h-text-sm h-shadow-lg">
+  <view class="h-corner-sm h-bg-white p-b">
     <view class="h-grid h-col-2 m-lr">
       <view class="h-bg-red-light p">1</view>
       <view class="h-bg-orange-light p">2</view>
@@ -35,8 +35,8 @@
   </view>
 </view>
 <!-- 三 -->
-<view class="p h-text-center h-text-sm h-shadow-lg">
-  <view class="h-corner-sm h-bg-white p-tb">
+<view class="h-text-center h-text-sm h-shadow-lg">
+  <view class="h-corner-sm h-bg-white p-b">
     <view class="h-grid h-col-3 m-lr">
       <view class="h-bg-red-light p">1</view>
       <view class="h-bg-orange-light p">2</view>
@@ -48,8 +48,8 @@
   </view>
 </view>
 <!-- 四 -->
-<view class="p-lr h-text-center h-text-sm h-shadow-lg">
-  <view class="h-corner-sm h-bg-white p-tb">
+<view class="h-text-center h-text-sm h-shadow-lg">
+  <view class="h-corner-sm h-bg-white p-b">
     <view class="h-grid h-col-4 m-lr">
       <view class="h-bg-red-light p">1</view>
       <view class="h-bg-orange-light p">2</view>
@@ -63,8 +63,8 @@
   </view>
 </view>
 <!-- 五 -->
-<view class="p h-text-center h-text-sm h-shadow-lg">
-  <view class="h-corner-sm h-bg-white p-tb">
+<view class="h-text-center h-text-sm h-shadow-lg">
+  <view class="h-corner-sm h-bg-white p-b">
     <view class="h-grid h-col-5 m-lr">
       <view class="h-bg-red-light p">1</view>
       <view class="h-bg-orange-light p">2</view>
@@ -81,9 +81,9 @@
 </view>
 
 
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-xs">
-    <text class="heyui-title h-text-blue"> 等高</text>
+<view class="h-bar h-bg-white">
+  <view class="action">
+    <text class="h-text-xs h-text-black"> 2. 等高</text>
   </view>
 </view>
 <view class=" h-text-center h-text-sm">

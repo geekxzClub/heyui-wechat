@@ -11,7 +11,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 不同图标</text>
+      <text class="heyui-title h-text-black"> 不同图标</text>
     </view>
   </view>
   <view class="h-list menu">

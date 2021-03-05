@@ -10,12 +10,8 @@
   </view>
 
 
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-xs">
-    <text class="heyui-title h-text-blue"> 浮动布局</text>
-  </view>
-</view>
-<view class="p h-text-center h-text-Hey h-text-sm h-bg-white">
+
+<view class="p-lr h-text-center h-text-Hey h-text-sm h-bg-white">
   <view class="h-fc p-sm">
     <view class="h-bg-grey h-fl p-sm h-corner-sm">Hey UI 左浮动h-fl</view>
   </view><view class="h-fc p-sm">

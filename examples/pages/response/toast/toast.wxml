@@ -12,9 +12,9 @@
 <h-toast id="toast"></h-toast>
 
 <!-- 成功 -->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 成功提示框</text>
+<view class="h-bar h-bg-white">
+  <view class="action">
+    <text class="h-text-xs h-text-black"> 1. 成功提示框</text>
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
@@ -22,9 +22,9 @@
 </view>
 
 <!-- 失败 -->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 失败提示框</text>
+<view class="h-bar h-bg-white">
+  <view class="action">
+    <text class="h-text-xs h-text-black"> 2. 失败提示框</text>
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
@@ -32,9 +32,9 @@
 </view>
 
 <!-- 警告 -->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 警告提示框</text>
+<view class="h-bar h-bg-white">
+  <view class="action">
+    <text class="h-text-xs h-text-black"> 3. 警告提示框</text>
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
@@ -43,9 +43,9 @@
 
 
 <!-- 自定义图片提示框 -->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 自定义图片提示框</text>
+<view class="h-bar h-bg-white">
+  <view class="action">
+    <text class="h-text-xs h-text-black"> 4. 自定义图片提示框</text>
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 

@@ -11,7 +11,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 一般常用</text>
+      <text class="heyui-title h-text-black"> 一般常用</text>
     </view>
   </view>
   <view class="p h-text-center h-text-sm h-shadow-lg">
@@ -27,7 +27,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 多列选择</text>
+      <text class="heyui-title h-text-black"> 多列选择</text>
     </view>
   </view>
   <view class="p h-text-center h-text-sm h-shadow-lg">
@@ -44,7 +44,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 选择时间</text>
+      <text class="heyui-title h-text-black"> 选择时间</text>
     </view>
   </view>
   <view class="p h-text-center h-text-sm h-shadow-lg">
@@ -60,7 +60,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 选择日期</text>
+      <text class="heyui-title h-text-black"> 选择日期</text>
     </view>
   </view>
   <view class="p h-text-center h-text-sm h-shadow-lg">
@@ -76,7 +76,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 选择日期</text>
+      <text class="heyui-title h-text-black"> 选择日期</text>
     </view>
   </view>
   <view class="p h-text-center h-text-sm h-shadow-lg">

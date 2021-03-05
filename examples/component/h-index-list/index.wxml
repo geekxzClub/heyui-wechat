@@ -9,7 +9,7 @@
       </view>
     </block>
   </scroll-view>
-  <view class="index-english" style="top: 80rpx">
+  <view class="index-english">
     <view wx:for="{{arrId}}" wx:key="i" wx:for-item="i" id="{{i}}" catchtouchstart="touchstart" catchtouchmove="touchmove" catchtouchend="touchend">{{i}}</view>
   </view>
   <view class="index-name" wx:if="{{indexShow}}">{{indexEnglish}}</view>

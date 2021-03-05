@@ -11,7 +11,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 加载状态</text>
+      <text class="heyui-title h-text-black"> 加载状态</text>
     </view>
   </view>
   <view class="h-load h-bg-blue loading"></view>
@@ -20,7 +20,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 弹框加载</text>
+      <text class="heyui-title h-text-black"> 弹框加载</text>
     </view>
   </view>
   <view class="h-bar h-bg-white m-t p-lr">
@@ -55,7 +55,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 进度条加载</text>
+      <text class="heyui-title h-text-black"> 进度条加载</text>
     </view>
   </view>
   <view class="h-bar h-bg-white p-lr">
@@ -75,7 +75,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 其他加载</text>
+      <text class="heyui-title h-text-black"> 其他加载</text>
     </view>
   </view>
 

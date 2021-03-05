@@ -10,7 +10,7 @@
   </view>
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-sm">
-      <text class="heyui-title h-text-blue"> 基础表格</text>
+      <text class="heyui-title h-text-black"> 基础表格</text>
     </view>
   </view>
   <view class="h-flex h-justify-center p">
@@ -22,7 +22,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-sm">
-      <text class="heyui-title h-text-blue"> 带斑马纹表格</text>
+      <text class="heyui-title h-text-black"> 带斑马纹表格</text>
     </view>
   </view>
   <view class="h-flex h-justify-center p">
@@ -35,7 +35,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-sm">
-      <text class="heyui-title h-text-blue"> 带间隔边框表格</text>
+      <text class="heyui-title h-text-black"> 带间隔边框表格</text>
     </view>
   </view>
   <view class="h-flex h-justify-center p">
@@ -48,7 +48,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-sm">
-      <text class="heyui-title h-text-blue"> 自定义无数据的提示文案</text>
+      <text class="heyui-title h-text-black"> 自定义无数据的提示文案</text>
     </view>
   </view>
   <view class="h-flex h-justify-center p">
@@ -62,7 +62,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-sm">
-      <text class="heyui-title h-text-blue"> 固定表头</text>
+      <text class="heyui-title h-text-black"> 固定表头</text>
     </view>
   </view>
   <view class="h-flex h-justify-center p">
@@ -77,7 +77,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-sm">
-      <text class="heyui-title h-text-blue"> 自定义表格头样式</text>
+      <text class="heyui-title h-text-black"> 自定义表格头样式</text>
     </view>
   </view>
   <view class="h-flex h-justify-center p">
@@ -92,7 +92,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-sm">
-      <text class="heyui-title h-text-blue"> 表格横向滑动</text>
+      <text class="heyui-title h-text-black"> 表格横向滑动</text>
     </view>
   </view>
   <view class="p">
@@ -107,7 +107,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-sm">
-      <text class="heyui-title h-text-blue"> 自定义表格行和单元格样式</text>
+      <text class="heyui-title h-text-black"> 自定义表格行和单元格样式</text>
     </view>
   </view>
   <view class="h-flex h-justify-center p">
@@ -120,7 +120,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-sm">
-      <text class="heyui-title h-text-blue"> 当某一行被点击时会触发该事件</text>
+      <text class="heyui-title h-text-black"> 当某一行被点击时会触发该事件</text>
     </view>
   </view>
   <view class="h-flex h-justify-center p">

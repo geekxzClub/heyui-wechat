@@ -10,7 +10,7 @@
   </view>
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 两个操作</text>
+      <text class="heyui-title h-text-black"> 两个操作</text>
     </view>
   </view>
   <view class="h-list menu-avatar">
@@ -34,7 +34,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 三个操作</text>
+      <text class="heyui-title h-text-black"> 三个操作</text>
     </view>
   </view>
   <view class="h-list menu-avatar">

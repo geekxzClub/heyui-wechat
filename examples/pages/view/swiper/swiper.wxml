@@ -11,7 +11,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 图片+视频</text>
+      <text class="heyui-title h-text-black"> 图片+视频</text>
     </view>
   </view>
   <swiper class="screen-swiper square-dot" current="{{current}}" duration="500" bindchange="bannerChage">
@@ -23,7 +23,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 卡片式</text>
+      <text class="heyui-title h-text-black"> 卡片式</text>
     </view>
   </view>
   <swiper class="card-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
@@ -37,7 +37,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 全屏式</text>
+      <text class="heyui-title h-text-black"> 全屏式</text>
     </view>
   </view>
   <swiper class="screen-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
@@ -49,7 +49,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> Grid样式</text>
+      <text class="heyui-title h-text-black"> Grid样式</text>
     </view>
   </view>
   <swiper class="screen-swiper square-dot" indicator-dots="true" circular="true">
@@ -85,7 +85,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 不需要指示点Dot</text>
+      <text class="heyui-title h-text-black"> 不需要指示点Dot</text>
     </view>
   </view>
   <swiper class="screen-swiper" circular="true" autoplay="true" interval="5000" duration="500">

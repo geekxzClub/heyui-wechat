@@ -11,7 +11,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 定义样式</text>
+      <text class="heyui-title h-text-black"> 定义样式</text>
     </view>
   </view>
   <view class="h-form-group">
@@ -25,7 +25,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 开关颜色</text>
+      <text class="heyui-title h-text-black"> 开关颜色</text>
     </view>
   </view>
   <view class="h-form-group">
@@ -39,7 +39,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 开关位置</text>
+      <text class="heyui-title h-text-black"> 开关位置</text>
     </view>
   </view>
   <view class="h-form-group">
@@ -53,7 +53,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 开关禁用</text>
+      <text class="heyui-title h-text-black"> 开关禁用</text>
     </view>
   </view>
   <view class="h-form-group">
@@ -63,7 +63,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-blue"> 定义状态</text>
+      <text class="heyui-title h-text-black"> 定义状态</text>
     </view>
   </view>
   <view class="h-form-group">
