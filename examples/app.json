@@ -111,5 +111,8 @@
     "borderStyle": "white",
     "position": "bottom"
   },
+  "navigateToMiniProgramAppIdList": [
+    "wx39672304efee4abb"
+  ],
   "sitemapLocation": "sitemap.json"
 }

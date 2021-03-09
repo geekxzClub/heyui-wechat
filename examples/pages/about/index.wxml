@@ -53,6 +53,12 @@
     </button>
   </view>
   <view class="h-item h-arrow">
+    <navigator class="content" target="miniProgram" open-type="navigate" app-id="wx39672304efee4abb" path="" extra-data="" version="release" hover-class="none">
+      <text class="heyui-creativefill text-orange"></text>
+      <text class="text-grey">极客精选官</text>
+    </navigator>
+  </view>
+  <view class="h-item h-arrow">
     <navigator class="content" url="/pages/about/about/about" hover-class="none">
       <text class="heyui-creativefill text-orange"></text>
       <text class="text-grey">关于heyui</text>
