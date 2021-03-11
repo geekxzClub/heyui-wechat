@@ -1,5 +1,51 @@
 <!--pages/plugin/plugin.wxml-->
-<view class="h-flex h-corner-tlr-sm p-t m-lr">
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-xs">
+    <text class="heyui-title h-text-blue"> 函数</text>
+  </view>
+</view>
+<view class="h-list menu">
+  <view class="h-item h-arrow m-lr m-tb-sm h-corner-sm h-shadow-lg" wx:for="{{funList}}" wx:key='item' bindtap="goToItem" data-type="{{item.type}}">
+    <view class="h-avatar h-avatar-sm" style="background-image:url('https://oss.geekxz.com/hey-ui-oss/icon/{{item.type}}.png');"></view>
+    <view class="content">
+      <!-- <image src="/images/icon/{{item.type}}.png" class="png" mode="aspectFit"></image> -->
+      <view class="h-text-darkGray">
+        <text class="h-text-cut h-text-xs h-text-bold">{{item.text_en}}</text>
+      </view>
+      <view class="h-text-grey h-text-sm h-flex">
+        <text class="h-text-cut h-text-s">{{item.text_zh}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-xs">
+    <text class="heyui-title h-text-blue"> 源码模板</text>
+  </view>
+</view>
+
+<view class="h-list menu">
+  <view class="h-item h-arrow m-lr m-tb-sm h-corner-sm h-shadow-lg" wx:for="{{tplList}}" wx:key='item' bindtap="goToItem" data-type="{{item.type}}">
+    <view class="h-avatar h-avatar-sm" style="background-image:url('https://oss.geekxz.com/hey-ui-oss/icon/{{item.type}}.png');"></view>
+    <view class="content">
+      <!-- <image src="/images/icon/{{item.type}}.png" class="png" mode="aspectFit"></image> -->
+      <view class="h-text-darkGray">
+        <text class="h-text-cut h-text-xs h-text-bold">{{item.text_en}}</text>
+      </view>
+      <view class="h-text-grey h-text-sm h-flex">
+        <text class="h-text-cut h-text-s">{{item.text_zh}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
+<!-- <view class="h-flex h-corner-tlr-sm p-t m-lr">
   <view class="h-active h-flex-sub h-bg-white h-corner-sm h-shadow">
     <view class="h-active-img">
       <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/banner/banner3.jpg"></image>
@@ -65,5 +111,5 @@
       </view>
     </view>
   </view>  
-</view>
+</view> -->
 

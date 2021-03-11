@@ -1,4 +1,8 @@
 /* pages/plugin/plugin.wxss */
+@import '/pages/tpl/tpl.wxss';
+.h-list.menu>.h-item{
+  height: 120rpx;
+}
 /* 活动Card */
 .h-active{
   height: 560rpx;

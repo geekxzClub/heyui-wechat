@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/plugin/plugin",
     "pages/index/index",
     "pages/tpl/top/index",
     "pages/tpl/tpl",
@@ -7,7 +8,6 @@
     "pages/view/pathview/pathview",
     "pages/view/verifycode/verifycode",
     "pages/view/dropdown/dropdown",
-    "pages/plugin/plugin",
     "pages/about/index",
     "pages/about/about/about",  
     "pages/view/card/card",
@@ -96,7 +96,7 @@
         "pagePath": "pages/plugin/plugin",
         "iconPath": "images/tabbar/plugin.png",
         "selectedIconPath": "images/tabbar/plugin_cur.png",
-        "text": "函数"
+        "text": "扩展"
       },
       {
         "pagePath": "pages/about/index",
