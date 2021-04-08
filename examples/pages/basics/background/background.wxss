@@ -1,2 +1,18 @@
-
-@import '/pages/tpl/top/index.wxss';
+.items{
+  height: 160rpx;
+  /*flex 布局*/
+  display: flex;
+  /*实现垂直居中*/
+  align-items: center;
+  /*实现水平居中*/
+  justify-content: left;
+}
+.items view{
+  line-height: 50rpx;
+}
+.h-grid.h-col-2>view{
+  width: 48%;
+}
+.h-grid .items:nth-child(2n){
+  margin-left: 4%;
+}

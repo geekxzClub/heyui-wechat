@@ -1,70 +1,57 @@
 <!--pages/basics/corner/corner.wxml-->
-<import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
-<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm">
+<view class="h-bar p-l">
+  <text class="h-text-sm h-text-bold h-text-black">边角大小</text>
+</view>
+<view class="p-lr-lg h-text-left h-text-s">
+  <view class="h-bg-grey h-corner-s p">s 2rpx</view>
+  <view class="h-bg-grey h-corner-xs m-t p">xs 6rpx</view>
+  <view class="h-bg-grey h-corner-sm m-t p">sm 12rpx</view>
+  <view class="h-bg-grey h-corner-md m-t p">md 32rpx</view>
+  <view class="h-bg-grey h-corner-lg m-t p">lg 9999rpx</view>
+</view>
 
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> 边角展示</text>
-    </view>
-  </view>
-  <view class="h-list menu p-b">    
-      <view class="h-bar h-bg-white p-l m-b">
-        <text class="h-text-xs h-text-black"> 1. 边角大小</text>
-      </view>
-      <view class="p-lr-lg h-text-left h-text-s h-bg-white">
-        <view class="h-bg-grey p h-corner-s">s 2rpx</view>
-        <view class="h-bg-grey m-t p h-corner-xs">xs 6rpx</view>
-        <view class="h-bg-grey m-t p h-corner-sm">sm 12rpx</view>
-        <view class="h-bg-grey m-t p h-corner-md">md 32rpx</view>
-        <view class="h-bg-grey m-t p h-corner-lg">lg 9999rpx</view>
-      </view>
+<view class="h-bar p-l m-t">
+  <text class="h-text-sm h-text-bold h-text-black">上边角</text>
+</view>
+<view class="p-lr-lg h-text-left h-text-s">
+  <view class="h-bg-grey h-corner-tlr-sm p">sm 12rpx</view>
+  <view class="h-bg-grey h-corner-tlr-md m-t p">md 32rpx</view>
+</view>
 
-      <view class="h-bar h-bg-white p-l m-t">
-        <text class="h-text-xs h-text-black"> 2. 上边角</text>
-      </view>
-      <view class="p-lr-lg h-text-left h-text-s h-bg-white">
-        <view class="h-bg-grey m-t p h-corner-tlr-sm">sm 12rpx</view>
-        <view class="h-bg-grey m-t p h-corner-tlr-md">md 32rpx</view>
-      </view>
+<view class="h-bar p-l m-t">
+  <text class="h-text-sm h-text-bold h-text-black">下边角</text>
+</view>
+<view class="h-text-left h-text-s p-lr">
+  <view class="h-bg-grey h-corner-blr-sm p">sm 12rpx</view>
+  <view class="h-bg-grey h-corner-blr-md m-t p">md 32rpx</view>
+</view>
 
-      <view class="h-bar h-bg-white p-l m-t">
-        <text class="h-text-xs h-text-black"> 3. 下边角</text>
-      </view>
-      <view class="p-lr h-text-left h-text-s h-bg-white">
-        <view class="h-bg-grey m-t p h-corner-blr-sm">sm 12rpx</view>
-        <view class="h-bg-grey m-t p h-corner-blr-md">md 32rpx</view>
-      </view>
+<view class="h-bar p-l m-t">
+  <text class="h-text-sm h-text-bold h-text-black">左边角</text>
+</view>
+<view class="h-text-left h-text-s p-lr p-b-xs">
+  <view class="h-bg-grey h-corner-ltb-sm p">sm 12rpx</view>
+  <view class="h-bg-grey h-corner-ltb-md m-t p">md 32rpx</view>
+  <view class="h-bg-grey h-corner-ltb-lg m-t p">lg 9999rpx</view>
+</view>
 
-      <view class="h-bar h-bg-white p-l m-t">
-        <text class="h-text-xs h-text-black"> 4. 左边角</text>
-      </view>
-      <view class="p h-text-left h-text-s h-bg-white">
-        <view class="h-bg-grey p h-corner-ltb-sm">sm 12rpx</view>
-        <view class="h-bg-grey m-t p h-corner-ltb-md">md 32rpx</view>
-        <view class="h-bg-grey m-t p h-corner-ltb-lg">lg 9999rpx</view>
-      </view>
+<view class="h-bar p-l">
+  <text class="h-text-sm h-text-bold h-text-black">右边角</text>
+</view>
+<view class="p-lr h-text-left h-text-s">
+  <view class="h-bg-grey h-corner-rtb-sm p">sm 12rpx</view>
+  <view class="h-bg-grey h-corner-rtb-md m-t p">md 32rpx</view>
+  <view class="h-bg-grey h-corner-rtb-lg m-t p">lg 9999rpx</view>
+</view>
 
-      <view class="h-bar h-bg-white p-l">
-        <text class="h-text-xs h-text-black"> 5. 右边角</text>
-      </view>
-      <view class="p-lr h-text-left h-text-s h-bg-white">
-        <view class="h-bg-grey m-t p h-corner-rtb-sm">sm 12rpx</view>
-        <view class="h-bg-grey m-t p h-corner-rtb-md">md 32rpx</view>
-        <view class="h-bg-grey m-t p h-corner-rtb-lg">lg 9999rpx</view>
-      </view>
+<view class="h-bar p-l m-t">
+  <text class="h-text-sm h-text-bold h-text-black">特别边角</text>
+</view>
+<view class="p-lr">
+  <view class=" h-bg-img h-corner-clip-sm h-avatar h-avatar-lg m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a4.jpg);"></view>
+  <view class="h-corner-clip-md h-avatar h-avatar-lg m-l h-bg-blue"></view>
+</view>
 
-      <view class="h-bar h-bg-white p-l m-t">
-        <text class="h-text-xs h-text-black"> 6. 特别边角</text>
-      </view>
-      <view class="p h-bg-white">
-        <view class=" h-bg-img h-corner-clip-sm h-avatar h-avatar-lg m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a4.jpg);"></view>
-        <view class="h-corner-clip-md h-avatar h-avatar-lg m-l h-bg-blue"></view>
-      </view>
-
-      <view class="p h-bg-white">
-        <view class="h-corner-shape-green h-avatar h-avatar-lg m-l h-bg-blue"></view>
-      </view>
-  </view>
-
+<view class="p">
+  <view class="h-corner-shape-green h-avatar h-avatar-lg m-l h-bg-blue"></view>
 </view>

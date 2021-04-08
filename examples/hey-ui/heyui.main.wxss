@@ -14,10 +14,13 @@
 page {
   /* Color 可以自定义相关配色 */
   /* 主题色 */
-  --success: #67c23a;
-  --error: #f56c6c;
-  --warning: #ffbc00;
-  --default: #409eff;
+  --success: #19be6b;
+  --error: #ed3f14;
+  --warning: #ff7900;
+  --primary: #007aff;
+	--black: #333333;
+	--white: #ffffff;
+	--teanslucent: rgba(0,0,0,0.7);
 	/* 标准色 */
 	--red: #e54d42;
 	--orange: #f37b1d;
@@ -31,11 +34,9 @@ page {
 	--pink: #e03997;
 	--brown: #a5673f;
 	--grey: #8799a3;
-	--black: #333333;
 	--darkGray: #666666;
 	--gray: #aaaaaa;
 	--ghostWhite: #f1f1f1;
-	--white: #ffffff;
 	/* 浅色 */
 	--redLight: #fadbd9;
 	--orangeLight: #fde6d2;
@@ -513,19 +514,19 @@ radio.white[checked] .wx-radio-input {
 	box-sizing: border-box;
 }
 .h-border::after {
-	border: 2rpx solid rgba(0, 0, 0, 0.1);
+	border: 2rpx solid rgba(0, 0, 0, 0.2);
 }
 .h-border-top::after {
-	border-top: 2rpx solid rgba(0, 0, 0, 0.1);
+	border-top: 2rpx solid rgba(0, 0, 0, 0.2);
 }
 .h-border-right::after {
-	border-right: 2rpx solid rgba(0, 0, 0, 0.1);
+	border-right: 2rpx solid rgba(0, 0, 0, 0.2);
 }
 .h-border-bottom::after {
-	border-bottom: 2rpx solid rgba(0, 0, 0, 0.1);
+	border-bottom: 2rpx solid rgba(0, 0, 0, 0.2);
 }
 .h-border-left::after {
-	border-left: 2rpx solid rgba(0, 0, 0, 0.1);
+	border-left: 2rpx solid rgba(0, 0, 0, 0.2);
 }
 .h-borders::after {
 	border: 8rpx solid #eee;
@@ -2000,7 +2001,7 @@ button.icon.icon-lg {
  ==================== */
 
 .h-form-group {
-	background-color: var(--white);
+	/* background-color: var(--white); */
 	padding: 1rpx 30rpx;
 	display: flex;
 	align-items: center;
@@ -2163,7 +2164,7 @@ button.icon.icon-lg {
 	vertical-align: middle;
 	margin-left: auto;
 	margin-right: auto;
-	width: 680rpx;
+	width: 600rpx;
 	max-width: 100%;
 	background-color: #f8f8f8;
 	border-radius: 10rpx;
@@ -2596,6 +2597,7 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
     背景 Background
  ==================== */
 /* 基础颜色 */
+
 .h-bg-red {
 	background-color: var(--red);
 	color: var(--white);
@@ -3248,6 +3250,9 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 /* 字体颜色 */
 .h-text-red{
 	color: var(--red);
+}
+.h-text-primary{	
+	color: var(--primary);
 }
 .h-text-orange{
 	color: var(--orange);

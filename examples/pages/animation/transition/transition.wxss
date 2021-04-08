@@ -1,6 +1,10 @@
 /* pages/animation/transition/transition.wxss */
 @import "../../../hey-ui/animation.wxss";
-
+.h-btn{
+  height: 120rpx;
+  width: 120rpx;
+  line-height: 200rpx;
+}
 image[class*="gif-"] {
   border-radius: 6rpx;
   display: block;

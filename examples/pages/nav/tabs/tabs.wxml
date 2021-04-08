@@ -1,114 +1,101 @@
 <!--pages/nav/tabs/tabs.wxml-->
-<import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
-
-<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> Tab导航</text>
-    </view>
+  <view class="h-bar p-l">
+    <text class="h-text-sm h-text-bold h-text-black">默认大小</text>
   </view>
-  <view class="h-list menu p-b">
-    <view class="h-bar h-bg-white p-l">
-      <text class="h-text-xs h-text-black"> 1. 默认大小</text>
+  <view class="h-list menu card-menu m-b">
+  <scroll-view scroll-x class="h-bg-white h-nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+    <view class="h-item {{index==TabCur?'h-text-green cur':''}}" wx:for="{{88}}" wx:key ='item' bindtap="selectTab" data-id="{{index}}">
+      HeyUI{{index}}
     </view>
-    <view class="h-list menu card-menu m-tb">
-    <scroll-view scroll-x class="h-bg-blue h-nav" scroll-with-animation scroll-left="{{scrollLeft}}">
-      <view class="h-item {{index==TabCur?'h-text-green cur':''}}" wx:for="{{88}}" wx:key ='item' bindtap="selectTab" data-id="{{index}}">
-        Tab{{index}}
+  </scroll-view>
+  </view>
+
+  <view class="h-bar p-l">
+    <text class="h-text-sm h-text-bold h-text-black">居中</text>
+  </view>
+  <view class="h-list menu card-menu m-b">
+  <scroll-view scroll-x class="h-bg-white h-nav h-text-center">
+    <view class="h-item {{index==TabCur?'h-text-primary cur':''}}" wx:for="{{3}}" wx:key="item" bindtap="selectTab" data-id="{{index}}">
+      HeyUI-{{index}}
+    </view>
+  </scroll-view>
+  </view>
+  <view class="h-bar p-l">
+    <text class="h-text-sm h-text-bold h-text-black"> 平分</text>
+  </view>
+  <view class="h-list menu card-menu m-b">
+  <scroll-view scroll-x class="h-bg-white h-nav">
+    <view class="h-flex h-text-center">
+      <view class="h-item h-flex-sub {{index==TabCur?'h-text-orange cur':''}}" wx:for="{{2}}" wx:key='item' bindtap="selectTab" data-id="{{index}}">
+        HeyUI-{{index}}
+      </view>
+    </view>
+  </scroll-view>
+  </view>
+  <view class="h-bar p-l">
+    <text class="h-text-sm h-text-bold h-text-black">图标</text>
+  </view>
+  <view class="h-list menu card-menu m-b">
+  <!-- 上边图标 -->
+  <scroll-view scroll-x class="h-bg-black h-nav h-text-center h-grid h-col-3">
+    <view class="h-item {{0==TabCur?'h-text-primary cur':''}}" bindtap="selectTab" data-id="0">
+      <view class="heyui-camerafill nav-icon"></view>
+      <text class="{{0==TabCur?'h-text-primary cur':''}}">数码</text>
+    </view>  
+    <view class="h-item {{1==TabCur?'h-text-primary cur':''}}" bindtap="selectTab" data-id="1">
+      <view class="heyui-upstagefill  nav-icon"></view>
+      <text class="{{1==TabCur?'h-text-primary cur':''}}">排行榜</text>
+    </view>
+    <view class="h-item {{2==TabCur?'h-text-primary cur':''}}" bindtap="selectTab" data-id="2">
+      <view class="heyui-clothesfill nav-icon"></view>
+      <text class="{{2==TabCur?'h-text-primary cur':''}}">皮肤</text>
+    </view>
+  </scroll-view>
+  <!-- 左边图标 -->
+  <scroll-view scroll-x class="h-bg-black h-nav h-text-center m-t">
+    <view class="h-item {{0==TabCur?'h-text-primary cur':''}}" bindtap="selectTab" data-id="0">
+      <text class="heyui-camerafill {{0==TabCur?'h-text-primary cur':''}}"></text> 数码
+    </view>
+    <view class="h-item {{1==TabCur?'h-text-primary cur':''}}" bindtap="selectTab" data-id="1">
+      <text class="heyui-upstagefill {{1==TabCur?'h-text-primary cur':''}}"></text> 排行榜
+    </view>
+    <view class="h-item {{2==TabCur?'h-text-primary cur':''}}" bindtap="selectTab" data-id="2">
+      <text class="heyui-clothesfill {{2==TabCur?'h-text-primary cur':''}}"></text> 皮肤
+    </view>
+  </scroll-view>
+  <!-- 右边图标 -->
+  <scroll-view scroll-x class="h-bg-black h-nav h-text-center m-t">
+    <view class="h-item {{0==TabCur?'h-text-primary cur':''}}" bindtap="selectTab" data-id="0">
+      数码 <text class="heyui-camerafill {{0==TabCur?'h-text-primary cur':''}}"></text>
+    </view>
+    <view class="h-item {{1==TabCur?'h-text-primary cur':''}}" bindtap="selectTab" data-id="1">
+      排行榜 <text class="heyui-upstagefill {{1==TabCur?'h-text-primary cur':''}}"></text>
+    </view>
+    <view class="h-item {{2==TabCur?'h-text-primary cur':''}}" bindtap="selectTab" data-id="2">
+      皮肤 <text class="heyui-clothesfill {{2==TabCur?'h-text-primary cur':''}}"></text>
+    </view>
+  </scroll-view>
+  </view>
+  <view class="h-bar p-l">
+    <text class="h-text-sm h-text-bold h-text-black">换色</text>
+  </view>
+  <view class="h-list menu card-menu m-b">
+    <scroll-view scroll-x class="h-bg-yellow h-nav">
+      <view class="h-flex h-text-center">
+        <view class="h-item h-flex-sub {{index==TabCur?'h-text-white cur':''}}" wx:for="{{2}}" wx:key='item' bindtap="selectTab" data-id="{{index}}">
+          HeyUI-{{index}}
+        </view>
       </view>
     </scroll-view>
-    </view>
-
-    <view class="h-bar h-bg-white p-l">
-      <text class="h-text-xs h-text-black"> 2. 居中</text>
-    </view>
-    <view class="h-list menu card-menu m-tb">
-    <scroll-view scroll-x class="h-bg-gray h-nav h-text-center">
-      <view class="h-item {{index==TabCur?'h-text-blue cur':''}}" wx:for="{{3}}" wx:key="item" bindtap="selectTab" data-id="{{index}}">
+  </view>
+  <view class="h-list menu card-menu m-tb">
+    <scroll-view scroll-x class="h-bg-primary h-nav h-text-center">
+      <view class="h-item {{index==TabCur?'h-text-black cur':''}}" wx:for="{{3}}" wx:key="item" bindtap="selectTab" data-id="{{index}}">
         HeyUI-{{index}}
       </view>
     </scroll-view>
-    </view>
-    <view class="h-bar h-bg-white p-l">
-      <text class="h-text-xs h-text-black"> 3. 平分</text>
-    </view>
-    <view class="h-list menu card-menu m-tb">
-    <scroll-view scroll-x class="h-bg-gray h-nav">
-      <view class="h-flex h-text-center">
-        <view class="h-item h-flex-sub {{index==TabCur?'h-text-orange cur':''}}" wx:for="{{2}}" wx:key='item' bindtap="selectTab" data-id="{{index}}">
-          HeyUI-{{index}}
-        </view>
-      </view>
-    </scroll-view>
-    </view>
-    <view class="h-bar h-bg-white p-l">
-      <text class="h-text-xs h-text-black"> 4. 图标</text>
-    </view>
-    <view class="h-list menu card-menu m-tb">
-    <!-- 上边图标 -->
-    <scroll-view scroll-x class="h-bg-black h-nav h-text-center h-grid h-col-3">
-      <view class="h-item {{0==TabCur?'h-text-white cur':''}}" bindtap="selectTab" data-id="0">
-        <view class="heyui-camerafill nav-icon"></view>
-        <text class="h-text-white">数码</text>
-      </view>  
-      <view class="h-item {{1==TabCur?'h-text-white cur':''}}" bindtap="selectTab" data-id="1">
-        <view class="heyui-upstagefill  nav-icon"></view>
-        <text class="h-text-white">排行榜</text>
-      </view>
-      <view class="h-item {{2==TabCur?'h-text-white cur':''}}" bindtap="selectTab" data-id="2">
-        <view class="heyui-clothesfill nav-icon"></view>
-        <text class="h-text-white">皮肤</text>
-      </view>
-    </scroll-view>
-    <!-- 左边图标 -->
-    <scroll-view scroll-x class="h-bg-black h-nav h-text-center m-t">
-      <view class="h-item {{0==TabCur?'h-text-white cur':''}}" bindtap="selectTab" data-id="0">
-        <text class="heyui-camerafill"></text> 数码
-      </view>
-      <view class="h-item {{1==TabCur?'h-text-white cur':''}}" bindtap="selectTab" data-id="1">
-        <text class="heyui-upstagefill"></text> 排行榜
-      </view>
-      <view class="h-item {{2==TabCur?'h-text-white cur':''}}" bindtap="selectTab" data-id="2">
-        <text class="heyui-clothesfill"></text> 皮肤
-      </view>
-    </scroll-view>
-    <!-- 右边图标 -->
-    <scroll-view scroll-x class="h-bg-black h-nav h-text-center m-t">
-      <view class="h-item {{0==TabCur?'h-text-white cur':''}}" bindtap="selectTab" data-id="0">
-        数码 <text class="heyui-camerafill"></text>
-      </view>
-      <view class="h-item {{1==TabCur?'h-text-white cur':''}}" bindtap="selectTab" data-id="1">
-        排行榜 <text class="heyui-upstagefill"></text>
-      </view>
-      <view class="h-item {{2==TabCur?'h-text-white cur':''}}" bindtap="selectTab" data-id="2">
-        皮肤 <text class="heyui-clothesfill"></text>
-      </view>
-    </scroll-view>
-    </view>
-    <view class="h-bar h-bg-white p-l">
-      <text class="h-text-xs h-text-black"> 5. 换色</text>
-    </view>
-    <view class="h-list menu card-menu m-tb">
-      <scroll-view scroll-x class="h-bg-yellow h-nav">
-        <view class="h-flex h-text-center">
-          <view class="h-item h-flex-sub {{index==TabCur?'h-text-white cur':''}}" wx:for="{{2}}" wx:key='item' bindtap="selectTab" data-id="{{index}}">
-            HeyUI-{{index}}
-          </view>
-        </view>
-      </scroll-view>
-    </view>
-    <view class="h-list menu card-menu m-tb">
-      <scroll-view scroll-x class="h-bg-cyan h-nav h-text-center">
-        <view class="h-item {{index==TabCur?'h-text-black cur':''}}" wx:for="{{3}}" wx:key="item" bindtap="selectTab" data-id="{{index}}">
-          HeyUI-{{index}}
-        </view>
-      </scroll-view>
-    </view>
-
-
   </view>
-</view>
+
 
 <!-- 
 <view wx:for="{{100}}" wx:key="item" wx:if="{{index==TabCur}}" class="h-bg-grey p m h-text-center">

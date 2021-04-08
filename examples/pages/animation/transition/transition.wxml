@@ -1,38 +1,24 @@
 <!--pages/animation/transition/transition.wxml-->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-red"> 默认效果</text>
-  </view>
+<view class="h-bar p-l">
+  <text class="h-text-sm h-text-bold h-text-black">进入动画</text>
+</view>
+<view class="h-flex h-flex-wrap h-justify-around p-b-xs">
+  <button class="h-btn h-bg-{{item.color}} animation-{{animation==item.name?item.name:''}} m-tb-xs h-basis-sm shadow" bindtap="toggle" data-class="{{item.name}}" wx:for="{{list}}" wx:key="index">{{item.name}}</button>
 </view>
 
-<view class="p-sm">
-  <view class="h-flex h-flex-wrap h-justify-around">
-    <button class="h-btn h-bg-{{item.color}} animation-{{animation==item.name?item.name:''}} m-sm h-basis-sm shadow" bindtap="toggle" data-class="{{item.name}}" wx:for="{{list}}" wx:key="index">{{item.name}}</button>
-  </view>
+<view class="h-bar p-l">
+  <text class="h-text-sm h-text-bold h-text-black">飞出动画</text>
+</view>
+<view class="h-flex h-flex-wrap h-justify-around p-b-xs">
+  <button class="h-btn h-bg-{{item.color}} animation-{{animation==item.name+'s'?item.name:''}} animation-reverse m-tb-xs h-basis-sm h-shadow" bindtap="toggle" data-class="{{item.name+'s'}}" wx:for="{{list}}" wx:key="index">{{item.name}}</button>
 </view>
 
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-red"> 反向</text>
-  </view>
+<view class="h-bar p-l">
+  <text class="h-text-sm h-text-bold h-text-black">延迟加载动画</text>
 </view>
-<view class="p-sm">
-  <view class="h-flex h-flex-wrap h-justify-around">
-    <button class="h-btn h-bg-{{item.color}} animation-{{animation==item.name+'s'?item.name:''}} animation-reverse m-sm h-basis-sm h-shadow" bindtap="toggle" data-class="{{item.name+'s'}}" wx:for="{{list}}" wx:key="index">{{item.name}}</button>
-  </view>
+<view class="action h-text-center m-b-xs">
+  <button class="h-btn h-bg-cyan h-shadow" bindtap="toggleDelay">开始</button>
 </view>
-
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-red"> 延迟执行</text>
-  </view>
-</view>
-
-<view class="action m-t h-text-center">
-  <button class="h-btn h-bg-cyan h-shadow" bindtap="toggleDelay">开始执行</button>
-</view>
-<view class="p-sm">
-  <view class="h-flex h-flex-wrap h-justify-around">
-    <button class="h-bg-{{item.color}} h-btn {{toggleDelay?'animation-slide-bottom':''}} m-sm h-basis-sm h-shadow" style="animation-delay: {{(index+1)*0.1}}s;" wx:for="{{list}}" wx:key="index">0.{{index+1}}s</button>
-  </view>
+<view class="h-flex h-flex-wrap h-justify-around">
+  <button class="h-bg-{{item.color}} h-btn {{toggleDelay?'animation-slide-bottom':''}} m-tb-xs h-basis-sm h-shadow" style="animation-delay: {{(index+1)*0.1}}s;" wx:for="{{list}}" wx:key="index">0.{{index+1}}s</button>
 </view>

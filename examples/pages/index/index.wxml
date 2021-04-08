@@ -34,10 +34,10 @@
     </view>
   </view>
   <view class="h-grid h-col-2 h-corner-tlr-sm p-b m-lr">
-    <view class="h-component-item h-bg-white h-corner-sm h-shadow-warp m-t" wx:for="{{component}}" wx:key='item' bindtap="goToView" data-type="{{item.type}}">
-      <view class="p-tb-lg h-text-lg box">      
+    <view class="h-component-item h-bg-white h-corner-sm h-border m-t" wx:for="{{component}}" wx:key='item' bindtap="goToView" data-type="{{item.type}}">
+      <view class="p-tb-lg box">      
         <view class="iconfont heyui-{{item.icon}}"></view>
-        <view class="h-text-black">{{item.text}}</view>
+        <view class="h-text-black h-text-xs">{{item.text}}</view>
       </view>
     </view>
   </view>

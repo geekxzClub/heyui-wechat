@@ -1,14 +1,4 @@
 <!--pages/nav/navbar/navbar.wxml-->
-<import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
-
-<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> 顶部导航</text>
-    </view>
-  </view>
-  
   <view class="h-list menu card-menu m-tb">
     <view class="h-bar h-bg-blue">
       <view class="action">
@@ -66,4 +56,3 @@
     </view>
   </view>
 
-</view>

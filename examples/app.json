@@ -1,7 +1,27 @@
 {
-  "pages": [
-    "pages/plugin/plugin",
+  "pages": [     
     "pages/index/index",
+    "pages/nav/nav",
+    "pages/nav/tabbar/tabbar", 
+    "pages/nav/navbar/navbar", 
+    "pages/nav/tabs/tabs",
+    "pages/nav/menu/menu",
+
+    "pages/animation/animation",
+    "pages/animation/transition/transition",
+
+    "pages/basics/basics",
+    "pages/basics/background/background",
+    "pages/basics/button/button",
+    "pages/basics/corner/corner",
+    "pages/basics/text/text",
+    "pages/basics/shadow/shadow",
+    "pages/basics/mp/mp",
+    "pages/basics/icon/icon",
+    "pages/basics/line/line",
+    "pages/basics/theme/theme",
+
+    "pages/plugin/plugin",
     "pages/tpl/top/index",
     "pages/tpl/tpl",
     "pages/view/tree/tree",
@@ -13,19 +33,10 @@
     "pages/view/card/card",
     "pages/view/comment/comment",
     
-    "pages/basics/basics",
-    "pages/basics/text/text",
-    "pages/basics/shadow/shadow",
-    "pages/basics/corner/corner",
-    "pages/basics/mp/mp",
-    "pages/basics/button/button",
-    "pages/basics/background/background",
-    "pages/basics/icon/icon",
-    "pages/basics/line/line",
-    "pages/basics/theme/theme",
 
-    "pages/animation/animation",
-    "pages/animation/transition/transition",
+
+
+
 
     "pages/form/form",
     "pages/form/input/input",
@@ -37,11 +48,7 @@
     "pages/form/image/image",
     "pages/form/rate/rate",
     
-    "pages/nav/nav",
-    "pages/nav/navbar/navbar",
-    "pages/nav/tabs/tabs",
-    "pages/nav/tabbar/tabbar",
-    "pages/nav/menu/menu",
+
 
     "pages/response/response",
     "pages/response/hsheet/hsheet",

@@ -5,11 +5,11 @@
 @import '/pages/tpl/tpl.wxss';
 .heyui-content {
   position: relative;
-  top: -110rpx;
+  top: -100rpx;
   opacity: 1;
 }
 .h-component-item{
-  height: 320rpx;
+  height: 240rpx;
   display: flex;
   align-items: center;
   justify-content: center

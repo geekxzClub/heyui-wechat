@@ -50,8 +50,11 @@ Page({
       that.setData({
         animation: ''
       })
-    }, 1000)
+    }, 5000)
   },
+
+
+
   toggleDelay() {
     var that = this;
     that.setData({

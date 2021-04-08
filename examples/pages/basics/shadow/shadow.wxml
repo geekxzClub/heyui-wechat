@@ -1,61 +1,48 @@
 <!--pages/basics/shadow/shadow.wxml-->
-<import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
-<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm">
-
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> 边框阴影展示</text>
-    </view>
+<view class="h-bar p-l">
+    <text class="h-text-sm h-text-bold h-text-black">边框border</text>
+</view>
+<view class="p-lr h-text-center p-b-xs">
+  <view class="h-bg-success p-tb h-corner-xs h-border-top m-b-xs">
+    <text class="h-text-sm h-text-center h-text-height">上边框</text>
   </view>
-  <view class="h-list menu p-b h-text-center">
-    <view class="h-bar h-bg-white p-l">
-        <text class="h-text-xs h-text-black"> 1. 边框</text>
-    </view>
-    <view class="p h-bg-white">
-      <view class="h-bg-white p-tb h-corner-xs h-border-top">
-        <text class="h-text-sm h-text-grey h-text-center h-text-height">上边框</text>
-      </view>
-      <view class="h-bg-white p-tb h-corner-xs h-border">
-        <text class="h-text-sm h-text-grey h-text-center h-text-height">四周边框</text>
-      </view>
-      <view class="h-bg-white p-tb h-corner-xs h-border-left">
-        <text class="h-text-sm h-text-grey h-text-center h-text-height">左边框</text>
-      </view>      
-      <view class="h-bg-white p-tb h-corner-xs h-dashed">
-        <text class="h-text-sm h-text-grey h-text-center h-text-height">虚线</text>
-      </view>
-      <view class="h-bg-white p-tb h-corner-xs h-border-right">
-        <text class="h-text-sm h-text-grey h-text-center h-text-height">右边框</text>
-      </view>
-      <view class="h-bg-white p-tb h-corner-xs h-border-bottom">
-        <text class="h-text-sm h-text-grey h-text-center h-text-height">下边框</text>
-      </view>
-    </view>
-    
-    <view class="h-bar h-bg-white p-l">
-      <text class="h-text-xs h-text-black"> 2. 阴影</text>
-    </view>
-    <view class="p">
-      <view class="h-bg-white m-b p-tb h-corner-xs h-shadow">
-        <text class="h-text-sm h-text-grey h-text-center h-text-height">默认阴影</text>
-      </view>
-      <view class="h-bg-blue m-b p-tb h-corner-xs h-shadow">
-        <text class="h-text-sm h-text-white h-text-center h-text-height">根据背景颜色改变阴影</text>
-      </view>
-      <view class="h-bg-white m-b p-tb h-corner-xs h-shadow-lg">
-        <text class="h-text-sm h-text-grey h-text-center h-text-height">长阴影</text>
-      </view>
-      <view class="h-bg-green m-b p-tb h-corner-xs h-shadow">
-        <text class="h-text-sm h-text-white h-text-center h-text-height">根据背景颜色改变长阴影</text>
-      </view>
-      <view class="h-bg-white m-b p-tb h-corner-xs h-shadow-warp">
-        <text class="h-text-sm h-text-grey h-text-center h-text-height">翘边阴影</text>
-      </view>
-      <view class="m-b p-tb h-shadow-img h-bg-img" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/banner/banner1.jpg);">
-        <text class="h-text-sm h-text-white h-text-center h-text-height">更具图片该表面的阴影</text>
-      </view>
-    </view>
+  <view class="h-bg-blue p-tb h-corner-xs h-border m-b-xs">
+    <text class="h-text-sm h-text-center h-text-height">四周边框</text>
   </view>
+  <view class="h-bg-error p-tb h-corner-xs h-border-left m-b-xs">
+    <text class="h-text-sm h-text-center h-text-height">左边框</text>
+  </view>      
+  <view class="h-bg-white p-tb h-corner-xs h-dashed m-b-xs">
+    <text class="h-text-sm h-text-center h-text-height">虚线</text>
+  </view>
+  <view class="h-bg-warning p-tb h-corner-xs h-border-right m-b-xs">
+    <text class="h-text-sm h-text-center h-text-height">右边框</text>
+  </view>
+  <view class="h-bg-primary p-tb h-corner-xs h-border-bottom m-b-xs">
+    <text class="h-text-sm h-text-center h-text-height">下边框</text>
+  </view>
+</view>
 
+<view class="h-bar p-l">
+  <text class="h-text-sm h-text-bold h-text-black">阴影shadow</text>
+</view>
+<view class="p-lr h-text-center">
+  <view class="h-bg-white m-b p-tb h-corner-xs h-shadow">
+    <text class="h-text-sm h-text-grey h-text-center h-text-height">默认阴影</text>
+  </view>
+  <view class="h-bg-blue m-b p-tb h-corner-xs h-shadow">
+    <text class="h-text-sm h-text-white h-text-center h-text-height">根据背景颜色改变阴影</text>
+  </view>
+  <view class="h-bg-white m-b p-tb h-corner-xs h-shadow-lg">
+    <text class="h-text-sm h-text-grey h-text-center h-text-height">长阴影</text>
+  </view>
+  <view class="h-bg-green m-b p-tb h-corner-xs h-shadow">
+    <text class="h-text-sm h-text-white h-text-center h-text-height">根据背景颜色改变长阴影</text>
+  </view>
+  <view class="h-bg-white m-b p-tb h-corner-xs h-shadow-warp">
+    <text class="h-text-sm h-text-grey h-text-center h-text-height">翘边阴影</text>
+  </view>
+  <view class="m-b p-tb h-shadow-img h-bg-img" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/banner/banner1.jpg);">
+    <text class="h-text-sm h-text-white h-text-center h-text-height">更具图片该表面的阴影</text>
+  </view>
 </view>

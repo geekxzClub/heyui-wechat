@@ -1,91 +1,77 @@
-<!-- background.wxml -->
-<import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
+<!-- text.wxml -->
+<view class="h-bar p-l">
+    <text class="h-text-sm h-text-bold h-text-black">字体大小</text>
+</view>
+<view class="h-text-center h-text-sm p-b-xs">
+  <view class="h-text-l h-corner-sm">页面辅助信息，次级内容</view>
+  <view class="h-text-s h-corner-sm p-t">页面默认字体，用于摘要或者阅读文本</view>
+  <view class="h-text-xs h-corner-sm p-t">页面小标题，首要层级显示内容</view>
+  <view class="h-text-sm h-corner-sm p-t">页面大标题，用于结果或者单一信息显示</view>
+  <view class="h-text-md h-corner-sm p-t">用于图标、数字等较大显示</view>
+  <view class="h-text-lg h-corner-sm p-t">用于图标、数字等特大显示</view>
+</view>
 
-  <view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm">
-    <view class="h-bar h-bg-white h-corner-sm">
-      <view class="action h-text-sm">
-        <text class="heyui-titles h-text-blue h-text-bold"> 字体展示</text>
-      </view>
-    </view>
-    <view class="h-list menu p-b">
-      <view class="h-bar h-bg-white p-l">
-          <text class="h-text-xs h-text-black"> 1. 字体大小</text>
-      </view>
-      <view class="h-text-center h-text-Hey h-text-sm h-bg-white p-b">
-        <view class="h-text-l h-corner-sm p-t">页面辅助信息，次级内容</view>
-        <view class="h-text-s h-corner-sm p-t">页面默认字体，用于摘要或者阅读文本</view>
-        <view class="h-text-xs h-corner-sm p-t">页面小标题，首要层级显示内容</view>
-        <view class="h-text-sm h-corner-sm p-t">页面大标题，用于结果或者单一信息显示</view>
-        <view class="h-text-md h-corner-sm p-t">用于图标、数字等较大显示</view>
-        <view class="h-text-lg h-corner-sm p-t">用于图标、数字等特大显示</view>
-      </view>
-
-      <view class="h-bar h-bg-white p-l">
-          <text class="h-text-xs h-text-black"> 2. 字体颜色</text>
-      </view>
-      <view class="h-grid h-col-4 h-bg-white p-tb-sm p-lr">
-        <view class="p-sm" wx:for="{{list}}" wx:key="item" wx:if="{{item.name!='white'}}">
-          <button class="h-btn h-corner-lg h-text-center h-bg-blue">
-            <text class="h-text-white">{{item.title}}</text>
-          </button>
-        </view>
-      </view>
-
-      <view class="h-bar h-bg-white p-l">
-          <text class="h-text-xs h-text-black"> 3. 排列方式</text>
-      </view>
-      <view class="h-text-center h-text-Hey h-text-sm h-bg-white p-tb-sm p-lr">
-        <view class="h-text-sm h-bg-white m-tb-sm p-l p-b">
-          <text class="h-text-left">Hey UI ,简单易用, 扩展性强, 文档丰富</text>
-        </view>
-        <view class="h-text-sm h-bg-white m-tb-sm p-l p-b">
-          <text class="h-text-center">Hey UI ,简单易用, 扩展性强, 文档丰富</text>
-        </view>
-        <view class="h-text-sm h-bg-white m-tb-sm p-l p-b">
-          <text class="h-text-right">Hey UI ,简单易用, 扩展性强, 文档丰富</text>
-        </view>
-      </view>
-
-      <view class="h-bar h-bg-white p-l">
-          <text class="h-text-xs h-text-black"> 4. 文字截断</text>
-      </view>
-      <view class="h-text-center h-text-Hey h-text-sm p-tb-sm p-lr-lg">
-        <view class="m-b-sm p-tb h-bg-grey h-corner-sm">
-          <view class="h-text-white h-text-sm h-text-cut m-l" style="width:120px">Hey UI ,简单易用, 扩展性强, 文档丰富</view>
-        </view>  
-      </view>
-
-      <view class="h-bar h-bg-white p-l">
-          <text class="h-text-xs h-text-black"> 5. 特殊处理</text>
-      </view>
-      <view class="h-text-center h-text-Hey h-text-sm p-tb-sm p-lr-lg">
-        <view class="h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-HEY p-tb">
-          <text>hey ui</text>
-          <text>全部字母大写</text>
-        </view>
-        <view class="h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-Hey p-tb">
-          <text>hey ui</text>
-          <text>英文单词首字母大写</text>
-        </view>
-        <view class=" h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-hey p-tb">
-          <text>hey ui</text>
-          <text>全部字母小写</text>
-        </view>
-        <view class=" h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-Hey p-tb">
-          <text class="h-text-bold">hey ui</text>
-          <text>文字加粗</text>
-        </view>
-        <view class=" h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-Hey p-tb">
-          <text class="h-text-skew">hey ui</text>
-          <text>文字倾斜</text>
-        </view>
-        <view class=" h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-Hey p-tb">
-          <text class="h-text-del">hey ui</text>
-          <text>文字删除线</text>
-        </view>  
-      </view>
-
+  <view class="h-bar p-l">
+      <text class="h-text-sm h-text-bold h-text-black">字体颜色</text>
+  </view>
+  <view class="h-grid h-col-4 p-b-xs p-lr">
+    <view class="p-sm" wx:for="{{list}}" wx:key="item" wx:if="{{item.name!='white'}}">
+      <button class="h-btn h-corner-lg h-text-center">
+        <text class="h-text-{{item.name}}">{{item.title}}</text>
+      </button>
     </view>
   </view>
 
+  <view class="h-bar p-l">
+      <text class="h-text-sm h-text-bold h-text-black">排列方式</text>
+  </view>
+  <view class="h-text-center h-text-Hey h-text-sm p-b-xs p-lr">
+    <view class="m-b-sm p-tb h-bg-grey h-corner-sm">
+      <text class="h-text-left m-l">Hey UI 文字右对齐</text>
+    </view>
+    <view class="m-b-sm p-tb h-bg-grey h-corner-sm">
+      <text class="h-text-center">Hey UI 文字居中</text>
+    </view>
+    <view class="m-b-sm p-tb h-bg-grey h-corner-sm">
+      <text class="h-text-right m-r">Hey UI 文字左对齐</text>
+    </view>
+  </view>
+
+  <view class="h-bar p-l">
+      <text class="h-text-sm h-text-bold h-text-black">文字截断</text>
+  </view>
+  <view class="h-text-center h-text-Hey h-text-sm p-b-xs p-lr-lg">
+    <view class="m-b-sm p-tb h-bg-grey h-corner-sm">
+      <view class="h-text-white h-text-sm h-text-cut m-l" style="width:120px">Hey UI ,简单易用, 扩展性强, 文档丰富</view>
+    </view>  
+  </view>
+
+  <view class="h-bar p-l">
+      <text class="h-text-sm h-text-bold h-text-black">特殊处理</text>
+  </view>
+  <view class="h-text-center h-text-Hey h-text-sm p-b-xs p-lr-lg">
+    <view class="h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-HEY p-tb">
+      <text>hey ui</text>
+      <text>全部字母大写</text>
+    </view>
+    <view class="h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-Hey p-tb">
+      <text>hey ui</text>
+      <text>英文单词首字母大写</text>
+    </view>
+    <view class=" h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-hey p-tb">
+      <text>hey ui</text>
+      <text>全部字母小写</text>
+    </view>
+    <view class=" h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-Hey p-tb">
+      <text class="h-text-bold">hey ui</text>
+      <text>文字加粗</text>
+    </view>
+    <view class=" h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-Hey p-tb">
+      <text class="h-text-skew">hey ui</text>
+      <text>文字倾斜</text>
+    </view>
+    <view class=" h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-Hey p-tb">
+      <text class="h-text-del">hey ui</text>
+      <text>文字删除线</text>
+    </view>  
+  </view>

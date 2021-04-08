@@ -1,10 +1,13 @@
 page {
   /* Color 可以自定义相关配色 */
   /* 主题色 */
-  --success: #67c23a;
-  --error: #f56c6c;
-  --warning: #ffbc00;
-  --default: #409eff;
+  --success: #19be6b;
+  --error: #ed3f14;
+  --warning: #ff7900;
+  --primary: #007aff;
+	--black: #000000;
+	--white: #ffffff;
+	--teanslucent: rgba(0,0,0,0.7);
   /* 文字颜色 */
   --dark: #333333;
   --dark1: #555555;
@@ -20,8 +23,16 @@ page {
 }
 
  /* 主题色 */
- .h-bg-default {
-	background-color: var(--default);
+ .h-bg-primary{
+	background-color: var(--primary);
+	color: var(--white);
+}
+.h-bg-teanslucent{
+	background-color: var(--teanslucent);
+	color: var(--white);
+}
+ .h-bg-primary {
+	background-color: var(--primary);
 	color: var(--white);
 }
  .h-bg-success {
@@ -74,10 +85,10 @@ page {
 }
 
 
-switch.default[checked] .wx-switch-input,
-checkbox.default[checked] .wx-checkbox-input,
-radio.default[checked] .wx-radio-input {
-	border-color: var(--default) !important;
+switch.primary[checked] .wx-switch-input,
+checkbox.primary[checked] .wx-checkbox-input,
+radio.primary[checked] .wx-radio-input {
+	border-color: var(--primary) !important;
 }
 switch.success[checked] .wx-switch-input,
 checkbox.success[checked] .wx-checkbox-input,
@@ -95,11 +106,11 @@ radio.warning[checked] .wx-radio-input {
 	border-color: var(--success) !important;
 }
 
-switch.default[checked] .wx-switch-input,
-checkbox.default[checked] .wx-checkbox-input,
-radio.default[checked] .wx-radio-input {	
-	background-color: var(--default) !important;
-	color: var(--default) !important;
+switch.primary[checked] .wx-switch-input,
+checkbox.primary[checked] .wx-checkbox-input,
+radio.primary[checked] .wx-radio-input {	
+	background-color: var(--primary) !important;
+	color: var(--primary) !important;
 }
 switch.success[checked] .wx-switch-input,
 checkbox.success[checked] .wx-checkbox-input,
