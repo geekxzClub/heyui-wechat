@@ -655,10 +655,7 @@ radio.white[checked] .wx-radio-input {
 
 
 
-/* ==================
-          按钮
- ==================== */
-
+/* button start */
 .h-btn {
 	position: relative;
 	border: 0rpx;
@@ -683,11 +680,9 @@ radio.white[checked] .wx-radio-input {
 .h-btn:not([class*="h-bg-"]) {
 	background-color: #f0f0f0;
 }
-
 .h-btn[class*="h-line"] {
 	background-color: transparent;
 }
-
 .h-btn[class*="h-line"]::after {
 	content: " ";
 	display: block;
@@ -704,25 +699,6 @@ radio.white[checked] .wx-radio-input {
 	z-index: 1;
 	pointer-events: none;
 }
-.h-btn[class*="h-corner-s"]::after {
-	border-radius: 2rpx;
-}
-.h-btn[class*="h-corner-xs"]::after {
-	border-radius: 6rpx;
-}
-.h-btn[class*="h-corner-sm"]::after {
-	border-radius: 12rpx;
-}
-.h-btn[class*="h-corner-md"]::after {
-	border-radius: 32rpx;
-}
-.h-btn[class*="h-corner-lg"]::after {
-	border-radius: 1000rpx;
-}
-
-.h-btn[class*="h-bg-"]::after {
-	display: none;
-}
 .h-btn.h-btn-sm {
 	padding: 0 20rpx;
 	font-size: 20rpx;
@@ -733,7 +709,6 @@ radio.white[checked] .wx-radio-input {
 	font-size: 32rpx;
 	height: 80rpx;
 }
-
 .h-btn.icon.icon-sm {
 	width: 48rpx;
 	height: 48rpx;
@@ -748,27 +723,18 @@ button.icon.icon-lg {
 	width: 80rpx;
 	height: 80rpx;
 }
-.h-btn.shadow-blur::before {
-	top: 4rpx;
-	left: 4rpx;
-	filter: blur(6rpx);
-	opacity: 0.6;
-}
 .h-btn.button-hover {
-	transform: translate(1rpx, 1rpx);
+	transform: translate(2rpx, 2rpx);
 }
-.block {
-	display: block;
-}
-.h-btn.block {
+.h-btn.h-btn-block {
 	display: flex;
   height: 100rpx;
 }
-
 .h-btn[disabled] {
 	opacity: 0.6;
 	color: var(--white);
 }
+/* button end */
 
 /* ==================
       标签徽章
@@ -2581,23 +2547,8 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 }
 
 
-
-
-
-/* ==================
-        卡片Card
- ==================== */
-
-
-
-
-
-
-/* ==================
-    背景 Background
- ==================== */
+/* color start */
 /* 基础颜色 */
-
 .h-bg-red {
 	background-color: var(--red);
 	color: var(--white);
@@ -2737,6 +2688,7 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+/* color end */
 
 
 
@@ -3225,9 +3177,7 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 
 
 
-/* ==================
-        文本Text
- ==================== */
+/* text start */
  /* 字体大小 */
 .h-text-l{
   font-size: 20rpx;
@@ -3340,12 +3290,9 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 .h-text-height {
   line-height: 1.6;
 }
+/* text end */
 
-
-/* ==================
-      边角 Corner
- ==================== */
-
+/* Corner start */
 .h-corner-s{
   border-radius: 2rpx;
 }
@@ -3361,7 +3308,6 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 .h-corner-lg{
   border-radius: 99999rpx;
 }
-
 /* 上 */
 .h-corner-tlr-s{
   border-top-left-radius: 2rpx;
@@ -3438,11 +3384,6 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
   border-top-right-radius: 9999rpx;
   border-bottom-right-radius: 9999rpx;
 }
-
-
-
-
-
 .h-corner-clip-sm{
        clip-path: polygon( 12rpx 0, calc(100% - 12rpx) 0, 100% 12rpx, 
 			100% calc(100% - 12rpx), calc(100% - 12rpx) 100%, 
@@ -3459,7 +3400,6 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 			0 32rpx
    		);
 }
-
 .h-corner-shape-green{     
   background: var(--green);
   background: radial-gradient(circle at top left, transparent 15px, var(--green) 0) top left, 
@@ -3478,17 +3418,45 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 	background-size: 90% 90%; 
 	background-repeat: no-repeat;
 }
+/* corner end */
 
-
-
-
-/* 弹幕 */
-.icon-zan-zan{ width: 28rpx; height: 28rpx; overflow: hidden; margin-right: 15rpx; }
-.icon-zan.fire{ width: 28rpx; height: 28rpx; }
-.icon-zan.good{ width: 20rpx; height: 20rpx; margin-right: 10rpx; }
-.img{ width: 100%; height: 100%; border: 0; }
-.h-barrage-gird{ padding: 20rpx; position: relative; height:100%;}
-.h-barrage-bg-img{ position: absolute; left: 0; top: 0;  z-index: 2; width: 100%; height: 100%;  border-radius: 10rpx;  overflow: hidden; }
+/* barrage start */
+.icon-zan-zan{ 
+	width: 28rpx; 
+	height: 28rpx; 
+	overflow: 
+	hidden; 
+	margin-right: 15rpx; 
+}
+.icon-zan.fire{ 
+	width: 28rpx; 
+	height: 28rpx; 
+}
+.icon-zan.good{ 
+	width: 20rpx; 
+	height: 20rpx; 
+	margin-right: 10rpx; 
+}
+.img{ 
+	width: 100%; 
+	height: 100%; 
+	border: 0; 
+}
+.h-barrage-gird{ 
+	padding: 20rpx; 
+	position: relative; 
+	height:100%;
+}
+.h-barrage-bg-img{ 
+	position: absolute; 
+	left: 0; top: 0;  
+	z-index: 2; 
+	width: 100%; 
+	height: 100%;  
+	border-radius: 
+	10rpx;  
+	overflow: hidden; 
+}
 .shadowOverlay { position: absolute; top: 0; left: 0; z-index: 5; width: 100%; height: 100%; overflow: hidden;  background-image: linear-gradient(0deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.3) 50%,rgba(0,0,0,.1) 100%); }
 .h-barrage-group{ background: #eee; border: 20rpx solid #fff; box-shadow: 0 0 10rpx #eee; border-radius: 10rpx; margin-bottom: 40rpx; height: 420rpx; position: relative; overflow: hidden;}
 .h-barrage-bottom-group{ position: absolute; top:140rpx; left: 100%; z-index: 10; animation-timing-function: linear; animation-fill-mode: none; transform: translateZ(0);  white-space: nowrap; height: 60rpx; }

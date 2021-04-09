@@ -1,5 +1,6 @@
 {
-  "pages": [     
+  "pages": [    
+    
     "pages/index/index",
     "pages/nav/nav",
     "pages/nav/tabbar/tabbar", 
@@ -66,6 +67,7 @@
     "pages/layout/collapse/collapse",
 
     "pages/view/view",
+    "pages/view/luckdraw/luckdraw", 
     "pages/view/avatar/avatar",
     "pages/view/tag/tag",
     "pages/view/progress/progress",

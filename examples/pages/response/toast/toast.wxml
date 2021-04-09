@@ -18,7 +18,7 @@
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
-  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showMesSuc'>弹出提示</button> 
+  <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showMesSuc'>弹出提示</button> 
 </view>
 
 <!-- 失败 -->
@@ -28,7 +28,7 @@
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
-  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showMesErr'>弹出提示</button> 
+  <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showMesErr'>弹出提示</button> 
 </view>
 
 <!-- 警告 -->
@@ -38,7 +38,7 @@
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
-  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showMesWar'>弹出提示</button> 
+  <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showMesWar'>弹出提示</button> 
 </view>
 
 
@@ -49,7 +49,7 @@
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
-  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showMyMes'>弹出提示</button> 
+  <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showMyMes'>弹出提示</button> 
 </view>
 
 

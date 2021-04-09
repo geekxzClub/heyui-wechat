@@ -19,7 +19,7 @@
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
-  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="Dialog">显示模态框</button> 
+  <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="Dialog">显示模态框</button> 
 </view>
 <view class="h-modal {{modalName=='Dialog'?'show':''}}" catchtouchmove="true">
   <view class="h-dialog">
@@ -47,7 +47,7 @@
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
-  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="Dialog1">显示模态框</button> 
+  <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="Dialog1">显示模态框</button> 
 </view>
 <view class="h-modal {{modalName=='Dialog1'?'show':''}}" catchtouchmove="true">
   <view class="h-dialog">
@@ -77,7 +77,7 @@
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
-  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="Dialog2">显示模态框</button> 
+  <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="Dialog2">显示模态框</button> 
 </view>
 <view class="h-modal {{modalName=='Dialog2'?'show':''}}" catchtouchmove="true">
   <view class="h-dialog">
@@ -100,7 +100,7 @@
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
-  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="Dialog3">显示模态框</button> 
+  <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="Dialog3">显示模态框</button> 
 </view>
 <view class="h-modal {{modalName=='Dialog3'?'show':''}}" catchtouchmove="true">
   <view class="h-dialog">
@@ -123,7 +123,7 @@
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
-  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="Image">显示模态框</button> 
+  <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="Image">显示模态框</button> 
 </view>
 <view class="h-modal {{modalName=='Image'?'show':''}}">
   <view class="h-dialog">
@@ -147,7 +147,7 @@
   </view>
 </view>
 <view class="p h-text-left h-text-s h-bg-white"> 
-  <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="Dialog4">显示模态框</button> 
+  <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="Dialog4">显示模态框</button> 
 </view>
 <view class="h-modal {{modalName=='Dialog4'?'show':''}}">
   <view class="h-dialog">

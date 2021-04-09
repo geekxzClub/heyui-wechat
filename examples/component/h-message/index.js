@@ -1,6 +1,5 @@
 Component({
   properties: {
-
   },
   data: {
     text: '',
@@ -19,7 +18,7 @@ Component({
         _this.setData({
           showToast: false
         })
-      }, 2000);
+      }, 3000);
     }
   }
 })

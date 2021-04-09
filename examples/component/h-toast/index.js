@@ -1,6 +1,6 @@
 Component({
+  externalClasses: ['h-toast-class'],
   properties: {
-   
   },
   data: {
     dataText: '',
