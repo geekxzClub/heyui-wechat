@@ -1,17 +1,8 @@
 <!--pages/form/image/image.wxml-->
-<import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
-
-<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> 图片上传展示</text>
-    </view>
-  </view>
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 限制图片</text>
+      <text class="h-text-sm h-text-bold h-text-black"> 限制图片</text>
     </view>
   </view>
   <view class="h-bar h-bg-white p">
@@ -22,7 +13,7 @@
       {{imgList2.length}}/4
     </view>
   </view>
-  <view class="h-form-group p-b">
+  <view class="h-form-group h-bg-white p-b">
     <view class="h-grid h-col-4 h-grid-square h-flex-sub">
       <view class="h-bg-img" wx:for="{{imgList2}}" wx:key="index" bindtap="ViewImage2" data-url="{{imgList2[index]}}">
         <image src='{{imgList2[index]}}' mode='aspectFill'></image>
@@ -39,7 +30,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 限制图片删除确认</text>
+      <text class="h-text-sm h-text-bold h-text-black"> 限制图片删除确认</text>
     </view>
   </view>
   <view class="h-bar h-bg-white p">
@@ -50,7 +41,7 @@
       {{imgList.length}}/4
     </view>
   </view>
-  <view class="h-form-group p-b">
+  <view class="h-form-group h-bg-white p-b">
     <view class="h-grid h-col-4 h-grid-square h-flex-sub">
       <view class="h-bg-img" wx:for="{{imgList}}" wx:key="index" bindtap="ViewImage" data-url="{{imgList[index]}}">
         <image src='{{imgList[index]}}' mode='aspectFill'></image>
@@ -64,4 +55,3 @@
     </view>
   </view>
 
-</view>

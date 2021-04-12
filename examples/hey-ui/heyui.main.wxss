@@ -1980,9 +1980,6 @@ button.icon.icon-lg {
 }
 
 .h-form-group .title {
-	/* text-align: justify; */
-	/* padding-right: 10rpx; */
-	font-size: 30rpx;
 	position: relative;
 	height: 60rpx;
 	line-height: 60rpx;
@@ -2004,14 +2001,12 @@ button.icon.icon-lg {
 .h-form-group .label-lg {
   width: 25%;
 }
-
 .h-form-group input {
 	flex: 1;
 	font-size: 30rpx;
 	color: #555;
 	padding-right: 10rpx;
   padding-left: 20rpx; 
-  
 }
 
 .h-form-group>text[class*="heyui-"] {
@@ -2022,12 +2017,9 @@ button.icon.icon-lg {
 
 .h-form-group textarea {
 	margin: 32rpx 0 30rpx;
-	height: 10.6em;
 	width: 100%;
 	line-height: 1.2em;
 	flex: 1;
-	/* font-size: 28rpx; */
-	/* padding: 0; */
 }
 .h-form-group .maxnum{
   position: relative;
@@ -2130,7 +2122,7 @@ button.icon.icon-lg {
 	vertical-align: middle;
 	margin-left: auto;
 	margin-right: auto;
-	width: 600rpx;
+	width: 580rpx;
 	max-width: 100%;
 	background-color: #f8f8f8;
 	border-radius: 10rpx;

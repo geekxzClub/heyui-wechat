@@ -1,17 +1,9 @@
 <!--pages/form/radio/radio.wxml-->
-<import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
 
-<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> 单选框展示</text>
-    </view>
-  </view>
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 定义样式</text>
+      <text class="h-text-sm h-text-bold h-text-black"> 定义样式</text>
     </view>
   </view>
   <view class="h-bg-white h-text-left p-b">
@@ -41,7 +33,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 基本案例</text>
+      <text class="h-text-sm h-text-bold h-text-black"> 基本案例</text>
     </view>
   </view>
   <view class="h-bg-white h-text-left p-b">
@@ -71,7 +63,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 布局方式</text>
+      <text class="h-text-sm h-text-bold h-text-black"> 布局方式</text>
     </view>
   </view>
   <view class="h-bg-white p-b">
@@ -90,7 +82,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 自定义颜色</text>
+      <text class="h-text-sm h-text-bold h-text-black"> 自定义颜色</text>
     </view>
   </view>
   <view class="h-bg-white p-tb">
@@ -109,7 +101,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 设置禁用</text>
+      <text class="h-text-sm h-text-bold h-text-black"> 设置禁用</text>
     </view>
   </view>
   <view class="h-bg-white h-text-left p-b">
@@ -134,7 +126,7 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 更改radio位置</text>
+      <text class="h-text-sm h-text-bold h-text-black"> 更改radio位置</text>
     </view>
   </view>
   <view class="h-bg-white h-text-left p-b">
@@ -160,8 +152,6 @@
 
   <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 设置radio大小</text>
+      <text class="h-text-sm h-text-bold h-text-black"> 设置radio大小</text>
     </view>
   </view>
-
-</view>

@@ -1,5 +1,14 @@
 {
-  "pages": [    
+  "pages": [  
+    "pages/form/image/image",      
+    "pages/form/form",
+    "pages/form/input/input",
+    "pages/form/switch/switch",
+    "pages/form/select/select",
+    "pages/form/rate/rate",
+    "pages/form/radio/radio",
+    "pages/form/checkbox/checkbox",
+    "pages/form/textarea/textarea",
     
     "pages/index/index",
     "pages/nav/nav",
@@ -33,22 +42,6 @@
     "pages/about/about/about",  
     "pages/view/card/card",
     "pages/view/comment/comment",
-    
-
-
-
-
-
-    "pages/form/form",
-    "pages/form/input/input",
-    "pages/form/textabea/textabea",
-    "pages/form/radio/radio",
-    "pages/form/checkbox/checkbox",
-    "pages/form/switch/switch",
-    "pages/form/select/select",
-    "pages/form/image/image",
-    "pages/form/rate/rate",
-    
 
 
     "pages/response/response",
