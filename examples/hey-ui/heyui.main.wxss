@@ -778,12 +778,12 @@ button.icon.icon-lg {
 	margin-left: 10rpx;
 }
 .h-tag.h-tag-sm {
-	font-size: 20rpx;
+	/* font-size: 20rpx; */
 	padding: 0rpx 12rpx;
 	height: 32rpx;
 }
 .h-tag.h-tag-lg {
-	font-size: 32rpx;
+	/* font-size: 32rpx; */
 	padding: 8rpx 22rpx;
 	height: 60rpx;
 }

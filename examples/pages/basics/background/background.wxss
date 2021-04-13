@@ -10,7 +10,7 @@
 .items view{
   line-height: 50rpx;
 }
-.h-grid.h-col-2>view{
+.h-grid.h-grid-2>view{
   width: 48%;
 }
 .h-grid .items:nth-child(2n){

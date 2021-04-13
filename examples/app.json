@@ -1,6 +1,26 @@
 {
   "pages": [    
     "pages/index/index",
+    "pages/view/view",
+    "pages/view/luckdraw/luckdraw", 
+    "pages/view/swiper/swiper",
+    "pages/view/title/title",
+    "pages/view/search/search",
+    "pages/view/addtips/addtips",
+    "pages/view/popup/popup",
+    "pages/view/notic/notic",
+    "pages/view/barrage/barrage",
+    "pages/view/table/table",
+    "pages/view/table/table2",
+    "pages/view/slideview/slideview",
+    "pages/view/divider/divider",
+    "pages/view/keyboard/keyboard",
+    
+    "pages/view/avatar/avatar",
+    "pages/view/tag/tag",
+    "pages/view/progress/progress",
+    "pages/view/loading/loading",
+
     "pages/layout/layout",
     "pages/layout/waterflow/waterflow",
     "pages/layout/list/list",
@@ -9,7 +29,6 @@
     "pages/layout/indexlist/indexlist",
     "pages/layout/grid/grid",
     "pages/layout/flex/flex",
-
 
     "pages/form/form",
     "pages/form/imagepicker/imagepicker",
@@ -60,24 +79,7 @@
     "pages/response/toast/toast",
     "pages/response/message/message",
 
-    "pages/view/view",
-    "pages/view/luckdraw/luckdraw", 
-    "pages/view/avatar/avatar",
-    "pages/view/tag/tag",
-    "pages/view/progress/progress",
-    "pages/view/loading/loading",
-    "pages/view/swiper/swiper",
-    "pages/view/title/title",
-    "pages/view/search/search",
-    "pages/view/addtips/addtips",
-    "pages/view/popup/popup",
-    "pages/view/notic/notic",
-    "pages/view/barrage/barrage",
-    "pages/view/table/table",
-    "pages/view/table/table2",
-    "pages/view/slideview/slideview",
-    "pages/view/divider/divider",
-    "pages/view/keyboard/keyboard",
+    
 
     "pages/logs/logs"
   ],

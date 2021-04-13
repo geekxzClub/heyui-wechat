@@ -2,7 +2,7 @@
     <view class="h-bar p-l">
       <text class="h-text-sm h-text-bold h-text-black">主题色</text>
     </view>
-    <view class="h-grid h-col-2 p-lr p-b">
+    <view class="h-grid h-grid-2 p-lr p-b">
       <view class="items h-bg-error h-corner-sm">
         <view class="p-sm">
           <view>error</view>
@@ -52,7 +52,7 @@
     <view class="h-bar p-l">
       <text class="h-text-sm h-text-bold h-text-black">渐变色</text>
     </view>
-    <view class="h-grid h-col-2 p-lr p-b">  
+    <view class="h-grid h-grid-2 p-lr p-b">  
       <view class="items h-bg-gradual-red h-corner-sm">
         <view class="p-sm">          
           <view>gradual-red</view>

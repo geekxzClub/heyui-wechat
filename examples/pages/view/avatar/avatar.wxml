@@ -1,125 +1,113 @@
 <!--pages/view/avatar/avatar.wxml-->
-<import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
 
-<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> 头像展示</text>
-    </view>
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black">头像形状</text>
   </view>
+</view>
+<view class="p-lr p-t h-bg-white">
+  <view class="h-avatar h-avatar-lg h-corner-xs" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
+  <view class="h-avatar h-avatar-lg h-corner-sm m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a2.jpg);"></view>
+  <view class="h-avatar h-avatar-lg h-corner-md m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a3.jpg);"></view>
+  <view class="h-avatar h-avatar-lg h-corner-lg m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a4.jpg);"></view>
+</view>
 
-  <view class="h-bar h-bg-white h-border-bottom">
-    <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 头像形状</text>
-    </view>
-  </view>
-  <view class="p h-bg-white">
-    <view class="h-avatar h-avatar-lg h-corner-xs" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
-    <view class="h-avatar h-avatar-lg h-corner-sm m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a2.jpg);"></view>
-    <view class="h-avatar h-avatar-lg h-corner-md m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a3.jpg);"></view>
-    <view class="h-avatar h-avatar-lg h-corner-lg m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a4.jpg);"></view>
-  </view>
+<view class="p h-bg-white">
+  <view class="h-avatar h-avatar-lg h-corner-clip-sm" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a5.jpg);"></view>
+  <view class="h-avatar h-avatar-lg h-corner-clip-md m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a6.jpg);"></view>
 
-  <view class="p h-bg-white">
-    <view class="h-avatar h-avatar-lg h-corner-clip-sm" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a5.jpg);"></view>
-    <view class="h-avatar h-avatar-lg h-corner-clip-md m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a6.jpg);"></view>
-
-    <view class="h-avatar h-avatar-lg h-corner-shape-green m-l">
-      <text>嗨</text>
-    </view>
-    <view class="h-avatar h-avatar-lg h-corner-shape-blue m-l">
-      <text>哈</text>
-    </view>
+  <view class="h-avatar h-avatar-lg h-corner-shape-green m-l">
+    <text>嗨</text>
   </view>
+  <view class="h-avatar h-avatar-lg h-corner-shape-blue m-l">
+    <text>哈</text>
+  </view>
+</view>
 
 
-  <view class="h-bar h-bg-white h-border-bottom">
-    <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 头像尺寸</text>
-    </view>
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black">头像尺寸</text>
   </view>
-  <view class="p h-bg-white">
-    <view class="h-avatar h-avatar-sm m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a7.jpg);"></view>
-      <view class="h-avatar m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a8.jpg);"></view>
-      <view class="h-avatar h-avatar-lg m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
-      <view class="h-avatar h-avatar-xl m-l h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a9.jpg);"></view>
-  </view>
-  <view class="p h-bg-white">
-    <view class="h-avatar h-avatar-sm m-l h-bg-yellow">H</view>
-    <view class="h-avatar h-avatar m-l h-bg-yellow">E</view>
-    <view class="h-avatar h-avatar-lg m-l h-bg-yellow">Y</view>
-    <view class="h-avatar h-avatar-xl m-l h-bg-yellow h-corner-lg">UI</view>
-  </view>
+</view>
+<view class="p-lr p-t h-bg-white">
+  <view class="h-avatar h-avatar-xl m-l h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a9.jpg);"></view>
+  <view class="h-avatar h-avatar-lg m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
+  <view class="h-avatar m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a8.jpg);"></view>
+  <view class="h-avatar h-avatar-sm m-l" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a7.jpg);"></view>
+</view>
+<view class="p-lr p-b h-bg-white">
+  <view class="h-avatar h-avatar-sm m-l h-bg-yellow">H</view>
+  <view class="h-avatar h-avatar m-l h-bg-yellow">E</view>
+  <view class="h-avatar h-avatar-lg m-l h-bg-yellow">Y</view>
+  <view class="h-avatar h-avatar-xl m-l h-bg-yellow h-corner-lg">UI</view>
+</view>
 
-  <view class="h-bar h-bg-white h-border-bottom">
-    <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 头像颜色</text>
-    </view>
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black">头像颜色</text>
   </view>
-  <view class="p h-bg-white h-text-Hey">
-    <view class="h-avatar h-avatar-lg h-bg-{{item.name}} m-xs" wx:for="{{ColorList}}" wx:key='item'>
-      <text class="h-avatar-text h-text-l">{{item.name}}</text>
-    </view>
+</view>
+<view class="p h-bg-white h-text-Hey">
+  <view class="h-avatar h-avatar-lg h-bg-{{item.name}} m-xs" wx:for="{{ColorList}}" wx:key='item'>
+    <text class="h-avatar-text h-text-l">{{item.name}}</text>
   </view>
+</view>
 
-  <view class="h-bar h-bg-white h-border-bottom">
-    <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 头像组合</text>
-    </view>
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black">头像组合</text>
   </view>
-
-  <view class="p h-bg-white">
-    <view class="h-avatar-group">
-      <view class="h-avatar h-corner-lg h-avatar-lg" wx:for="{{4}}" wx:key style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a{{index+1}}.jpg);"></view>
-    </view>
-  </view><view class="p h-bg-white">
-    <view class="h-avatar-group">
-      <view class="h-avatar h-corner-md h-avatar-lg" wx:for="{{4}}" wx:key style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a{{index+1}}.jpg);"></view>
-    </view>
-  </view><view class="p h-bg-white">
-    <view class="h-avatar-group">
-      <view class="h-avatar h-corner-sm h-avatar-lg" wx:for="{{4}}" wx:key style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a{{index+1}}.jpg);"></view>
-    </view>
+</view>
+<view class="p-lr p-t h-bg-white">
+  <view class="h-avatar-group">
+    <view class="h-avatar h-corner-lg h-avatar-lg" wx:for="{{4}}" wx:key='item' style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a{{index+1}}.jpg);"></view>
   </view>
-
-
-  <view class="h-bar h-bg-white h-border-bottom">
-    <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 特别头像</text>
-    </view>
+</view>
+<view class="p h-bg-white">
+  <view class="h-avatar-group">
+    <view class="h-avatar h-corner-md h-avatar-lg" wx:for="{{4}}" wx:key='item' style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a{{index+1}}.jpg);"></view>
   </view>
-
-  <view class="p h-bg-white">
-    <view class="h-avatar h-avatar-lg h-bg-green h-corner-lg">
-      <text class="heyui-people"></text>
-    </view>
-    <view class="h-avatar h-avatar-lg h-bg-blue m-l">
-      <text>嗨</text>
-    </view>
+</view>
+<view class="p h-bg-white">
+  <view class="h-avatar-group">
+    <view class="h-avatar h-corner-sm h-avatar-lg" wx:for="{{4}}" wx:key='item' style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a{{index+1}}.jpg);"></view>
   </view>
-
-  <view class="h-bar h-bg-white h-border-bottom">
-    <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 徽章头像</text>
-    </view>
-  </view>
-  <view class="p h-bg-white h-flex h-justify-between h-align-center">
-    <view class="h-avatar h-avatar-xl h-bg-default">
-      嗨
-      <view class="h-tag h-badge">999+</view>
-    </view>
-    <view class="h-avatar h-avatar-xl" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a6.jpg);">
-      <view class="h-tag h-badge">9</view>
-    </view>
-    <view class="h-avatar h-avatar-xl h-bg-default">
-      <view class="h-tag h-badge"></view>
-      <text class="heyui-people"></text>
-    </view>
-    <view class="h-avatar h-avatar-xl h-bg-default">
-      <view class="h-tag h-badge">999+</view>
-    </view>  
-  </view>
+</view>
 
 
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black">特别头像</text>
+  </view>
+</view>
+<view class="p h-bg-white">
+  <view class="h-avatar h-avatar-lg h-bg-green h-corner-lg">
+    <text class="heyui-people"></text>
+  </view>
+  <view class="h-avatar h-avatar-lg h-bg-blue m-l">
+    <text>嗨</text>
+  </view>
+</view>
+
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black">徽章头像</text>
+  </view>
+</view>
+<view class="p h-bg-white h-flex h-justify-between h-align-center">
+  <view class="h-avatar h-avatar-xl h-bg-blue h-text-white">
+    嗨
+    <view class="h-tag h-badge">999+</view>
+  </view>
+  <view class="h-avatar h-avatar-xl" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a6.jpg);">
+    <view class="h-tag h-badge">9</view>
+  </view>
+  <view class="h-avatar h-avatar-xl h-bg-pink">
+    <view class="h-tag h-badge"></view>
+    <text class="heyui-people"></text>
+  </view>
+  <view class="h-avatar h-avatar-xl h-bg-green">
+    <view class="h-tag h-badge">999+</view>
+  </view>  
 </view>

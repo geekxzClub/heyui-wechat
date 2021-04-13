@@ -1,130 +1,118 @@
 <!--pages/view/tag/tag.wxml-->
-<import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black"> 标签形状</text>
+  </view>
+</view>
+<view class="p h-bg-white">
+  <view class="h-tag h-bg-primary">默认</view>
+  <view class="h-tag h-corner-xs h-bg-success">6rpx</view>
+  <view class="h-tag h-corner-sm h-bg-error">12rpx</view>
+  <view class="h-tag h-corner-lg h-bg-warning">圆角</view>
+</view>
 
-<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> 标签展示</text>
-    </view>
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black"> 标签尺寸</text>
   </view>
+</view>
+<view class="p h-bg-white">
+  <view class="h-tag h-tag-lg h-text-s h-corner-sm h-bg-primary">大尺寸</view>
+  <view class="h-tag h-text-s h-bg-error">默认</view>
+  <view class="h-tag h-tag-sm h-corner-xs h-bg-warning">小</view>
+</view>
 
-  <view class="h-bar h-bg-white h-border-bottom">
-    <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 标签形状</text>
-    </view>
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black"> 标签颜色</text>
   </view>
-  <view class="p h-bg-white">
-    <view class="h-tag">默认</view>
-    <view class="h-tag h-corner-xs">6rpx</view>
-    <view class="h-tag h-corner-sm">12rpx</view>
-    <view class="h-tag h-corner-lg">圆角</view>
+</view>
+<view class="p h-bg-white h-flex h-flex-wrap">
+  <view class="p-xs" wx:for="{{ColorList}}" wx:key='item'  wx:if="{{item.name!='gray'}}">
+    <view class="h-tag h-bg-{{item.name}}">{{item.title}}</view>
   </view>
+  <view class="p-xs" wx:for="{{ColorList}}" wx:key='item'  wx:if="{{item.name!='gray' && item.name!='black' && item.name!='white'}}">
+    <view class="h-tag h-bg-{{item.name}}-light">{{item.title}}</view>
+  </view>
+</view>
 
-  <view class="h-bar h-bg-white h-border-bottom">
-    <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 标签尺寸</text>
-    </view>
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black"> 标签镂空</text>
   </view>
-  <view class="p h-bg-white">
-    <view class="h-tag h-tag-sm h-corner-xs">小尺寸</view>
-    <view class="h-tag">默认</view>
-    <view class="h-tag h-tag-lg h-corner-sm">大尺寸</view>
-  </view>
+</view>
+<view class="p h-bg-white h-flex h-flex-wrap">
+  <view class="p-xs" wx:for="{{ColorList}}" wx:key='item'  wx:if="{{item.name!='gray'}}">
+    <view class="h-tag h-line-{{item.name}}">{{item.title}}</view>
+  </view>  
+</view>
 
-  <view class="h-bar h-bg-white h-border-bottom">
-    <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 标签颜色</text>
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black"> 胶囊样式标签</text>
+  </view>
+</view>
+<view class="p h-bg-white h-flex h-flex-wrap">
+  <view class="h-capsule">
+    <view class="h-tag h-bg-red">
+      <text class="heyui-likefill"></text>
+    </view>
+    <view class="h-tag h-line-red">
+      20
     </view>
   </view>
-  <view class="p h-bg-white h-flex h-flex-wrap">
-    <view class="p-xs" wx:for="{{ColorList}}" wx:key  wx:if="{{item.name!='gray'}}">
-      <view class="h-tag h-bg-{{item.name}}">{{item.title}}</view>
+  <view class="h-capsule h-capsule-round p-b-sm">
+    <view class="h-tag h-bg-blue ">
+      <text class="heyui-likefill"></text>
     </view>
-    <view class="p-xs" wx:for="{{ColorList}}" wx:key  wx:if="{{item.name!='gray' && item.name!='black' && item.name!='white'}}">
-      <view class="h-tag h-bg-{{item.name}}-light">{{item.title}}</view>
+    <view class="h-tag h-line-blue">
+      21
     </view>
   </view>
+  <view class="h-capsule h-capsule-round p-b-sm">
+    <view class="h-tag h-bg-blue ">
+      说明
+    </view>
+    <view class="h-tag h-line-blue">
+      724
+    </view>
+  </view>
+  <view class="h-capsule h-capsule-radius p-b-sm">
+    <view class="h-tag h-bg-grey ">
+      <text class="heyui-likefill"></text>
+    </view>
+    <view class="h-tag h-line-grey">
+      618
+    </view>
+  </view>
+  <view class="h-capsule h-capsule-radius p-b-sm">
+    <view class="h-tag h-bg-brown sm">
+      <text class="heyui-likefill"></text>
+    </view>
+    <view class="h-tag h-line-brown sm">
+      20
+    </view>
+  </view>  
+</view>
 
-  <view class="h-bar h-bg-white h-border-bottom">
-    <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 标签镂空</text>
-    </view>
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black">标签徽章</text>
   </view>
-  <view class="p h-bg-white h-flex h-flex-wrap">
-    <view class="p-xs" wx:for="{{ColorList}}" wx:key  wx:if="{{item.name!='gray'}}">
-      <view class="h-tag h-line-{{item.name}}">{{item.title}}</view>
-    </view>  
+</view>
+<view class="p h-bg-white h-flex h-justify-between h-align-center">
+  <view class="h-avatar h-avatar-xl h-bg-blue h-text-white">
+    嗨
+    <view class="h-tag h-badge">999+</view>
   </view>
-
-  <view class="h-bar h-bg-white h-border-bottom">
-    <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 胶囊样式标签</text>
-    </view>
+  <view class="h-avatar h-avatar-xl" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a6.jpg);">
+    <view class="h-tag h-badge">9</view>
   </view>
-  <view class="p h-bg-white h-flex h-flex-wrap">
-    <view class="h-capsule">
-      <view class="h-tag h-bg-red">
-        <text class="heyui-likefill"></text>
-      </view>
-      <view class="h-tag h-line-red">
-        20
-      </view>
-    </view>
-    <view class="h-capsule h-capsule-round p-b-sm">
-      <view class="h-tag h-bg-blue ">
-        <text class="heyui-likefill"></text>
-      </view>
-      <view class="h-tag h-line-blue">
-        21
-      </view>
-    </view>
-    <view class="h-capsule h-capsule-round p-b-sm">
-      <view class="h-tag h-bg-blue ">
-        说明
-      </view>
-      <view class="h-tag h-line-blue">
-        724
-      </view>
-    </view>
-    <view class="h-capsule h-capsule-radius p-b-sm">
-      <view class="h-tag h-bg-grey ">
-        <text class="heyui-likefill"></text>
-      </view>
-      <view class="h-tag h-line-grey">
-        618
-      </view>
-    </view>
-    <view class="h-capsule h-capsule-radius p-b-sm">
-      <view class="h-tag h-bg-brown sm">
-        <text class="heyui-likefill"></text>
-      </view>
-      <view class="h-tag h-line-brown sm">
-        20
-      </view>
-    </view>  
+  <view class="h-avatar h-avatar-xl h-bg-pink">
+    <view class="h-tag h-badge"></view>
+    <text class="heyui-people"></text>
   </view>
-
-  <view class="h-bar h-bg-white h-border-bottom">
-    <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 标签徽章</text>
-    </view>
-  </view>
-  <view class="p h-bg-white h-flex h-justify-between h-align-center">
-    <view class="h-avatar h-avatar-xl">
-      嗨
-      <view class="h-tag h-badge">999+</view>
-    </view>
-    <view class="h-avatar h-avatar-xl" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);">
-      <view class="h-tag h-badge">9</view>
-    </view>
-    <view class="h-avatar h-avatar-xl">
-      <view class="h-tag h-badge"></view>
-      <text class="heyui-people"></text>
-    </view>
-    <view class="h-avatar h-avatar-xl">
-      <view class="h-tag h-badge">999+</view>
-    </view>  
-  </view>
-
+  <view class="h-avatar h-avatar-xl h-bg-green">
+    <view class="h-tag h-badge">999+</view>
+  </view>  
 </view>
