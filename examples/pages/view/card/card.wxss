@@ -4,7 +4,7 @@
   height: 520rpx;
   display: inline-block;
 }
-.h-grid.h-col-2>view{
+.h-grid.h-grid-2>view{
   width: 48%;
 }
 .h-grid .h-goods-item:nth-child(2n){

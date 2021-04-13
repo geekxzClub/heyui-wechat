@@ -1,101 +1,163 @@
 <!--pages/layout/flex/flex.wxml-->
-<import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
-
-<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> Flex弹性布局</text>
-    </view>
-  </view>
-
 <view class="h-bar h-bg-white">
   <view class="action">
-    <text class="h-text-xs h-text-black"> 1. Flex固定尺寸布局</text>
+    <text class="h-text-sm h-text-bold h-text-black">Flex固定尺寸布局</text>
   </view>
 </view>
-<view class="p h-text-left h-text-s h-bg-white">
+<view class="p-lr p-b h-text-left h-text-s h-bg-white">
   <view class="h-flex h-flex-wrap">
-    <view class="h-basis-xs h-bg-grey p-sm h-corner-xs">xs(20%)</view>
+    <view class="h-basis-xs h-bg-yellow-light p h-corner-xs">xs(20%)</view>
     <view class="h-basis-df"></view>
-    <view class="h-basis-sm h-bg-grey m-t p-sm h-corner-xs">sm(40%)</view>
+    <view class="h-basis-sm h-bg-orange-light m-t p h-corner-xs">h-basis-sm(40%)</view>
     <view class="h-basis-df"></view>
-    <view class="h-basis-df h-bg-grey m-t p-sm h-corner-xs">sub(50%)</view>
-    <view class="h-basis-lg h-bg-grey m-t p-sm h-corner-xs">lg(60%)</view>
-    <view class="h-basis-xl h-bg-grey m-t p-sm h-corner-xs">xl(80%)</view>
+    <view class="h-basis-df h-bg-cyan-light m-t p h-corner-xs">h-basis-sub(50%)</view>
+    <view class="h-basis-lg h-bg-purple-light m-t p h-corner-xs">h-basis-lg(60%)</view>
+    <view class="h-basis-xl h-bg-brown-light m-t p h-corner-xs">h-basis-xl(80%)</view>
   </view>
 </view>
 
 
 <view class="h-bar h-bg-white m-t">
   <view class="action">
-    <text class="h-text-xs h-text-black"> 2. Flex比例布局</text>
+    <text class="h-text-sm h-text-bold h-text-black">Flex比例布局</text>
   </view>
 </view>
-<view class="p h-text-left h-text-s h-bg-white">
+<view class="p-lr p-b h-text-left h-text-s h-bg-white">
   <view class="h-flex">
-    <view class="h-flex-sub h-bg-grey p-sm m-xs h-corner-xs">1</view>
-    <view class="h-flex-sub h-bg-grey p-sm m-xs h-corner-xs">1</view>
+    <view class="h-flex-sub h-bg-brown-light p m-xs h-corner-xs">h-flex-sub 1</view>
+    <view class="h-flex-sub h-bg-purple-light p m-xs h-corner-xs">h-flex-sub 1</view>
   </view>
   <view class="h-flex">
-    <view class="h-flex-sub h-bg-grey p-sm m-xs h-corner-xs">1</view>
-    <view class="h-flex-twice h-bg-grey p-sm m-xs h-corner-xs">2</view>
+    <view class="h-flex-sub h-bg-purple-light p m-xs h-corner-xs">h-flex-sub 1</view>
+    <view class="h-flex-twice h-bg-brown-light p m-xs h-corner-xs">h-flex-twice 2</view>
   </view>
   <view class="h-flex">
-    <view class="h-flex-sub h-bg-grey p-sm m-xs radius">1</view>
-    <view class="h-flex-twice h-bg-grey p-sm m-xs radius">2</view>
-    <view class="h-flex-treble h-bg-grey p-sm m-xs radius">3</view>
+    <view class="h-flex-sub h-bg-orange-light p m-xs radius">sub 1</view>
+    <view class="h-flex-twice h-bg-cyan-light p m-xs radius">h-flex-twice 2</view>
+    <view class="h-flex-treble h-bg-brown-light p m-xs radius">h-flex-treble 3</view>
   </view>
 </view>
 
 
 <view class="h-bar h-bg-white m-t">
   <view class="action">
-    <text class="h-text-xs h-text-black"> 3. Flex水平对齐</text>
+    <text class="h-text-sm h-text-bold h-text-black">Flex水平对齐</text>
   </view>
 </view>
-<view class="p h-text-left h-text-s h-bg-white">
-    <view class="h-flex h-justify-start h-border-bottom p-b">
-      <view class="h-bg-grey p-sm m-xs h-corner-xs">start</view>
-      <view class="h-bg-grey p-sm m-xs h-corner-xs">start</view>
+<view class="p-lr p-b h-text-left h-text-s h-bg-white">
+    <view class="h-flex h-justify-start">
+      <view class="h-bg-brown-light p m-xs h-corner-xs">h-justify-start</view>
+      <view class="h-bg-brown-light p m-xs h-corner-xs">h-justify-start</view>
     </view>
-    <view class="h-flex h-justify-end h-border-bottom p-tb">
-      <view class="h-bg-grey p-sm m-xs h-corner-xs">end</view>
-      <view class="h-bg-grey p-sm m-xs h-corner-xs">end</view>
+    <view class="h-flex h-justify-end">
+      <view class="h-bg-cyan-light p m-xs h-corner-xs">h-justify-end</view>
+      <view class="h-bg-cyan-light p m-xs h-corner-xs">h-justify-end</view>
     </view>
-    <view class="h-flex h-justify-center h-border-bottom p-tb">
-      <view class="h-bg-grey p-sm m-xs h-corner-xs">center</view>
-      <view class="h-bg-grey p-sm m-xs h-corner-xs">center</view>
+    <view class="h-flex h-justify-center">
+      <view class="h-bg-orange-light p m-xs h-corner-xs">h-justify-center</view>
+      <view class="h-bg-orange-light p m-xs h-corner-xs">h-justify-center</view>
     </view>
-    <view class="h-flex h-justify-between h-border-bottom p-tb">
-      <view class="h-bg-grey p-sm m-xs h-corner-xs">between</view>
-      <view class="h-bg-grey p-sm m-xs h-corner-xs">between</view>
+    <view class="h-flex h-justify-between">
+      <view class="h-bg-purple-light p m-xs h-corner-xs">h-justify-between</view>
+      <view class="h-bg-purple-light p m-xs h-corner-xs">h-justify-between</view>
     </view>
-    <view class="h-flex h-justify-around h-border-bottom p-tb">
-      <view class="h-bg-grey p-sm m-xs h-corner-xs">around</view>
-      <view class="h-bg-grey p-sm m-xs h-corner-xs">around</view>
+    <view class="h-flex h-justify-around">
+      <view class="h-bg-yellow-light p m-xs h-corner-xs">h-justify-around</view>
+      <view class="h-bg-yellow-light p m-xs h-corner-xs">h-justify-around</view>
     </view>
 </view>
 
 
 <view class="h-bar h-bg-white m-t">
   <view class="action">
-    <text class="h-text-xs h-text-black"> 4. Flex垂直对齐</text>
+    <text class="h-text-sm h-text-bold h-text-black">Flex垂直对齐</text>
   </view>
 </view>
-<view class="p h-text-left h-text-s h-bg-white">
-    <view class="h-flex h-align-start p">
-      <view class="h-bg-grey p-lg m-xs h-corner-xs">Hey-UI</view>
-      <view class="h-bg-grey p-sm m-xs h-corner-xs">start</view>
+<view class="p-lr p-b h-text-left h-text-s h-bg-white">
+    <view class="h-flex h-align-start">
+      <view class="h-bg-yellow-light p-lg m-xs h-corner-xs">h-align-start</view>
+      <view class="h-bg-yellow-light p-sm m-xs h-corner-xs">h-align-start</view>
     </view>
-    <view class="h-flex h-align-center p">
-      <view class="h-bg-grey p-lg m-xs h-corner-xs">Hey-UI</view>
-      <view class="h-bg-grey p-sm m-xs h-corner-xs">center</view>
+    <view class="h-flex h-align-center">
+      <view class="h-bg-purple-light p-lg m-xs h-corner-xs">h-align-center</view>
+      <view class="h-bg-purple-light p-sm m-xs h-corner-xs">h-align-center</view>
     </view>
-    <view class="h-flex h-align-end p">
-      <view class="h-bg-grey p-lg m-xs h-corner-xs">Hey-UI</view>
-      <view class="h-bg-grey p-sm m-xs h-corner-xs">end</view>
+    <view class="h-flex h-align-end">
+      <view class="h-bg-orange-light p-lg m-xs h-corner-xs">h-align-end</view>
+      <view class="h-bg-orange-light p-sm m-xs h-corner-xs">h-align-end</view>
     </view>
 </view>
 
+<view class="h-bar h-bg-white m-t">
+  <view class="action">
+    <text class="h-text-sm h-text-bold h-text-black">Flex-Col-xx</text>
+  </view>
+</view>
+<view class="p-lr p-b h-text-left h-text-s h-bg-white">
+  <view class="h-flex">
+    <view class="h-text-center h-bg-green-light h-col-12 p-tb">12：100%</view>
+  </view>
+  <view class="h-flex">
+    <view class="h-text-center h-bg-red-light h-col-6 p-tb">6：50%</view>
+    <view class="h-text-center h-bg-blue-light h-col-6 p-tb">6：50%</view>
+  </view>
+  <view class="h-flex">
+    <view class="h-text-center h-bg-pink-light h-col-4 p-tb">4：33.33%</view>
+    <view class="h-text-center h-bg-blue-light h-col-4 p-tb">4：33.33%</view>
+    <view class="h-text-center h-bg-orange-light h-col-4 p-tb">4：33.33%</view>
+  </view>
+  <view class="h-flex">
+    <view class="h-text-center h-bg-green-light h-col-4 p-tb">3：25%</view>
+    <view class="h-text-center h-bg-blue-light h-col-4 p-tb">3：25%</view>
+    <view class="h-text-center h-bg-orange-light h-col-4 p-tb">3：25%</view>
+    <view class="h-text-center h-bg-pink-light h-col-4 p-tb">3：25%</view>
+  </view>
+  <view class="h-flex">
+    <view class="h-text-center h-bg-yellow-light h-col-8 p-tb">8：66.66%</view>
+    <view class="h-text-center h-bg-blue-light h-col-4 p-tb">4：33.33%</view>
+  </view>
+
+  <view class="h-flex p-t">
+    <view class="h-text-center h-bg-blue-light h-flex-1 p-tb">Hey UI</view>
+  </view>
+  <view class="h-flex">
+    <view class="h-text-center h-bg-green-light h-flex-1 p-tb">Hey UI</view>
+    <view class="h-text-center h-bg-pink-light h-flex-1 p-tb">Hey UI</view>
+  </view>
+  <view class="h-flex">
+    <view class="h-text-center h-bg-cyan-light h-flex-1 p-tb">Hey UI</view>
+    <view class="h-text-center h-bg-brown-light h-flex-1 p-tb">Hey UI</view>
+    <view class="h-text-center h-bg-orange-light h-flex-1 p-tb">Hey UI</view>
+  </view>
+
+  <view class="h-flex h-justify-between p-t">
+    <view class="h-text-center h-bg-green-light h-col-4 p-tb">col-4</view>
+    <view class="h-text-center h-bg-pink-light h-col-4 p-tb">col-4</view>
+  </view>
+  <view class="h-flex h-justify-end">
+    <view class="h-text-center h-bg-mauve-light h-col-4 p-tb">col-4</view>
+    <view class="h-text-center h-bg-orange-light h-col-4 p-tb">col-4</view>
+  </view>
+  <view class="h-flex h-justify-start">
+    <view class="h-text-center h-bg-green-light h-col-4 p-tb">col-4</view>
+    <view class="h-text-center h-bg-orange-light h-col-4 p-tb">col-4</view>
+  </view>
+  <view class="h-flex h-justify-center">
+    <view class="h-text-center h-bg-yellow-light h-col-6 p-tb">col-6</view>
+    <view class="h-text-center h-bg-blue-light h-col-4 p-tb">col-4</view>
+  </view>
+  <view class="h-flex h-justify-between">
+    <view class="h-text-center h-bg-olive-light h-col-3 p-tb">Hey UI</view>
+    <view class="h-text-center h-bg-purple-light  h-col-3 p-tb">Hey UI</view>
+    <view class="h-text-center h-bg-orange-light h-col-3 p-tb">Hey UI</view>
+  </view>
+  <view class="h-flex h-justify-between">
+    <view class="h-text-center h-bg-green-light h-col-6 p-tb">col-6 </view>
+    <view class="h-text-center h-bg-brown-light h-col-6 p-tb">col-6</view>
+  </view>
+  <view class="h-flex h-justify-between">
+    <view class="h-text-center h-bg-yellow-light h-col-4 p-tb">col-4</view>
+    <view class="h-text-center h-bg-cyan-light  h-col-4 p-tb">col-4</view>
+    <view class="h-text-center h-bg-orange-light h-col-4 p-tb">col-4</view>
+  </view>
 </view>

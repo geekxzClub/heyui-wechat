@@ -1,7 +1,7 @@
 <!--pages/layout/indexlist/indexlist.wxml-->
 <view class="h-bar h-bg-white">
   <view class="action">
-    <text class="h-text-xs h-text-black"> 索引组件 IndexList</text>
+    <text class="h-text-sm h-text-bold h-text-black"> 索引组件 IndexList</text>
   </view>
 </view>
 <h-index-list list="{{list}}"></h-index-list>

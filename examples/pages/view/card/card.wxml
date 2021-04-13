@@ -214,7 +214,7 @@
     </view>
   </view>
 
-  <view class="h-grid h-col-2 h-corner-tlr-sm m-lr p-b">
+  <view class="h-grid h-grid-2 h-corner-tlr-sm m-lr p-b">
     <view class="h-goods-item h-bg-white h-corner-xs h-shadow m-t" wx:for="{{goodsList}}" wx:key='item'>
       <view class="h-goods-img">
         <image mode="aspectFill" src="{{item.img}}"></image>

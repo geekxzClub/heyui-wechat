@@ -54,7 +54,7 @@
   </view>
   <swiper class="screen-swiper square-dot" indicator-dots="true" circular="true">
     <swiper-item wx:for="{{swiperList}}" wx:key='item'>
-    <view class="h-list h-grid h-col-3 no-border m-tb card-menu">
+    <view class="h-list h-grid h-grid-3 no-border m-tb card-menu">
         <view class="h-item">
           <view class="heyui-picfill h-text-yellow"></view>
           <text>宫格</text>

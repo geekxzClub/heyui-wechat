@@ -6,7 +6,7 @@
       <text class="h-text-sm">v1.0</text>
     </view>
     <view class="dec h-text-white h-text-xs">基于微信小程序原生语法 实现的CSS组件库</view>
-    <view class="h-list h-grid h-col-4 no-border m-t h-corner-sm">
+    <view class="h-list h-grid h-grid-4 no-border m-t h-corner-sm">
       <view class="h-item">
         <view class="heyui h-text-white">100+</view>
         <text class="h-text-white">组件</text>
@@ -33,7 +33,7 @@
       <text class="heyui-titles h-text-blue h-text-bold"> 组件演示</text>
     </view>
   </view>
-  <view class="h-grid h-col-2 h-corner-tlr-sm p-b m-lr">
+  <view class="h-grid h-grid-2 h-corner-tlr-sm p-b m-lr">
     <view class="h-component-item h-bg-white h-corner-sm h-border m-t" wx:for="{{component}}" wx:key='item' bindtap="goToView" data-type="{{item.type}}">
       <view class="p-tb-lg box">      
         <view class="iconfont heyui-{{item.icon}}"></view>

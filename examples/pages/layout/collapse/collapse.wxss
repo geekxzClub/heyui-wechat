@@ -1,6 +1,5 @@
 /* pages/layout/collapse/collapse.wxss */
-@import '/pages/tpl/top/index.wxss';
-.detail {
+.h-collapse-detail {
   margin-bottom: 10rpx;
   font-size: 30rpx;
   line-height: 80rpx;
@@ -11,11 +10,9 @@
   padding: 30rpx;
   border-radius:  0rpx 0rpx 20rpx 20rpx;
 }
-
 .h-list.menu>.h-item.h-down {
 	padding-right: 90rpx
 }
-
 .h-list.menu>.h-item.h-down:before {
 	position: absolute;
 	top: 0;
@@ -25,7 +22,7 @@
 	margin: auto;
 	width: 30rpx;
 	height: 30rpx;
-	color: var(--grey);
+	/* color: var(--grey); */
 	content: "\e661";
 	text-align: center;
 	font-size: 34rpx;

@@ -14,7 +14,7 @@
   <view class="h-bar p-l">
       <text class="h-text-sm h-text-bold h-text-black">字体颜色</text>
   </view>
-  <view class="h-grid h-col-4 p-b-xs p-lr">
+  <view class="h-grid h-grid-4 p-b-xs p-lr">
     <view class="p-sm" wx:for="{{list}}" wx:key="item" wx:if="{{item.name!='white'}}">
       <button class="h-btn h-corner-lg h-text-center">
         <text class="h-text-{{item.name}}">{{item.title}}</text>

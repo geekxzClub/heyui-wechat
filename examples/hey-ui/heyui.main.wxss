@@ -1214,7 +1214,7 @@ button.icon.icon-lg {
 	display: flex;
 	padding-right: 10rpx;
 	height: 140rpx;
-	background-color: var(--white);
+	/* background-color: var(--white); */
 	justify-content: flex-end;
 	align-items: center
 }
@@ -1285,7 +1285,7 @@ button.icon.icon-lg {
 	display: flex;
 	padding: 0 30rpx;
 	min-height: 100rpx;
-	background-color: var(--white);
+	/* background-color: var(--white); */
 	justify-content: space-between;
 	align-items: center
 }
@@ -1330,7 +1330,7 @@ button.icon.icon-lg {
 	margin: auto;
 	width: 30rpx;
 	height: 30rpx;
-	color: var(--grey);
+	/* color: var(--grey); */
 	content: "\e6a3";
 	text-align: center;
 	font-size: 34rpx;
@@ -2014,24 +2014,28 @@ button.icon.icon-lg {
 	padding: 0;
 	box-sizing: border-box;
 }
-
 .h-form-group textarea {
 	margin: 32rpx 0 30rpx;
 	width: 100%;
 	line-height: 1.2em;
 	flex: 1;
 }
+.h-form-group textarea[disabled],
+.h-form-group textarea[disabled] .placeholder {
+	color: transparent;
+}
+
 .h-form-group .maxnum{
   position: relative;
   bottom: 0rpx;
   border: 4px solid red;
 }
-
 .h-form-group.align-start .title {
 	height: 1em;
 	margin-top: 32rpx;
 	line-height: 1em;
 }
+
 
 .h-form-group picker {
 	flex: 1;
@@ -2039,24 +2043,22 @@ button.icon.icon-lg {
 	overflow: hidden;
 	position: relative;
 }
-
 .h-form-group picker .picker {
 	line-height: 100rpx;
-	font-size: 28rpx;
+	/* font-size: 28rpx; */
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 	width: 100%;
 	text-align: right;
 }
-
 .h-form-group picker::after {
 	font-family: "heyui";
 	display: block;
 	content: "\e6a3";
 	position: absolute;
-	font-size: 34rpx;
-	color: var(--grey);
+	/* font-size: 34rpx; */
+	/* color: var(--grey); */
 	line-height: 100rpx;
 	width: 60rpx;
 	text-align: center;
@@ -2066,10 +2068,7 @@ button.icon.icon-lg {
 	margin: auto;
 }
 
-.h-form-group textarea[disabled],
-.h-form-group textarea[disabled] .placeholder {
-	color: transparent;
-}
+
 
 
 
@@ -2333,8 +2332,57 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
  ==================== */
 
 /*  -- flex弹性布局 -- */
+.h-col-12 {
+  width: 100%;
+}
+
+.h-col-11 {
+  width: 91.66666667%;
+}
+
+.h-col-10 {
+  width: 83.33333333%;
+}
+
+.h-col-9 {
+  width: 75%;
+}
+
+.h-col-8 {
+  width: 66.66666667%;
+}
+
+.h-col-7 {
+  width: 58.33333333%;
+}
+
+.h-col-6 {
+  width: 50%;
+}
+
+.h-col-5 {
+  width: 41.66666667%;
+}
+
+.h-col-4 {
+  width: 33.33333333%;
+}
+
+.h-col-3 {
+  width: 25%;
+}
+.h-col-2 {
+  width: 16.66666667%;
+}
+.h-col-1 {
+  width: 8.33333333%;
+}
+.h-flex-1 {
+  flex: 1;
+}
 
 .h-flex {
+  display: -webkit-flex;
 	display: flex;
 }
 .h-basis-xs {
@@ -2464,60 +2512,60 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 	position: absolute;
 }
 
-.h-grid.h-col-1.h-grid-square>view {
+.h-grid.h-grid-1.h-grid-square>view {
 	padding-bottom: 100%;
 	height: 0;
 	margin-right: 0;
 }
 
-.h-grid.h-col-2.h-grid-square>view {
+.h-grid.h-grid-2.h-grid-square>view {
 	padding-bottom: calc((100% - 20rpx)/2);
 	height: 0;
 	width: calc((100% - 20rpx)/2);
 }
 
-.h-grid.h-col-3.h-grid-square>view {
+.h-grid.h-grid-3.h-grid-square>view {
 	padding-bottom: calc((100% - 40rpx)/3);
 	height: 0;
 	width: calc((100% - 40rpx)/3);
 }
 
-.h-grid.h-col-4.h-grid-square>view {
+.h-grid.h-grid-4.h-grid-square>view {
 	padding-bottom: calc((100% - 60rpx)/4);
 	height: 0;
 	width: calc((100% - 60rpx)/4);
 }
 
-.h-grid.h-col-5.h-grid-square>view {
+.h-grid.h-grid-5.h-grid-square>view {
 	padding-bottom: calc((100% - 80rpx)/5);
 	height: 0;
 	width: calc((100% - 80rpx)/5);
 }
 
-.h-grid .h-col-2 .h-grid-square>view:nth-child(2n),
-.h-grid.h-col-3.h-grid-square>view:nth-child(3n),
-.h-grid.h-col-4.h-grid-square>view:nth-child(4n),
-.h-grid.h-col-5.h-grid-square>view:nth-child(5n){
+.h-grid .h-grid-2 .h-grid-square>view:nth-child(2n),
+.h-grid.h-grid-3.h-grid-square>view:nth-child(3n),
+.h-grid.h-grid-4.h-grid-square>view:nth-child(4n),
+.h-grid.h-grid-5.h-grid-square>view:nth-child(5n){
 	margin-right: 0;
 }
 
-.h-grid.h-col-1>view {
+.h-grid.h-grid-1>view {
 	width: 100%;
 }
 
-.h-grid.h-col-2>view {
+.h-grid.h-grid-2>view {
 	width: 50%;
 }
 
-.h-grid.h-col-3>view {
+.h-grid.h-grid-3>view {
 	width: 33.33%;
 }
 
-.h-grid.h-col-4>view {
+.h-grid.h-grid-4>view {
 	width: 25%;
 }
 
-.h-grid.h-col-5>view {
+.h-grid.h-grid-5>view {
 	width: 20%;
 }
 

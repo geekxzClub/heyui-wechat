@@ -1,0 +1,82 @@
+<!--pages/form/select/select.wxml-->
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black"> 一般常用</text>
+  </view>
+</view>
+<view class="p h-text-center h-text-sm h-shadow-lg h-bg-white">
+  <view class="h-form-group h-corner-sm h-bg-primary p-tb">
+    <view class="title">普通选择</view>
+    <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+      <view class="picker">
+        {{index?picker[index]:'禁止换行，超出容器部分会以 ... 方式截断'}}
+      </view>
+    </picker>
+  </view>
+</view>
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black"> 多列选择</text>
+  </view>
+</view>
+<view class="p h-text-center h-text-sm h-shadow-lg h-bg-white">
+  <view class="h-form-group h-corner-sm h-bg-success p-tb">
+    <view class="title">多列选择</view>
+    <picker mode="multiSelector" bindchange="MultiChange" bindcolumnchange="MultiColumnChange" value="{{multiIndex}}"
+    range="{{multiArray}}">
+      <view class="picker">
+        {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+      </view>
+    </picker>
+  </view>
+</view>
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black"> 选择时间</text>
+  </view>
+</view>
+<view class="p h-text-center h-text-sm h-shadow-lg h-bg-white">
+  <view class="h-form-group h-corner-sm h-bg-warning p-tb">
+    <view class="title">选择时间</view>
+    <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="TimeChange">
+      <view class="picker">
+        {{time}}
+      </view>
+    </picker>
+  </view>
+</view>
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black"> 选择日期</text>
+  </view>
+</view>
+<view class="p h-text-center h-text-sm h-shadow-lg h-bg-white">
+  <view class="h-form-group h-corner-sm h-bg-teanslucent p-tb">
+    <view class="title">选择日期</view>
+    <picker mode="date" value="{{date}}" start="2017-09-01" end="2020-09-01" bindchange="DateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+    </picker>
+  </view>
+</view>
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black"> 选择日期</text>
+  </view>
+</view>
+<view class="p h-text-center h-text-sm h-shadow-lg h-bg-white">
+  <view class="h-form-group h-corner-sm h-bg-error p-tb">
+    <view class="title">选择日期</view>
+    <picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker">
+        {{region[0]}}，{{region[1]}}，{{region[2]}}
+      </view>
+    </picker>
+  </view>
+</view>

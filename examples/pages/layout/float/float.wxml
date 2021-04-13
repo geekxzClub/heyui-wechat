@@ -1,22 +1,15 @@
 <!--pages/layout/float/float.wxml-->
-<import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
-
-<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> 浮动布局</text>
-    </view>
-  </view>
-
-
-
-<view class="p-lr h-text-center h-text-Hey h-text-sm h-bg-white">
-  <view class="h-fc p-sm">
-    <view class="h-bg-grey h-fl p-sm h-corner-sm">Hey UI 左浮动h-fl</view>
-  </view><view class="h-fc p-sm">
-    <view class="h-bg-grey h-fr p-sm h-corner-sm">Hey UI 右浮动h-fr</view>
+<view class="h-bar h-bg-white">
+  <view class="action">
+    <text class="h-text-sm h-text-bold h-text-black">浮动布局</text>
   </view>
 </view>
 
+<view class="p-lr h-text-center h-text-sm h-bg-white">
+  <view class="h-fc p-sm">
+    <view class="h-bg-primary h-fl p-sm h-corner-sm">Hey UI 左浮动h-fl</view>
+  </view>
+  <view class="h-fc p-b-lg">
+    <view class="h-bg-error h-fr p-sm h-corner-sm">Hey UI 右浮动h-fr</view>
+  </view>
 </view>

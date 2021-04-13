@@ -38,13 +38,13 @@ Page({
     }, {
       id: 6,
       icon: 'cardboardfill',
-      type: 'select',
+      type: 'picker',
       text_zh: '选择框',
-      text_en: 'Select'
+      text_en: 'Picker'
     }, {
       id: 7,
       icon: 'cardboardfill',
-      type: 'image',
+      type: 'imagepicker',
       text_zh: '图片选择器',
       text_en: 'Imagepicker'
     }, {
@@ -89,14 +89,14 @@ Page({
         url: '/pages/form/switch/switch'
       })
     }
-    if (type == 'select') {
+    if (type == 'picker') {
       wx.navigateTo({
-        url: '/pages/form/select/select'
+        url: '/pages/form/picker/picker'
       })
     }
-    if (type == 'image') {
+    if (type == 'imagepicker') {
       wx.navigateTo({
-        url: '/pages/form/image/image'
+        url: '/pages/form/imagepicker/imagepicker'
       })
     }
     if (type == 'rate') {

@@ -1,16 +1,26 @@
 {
-  "pages": [  
-    "pages/form/image/image",      
+  "pages": [    
+    "pages/index/index",
+    "pages/layout/layout",
+    "pages/layout/waterflow/waterflow",
+    "pages/layout/list/list",
+    "pages/layout/float/float",
+    "pages/layout/collapse/collapse",
+    "pages/layout/indexlist/indexlist",
+    "pages/layout/grid/grid",
+    "pages/layout/flex/flex",
+
+
     "pages/form/form",
-    "pages/form/input/input",
-    "pages/form/switch/switch",
-    "pages/form/select/select",
-    "pages/form/rate/rate",
+    "pages/form/imagepicker/imagepicker",
     "pages/form/radio/radio",
     "pages/form/checkbox/checkbox",
     "pages/form/textarea/textarea",
+    "pages/form/rate/rate",
+    "pages/form/switch/switch",
+    "pages/form/picker/picker",
+    "pages/form/input/input",
     
-    "pages/index/index",
     "pages/nav/nav",
     "pages/nav/tabbar/tabbar", 
     "pages/nav/navbar/navbar", 
@@ -49,15 +59,6 @@
     "pages/response/dialog/dialog",
     "pages/response/toast/toast",
     "pages/response/message/message",
-
-    "pages/layout/layout",
-    "pages/layout/waterflow/waterflow",
-    "pages/layout/flex/flex",
-    "pages/layout/grid/grid",
-    "pages/layout/float/float",
-    "pages/layout/list/list",
-    "pages/layout/indexlist/indexlist",
-    "pages/layout/collapse/collapse",
 
     "pages/view/view",
     "pages/view/luckdraw/luckdraw", 

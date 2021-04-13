@@ -7,7 +7,7 @@
         <text class="h-text-sm">v1.0</text>
       </view>
       <view class="dec h-text-white h-text-xs">基于微信小程序原生语法 实现的CSS组件库</view>
-      <view class="h-list h-grid h-col-4 no-border m-t h-corner-sm">
+      <view class="h-list h-grid h-grid-4 no-border m-t h-corner-sm">
         <view class="h-item">
           <view class="heyui h-text-white">100+</view>
           <text class="h-text-white">组件</text>
@@ -37,6 +37,7 @@
     <view class="h-list menu p-b">
       <view class="h-item h-arrow" wx:for="{{componentList}}" wx:key='item' bindtap="goToItem" data-type="{{item.type}}">
         <view class="h-avatar h-avatar-sm" style="background-image:url('https://oss.geekxz.com/hey-ui-oss/icon/{{item.type}}.png');"></view>
+        <!-- <view class="h-avatar h-avatar-sm" style="background-image:url('/images/icon/{{item.type}}.png');"></view> -->
         <view class="content">
           <!-- <image src="/images/icon/{{item.type}}.png" class="png" mode="aspectFit"></image> -->
           <view class="h-text-darkGray">

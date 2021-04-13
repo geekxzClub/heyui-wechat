@@ -9,7 +9,7 @@
   opacity: 1;
 }
 .h-component-item{
-  height: 240rpx;
+  height: 260rpx;
   display: flex;
   align-items: center;
   justify-content: center
@@ -25,7 +25,7 @@
   font-size: 70rpx;
   color: #409eff;
 }
-.h-grid.h-col-2>view{
+.h-grid.h-grid-2>view{
   width: 48%;
 }
 .h-grid .h-component-item:nth-child(2n){

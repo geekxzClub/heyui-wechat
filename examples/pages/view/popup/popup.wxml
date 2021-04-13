@@ -14,7 +14,7 @@
     </view>
   </view>
   <view class="p h-text-left h-text-s h-bg-white"> 
-    <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="popup">显示弹出层</button> 
+    <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="popup">显示弹出层</button> 
   </view>
   <view class="h-modal {{modalName=='popup'?'show':''}}" bindtap="hideModal">
     <view class="h-dialog h-text-center" catchtap>      
@@ -28,7 +28,7 @@
     </view>
   </view>
   <view class="p h-text-left h-text-s h-bg-white"> 
-    <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="DrawerModalL">显示弹出层</button> 
+    <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="DrawerModalL">显示弹出层</button> 
   </view>
   <view class="h-modal drawer-modal h-justify-start {{modalName=='DrawerModalL'?'show':''}}" bindtap="hideModal">
     <view class="h-dialog h-basis-lg" catchtap style="top:{{CustomBar}}px;height:calc(100vh - {{CustomBar}}px)">
@@ -48,7 +48,7 @@
     </view>
   </view>
   <view class="p h-text-left h-text-s h-bg-white"> 
-    <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="DrawerModalR">显示弹出层</button> 
+    <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="DrawerModalR">显示弹出层</button> 
   </view>
   <view class="h-modal drawer-modal h-justify-end {{modalName=='DrawerModalR'?'show':''}}" bindtap="hideModal">
     <view class="h-dialog h-basis-lg" catchtap style="top:{{CustomBar}}px;height:calc(100vh - {{CustomBar}}px)">
@@ -68,7 +68,7 @@
     </view>
   </view>
   <view class="p h-text-left h-text-s h-bg-white"> 
-    <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="popupB">显示弹出层</button> 
+    <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="popupB">显示弹出层</button> 
   </view>
   <view class="h-modal bottom-modal {{modalName=='popupB'?'show':''}}" bindtap="hideModal">
     <view class="h-dialog" catchtap>
@@ -88,7 +88,7 @@
     </view>
   </view>
   <view class="p h-text-left h-text-s h-bg-white"> 
-    <button class="h-btn h-btn-lg block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="popupT">显示弹出层</button> 
+    <button class="h-btn h-btn-lg h-btn-block h-bg-blue-light h-text-blue m-tb-smh-shadow" bindtap='showModal' data-target="popupT">显示弹出层</button> 
   </view>
   <view class="h-modal top-modal {{modalName=='popupT'?'show':''}}" bindtap="hideModal">
     <view class="h-dialog" catchtap>

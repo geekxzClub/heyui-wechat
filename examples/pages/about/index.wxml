@@ -70,7 +70,7 @@
 
 
 
-<view class='h-grid h-col-1 h-text-center h-text-dark4 h-qrcode'>
+<view class='h-grid h-grid-1 h-text-center h-text-dark4 h-qrcode'>
   <view class="h-bg-img m-b-sm">
     <image class="h-corner-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/geekxz_qrcode.jpg"></image>
   </view>
