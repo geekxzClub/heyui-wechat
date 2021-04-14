@@ -1,19 +1,10 @@
 <!--pages/view/title/title.wxml-->
-<import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
-
-<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> 标签展示</text>
-    </view>
-  </view>
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-red"> 颜色</text>
+      <text class="h-text-sm h-text-bold h-text-black"> 颜色</text>
     </view>
   </view>
-  <view class="h-list menu card-menu m-t">
+  <view class="h-list menu card-menu m-tb ">
     <view class="h-bar h-justify-start h-bg-green">
       <view class="action border-title">
         <text class="h-text-xl text-bold">关于我们</text>
@@ -31,10 +22,10 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-red"> 位置</text>
+      <text class="h-text-sm h-text-bold h-text-black"> 位置</text>
     </view>
   </view>
-  <view class="h-list menu card-menu m-t">
+  <view class="h-list menu card-menu m-tb">
     <view class="h-bar h-justify-start h-bg-white">
       <view class="action border-title">
         <text class="h-text-xl text-bold">关于我们</text>
@@ -59,10 +50,10 @@
 
   <view class="h-bar h-bg-white h-border-bottom">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-red"> 类型</text>
+      <text class="h-text-sm h-text-bold h-text-black"> 类型</text>
     </view>
   </view>
-  <view class="h-list menu card-menu m-tb p-b-lg">
+  <view class="h-list menu card-menu m-tb">
     <view class="h-bar h-bg-white">
       <view class="action border-title">
         <text class="h-text-xl h-text-bold">关于我们</text>
@@ -109,5 +100,3 @@
       </view>
     </view>
   </view>
-
-</view>

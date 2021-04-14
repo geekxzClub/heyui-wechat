@@ -37,7 +37,7 @@
   </view>
   <view class="h-list menu card-menu m-b">
   <!-- 上边图标 -->
-  <scroll-view scroll-x class="h-bg-black h-nav h-text-center h-grid h-col-3">
+  <scroll-view scroll-x class="h-bg-black h-nav h-text-center h-grid h-grid-3">
     <view class="h-item {{0==TabCur?'h-text-primary cur':''}}" bindtap="selectTab" data-id="0">
       <view class="heyui-camerafill nav-icon"></view>
       <text class="{{0==TabCur?'h-text-primary cur':''}}">数码</text>

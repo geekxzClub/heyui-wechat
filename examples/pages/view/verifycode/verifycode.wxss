@@ -1,5 +1,4 @@
 /* pages/view/verifycode/verifycode.wxss */
-@import '/pages/tpl/top/index.wxss';
 .h-verifycode {
   overflow: hidden;
   position: relative;

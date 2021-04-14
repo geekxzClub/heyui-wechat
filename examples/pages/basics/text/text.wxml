@@ -26,13 +26,13 @@
       <text class="h-text-sm h-text-bold h-text-black">排列方式</text>
   </view>
   <view class="h-text-center h-text-Hey h-text-sm p-b-xs p-lr">
-    <view class="m-b-sm p-tb h-bg-grey h-corner-sm">
+    <view class="m-b-sm p-tb h-bg-primary h-corner-sm">
       <text class="h-text-left m-l">Hey UI 文字右对齐</text>
     </view>
-    <view class="m-b-sm p-tb h-bg-grey h-corner-sm">
+    <view class="m-b-sm p-tb h-bg-warning h-corner-sm">
       <text class="h-text-center">Hey UI 文字居中</text>
     </view>
-    <view class="m-b-sm p-tb h-bg-grey h-corner-sm">
+    <view class="m-b-sm p-tb h-bg-error h-corner-sm">
       <text class="h-text-right m-r">Hey UI 文字左对齐</text>
     </view>
   </view>
@@ -41,7 +41,7 @@
       <text class="h-text-sm h-text-bold h-text-black">文字截断</text>
   </view>
   <view class="h-text-center h-text-Hey h-text-sm p-b-xs p-lr-lg">
-    <view class="m-b-sm p-tb h-bg-grey h-corner-sm">
+    <view class="m-b-sm p-tb h-bg-teanslucent h-corner-sm">
       <view class="h-text-white h-text-sm h-text-cut m-l" style="width:120px">Hey UI ,简单易用, 扩展性强, 文档丰富</view>
     </view>  
   </view>
@@ -50,27 +50,27 @@
       <text class="h-text-sm h-text-bold h-text-black">特殊处理</text>
   </view>
   <view class="h-text-center h-text-Hey h-text-sm p-b-xs p-lr-lg">
-    <view class="h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-HEY p-tb">
+    <view class="h-text-sm h-corner-sm h-text-height h-bg-warning m-b-sm h-text-center h-text-HEY p-tb">
       <text>hey ui</text>
       <text>全部字母大写</text>
     </view>
-    <view class="h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-Hey p-tb">
+    <view class="h-text-sm h-corner-sm h-text-height h-bg-primary m-b-sm h-text-center h-text-Hey p-tb">
       <text>hey ui</text>
       <text>英文单词首字母大写</text>
     </view>
-    <view class=" h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-hey p-tb">
+    <view class=" h-text-sm h-corner-sm h-text-height h-bg-error m-b-sm h-text-center h-text-hey p-tb">
       <text>hey ui</text>
       <text>全部字母小写</text>
     </view>
-    <view class=" h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-Hey p-tb">
+    <view class=" h-text-sm h-corner-sm h-text-height h-bg-success m-b-sm h-text-center h-text-Hey p-tb">
       <text class="h-text-bold">hey ui</text>
       <text>文字加粗</text>
     </view>
-    <view class=" h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-Hey p-tb">
+    <view class=" h-text-sm h-corner-sm h-text-height h-bg-teanslucent m-b-sm h-text-center h-text-Hey p-tb">
       <text class="h-text-skew">hey ui</text>
       <text>文字倾斜</text>
     </view>
-    <view class=" h-text-sm h-corner-sm h-text-height h-bg-blue m-b-sm h-text-center h-text-Hey p-tb">
+    <view class=" h-text-sm h-corner-sm h-text-height h-bg-yellow m-b-sm h-text-center h-text-Hey p-tb">
       <text class="h-text-del">hey ui</text>
       <text>文字删除线</text>
     </view>  

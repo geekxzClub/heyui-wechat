@@ -9,7 +9,7 @@
   <view class="h-bg-white h-text-left p-b">
     <radio-group>
       <view class="h-text-black h-text-sm p">1、自带效应器和4倍镜的狙击枪是?</view>
-      <view class="h-grid h-col-1 m-lr">
+      <view class="h-grid h-grid-1 m-lr">
         <view class="p-tb">
           <radio class="radio"></radio>
           <text class="p-lr">SKS</text>
@@ -39,7 +39,7 @@
   <view class="h-bg-white h-text-left p-b">
     <radio-group>
       <view class="h-text-black h-text-sm p">2、下面哪一种瓜不能吃?</view>
-      <view class="h-grid h-col-1 m-lr">
+      <view class="h-grid h-grid-1 m-lr">
         <view class="p-tb">
           <radio></radio>
           <text class="p-lr">冬瓜</text>
@@ -107,7 +107,7 @@
   <view class="h-bg-white h-text-left p-b">
     <radio-group>
       <view class="h-text-black h-text-sm p">5、程序猿最渴望拥有什么?</view>
-      <view class="h-grid h-col-1 m-lr">
+      <view class="h-grid h-grid-1 m-lr">
         <view class="p-tb">
           <radio class="radio"></radio>
           <text class="p-lr">斐尔可</text>
@@ -132,7 +132,7 @@
   <view class="h-bg-white h-text-left p-b">
     <radio-group style="display:block">
       <view class="h-text-black h-text-sm p">6、程序猿最渴望拥有什么?</view>
-      <view class="h-grid h-col-1 m-lr">
+      <view class="h-grid h-grid-1 m-lr">
         <view class="h-flex h-justify-between h-align-center p-tb">
           <text class="titler">斐尔可</text>
           <radio class="radio"></radio>

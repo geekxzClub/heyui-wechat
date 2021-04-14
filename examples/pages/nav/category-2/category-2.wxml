@@ -1,0 +1,117 @@
+<scroll-view scroll-y scroll-with-animation class="tab-view" scroll-top="{{scrollTop}}" style="height:{{menuHeight}}px">
+    <view wx:for="{{tabbar}}" wx:key="item" class="tab-bar-item {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" catchtap="swichNav">
+      <text>{{item}}</text>
+    </view>
+</scroll-view>
+<view class="right-box">
+  <!--内容部分 start 自定义可删除-->
+  <block wx:for="{{tabbar}}" wx:key="item">
+    <view class="page-view" hidden="{{currentTab!==index}}">
+      <swiper indicator-dots autoplay circular interval="5000" duration="150" class="swiper">
+        <swiper-item wx:if="{{index%2===0}}" catchtap="detail">
+          <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner1.jpg" class="slide-image" />
+        </swiper-item>
+        <swiper-item catchtap="detail">
+          <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner2.jpg" class="slide-image" />
+        </swiper-item>
+        <swiper-item catchtap="detail">
+          <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner3.jpg" class="slide-image" />
+        </swiper-item>
+      </swiper>
+      <view class="class-box">
+        <view class="class-item">
+          <view class="class-name">{{item}}</view>
+          <view class="g-container">
+            <view class="g-box" catchtap="productList" data-key="高价回收">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner3.jpg" class="g-image" />
+              <view class="g-title">高价回收</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="好物优选">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner4.jpg" class="g-image" />
+              <view class="g-title">好物优选</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="iphone X">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner5.jpg" class="g-image" />
+              <view class="g-title">iphone X</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="电动牙刷" wx:if="{{index%2===0}}">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner6.jpg" class="g-image" />
+              <view class="g-title">电动牙刷</view>
+            </view>
+          </view>
+        </view>
+
+        <view class="class-item">
+          <view class="class-name">专场推荐{{index+1}}</view>
+          <view class="g-container">
+            <view class="g-box" catchtap="productList" data-key="笔记本" wx:if="{{index%2===0}}">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner3.jpg" class="g-image" />
+              <view class="g-title">笔记本</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="电水壶">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner4.jpg" class="g-image" />
+              <view class="g-title">电水壶</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="iphone X">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner5.jpg" class="g-image" />
+              <view class="g-title">iphone X</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="电动牙刷">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner6.jpg" class="g-image" />
+              <view class="g-title">电动牙刷</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="抽纸">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner1.jpg" class="g-image" />
+              <view class="g-title">抽纸</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="笔记本">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner3.jpg" class="g-image" />
+              <view class="g-title">笔记本</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="电水壶">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner4.jpg" class="g-image" />
+              <view class="g-title">电水壶</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="iphone X" wx:if="{{index%2===0}}">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner5.jpg" class="g-image" />
+              <view class="g-title">iphone X</view>
+            </view>
+          </view>
+        </view>
+
+        <view class="class-item">
+          <view class="class-name">专场推荐{{index+1}}</view>
+          <view class="g-container">
+            <view class="g-box" catchtap="productList" data-key="iphone X">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner5.jpg" class="g-image" />
+              <view class="g-title">iphone X</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="电动牙刷">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner6.jpg" class="g-image" />
+              <view class="g-title">电动牙刷</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="抽纸">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner1.jpg" class="g-image" />
+              <view class="g-title">抽纸</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="笔记本">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner3.jpg" class="g-image" />
+              <view class="g-title">笔记本</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="电水壶">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner4.jpg" class="g-image" />
+              <view class="g-title">电水壶</view>
+            </view>
+            <view class="g-box" catchtap="productList" data-key="iphone X" wx:if="{{index%2===0}}">
+              <image src="https://oss.geekxz.com/hey-ui-oss/banner/banner5.jpg" class="g-image" />
+              <view class="g-title">iphone X</view>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+  </block>
+  <!--内容部分 end 自定义可删除-->
+</view>

@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "h-notic": "../../component/h-notic/index"
+    "h-notic": "/component/h-notic/index"
   }
 }

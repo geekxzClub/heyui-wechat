@@ -1,37 +1,26 @@
-<!--pages/view/divder/divder.wxml--><import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
+<!--pages/view/divder/divder.wxml-->
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black"> 形状小</text>
+  </view>
+</view>
+<view class="p h-bg-white">
+  <view class="h-divder h-flex h-justify-center h-align-center m-t">没有更多了</view>
+  <view class="h-divder1 h-flex h-justify-center h-align-center m-t">没有更多了</view>
+  <view class="h-divder2 h-flex h-justify-center h-align-center m-t">没有更多了</view>
+  <view class="h-divder3 h-flex h-justify-center h-align-center m-t">没有更多了</view>
+</view>
 
-<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> 分割线展示</text>
-    </view>
+<view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black"> 大小</text>
   </view>
-
-  <view class="h-bar h-bg-white h-border-bottom">
-    <view class="action h-text-xs">
-      <text class="heyui-title h-text-red"> 形状小</text>
-    </view>
-  </view>
-  <view class="p h-bg-white">
-    <view class="h-divder h-flex h-justify-center h-align-center m-t">没有更多了</view>
-    <view class="h-divder1 h-flex h-justify-center h-align-center m-t">没有更多了</view>
-    <view class="h-divder2 h-flex h-justify-center h-align-center m-t">没有更多了</view>
-    <view class="h-divder3 h-flex h-justify-center h-align-center m-t">没有更多了</view>
-  </view>
-
-  <view class="h-bar h-bg-white h-border-bottom">
-    <view class="action h-text-xs">
-      <text class="heyui-title h-text-red"> 大小</text>
-    </view>
-  </view>
-  <view class="p h-bg-white">
-    <view class="h-divder h-flex h-justify-center h-align-center m-t h-text-l">没有更多了</view>
-    <view class="h-divder h-flex h-justify-center h-align-center m-t h-text-s">没有更多了</view>
-    <view class="h-divder h-flex h-justify-center h-align-center m-t h-text-xs">没有更多了</view>
-    <view class="h-divder h-flex h-justify-center h-align-center m-t h-text-sm">没有更多了</view>
-    <view class="h-divder h-flex h-justify-center h-align-center m-t h-text-md">没有更多了</view>
-    <view class="h-divder h-flex h-justify-center h-align-center m-t h-text-lg">没有更多了</view>
-  </view>
-
+</view>
+<view class="p h-bg-white">
+  <view class="h-divder h-flex h-justify-center h-align-center m-t h-text-l">没有更多了</view>
+  <view class="h-divder h-flex h-justify-center h-align-center m-t h-text-s">没有更多了</view>
+  <view class="h-divder h-flex h-justify-center h-align-center m-t h-text-xs">没有更多了</view>
+  <view class="h-divder h-flex h-justify-center h-align-center m-t h-text-sm">没有更多了</view>
+  <view class="h-divder h-flex h-justify-center h-align-center m-t h-text-md">没有更多了</view>
+  <view class="h-divder h-flex h-justify-center h-align-center m-t h-text-lg">没有更多了</view>
 </view>

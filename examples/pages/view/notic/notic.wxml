@@ -1,7 +1,7 @@
 <!--pages/view/notic/notic.wxml-->
-<view class="h-bar h-bg-white h-border-bottom">
+<view class="h-bar h-bg-white">
   <view class="action h-text-sm">
-    <text class="heyui-title h-text-black"> 显示完后再显示</text>
+    <text class="h-text-sm h-text-bold h-text-black">显示完后再显示</text>
   </view>
 </view>
 <view class="h-notic h-bg-blue">
@@ -11,9 +11,9 @@
     </view>
   </view>
 </view>
-<view class="h-bar h-bg-white h-border-bottom">
+<view class="h-bar h-bg-white m-t">
   <view class="action h-text-sm">
-    <text class="heyui-title h-text-black"> 出现白边后即显示</text>
+    <text class="h-text-sm h-text-bold h-text-black">出现白边后即显示</text>
   </view>
 </view>
 <view class="h-notic h-bg-green">
@@ -25,9 +25,9 @@
   </view>
 </view>
 
-<view class="h-bar h-bg-white h-border-bottom">
+<view class="h-bar h-bg-white m-t">
   <view class="action h-text-sm">
-    <text class="heyui-title h-text-black"> 上下滚动</text>
+    <text class="h-text-sm h-text-bold h-text-black">上下滚动</text>
   </view>
 </view>
 <swiper class="h-notic-container h-bg-pink p-l" vertical="true" autoplay="true" circular="true" interval="1500">

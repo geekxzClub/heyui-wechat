@@ -1,17 +1,8 @@
 <!--pages/view/swiper/swiper.wxml-->
-<import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
 
-<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> 轮播展示</text>
-    </view>
-  </view>
-
-  <view class="h-bar h-bg-white h-border-bottom">
+  <view class="h-bar h-bg-white">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 图片+视频</text>
+      <text class="h-text-sm h-text-bold h-text-black">图片+视频</text>
     </view>
   </view>
   <swiper class="screen-swiper square-dot" current="{{current}}" duration="500" bindchange="bannerChage">
@@ -21,12 +12,12 @@
     </swiper-item>
   </swiper>
 
-  <view class="h-bar h-bg-white h-border-bottom">
+  <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 卡片式</text>
+      <text class="h-text-sm h-text-bold h-text-black">卡片式</text>
     </view>
   </view>
-  <swiper class="card-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper class="card-swiper round-dot h-bg-white" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
     <swiper-item wx:for="{{swiperList}}" wx:key='item' class="{{cardCur==index?'cur':''}}">
       <view class="swiper-item">
         <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
@@ -35,9 +26,9 @@
     </swiper-item>
   </swiper>
 
-  <view class="h-bar h-bg-white h-border-bottom">
+  <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 全屏式</text>
+      <text class="h-text-sm h-text-bold h-text-black">全屏式</text>
     </view>
   </view>
   <swiper class="screen-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
@@ -47,12 +38,12 @@
     </swiper-item>
   </swiper>
 
-  <view class="h-bar h-bg-white h-border-bottom">
+  <view class="h-bar h-bg-white h-border-bottom m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> Grid样式</text>
+      <text class="h-text-sm h-text-bold h-text-black">Grid样式</text>
     </view>
   </view>
-  <swiper class="screen-swiper square-dot" indicator-dots="true" circular="true">
+  <swiper class="screen-swiper square-dot h-bg-white" indicator-dots="true" circular="true">
     <swiper-item wx:for="{{swiperList}}" wx:key='item'>
     <view class="h-list h-grid h-grid-3 no-border m-tb card-menu">
         <view class="h-item">
@@ -83,9 +74,9 @@
     </swiper-item>
   </swiper>
 
-  <view class="h-bar h-bg-white h-border-bottom m-t">
+  <view class="h-bar h-bg-white m-t">
     <view class="action h-text-xs">
-      <text class="heyui-title h-text-black"> 不需要指示点Dot</text>
+      <text class="h-text-sm h-text-bold h-text-black">不需要指示点Dot</text>
     </view>
   </view>
   <swiper class="screen-swiper" circular="true" autoplay="true" interval="5000" duration="500">
@@ -94,5 +85,3 @@
       <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
     </swiper-item>
   </swiper>
-
-</view>

@@ -3,45 +3,45 @@
   <text class="h-text-sm h-text-bold h-text-black">边角大小</text>
 </view>
 <view class="p-lr-lg h-text-left h-text-s">
-  <view class="h-bg-grey h-corner-s p">s 2rpx</view>
-  <view class="h-bg-grey h-corner-xs m-t p">xs 6rpx</view>
-  <view class="h-bg-grey h-corner-sm m-t p">sm 12rpx</view>
-  <view class="h-bg-grey h-corner-md m-t p">md 32rpx</view>
-  <view class="h-bg-grey h-corner-lg m-t p">lg 9999rpx</view>
+  <view class="h-bg-error h-corner-s p">s 2rpx</view>
+  <view class="h-bg-success h-corner-xs m-t p">xs 6rpx</view>
+  <view class="h-bg-warning h-corner-sm m-t p">sm 12rpx</view>
+  <view class="h-bg-primary h-corner-md m-t p">md 32rpx</view>
+  <view class="h-bg-teanslucent h-corner-lg m-t p">lg 9999rpx</view>
 </view>
 
 <view class="h-bar p-l m-t">
   <text class="h-text-sm h-text-bold h-text-black">上边角</text>
 </view>
 <view class="p-lr-lg h-text-left h-text-s">
-  <view class="h-bg-grey h-corner-tlr-sm p">sm 12rpx</view>
-  <view class="h-bg-grey h-corner-tlr-md m-t p">md 32rpx</view>
+  <view class="h-bg-red h-corner-tlr-sm p">sm 12rpx</view>
+  <view class="h-bg-orange h-corner-tlr-md m-t p">md 32rpx</view>
 </view>
 
 <view class="h-bar p-l m-t">
   <text class="h-text-sm h-text-bold h-text-black">下边角</text>
 </view>
 <view class="h-text-left h-text-s p-lr">
-  <view class="h-bg-grey h-corner-blr-sm p">sm 12rpx</view>
-  <view class="h-bg-grey h-corner-blr-md m-t p">md 32rpx</view>
+  <view class="h-bg-yellow h-corner-blr-sm p">sm 12rpx</view>
+  <view class="h-bg-olive h-corner-blr-md m-t p">md 32rpx</view>
 </view>
 
 <view class="h-bar p-l m-t">
   <text class="h-text-sm h-text-bold h-text-black">左边角</text>
 </view>
 <view class="h-text-left h-text-s p-lr p-b-xs">
-  <view class="h-bg-grey h-corner-ltb-sm p">sm 12rpx</view>
-  <view class="h-bg-grey h-corner-ltb-md m-t p">md 32rpx</view>
-  <view class="h-bg-grey h-corner-ltb-lg m-t p">lg 9999rpx</view>
+  <view class="h-bg-green h-corner-ltb-sm p">sm 12rpx</view>
+  <view class="h-bg-cyan h-corner-ltb-md m-t p">md 32rpx</view>
+  <view class="h-bg-purple h-corner-ltb-lg m-t p">lg 9999rpx</view>
 </view>
 
 <view class="h-bar p-l">
   <text class="h-text-sm h-text-bold h-text-black">右边角</text>
 </view>
 <view class="p-lr h-text-left h-text-s">
-  <view class="h-bg-grey h-corner-rtb-sm p">sm 12rpx</view>
-  <view class="h-bg-grey h-corner-rtb-md m-t p">md 32rpx</view>
-  <view class="h-bg-grey h-corner-rtb-lg m-t p">lg 9999rpx</view>
+  <view class="h-bg-mauve h-corner-rtb-sm p">sm 12rpx</view>
+  <view class="h-bg-pink h-corner-rtb-md m-t p">md 32rpx</view>
+  <view class="h-bg-brown h-corner-rtb-lg m-t p">lg 9999rpx</view>
 </view>
 
 <view class="h-bar p-l m-t">

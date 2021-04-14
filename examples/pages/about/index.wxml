@@ -27,7 +27,7 @@
   </view>
 </view>
 
-<view class="h-list menu card-menu m-tb">
+<view class="h-list menu card-menu m-tb h-bg-white">
   <view class="h-item h-arrow">
     <view class="content" bindtap="copyLink" data-link="https://github.com/geekxzClub">
       <text class="heyui-github text-grey"></text>

@@ -5,7 +5,7 @@
 <view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
   <view class="h-bar h-bg-white h-corner-sm">
     <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> 搜索展示</text>
+      <text class="heyui-titles h-text-blue h-text-bold"> Popup展示</text>
     </view>
   </view>
   <view class="h-bar h-bg-white h-border-bottom">

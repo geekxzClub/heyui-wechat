@@ -23,13 +23,19 @@ Page({
       type: 'tabs',
       text_zh: '选项卡',
       text_en: 'Tabs'
+    }, {
+      id: 4,
+      icon: 'cardboardfill',
+      type: 'category',
+      text_zh: '顶部分类菜单',
+      text_en: 'Category'
+    }, {
+      id: 5,
+      icon: 'cardboardfill',
+      type: 'category-2',
+      text_zh: '侧边分类菜单',
+      text_en: 'category-2'
     }
-    // , {
-    //   id: 4,
-    //   icon: 'cardboardfill',
-    //   type: 'menu',
-    //   text: 'Menu 浮动菜单'
-    // }
     ]
   },
 
@@ -59,6 +65,16 @@ Page({
     if (type == 'menu') {
       wx.navigateTo({
         url: '/pages/nav/menu/menu'
+      })
+    }
+    if (type == 'category') {
+      wx.navigateTo({
+        url: '/pages/nav/category/category'
+      })
+    }
+    if (type == 'category-2') {
+      wx.navigateTo({
+        url: '/pages/nav/category-2/category-2'
       })
     }
   },

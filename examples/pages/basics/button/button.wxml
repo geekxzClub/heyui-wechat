@@ -20,7 +20,7 @@
 <view class="h-bar p-l">
   <text class="h-text-sm h-text-bold h-text-black">按钮颜色</text>
 </view>
-<view class="h-grid h-col-5 p-lr-sm p-b-xs">
+<view class="h-grid h-grid-5 p-lr-sm p-b-xs">
   <view class="m-b-sm h-text-center" wx:for="{{ColorList}}" wx:key='item'>
     <button class="h-btn h-bg-{{item.name}}">{{item.title}}</button>
   </view>
@@ -28,7 +28,7 @@
 <view class="h-bar p-l">
   <text class="h-text-sm h-text-bold h-text-black">按钮镂空</text>
 </view>
-<view class="h-grid h-col-5 p-lr-sm p-b-xs">
+<view class="h-grid h-grid-5 p-lr-sm p-b-xs">
   <view class="m-b-sm h-text-center" wx:for="{{ColorList}}" wx:key='item'>
     <button class="h-btn h-line-{{item.name}} h-corner-lg">{{item.title}}</button>
   </view>
@@ -57,7 +57,7 @@
 <view class="h-bar p-l">
   <text class="h-text-sm h-text-bold h-text-black">特殊能力</text>
 </view>
-<view class="h-grid h-col-3 p-b-xs">
+<view class="h-grid h-grid-3 p-b-xs">
   <view class="m-b-sm h-text-center">
     <button class="h-btn h-btn-lg h-corner-sm h-bg-cyan h-shaaow" open-type="contact">
       <text class="h-text-white">客服</text>

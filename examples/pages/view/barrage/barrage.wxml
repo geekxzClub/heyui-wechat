@@ -1,16 +1,7 @@
 <!--pages/view/barrage/barrage.wxml-->
-<import src="/pages/tpl/top/index.wxml" />
-<template is="headers"></template>
-
-<view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm p-b">
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action h-text-sm">
-      <text class="heyui-titles h-text-blue h-text-bold"> 弹幕展示</text>
-    </view>
-  </view>
 
   <!-- 有序弹幕 -->
-  <view class='h-barrage-gird'>
+  <view class='h-barrage-gird m'>
     <view class='h-barrage-group'>
         <!-- top -->
         <view class='h-barrage-bottom-group top' style="animation: dmAnimation2 35s linear infinite; ">
@@ -65,7 +56,7 @@
     </view>
   </view>
 
-  <view class='h-barrage-gird'>
+  <view class='h-barrage-gird m-lr m-b'>
 
     <view class='h-barrage-group'>
         <!-- top -->
@@ -91,7 +82,7 @@
     </view>
 
   </view>
-  <view class='h-barrage-gird'>
+  <view class='h-barrage-gird m-lr m-b'>
     <view class='h-barrage-group'>
         <!-- mid -->
         <view class='h-barrage-bottom-group mid'  style="animation: dmAnimation2 30s linear 1s infinite; ">
@@ -113,7 +104,7 @@
         <view class='shadowOverlay'></view>    
     </view>
   </view>
-  <view class='h-barrage-gird'>
+  <view class='h-barrage-gird m-lr'>
     <view class='h-barrage-group'>
         <!-- btm -->
         <view class='h-barrage-bottom-group btm'  style="animation: dmAnimation2 45s linear infinite; ">
@@ -137,7 +128,7 @@
   </view>
 
   <!-- 无序弹幕 -->
-  <view class='h-barrage-gird'>
+  <view class='h-barrage-gird m-lr m-t p-b'>
     
     <view class='h-barrage-group'>
         <view class='h-barrage-bottom-group' wx:for="{{ dmData }}" wx:key="item"  style="top:{{ item.top }}%; animation: dmAnimation {{item.time}}s linear {{ index*3 }}s infinite; ">
@@ -161,5 +152,3 @@
     </view>
     
   </view>
-
-</view>

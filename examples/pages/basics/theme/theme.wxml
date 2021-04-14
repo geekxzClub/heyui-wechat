@@ -7,7 +7,7 @@
 <view class="h-bar p-l">
   <text class="h-text-sm h-text-bold h-text-black">1、自定义主题背景颜色</text>
 </view>
-<view class="h-grid h-col-2 p-lr p-b">
+<view class="h-grid h-grid-2 p-lr p-b">
   <view class="items h-bg-error h-corner-sm">
     <view class="p-sm">
       <view>error</view>
@@ -57,7 +57,7 @@
 <view class="h-bar p-l p-b-xs">
   <text class="h-text-sm h-text-bold h-text-black">自定义主题背景颜色</text>
 </view>
-<view class="h-grid h-col-2 p-lr p-b">
+<view class="h-grid h-grid-2 p-lr p-b">
   <view class="items h-bg-gray h-corner-sm">
     <view class="p-sm">
       <view>gray</view>
@@ -93,7 +93,7 @@
 
 <!-- button -->
 <view class="h-text-sm h-text-bold h-text-xs p-lr">自定义主题按钮颜色</view>
-<view class="h-grid h-col-4 p-b-sm p-b">
+<view class="h-grid h-grid-4 p-b-sm p-b">
   <view class="m-tb-sm h-text-center">
     <button class="h-btn h-bg-primary h-btn-lg">默认</button>
   </view>
