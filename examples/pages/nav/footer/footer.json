@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "底部导航",
+  "usingComponents": {
+    "tui-footer": "/component/h-footer/footer"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "pages": [    
+  "pages": [     
     "pages/index/index",
     "pages/view/luckdraw/luckdraw", 
     
@@ -48,6 +48,7 @@
     "pages/nav/tabs/tabs",
     "pages/nav/category-2/category-2",
     "pages/nav/category/category",
+    "pages/nav/footer/footer",
     "pages/nav/menu/menu",
 
     "pages/animation/animation",

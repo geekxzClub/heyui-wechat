@@ -35,6 +35,12 @@ Page({
       type: 'category-2',
       text_zh: '侧边分类菜单',
       text_en: 'category-2'
+    }, {
+      id: 6,
+      icon: 'cardboardfill',
+      type: 'footer',
+      text_zh: '底部导航',
+      text_en: 'footer'
     }
     ]
   },
@@ -75,6 +81,11 @@ Page({
     if (type == 'category-2') {
       wx.navigateTo({
         url: '/pages/nav/category-2/category-2'
+      })
+    }
+    if (type == 'footer') {
+      wx.navigateTo({
+        url: '/pages/nav/footer/footer'
       })
     }
   },

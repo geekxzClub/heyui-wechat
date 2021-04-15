@@ -1,0 +1,8 @@
+<tui-footer fixed="{{false}}" copyright="{{copyright}}"></tui-footer>
+<tui-footer fixed="{{false}}" copyright="{{copyright}}" navigate="{{navigate}}" tui-footer-class="tui-custom"></tui-footer>
+
+<tui-footer fixed="{{false}}" copyright="{{copyright}}" navigate="{{navigate2}}" tui-footer-class="tui-custom"></tui-footer>
+
+<tui-footer fixed="{{false}}" copyright="{{copyright}}" navigate="{{navigate3}}" tui-footer-class="tui-custom"></tui-footer>
+
+<tui-footer copyright="Copyright © 2021 Thor UI All Rights Reserved." navigate="{{navigate}}" bgcolor="#fafafa"></tui-footer>
