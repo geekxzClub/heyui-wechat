@@ -2,7 +2,7 @@
 <view class="h-flex h-corner-tlr-sm p-t m-lr" bindtap="goToMore" data-sid="1" data-sname="婚嫁系列">
   <view class="h-series h-flex-sub h-bg-white h-corner-sm h-shadow">
     <view class="h-series-img">
-      <image class="h-corner-tlr-sm" mode="aspectFill" src="http://demo.geekxz.com/images/sy2-1.png"></image>
+      <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-1.png"></image>
     </view>
     <view class="h-series-content p-sm">      
       <view class="h-status h-text-sm h-bg-pink h-text-white">婚嫁系列</view>
@@ -25,7 +25,7 @@
 <view class="h-flex h-corner-tlr-sm p-t m-lr" bindtap="goToMore" data-sid="2" data-sname="国翠系列">
   <view class="h-series h-flex-sub h-bg-white h-corner-sm h-shadow">
     <view class="h-series-img">
-      <image class="h-corner-tlr-sm" mode="aspectFill" src="http://demo.geekxz.com/images/sy2-2.png"></image>
+      <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-2.png"></image>
     </view>
     <view class="h-series-content p-sm">      
       <view class="h-status h-text-sm h-bg-black h-text-white">国翠系列</view>
@@ -48,7 +48,7 @@
 <view class="h-flex h-corner-tlr-sm p-t m-lr p-b" bindtap="goToMore" data-sid="1" data-sname="童话系列">
   <view class="h-series h-flex-sub h-bg-white h-corner-sm h-shadow">
     <view class="h-series-img">
-      <image class="h-corner-tlr-sm" mode="aspectFill" src="http://demo.geekxz.com/images/sy2-3.png"></image>
+      <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-3.png"></image>
     </view>
     <view class="h-series-content p-sm">      
       <view class="h-status h-text-sm h-bg-mauve h-text-white">童话系列</view>

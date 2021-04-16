@@ -54,9 +54,9 @@
 
 
 <!-- 营销活动 -->
-<view class="h-bar h-bg-white p-tb-lg">
+<view class="h-bar">
   <view class="action">
-    <text class="heyui-titles h-text-lg h-text-red"> 营销活动</text>
+    <text class="heyui-titles h-text-lg h-text-black"> 营销活动</text>
   </view>
 </view>
 <!-- <view class="h-bar h-justify-center h-bg-white p-tb-lg">
@@ -65,33 +65,31 @@
     <text class="h-bg-green" style="width:2rem"></text>
   </view>
 </view> -->
-<view class="h-bg-white p-b h-border-bottom">
-  <view class="h-flex m-lr p-b">
-    <view class="h-flex-sub h-corner-sm active-left">
-      <view class=" h-shadow h-marry-img">
-        <image class="h-corner-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-1.png"></image>
-      </view>
+<view class="h-flex m-lr">
+  <view class="h-flex-sub h-corner-sm active-left">
+    <view class=" h-shadow h-marry-img">
+      <image class="h-corner-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-1.png"></image>
     </view>
-    <view class="h-flex-sub h-corner-xs active-right">
-      <view class="h-shadow culture-img h-fl">
-        <image class="h-corner-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-2.png"></image>
-      </view>
-      <view class="h-shadow fairytale-img h-fl"  bindtap="goToLucky">
-        <image class="h-corner-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-3.png"></image>
-      </view>
+  </view>
+  <view class="h-flex-sub h-corner-xs active-right">
+    <view class="h-shadow culture-img h-fl">
+      <image class="h-corner-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-2.png"></image>
+    </view>
+    <view class="h-shadow fairytale-img h-fl"  bindtap="goToLucky">
+      <image class="h-corner-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-3.png"></image>
     </view>
   </view>
 </view>
 
 <!-- 精选推荐 -->
-<view class="h-bar h-bg-white p-tb-lg">
+<view class="h-bar p-tb-lg">
   <view class="action">
-    <text class="heyui-titles h-text-lg h-text-red"> 精选推荐</text>
+    <text class="heyui-titles h-text-lg h-text-black"> 精选推荐</text>
   </view>
 </view>
-<scroll-view scroll-x class="h-bg-white h-nav p-b h-border-bottom " scroll-with-animation scroll-left="{{scrollLeft}}">
+<scroll-view scroll-x class="h-nav" scroll-with-animation scroll-left="{{scrollLeft}}">
   <view class="h-item h-boutique" wx:for="{{goodsList}}" wx:key="item" bindtap="selectTab" data-id="{{index}}">
-    <view class="h-goods-item h-bg-white h-corner-sm m-b-sm h-shadow" bindtap="goToDetail">
+    <view class="h-goods-item h-bg-white h-corner-sm m-b-sm" bindtap="goToDetail">
       <view class="h-goods-img">
         <image class="h-corner-tlr-sm " mode="aspectFill" src="{{item.img}}"></image>
       </view>
@@ -111,93 +109,91 @@
 </scroll-view>
 
 <!-- 主题 -->
-<!-- <view class="h-bar h-justify-center h-bg-white p-t-lg">
+<view class="h-bar h-justify-center p-t">
   <view class="action sub-title">
-    <text class="h-text-md h-text-bold h-text-green">主题系列</text>
-    <text class="h-bg-green" style="width:2rem"></text>
+    <text class="h-text-sm h-text-bold h-text-blue">主题推荐</text>
+    <text class="h-bg-yellow" style="width:1rem"></text>
   </view>
-</view> -->
-<view class="h-bg-white p-tb m-b">
-  <view class="h-flex h-corner-tlr-sm p-t m-lr" bindtap="goToMore" data-sid="1" data-sname="婚嫁系列">
-    <view class="h-series h-flex-sub h-bg-white h-corner-sm h-shadow">
-      <view class="h-series-img">
-        <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-1.png"></image>
-      </view>
-      <view class="h-series-content p-sm">      
-        <view class="h-status h-text-sm h-bg-pink h-text-white">婚嫁系列</view>
-        <view class="h-series-tit h-text-sm h-text-cut">一见倾心 真爱礼赞</view>
-        <view class="h-series-time h-text-s h-text-gray">赞颂动人爱情</view>
-        <view class="h-view-time h-border-top p-lr-sm">
-          <view class="h-fl h-text-s h-text-gray">          
-            <text class="heyui-time"> 42天</text>
-          </view>
-          <view class="h-fr h-text-s h-text-gray">
-            <text class="heyui-attention"> 12313</text>
-            <!-- <text class="heyui-message m-l-sm"> 77454</text> -->
-            <text class="heyui-appreciate m-l-sm"> 77454</text>
-          </view>
+</view>
+<view class="h-flex h-corner-tlr-sm p-t m-lr" bindtap="goToMore" data-sid="1" data-sname="婚嫁系列">
+  <view class="h-series h-flex-sub h-bg-white h-corner-sm">
+    <view class="h-series-img">
+      <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-1.png"></image>
+    </view>
+    <view class="h-series-content p-sm">      
+      <view class="h-status h-text-sm h-bg-pink h-text-white">婚嫁系列</view>
+      <view class="h-series-tit h-text-sm h-text-cut">一见倾心 真爱礼赞</view>
+      <view class="h-series-time h-text-s h-text-gray">赞颂动人爱情</view>
+      <view class="h-view-time h-border-top p-lr-sm">
+        <view class="h-fl h-text-s h-text-gray">          
+          <text class="heyui-time"> 42天</text>
+        </view>
+        <view class="h-fr h-text-s h-text-gray">
+          <text class="heyui-attention"> 12313</text>
+          <!-- <text class="heyui-message m-l-sm"> 77454</text> -->
+          <text class="heyui-appreciate m-l-sm"> 77454</text>
         </view>
       </view>
-    </view>  
-  </view>
+    </view>
+  </view>  
+</view>
 
-  <view class="h-flex h-corner-tlr-sm p-t m-lr" bindtap="goToMore" data-sid="2" data-sname="国翠系列">
-    <view class="h-series h-flex-sub h-bg-white h-corner-sm h-shadow">
-      <view class="h-series-img">
-        <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-2.png"></image>
-      </view>
-      <view class="h-series-content p-sm">      
-        <view class="h-status h-text-sm h-bg-black h-text-white">国翠系列</view>
-        <view class="h-series-tit h-text-sm h-text-cut">浑然天成 灵气逼人</view>
-        <view class="h-series-time h-text-s h-text-gray">赞颂动人爱情</view>
-        <view class="h-view-time h-border-top p-lr-sm">
-          <view class="h-fl h-text-s h-text-gray">          
-            <text class="heyui-time"> 42天</text>
-          </view>
-          <view class="h-fr h-text-s h-text-gray">
-            <text class="heyui-attention"> 12313</text>
-            <!-- <text class="heyui-message m-l-sm"> 77454</text> -->
-            <text class="heyui-appreciate m-l-sm"> 77454</text>
-          </view>
+<view class="h-flex h-corner-tlr-sm p-t m-lr" bindtap="goToMore" data-sid="2" data-sname="国翠系列">
+  <view class="h-series h-flex-sub h-bg-white h-corner-sm">
+    <view class="h-series-img">
+      <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-2.png"></image>
+    </view>
+    <view class="h-series-content p-sm">      
+      <view class="h-status h-text-sm h-bg-black h-text-white">国翠系列</view>
+      <view class="h-series-tit h-text-sm h-text-cut">浑然天成 灵气逼人</view>
+      <view class="h-series-time h-text-s h-text-gray">赞颂动人爱情</view>
+      <view class="h-view-time h-border-top p-lr-sm">
+        <view class="h-fl h-text-s h-text-gray">          
+          <text class="heyui-time"> 42天</text>
+        </view>
+        <view class="h-fr h-text-s h-text-gray">
+          <text class="heyui-attention"> 12313</text>
+          <!-- <text class="heyui-message m-l-sm"> 77454</text> -->
+          <text class="heyui-appreciate m-l-sm"> 77454</text>
         </view>
       </view>
-    </view>  
-  </view>
+    </view>
+  </view>  
+</view>
 
-  <view class="h-flex h-corner-tlr-sm p-t m-lr p-b" bindtap="goToMore" data-sid="1" data-sname="童话系列">
-    <view class="h-series h-flex-sub h-bg-white h-corner-sm h-shadow">
-      <view class="h-series-img">
-        <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-3.png"></image>
-      </view>
-      <view class="h-series-content p-sm">      
-        <view class="h-status h-text-sm h-bg-mauve h-text-white">童话系列</view>
-        <view class="h-series-tit h-text-sm h-text-cut">如梦如幻 唯美孤品</view>
-        <view class="h-series-time h-text-s h-text-gray">赞颂动人爱情</view>
-        <view class="h-view-time h-border-top p-lr-sm">
-          <view class="h-fl h-text-s h-text-gray">          
-            <text class="heyui-time"> 42天</text>
-          </view>
-          <view class="h-fr h-text-s h-text-gray">
-            <text class="heyui-attention"> 12313</text>
-            <!-- <text class="heyui-message m-l-sm"> 77454</text> -->
-            <text class="heyui-appreciate m-l-sm"> 77454</text>
-          </view>
+<view class="h-flex h-corner-tlr-sm p-t m-lr p-b" bindtap="goToMore" data-sid="1" data-sname="童话系列">
+  <view class="h-series h-flex-sub h-bg-white h-corner-sm">
+    <view class="h-series-img">
+      <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-3.png"></image>
+    </view>
+    <view class="h-series-content p-sm">      
+      <view class="h-status h-text-sm h-bg-mauve h-text-white">童话系列</view>
+      <view class="h-series-tit h-text-sm h-text-cut">如梦如幻 唯美孤品</view>
+      <view class="h-series-time h-text-s h-text-gray">赞颂动人爱情</view>
+      <view class="h-view-time h-border-top p-lr-sm">
+        <view class="h-fl h-text-s h-text-gray">          
+          <text class="heyui-time"> 42天</text>
+        </view>
+        <view class="h-fr h-text-s h-text-gray">
+          <text class="heyui-attention"> 12313</text>
+          <!-- <text class="heyui-message m-l-sm"> 77454</text> -->
+          <text class="heyui-appreciate m-l-sm"> 77454</text>
         </view>
       </view>
-    </view>  
-  </view>
+    </view>
+  </view>  
 </view>
 
 <!-- 推荐商品 -->
-<view class="h-bar h-justify-center h-bg-white p-t-lg">
+<view class="h-bar h-justify-center p-t">
   <view class="action sub-title">
     <text class="h-text-sm h-text-bold h-text-blue">推荐商品</text>
     <text class="h-bg-yellow" style="width:1rem"></text>
   </view>
 </view>
-<view class=" h-bg-white" style="padding-bottom: 110rpx">
+<view class="" style="padding-bottom: 120rpx">
   <view class="h-grid h-grid-2 h-corner-tlr-sm m-lr p-b">
-    <view class="h-goods-item h-bg-white h-corner-sm h-shadow m-t" wx:for="{{goodsList}}" wx:key='item' bindtap="goToDetail">
+    <view class="h-goods-item h-bg-white h-corner-sm m-t" wx:for="{{goodsList}}" wx:key='item' bindtap="goToDetail">
       <view class="h-goods-img">
         <image class="h-corner-tlr-sm " mode="aspectFill" src="{{item.img}}"></image>
       </view>

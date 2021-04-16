@@ -1,6 +1,6 @@
 <!--pages/about/about.wxml-->
 <!-- 个人信息 -->
-<view class="user-box h-bg-default h-corner-blr-md">
+<view class="user-box h-bg-primary h-corner-blr-md">
   <view class="h-list menu-avatar p-t-sm">
     <view class="h-item">
       <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a5.jpg);"></view>
