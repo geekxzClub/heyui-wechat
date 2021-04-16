@@ -1,0 +1,28 @@
+<!--pages/category/more/more.wxml-->
+<!-- <view class="h-bar h-justify-center h-bg-white p-tb-lg">
+  <view class="action sub-title">
+    <text class="h-text-md h-text-bold h-text-green">珠宝</text>
+    <text class="h-bg-green" style="width:2rem"></text>
+  </view>
+</view> -->
+<view class=" h-bg-white">
+  <view class="h-grid h-col-2 h-corner-tlr-sm m-lr p-b">
+    <view class="h-goods-item h-bg-white h-corner-sm h-shadow m-t" wx:for="{{goodsList}}" wx:key='item' bindtap="goToDetail">
+      <view class="h-goods-img">
+        <image class="h-corner-tlr-sm " mode="aspectFill" src="{{item.img}}"></image>
+      </view>
+      <view class="h-goods-content">
+        <view class="h-good-tit h-text-xs h-text-cut2 p-lr-sm p-t-sm">{{item.title}}</view>
+        <view class="h-price-sell">
+          <view class="h-fl h-text-price h-text-red p-l-sm">
+            <text class="h-text-s">￥</text>
+            <text class="h-text-sm">{{item.price}}</text>
+            <text class="h-text-s">.00</text>
+          </view>
+          <text class="h-fl h-text-sell h-text-s h-text-gray m-l-sm">库存{{item.store}}件</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

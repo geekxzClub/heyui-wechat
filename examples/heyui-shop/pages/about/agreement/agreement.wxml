@@ -1,0 +1,68 @@
+<!--pages/about/agreement/agreement.wxml-->
+<scroll-view scroll-x class="h-bg-white h-nav {{isFixedTop?'search-bar':''}}" id="search-bar">
+  <view class="h-flex h-text-center">
+    <view class="h-item h-flex-sub h-text-xs {{index==TabCur?'h-text-orange cur':''}}" wx:for="{{navTab}}" wx:key='item' bindtap="selectTab" data-id="{{index}}">
+      {{item}}
+    </view>
+  </view>
+</scroll-view>
+
+<view wx:if="{{TabCur==0}}" class="m p-b-lg user-know h-bg-white h-corner-sm">
+  <view class="p-t m-lr h-text-sm">极客小站小程序用户须知</view>
+  <view class="m h-text-xs">
+    <view class="h-text-bold m-t m-b-sm">Hi！朋友~欢迎使用极客小站小程序！</view>
+    <view>极客小站小程序是一款高颜值的节日用品/礼品的商城小程序，不仅主打节日理念，更加关注节日与你之间的背后故事，每个节日里，你最思念谁？就在极客小站里替他选一份精致好物吧～</view>
+    <view class="h-text-bold m-t m-b-sm">产品质量</view>
+    <view>极客小站的每一款产品都会经过多维测评和试用，严格把控产品的渠道资质和产品品质。</view>
+    <view class="h-text-bold m-t m-b-sm">运费说明</view>
+    <view>极客小站在邮费上坚持无门槛包邮福利（偏远地区除外，例如：新疆，西藏，内蒙古，青海，海南，宁夏、港澳台，需补齐邮费。）</view>
+    <view class="h-text-bold m-t m-b-sm">发货方式</view>
+    <view>极客小站在每个节日已设定固定的发货周期，因此朋友们需要注意每个节日的发货时间，与我们合作的有顺丰、京东等快递大哥，将以实力准点送达极客小站好物。</view>
+    <view class="m-b-lg">更多功能敬请期待！</view>
+    <view class="m-t-lg">
+        <button class="h-btn h-btn h-bg-orange" openType="feedback"><text class="h-text-xs">意见反馈</text></button>
+    </view>
+  </view>
+</view>
+<view wx:if="{{TabCur==1}}" class="m p-b user-know h-bg-white h-corner-sm">
+  <view class="p-t m-lr h-text-sm">极客小站售后协议</view>
+  <view class="m h-text-xs">
+    <view class="h-text-bold m-t m-b-sm">Sorry！朋友~很抱歉极客小站的产品让您不满意。</view>
+    <view class="h-text-bold m-b-sm">退款声明</view>
+    <view>极客小站小程序端支持仅退款、仅退换、退货退款三中退款类型：</view>
+    <view class="h-text-xs">
+        <view class="h-text-bold m-t">仅退款</view>
+        <view>目前有食品类、票务类的商品支持仅退款，在提交申请时需要及时与客服沟通，否则有可能一直处于待处理状态哦～</view>
+        <view class="h-text-bold m-t">仅退换</view>
+        <view>朋友们需要填写商品包装内的售后服务单中的换货页，填好后随原商品原包装一同寄回原发货地址。</view>
+        <view class="h-text-bold m-t">退货退款</view>
+        <view>极客小站支持7天无理由退货退款。朋友们需要填写商品包装内的售后服务单中的退货退款页，填好后随原商品原包装一同寄回原发货地址。</view>
+    </view>
+    <view class="h-text-xs h-text-bold m-t">极客小站在7天无理由售后服务期外可能存在以下拒绝情况：</view>
+    <view class="m-b padding-left">
+        <view class="h-text-xs">商品损坏或丢失、非极客小站小程序端渠道的商品、退款件邮费到付</view>
+    </view>
+    <view>极客小站希望朋友们在有售后需求时优先与客服沟通，以维护自身消费者权益。</view>
+    <view class="h-text-bold m-t m-b-sm">赔付声明</view>
+    <view>在极客小站所有平台下单的朋友们，如有产品质量、食品安全等情况，极客小站将竭力负责。</view>
+    <view class="m-b-lg">期待您下次惠顾！</view>
+    <view class="m-t-lg">
+        <button class="h-btn h-btn h-bg-orange" openType="contact"><text class="h-text-xs">联系客服</text></button>
+    </view>
+  </view>
+</view>
+<view wx:if="{{TabCur==2}}" class="m p-b user-know h-bg-white h-corner-sm">
+  <view class="p-t m-lr h-text-sm">极客小站小程序用户须知</view>
+  <view class="m h-text-xs">
+    <view class="h-text-bold m-t m-b-sm">Hi！朋友~欢迎使用极客小站小程序！</view>
+    <view>极客小站小程序是极客小站技术团队自行研发的系统，其开发、运维、数据、计算由云服务支持。</view>
+    <view class="h-text-bold m-t m-b-sm">数据加密与保存</view>
+    <view>系统已加入DES、3DES、AES、RSA、DSA、SHA-1、MD5等主流算法，产生的数据由云上数据库产品。</view>
+    <view class="h-text-bold m-t m-b-sm">数据使用与销毁</view>
+    <view>系统内部的订单、用户账号、收货地址等隐私数据仅由工作人员参考与使用；</view>
+    <view>小程序在后续版本支持注销账号，注销后用户的所有信息将从极客小站系统全部抹除，包括用户基础信息、订单信息、收货信息等等。</view>
+    <view class="m-t-lg">
+        <button class="h-btn h-btn h-bg-orange" openType="contact"><text class="h-text-xs">举报有奖</text></button>
+    </view>
+  </view>
+</view>

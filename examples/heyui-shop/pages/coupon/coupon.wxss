@@ -1,0 +1,15 @@
+/* pages/coupon/coupon.wxss */
+.h-coupon-item{
+	position: relative;
+  overflow: hidden;
+}
+.h-status-tag { 
+	position: absolute; 
+	width: 140rpx; 
+	height: 40rpx; 
+	text-align: center; 
+	transform: rotate(-40deg); 
+	top: 5px; 
+  left: -16px; 
+  line-height: 38rpx;
+}

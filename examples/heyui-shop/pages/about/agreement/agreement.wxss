@@ -1,0 +1,11 @@
+/* pages/about/agreement/agreement.wxss */
+.user-know{
+  line-height: 60rpx;
+}
+.search-bar{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}

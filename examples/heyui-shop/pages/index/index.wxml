@@ -1,0 +1,232 @@
+<!--index.wxml-->
+<!-- <h-add-tips h-class='h-bg-orange-light h-text-pink h-shadow' h-arrow-class="h-arrow-green" h-tips-icon="heyui-close" text='点击添加我的小程序'></h-add-tips> -->
+<!-- 搜索栏 -->
+<view class="h-bar search h-bg-white p-tb {{isFixedTop?'search-bar':''}}" id="search-bar">
+  <view class="search-form h-corner-lg">
+    <text class="heyui-search"></text>
+    <input type="text" placeholder="搜索商品、文章、视频" confirm-type="search" disabled="true" bindtap="inputFocus"></input>
+  </view>
+  <!-- <view class="action">
+    <button class="h-btn h-bg-green shadow-blur h-corner-lg">搜索</button>
+  </view> -->
+</view>
+
+<!-- 用于吸顶后 占位用的 -->
+<view class="column" wx:if="{{isFixedTop}}"></view>
+
+<view class="h-bg-white p-b m-b">
+  <!-- 轮播图 -->
+  <swiper class="screen-swiper square-dot h-corner-sm m-lr" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+    <swiper-item wx:for="{{swiperList}}" wx:key='item'>
+      <image class="h-corner-sm" src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video class="h-corner-sm" src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </swiper-item>
+  </swiper>
+
+  <!-- 分类 -->
+  <view class="h-list h-grid h-grid-3 no-border">
+    <view class="h-item" bindtap="goToCategory" data-tid="1">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>珠宝</text>
+    </view>
+    <view class="h-item" bindtap="goToCategory" data-tid="2">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>钟表</text>
+    </view>
+    <view class="h-item" bindtap="goToCategory" data-tid="3">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>家居</text>
+    </view>
+    <view class="h-item" bindtap="goToCategory" data-tid="4">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>摆件</text>
+    </view>
+    <view class="h-item" bindtap="goToSeries" data-tid="4">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>系列</text>
+    </view>    
+    <view class="h-item" bindtap="goToActive" data-tid="4">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>活动</text>
+    </view>
+  </view>
+</view>
+
+
+<!-- 营销活动 -->
+<view class="h-bar h-bg-white p-tb-lg">
+  <view class="action">
+    <text class="heyui-titles h-text-lg h-text-red"> 营销活动</text>
+  </view>
+</view>
+<!-- <view class="h-bar h-justify-center h-bg-white p-tb-lg">
+  <view class="action sub-title">
+    <text class="h-text-md h-text-bold h-text-green">营销活动</text>
+    <text class="h-bg-green" style="width:2rem"></text>
+  </view>
+</view> -->
+<view class="h-bg-white p-b h-border-bottom">
+  <view class="h-flex m-lr p-b">
+    <view class="h-flex-sub h-corner-sm active-left">
+      <view class=" h-shadow h-marry-img">
+        <image class="h-corner-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-1.png"></image>
+      </view>
+    </view>
+    <view class="h-flex-sub h-corner-xs active-right">
+      <view class="h-shadow culture-img h-fl">
+        <image class="h-corner-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-2.png"></image>
+      </view>
+      <view class="h-shadow fairytale-img h-fl"  bindtap="goToLucky">
+        <image class="h-corner-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-3.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 精选推荐 -->
+<view class="h-bar h-bg-white p-tb-lg">
+  <view class="action">
+    <text class="heyui-titles h-text-lg h-text-red"> 精选推荐</text>
+  </view>
+</view>
+<scroll-view scroll-x class="h-bg-white h-nav p-b h-border-bottom " scroll-with-animation scroll-left="{{scrollLeft}}">
+  <view class="h-item h-boutique" wx:for="{{goodsList}}" wx:key="item" bindtap="selectTab" data-id="{{index}}">
+    <view class="h-goods-item h-bg-white h-corner-sm m-b-sm h-shadow" bindtap="goToDetail">
+      <view class="h-goods-img">
+        <image class="h-corner-tlr-sm " mode="aspectFill" src="{{item.img}}"></image>
+      </view>
+      <view class="h-goods-content">
+        <view class="h-good-tit h-text-xs h-text-cut p-lr-sm p-t-sm">{{item.title}}</view>
+        <view class="h-price-sell">
+          <view class="h-fl h-text-price h-text-red p-l-sm">
+            <text class="h-text-s">￥</text>
+            <text class="h-text-sm">{{item.price}}</text>
+            <text class="h-text-s">.00</text>
+          </view>
+          <text class="h-fl h-text-sell h-text-s h-text-gray m-l-sm">库存{{item.store}}件</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+<!-- 主题 -->
+<!-- <view class="h-bar h-justify-center h-bg-white p-t-lg">
+  <view class="action sub-title">
+    <text class="h-text-md h-text-bold h-text-green">主题系列</text>
+    <text class="h-bg-green" style="width:2rem"></text>
+  </view>
+</view> -->
+<view class="h-bg-white p-tb m-b">
+  <view class="h-flex h-corner-tlr-sm p-t m-lr" bindtap="goToMore" data-sid="1" data-sname="婚嫁系列">
+    <view class="h-series h-flex-sub h-bg-white h-corner-sm h-shadow">
+      <view class="h-series-img">
+        <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-1.png"></image>
+      </view>
+      <view class="h-series-content p-sm">      
+        <view class="h-status h-text-sm h-bg-pink h-text-white">婚嫁系列</view>
+        <view class="h-series-tit h-text-sm h-text-cut">一见倾心 真爱礼赞</view>
+        <view class="h-series-time h-text-s h-text-gray">赞颂动人爱情</view>
+        <view class="h-view-time h-border-top p-lr-sm">
+          <view class="h-fl h-text-s h-text-gray">          
+            <text class="heyui-time"> 42天</text>
+          </view>
+          <view class="h-fr h-text-s h-text-gray">
+            <text class="heyui-attention"> 12313</text>
+            <!-- <text class="heyui-message m-l-sm"> 77454</text> -->
+            <text class="heyui-appreciate m-l-sm"> 77454</text>
+          </view>
+        </view>
+      </view>
+    </view>  
+  </view>
+
+  <view class="h-flex h-corner-tlr-sm p-t m-lr" bindtap="goToMore" data-sid="2" data-sname="国翠系列">
+    <view class="h-series h-flex-sub h-bg-white h-corner-sm h-shadow">
+      <view class="h-series-img">
+        <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-2.png"></image>
+      </view>
+      <view class="h-series-content p-sm">      
+        <view class="h-status h-text-sm h-bg-black h-text-white">国翠系列</view>
+        <view class="h-series-tit h-text-sm h-text-cut">浑然天成 灵气逼人</view>
+        <view class="h-series-time h-text-s h-text-gray">赞颂动人爱情</view>
+        <view class="h-view-time h-border-top p-lr-sm">
+          <view class="h-fl h-text-s h-text-gray">          
+            <text class="heyui-time"> 42天</text>
+          </view>
+          <view class="h-fr h-text-s h-text-gray">
+            <text class="heyui-attention"> 12313</text>
+            <!-- <text class="heyui-message m-l-sm"> 77454</text> -->
+            <text class="heyui-appreciate m-l-sm"> 77454</text>
+          </view>
+        </view>
+      </view>
+    </view>  
+  </view>
+
+  <view class="h-flex h-corner-tlr-sm p-t m-lr p-b" bindtap="goToMore" data-sid="1" data-sname="童话系列">
+    <view class="h-series h-flex-sub h-bg-white h-corner-sm h-shadow">
+      <view class="h-series-img">
+        <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-3.png"></image>
+      </view>
+      <view class="h-series-content p-sm">      
+        <view class="h-status h-text-sm h-bg-mauve h-text-white">童话系列</view>
+        <view class="h-series-tit h-text-sm h-text-cut">如梦如幻 唯美孤品</view>
+        <view class="h-series-time h-text-s h-text-gray">赞颂动人爱情</view>
+        <view class="h-view-time h-border-top p-lr-sm">
+          <view class="h-fl h-text-s h-text-gray">          
+            <text class="heyui-time"> 42天</text>
+          </view>
+          <view class="h-fr h-text-s h-text-gray">
+            <text class="heyui-attention"> 12313</text>
+            <!-- <text class="heyui-message m-l-sm"> 77454</text> -->
+            <text class="heyui-appreciate m-l-sm"> 77454</text>
+          </view>
+        </view>
+      </view>
+    </view>  
+  </view>
+</view>
+
+<!-- 推荐商品 -->
+<view class="h-bar h-justify-center h-bg-white p-t-lg">
+  <view class="action sub-title">
+    <text class="h-text-sm h-text-bold h-text-blue">推荐商品</text>
+    <text class="h-bg-yellow" style="width:1rem"></text>
+  </view>
+</view>
+<view class=" h-bg-white" style="padding-bottom: 110rpx">
+  <view class="h-grid h-grid-2 h-corner-tlr-sm m-lr p-b">
+    <view class="h-goods-item h-bg-white h-corner-sm h-shadow m-t" wx:for="{{goodsList}}" wx:key='item' bindtap="goToDetail">
+      <view class="h-goods-img">
+        <image class="h-corner-tlr-sm " mode="aspectFill" src="{{item.img}}"></image>
+      </view>
+      <view class="h-goods-content">
+        <view class="h-good-tit h-text-xs h-text-cut2 p-lr-sm p-t-sm">{{item.title}}</view>
+        <view class="h-price-sell">
+          <view class="h-fl h-text-price h-text-red p-l-sm">
+            <text class="h-text-s">￥</text>
+            <text class="h-text-sm">{{item.price}}</text>
+            <text class="h-text-s">.00</text>
+          </view>
+          <text class="h-fl h-text-sell h-text-s h-text-gray m-l-sm">库存{{item.store}}件</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="tabbar-box h-border-top">
+  <view class="h-bar tabbar h-bg-white">
+    
+    <block wx:for="{{tabbar}}" wx:key="item">
+      <view class="action {{current==index?'tui-item-active':''}}" data-index="{{index}}" bindtap="tabbarSwitch">
+        <view class="heyui-h-image">
+          <image src="/images/shop/{{item.icon}}.png"></image>
+        </view>
+        <view class="h-text-dark4">{{item.text}}</view>
+      </view>
+    </block>
+  </view>
+</view>

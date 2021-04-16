@@ -1,0 +1,46 @@
+<!--pages/order/order.wxml-->
+<scroll-view scroll-x class="h-bg-white h-nav {{isFixedTop?'search-bar':''}}" id="search-bar">
+  <view class="h-flex h-text-center">
+    <view class="h-item h-flex-sub {{index==TabCur?'h-text-orange cur':''}}" wx:for="{{navTab}}" wx:key='item' bindtap="selectTab" data-id="{{index}}">
+      {{item}}
+    </view>
+  </view>
+</scroll-view>
+
+<view wx:for="{{navTab}}" wx:key="item" wx:if="{{index==TabCur}}" class="m-lr p-b">
+  <block wx:for="{{orderArr}}" wx:key="unique">
+  <view class="order-item h-corner-sm h-bg-white m-t" bindtap="showOrderDetailInfo" data-id="{{item.id}}">
+      <view class="order-top h-text-sm h-border-bottom p-l">订单编号: {{item.order_no}}</view>
+      <view class="order-center h-border-bottom p-lr">
+        <view class="good-img">
+            <image class="h-corner-sm m-t-sm" mode="aspectFill" src="{{item.snap_img}}"></image>
+        </view>
+        <view class="txt p-l">
+          <text class="h-text-md h-text-cut">{{item.snap_name}}</text>
+          <text class="h-text-xs">{{item.total_count}} 件商品</text>
+        </view>
+        <view class="order-status">
+          <text class="unpay" wx:if="{{item.status==1}}">待付款</text>
+          <text class="payed" wx:if="{{item.status==2}}">待收货</text>
+          <text class="done" wx:if="{{item.status==3}}">已完成</text>
+        </view>
+      </view>
+      <view class="order-bottom p-lr" wx:if="{{item.status==1}}">
+        <view class="price h-text-sm">实付:<text class="h-text-red">￥{{item.total_price}}</text></view>  
+        <button class="h-btn h-text-xs m-t-sm h-bg-red">待付款</button>
+      </view>
+      <view class="order-bottom p-lr" wx:if="{{item.status==2}}">
+        <view class="price h-text-sm">实付:<text class="h-text-red">￥{{item.total_price}}</text></view>  
+        <button class="h-btn h-text-xs m-t-sm h-bg-orange">待发货</button>
+      </view>
+      <view class="order-bottom p-lr" wx:if="{{item.status==3}}">
+        <view class="price h-text-xs">实付:<text class="h-text-red">￥{{item.total_price}}</text></view>  
+        <button class="h-btn h-text-xs m-t-sm h-bg-blue">已完成</button>
+      </view>
+  </view>
+  </block>
+
+
+
+
+</view>

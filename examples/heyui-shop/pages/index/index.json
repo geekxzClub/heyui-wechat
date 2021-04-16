@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#409eff",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "Hey-ui商城1.0",
+  "backgroundColor": "#fff",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "h-add-tips": "/component/h-add-tips/index"
+  }
+}

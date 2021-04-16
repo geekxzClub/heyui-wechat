@@ -1,0 +1,4 @@
+/* pages/score/scorelog/scorelog.wxss */
+.h-list.menu-avatar>.h-item .content{
+  left: 35rpx;
+}

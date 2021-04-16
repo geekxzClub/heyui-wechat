@@ -27,7 +27,7 @@
 
 <view class="h-list menu">
   <view class="h-item h-arrow m-lr m-tb-sm h-corner-sm h-shadow-lg h-bg-white" wx:for="{{tplList}}" wx:key='item' bindtap="goToItem" data-type="{{item.type}}">
-    <view class="h-avatar h-avatar-sm" style="background-image:url('https://oss.geekxz.com/hey-ui-oss/icon/{{item.type}}.png');"></view>
+    <view class="h-avatar h-avatar-sm" style="background-image:url('/images/icon/{{item.icon}}.png');"></view>
     <view class="content">
       <!-- <image src="/images/icon/{{item.type}}.png" class="png" mode="aspectFit"></image> -->
       <view class="h-text-darkGray">

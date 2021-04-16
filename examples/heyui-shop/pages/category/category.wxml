@@ -1,0 +1,63 @@
+<!--pages/category/category.wxml-->
+<view class="container">  
+
+  <!--左侧栏-->
+  <scroll-view scroll-y="true" class="nav_left" style="height: {{winHeight}}px; background-color: #fff;">
+    <block wx:for="{{nav_list}}" wx:key="item"> 
+      <!--当前项的id等于item项的id，那个就是当前状态-->
+      <!--用data-index记录这个数据在数组的下标位置，使用data-id设置每个item的id值，供打开2级页面使用-->
+      <view class="nav_left_items {{curNav == item.id ? 'active h-bg-gray4 h-text-blue' : ''}} h-text-sm" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.id}}">{{item.name}}</view>  
+    </block>  
+  </scroll-view >  
+
+  <!--右侧栏--> 
+  <scroll-view scroll-y="true" class="nav_right h-bg-gray4 p-xs p-b" style="height: {{winHeight}}px;">  
+    
+    <!--如果有数据，才遍历项-->  
+    <view class="cate-box" style="height: auto;" wx:if="{{productList}}" >  
+      <view class='top-img m-t' wx:if="{{productList.length>=1}}">
+        <block wx:if="{{productList}}"> 
+          <image class="h-corner-sm" src="{{productList[0]['pic']}}"></image> 
+        </block> 
+        <block wx:else> 
+          <image class="h-corner-sm" src="http://temp.im/50x30"></image> 
+        </block> 
+      </view>
+      <block wx:for="{{productList}}" wx:key="item" wx:for-index="bindex" bindtap="goToDetail">      
+        <view class="nav_right_items h-corner-sm h-shadow m-t">  
+          <!-- <navigator url="/pages/detail/detail?aid={{item.id}}">  -->
+            <!--用view包裹图片组合，如果有图片就用，无图片提供就使用50x30的这个默认图片-->  
+            <view bindtap="goToDetail">
+              <block wx:if="{{item.pic}}"> 
+                <image class="h-corner-tlr-sm" src="{{item.pic}}"></image> 
+              </block> 
+              <block wx:else> 
+                <image class="h-corner-tlr-sm" src="http://temp.im/50x30"></image> 
+              </block> 
+            </view>
+            <!--如果有文字，就用文字；无文字就用其他--> 
+            <view class="h-text-height h-text-cut p-lr-xs" wx:if="{{item.title}}">
+              <text>{{item.title}}</text>  
+            </view>
+            <view class="h-text-height h-text-cut p-lr-xs" wx:if="{{item.dec}}">
+              <text>{{item.dec}}</text>  
+            </view>
+            <view class="h-text-height h-text-cut p-lr-xs h-text-red" wx:if="{{item.price}}">
+              <text>￥{{item.price}}</text>  
+            </view> 
+            <view wx:else>  
+              <text>无标题</text>  
+            </view>  
+          <!-- </navigator>   -->
+        </view>  
+      </block>
+    </view>
+    
+    <view class='mores h-text-center' bindtap="goToMore" wx:if="{{productList.length>=6}}"><text>查看更多</text></view>
+    <!--如果无数据，则显示数据--> 
+    <view class="no-data" wx:if="{{productList.length<1}}">
+      <image mode="aspectFill" src="/images/buy.png"></image>
+      <view class="tit h-text-gray m-tb-sm">快去创作一些好文吧~</view>
+    </view> 
+  </scroll-view>
+</view>

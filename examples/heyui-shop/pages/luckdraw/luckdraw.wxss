@@ -1,0 +1,142 @@
+/* pages/luckdraw/luckdraw.wxss */
+.boox{
+  margin: 0 auto;
+}
+.container-out {
+  height: 600rpx;
+  width: 650rpx;
+  background-color: #b136b9;
+  margin: 0rpx auto;
+  border-radius: 40rpx;
+  /* box-shadow: 0 10px 0 #871a8e; */
+  position: relative;
+  top: 200px;
+}
+
+.container-in {
+  width: 580rpx;
+  height: 530rpx;
+  background-color: #871a8e;
+  border-radius: 40rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/**小圆球
+box-shadow: inset 3px 3px 3px #fff2af;*/
+
+.circle {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  height: 20rpx;
+  width: 20rpx;
+}
+
+.content-out {
+  position: absolute;
+  height: 150rpx;
+  width: 166.6666rpx;
+  background-color: #f5f0fc;
+  border-radius: 15rpx;
+  box-shadow: 0 5px 0 #d87fde;
+}
+
+
+
+/* page{ box-sizing: border-box; padding-top: 25rpx; background-color: #FF6600;} */
+ 
+.box{ 
+  width: 540rpx; 
+  height: 490rpx; 
+  margin: 0 auto; 
+  box-sizing: border-box; 
+  position: relative;
+  margin-top: 15rpx;
+	/* -webkit-box-shadow: 8px 8px 0 rgba(0,0,0,.2); */
+  /* box-shadow: 8px 8px 0 rgba(0,0,0,.2); */
+}
+.list{ 
+  width: 170rpx; 
+  height: 150rpx; 
+  position: absolute; 
+  background-color: #fff;
+  display: flex; 
+  flex-direction: column; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-content: center; 
+  align-items: center;
+  border-radius: 20rpx;
+  box-shadow: 0 5px 0 #d87fde;
+}
+
+/* 抽奖过程中选定样式 */
+.list.change_in{ 
+  color: #333; 
+  background-color: #00BFFF;
+  padding: 10rpx;
+}
+.list_t{ 
+  width: 100%; 
+  height: 70rpx;
+}
+.list_t image{ 
+  width: 100%; 
+  height: 100%;
+  border-radius: 20rpx 20rpx 0 0;
+}
+.list_b{ 
+  width: 100%; 
+  height: 60rpx; 
+  line-height: 60rpx; 
+  text-align: center; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  font-size: 22rpx;
+  background-color: #fff;
+  border-radius: 0 0 20rpx 20rpx;
+}
+/* 根据TOP */
+.list:nth-child(1){ 
+  left: 50%; top: 50%; 
+  color: #fff; 
+  background-color: #1CBBB4;
+  display: flex; 
+  justify-content: center; 
+  align-content: center; 
+  align-items: center;
+	-webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.list.grey:nth-child(1){ 
+  background-color: #5F9EA0;
+}
+.list:nth-child(2) , .list:nth-child(3) , .list:nth-child(4){ 
+  top: 0;
+}
+.list:nth-child(6) , .list:nth-child(7) , .list:nth-child(8){ 
+  bottom: 0;
+}
+.list:nth-child(5) , .list:nth-child(9){ 
+  top: 50%;
+	-webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* 根据LEFT */
+.list:nth-child(2) , .list:nth-child(8) , .list:nth-child(9){ 
+  left: 0;
+}
+.list:nth-child(3) , .list:nth-child(7){ 
+  left: 50%;
+	-webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.list:nth-child(4) , .list:nth-child(5) , .list:nth-child(6){ 
+  right: 0;
+}

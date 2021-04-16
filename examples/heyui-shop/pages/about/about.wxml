@@ -1,0 +1,170 @@
+<!--pages/about/about.wxml-->
+<!-- 个人信息 -->
+<view class="user-box h-bg-default h-corner-blr-md">
+  <view class="h-list menu-avatar p-t-sm">
+    <view class="h-item">
+      <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a5.jpg);"></view>
+      <view class="content">
+        <view class="h-text-white">
+          <text class="h-text-cut h-text-md">Hey-ui</text>
+          <view class="h-tag h-tag-sm h-corner-lg h-bg-gray m-l-sm">设置手机号</view>
+        </view>
+        <view class="h-text-white h-text-s h-flex">
+          <text class="h-text-cut">
+              <text class="h-text-white"></text> 我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
+          </text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="heyui-right h-text-white h-text-sm"></view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- vip -->
+<view class="vip-box h-corner-sm m h-shadow">
+  <view class="vip h-bg-black h-corner-tlr-sm"></view>
+  <view class="h-list h-grid h-grid-3 no-border h-corner-blr-sm">
+    <view class="h-item">
+      <view class="iconfont heyui-31huiyuanqia h-text-yellow"></view>
+      <text>我的会员</text>
+    </view>
+    <view class="h-item">
+      <view class="iconfont heyui-shengriliwu h-text-yellow"></view>
+      <text>新人礼包</text>
+    </view>
+    <view class="h-item">      
+      <navigator url="/pages/score/score" hover-class="navigator-hover">
+      <view class="iconfont heyui-jifen h-text-yellow"></view>
+      <text>积分兑换</text>
+      </navigator>
+    </view>
+  </view>
+</view>
+<view class="my-order"></view>
+
+<!-- 轮播图 -->
+<!-- <swiper class="screen-swiper h-corner-sm p-lr-sm"  circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key='item'>
+    <image class="h-corner-sm" src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+    <video class="h-corner-sm" src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+  </swiper-item>
+</swiper> -->
+
+<!-- 订单 -->
+<view class="h-list menu card-menu m-tb h-shadow h-corner-sm">
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action">
+      <text class="h-text-sm h-text-black">我的订单</text>
+    </view> 
+  </view>
+  <view class="h-list h-grid h-grid-4 no-border">
+    <view class="h-item" bindtap="goToOrder" data-tab="1">
+      <view class="iconfont heyui-31quanbushangpin h-text-yellow"></view>
+      <text>全部订单</text>
+    </view>
+    <view class="h-item" bindtap="goToOrder" data-tab="2">
+      <view class="iconfont heyui-daifukuan h-text-yellow"></view>
+      <text>待付款</text>
+    </view>
+    <view class="h-item" bindtap="goToOrder" data-tab="3">
+      <view class="iconfont heyui-daifahuo h-text-yellow"></view>
+      <text>待收货</text>
+    </view>
+    <view class="h-item" bindtap="goToOrder" data-tab="4">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>已完成</text>
+    </view>
+  </view>
+</view>
+
+<!-- 我的服务 -->
+<view class="h-list menu card-menu m-tb h-shadow">
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action">
+      <text class="h-text-sm h-text-black">我的服务</text>
+    </view> 
+  </view>
+  <view class="h-list h-grid h-grid-4 no-border">
+    <view class="h-item">
+      <navigator url="/pages/coupon/coupon" hover-class="navigator-hover">
+      <view class="iconfont heyui-31hongbao h-text-yellow"></view>
+      <text>优惠券</text>
+      </navigator>
+    </view>
+    <view class="h-item">
+      <view class="iconfont heyui-31daipingjia h-text-yellow"></view>
+      <text>我的评价</text>
+    </view>
+    <view class="h-item">
+      <navigator url="/pages/score/score" hover-class="navigator-hover">
+      <view class="iconfont heyui-jifen h-text-yellow"></view>
+      <text>我的积分</text>
+      </navigator>
+    </view>  
+    <view class="h-item" bindtap="editAddress">
+      <view class="iconfont heyui-31dingwei h-text-yellow"></view>
+      <text>地址信息</text>
+    </view>
+    <view class="h-item" bindtap="goToAfterSale" data-tid="1">
+      <view class="iconfont heyui-tuikuan h-text-yellow"></view>
+      <text>退款/售后</text>
+    </view>
+  </view>
+</view>
+
+<!-- 关于我们 -->
+<view class="h-list menu card-menu m-t h-shadow">
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action">
+      <text class="h-text-sm h-text-black">关于我们</text>
+    </view> 
+  </view>
+  <view class="h-list h-grid h-grid-4 no-border">
+    <view class="h-item" bindtap='showModal' data-target="Image">
+      <view class="iconfont heyui-31erweima h-text-yellow"></view>
+      <text>公众号</text>
+    </view>
+    <view class="h-item">
+      <navigator url="/pages/about/agreement/agreement?tab=0" hover-class="navigator-hover">
+      <view class="iconfont heyui-tishi h-text-yellow"></view>
+      <text>用户须知</text>
+      </navigator>
+    </view>
+    <view class="h-item">
+      <button class="about-contact" open-type="contact"></button>
+      <view class="iconfont heyui-kefu h-text-yellow"></view>
+      <text>联系客服</text>
+    </view>
+    <view class="h-item">
+      <button class="about-contact" open-type="feedback"></button>
+      <view class="iconfont heyui-bangzhu h-text-yellow"></view>
+      <text>意见反馈</text>
+    </view>
+    <view class="h-item">
+      <view class="heyui-picfill h-text-yellow"></view>
+      <text>关于我们</text>
+    </view>
+    <view class="h-item">
+      <view class="iconfont heyui-31tishi h-text-yellow"></view>
+      <text>版本信息</text>
+    </view>
+  </view>
+</view>
+<view class="p-b"></view>
+
+<view class="h-modal {{modalName=='Image'?'show':''}}">
+  <view class="h-dialog">
+    <view class="h-bg-img" style="background-image: url('/images/1.jpg');height:200px;">
+      <view class="h-bar h-justify-end h-text-white">
+        <view class="action" bindtap="myCancel">
+          <text class="heyui-close "></text>
+        </view>
+      </view>
+    </view>
+    <view class="h-bar h-bg-white">
+      <view class="action h-flex-sub" bindtap="myCancel">我知道了</view>
+    </view>
+  </view>
+</view>

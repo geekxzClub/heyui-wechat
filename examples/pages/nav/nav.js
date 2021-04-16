@@ -7,37 +7,37 @@ Page({
   data: {
     componentList: [{
       id: 1,
-      icon: 'cardboardfill',
+      icon: 'navbar',
       type: 'navbar',
       text_zh: '顶部导航',
       text_en: 'BavBar'
     }, {
       id: 2,
-      icon: 'cardboardfill',
+      icon: 'tabbar',
       type: 'tabbar',
       text_zh: '底部导航',
       text_en: 'TabBar'
     }, {
       id: 3,
-      icon: 'cardboardfill',
+      icon: 'tabs',
       type: 'tabs',
       text_zh: '选项卡',
       text_en: 'Tabs'
     }, {
       id: 4,
-      icon: 'cardboardfill',
+      icon: 'category',
       type: 'category',
       text_zh: '顶部分类菜单',
       text_en: 'Category'
     }, {
       id: 5,
-      icon: 'cardboardfill',
+      icon: 'category',
       type: 'category-2',
       text_zh: '侧边分类菜单',
       text_en: 'category-2'
     }, {
       id: 6,
-      icon: 'cardboardfill',
+      icon: 'footer',
       type: 'footer',
       text_zh: '底部导航',
       text_en: 'footer'

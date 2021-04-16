@@ -1,0 +1,77 @@
+<!--pages/cart/cart.wxml-->
+<view class='cart-box h-bg-white'>
+  <view class='section-good p-lr m-b'>
+    <checkbox-group bindchange="checkboxChange">
+      <view class='cart-item h-border-bottom' wx:for='{{goodList}}' wx:for-item="good" wx:key="item">
+        <label class="cart-checkbox">
+          <checkbox value="{{good.id}}" checked="{{good.checked}}" hidden='hidden' />
+          <icon type="circle" size="23" wx:if="{{!good.checked}}"></icon>
+          <icon type="success" size="23" wx:if="{{good.checked}}"></icon>
+        </label>
+        <image class='cart-goods-img h-corner-sm m-l-lg m-r-sm' src='{{good.img}}' bindtap="goToDetail"></image>
+        <view class='cart-content m-l-sm' bindtap="goToDetail">
+          <view class='h-text-cut h-text-sm'>{{good.title}}</view>
+          <view class='h-text-cut h-text-xs m-t-sm h-text-gray'>{{good.desc}}</view>
+          <view class='h-text-cut h-text-sm h-text-red m-t-lg'>¥{{good.price}}</view>
+        </view>
+        <view class='stepper '>
+          <view class='subtract h-corner-sm {{good.count == 1 ? "disabled h-bg-gray4": "h-bg-blue-light"}}' data-index='{{index}}' catchtap='subtracttap'>-</view>
+          <input class='count' type='number' disabled value='{{good.count}}'></input>
+          <view class='add h-corner-sm h-bg-yellow' data-index="{{index}}" catchtap='addtap'>+</view>
+        </view>
+      </view>
+    </checkbox-group>
+  </view>
+  <!-- 统计 -->
+  <view class='cart-bottom h-shadow h-bg-white'>
+    <checkbox-group bindchange="selectalltap">
+      <label class='checkbox-allcheck m-l'>
+        <checkbox value="{{!checkAll}}" checked="{{checkAll}}" hidden='hidden' />
+        <icon type="circle" size="23" wx:if="{{!checkAll}}"></icon>
+        <icon type="success" size="23" wx:if="{{checkAll}}"></icon>
+        <text class='check-all-text m-l-sm'>全选</text>
+      </label>
+    </checkbox-group>
+    <view class="total h-text-xs">
+      <view class='totalCount'>已选择
+        <text class="h-text-red">{{totalCount}}</text> 件商品
+      </view>
+      <view class='totalPrice h-text-xs m-l'>总价：
+        <text class="h-text-sm h-text-red">¥{{totalPrice}}</text>
+      </view>
+    </view>
+    <view wx:if="{{totalCount>0}}" class='h-text-center btn h-bg-yellow h-text-black' bindtap="submitOrder">去结算</view>
+    
+    <view wx:else class='h-text-center btn h-bg-gray h-text-white'>去结算</view>
+  </view>
+</view>
+
+
+
+<!-- 推荐商品 -->
+<view class="h-bar h-justify-center h-bg-white p-t-lg m-t">
+  <view class="action sub-title">
+    <text class="h-text-sm h-text-bold h-text-blue">推荐商品</text>
+    <text class="h-bg-yellow" style="width:1rem"></text>
+  </view>
+</view>
+<view class=" h-bg-white cart-goods-recommend">
+  <view class="h-grid h-grid-2 h-corner-tlr-sm m-lr p-b">
+    <view class="h-goods-item h-bg-white h-corner-sm h-shadow m-t" wx:for="{{goodsList2}}" wx:key='item' bindtap="goToDetail">
+      <view class="h-goods-img">
+        <image class="h-corner-tlr-sm" mode="aspectFill" src="{{item.img}}"></image>
+      </view>
+      <view class="h-goods-content">
+        <view class="h-good-tit h-text-xs h-text-cut2 p-lr-sm p-t-sm">{{item.title}}</view>
+        <view class="h-price-sell">
+          <view class="h-fl h-text-price h-text-red p-l-sm">
+            <text class="h-text-s">￥</text>
+            <text class="h-text-sm">{{item.price}}</text>
+            <text class="h-text-s">.00</text>
+          </view>
+          <text class="h-fl h-text-sell h-text-s h-text-gray m-l-sm">{{item.store}}人已付款</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

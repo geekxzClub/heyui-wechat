@@ -1,6 +1,7 @@
 {
   "pages": [     
     "pages/index/index",
+    "pages/plugin/plugin",
     "pages/view/luckdraw/luckdraw", 
     
     "pages/view/view",
@@ -65,7 +66,6 @@
     "pages/basics/line/line",
     "pages/basics/theme/theme",
 
-    "pages/plugin/plugin",
     "pages/tpl/top/index",
     "pages/tpl/tpl",
     "pages/view/tree/tree",
@@ -75,16 +75,28 @@
     "pages/about/about/about",  
     "pages/view/comment/comment",
 
-
     "pages/response/response",
     "pages/response/hsheet/hsheet",
     "pages/response/dialog/dialog",
     "pages/response/toast/toast",
-    "pages/response/message/message",
-
-    
+    "pages/response/message/message",   
 
     "pages/logs/logs"
+  ],
+  "subpackages": [
+    {
+      "root": "heyui-shop",
+      "pages": [
+        "pages/index/index"
+      ]
+    },
+    {
+      "root": "heyui-blog",
+      "name": "pack2",
+      "pages": [
+        "pages/index/index"
+      ]
+    }
   ],
   "window": {
     "backgroundTextStyle": "light",

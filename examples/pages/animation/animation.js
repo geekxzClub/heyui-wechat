@@ -7,7 +7,7 @@ Page({
   data: {
     componentList: [{
       id: 1,
-      icon: 'cardboardfill',
+      icon: 'animation',
       type: 'animation',
       text_zh: '动画',
       text_en: 'Animation'

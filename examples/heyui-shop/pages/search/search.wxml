@@ -1,0 +1,64 @@
+<!--pages/search/search.wxml-->
+<!-- 搜索栏 -->
+<view class="h-bar search h-bg-default p-tb {{isFixedTop?'search-bar':''}}" id="search-bar">
+  <view class="search-form h-corner-lg">
+    <text class="heyui-search"></text>
+    <input type="text" placeholder="搜索商品、文章、视频" confirm-type="search"></input>
+  </view>
+  <view class="action">
+    <button class="h-btn h-bg-green shadow-blur h-corner-lg">搜索</button>
+  </view>
+</view>
+
+<view class="h-bar h-bg-white">
+  <view class="action">
+    <text class="h-text-sm h-text-black">最近搜索</text>
+  </view>
+</view>
+<view class="h-bg-white h-flex h-flex-wrap p-lr">
+  <view class="p-r p-b" wx:for="{{hostWord}}" wx:key='item'>
+    <view class="h-tag h-tag-lg h-bg-white h-border h-corner-sm h-text-black"><text class="h-text-s">{{item.title}}</text></view>
+  </view>
+</view>
+
+
+<view class="h-bar h-bg-white">
+  <view class="action">
+    <text class="h-text-sm h-text-black">热门搜索</text>
+  </view>
+</view>
+<view class="h-grid h-grid2 h-bg-white">
+  <view class="p-lr p-b" wx:for="{{hostWord}}" wx:key='item'>
+    <view class="{{index>2? 'h-text-gray' : 'h-text-black'}}">
+      <text class="h-tag h-tag {{index>2? 'h-bg-gray' : 'h-bg-orange'}} h-corner-xs h-text-s">{{index+1}}</text>      
+      <text class="h-text-s p-l-sm">{{item.title}}</text>
+    </view>
+  </view>
+</view>
+
+
+<view class="h-bar h-bg-white">
+  <view class="action">
+    <text class="h-text-sm h-text-black">精选推荐</text>
+  </view>
+</view>
+<scroll-view scroll-x class="h-bg-white h-nav p-b" scroll-with-animation scroll-left="{{scrollLeft}}">
+  <view class="h-item" wx:for="{{goodsList}}" wx:key="item" bindtap="selectTab" data-id="{{index}}">
+    <view class="h-goods-item h-bg-white h-corner-sm m-b-sm h-shadow">
+      <view class="h-goods-img">
+        <image class="h-corner-tlr-sm " mode="aspectFill" src="{{item.img}}"></image>
+      </view>
+      <view class="h-goods-content">
+        <view class="h-good-tit h-text-xs h-text-cut p-lr-sm p-t-sm">{{item.title}}</view>
+        <view class="h-price-sell">
+          <view class="h-fl h-text-price h-text-red p-l-sm">
+            <text class="h-text-s">￥</text>
+            <text class="h-text-sm">{{item.price}}</text>
+            <text class="h-text-s">.00</text>
+          </view>
+          <text class="h-fl h-text-sell h-text-s h-text-gray m-l-sm">库存{{item.store}}件</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

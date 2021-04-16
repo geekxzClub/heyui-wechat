@@ -7,103 +7,103 @@ Page({
   data: {
     componentList: [{
       id: 1,
-      icon: 'cardboardfill',
+      icon: 'avatar',
       type: 'avatar',
      text_zh: '头像',
      text_en: 'Avatar'
     }, {
       id: 2,
-      icon: 'cardboardfill',
+      icon: 'tag',
       type: 'tag',
      text_zh: '标签',
      text_en: 'Tag'
     }, {
       id: 3,
-      icon: 'cardboardfill',
+      icon: 'progress',
       type: 'progress',
      text_zh: '进度条',
      text_en: 'Progress'
     }, {
       id: 4,
-      icon: 'cardboardfill',
+      icon: 'loading',
       type: 'loading',
      text_zh: '加载',
      text_en: 'Loading'
     }, {
       id: 5,
-      icon: 'cardboardfill',
+      icon: 'swiper',
       type: 'swiper',
      text_zh: '轮播图',
      text_en: 'Swiper'
     }, {
       id: 6,
-      icon: 'cardboardfill',
+      icon: 'titlebar',
       type: 'titlebar',
      text_zh: '标题栏',
      text_en: 'TitleBar'
     }, {
       id: 7,
-      icon: 'cardboardfill',
+      icon: 'searchbar',
       type: 'searchbar',
      text_zh: '搜索栏',
      text_en: 'SearchBar'
     }, {
       id: 8,
-      icon: 'cardboardfill',
+      icon: 'addtips',
       type: 'addtips',
      text_zh: '添加我的小程序',
      text_en: 'AddTips'
     }, {
       id: 9,
-      icon: 'cardboardfill',
+      icon: 'card',
       type: 'card',
      text_zh: '卡片',
      text_en: 'Card'
     }, {
       id: 10,
-      icon: 'cardboardfill',
+      icon: 'popup',
       type: 'popup',
      text_zh: '弹出层',
      text_en: 'Popup'
     }, {
       id: 11,
-      icon: 'cardboardfill',
+      icon: 'notic',
       type: 'notic',
      text_zh: '通知公告栏',
      text_en: 'Notic'
     }, {
       id: 12,
-      icon: 'cardboardfill',
+      icon: 'barrage',
       type: 'barrage',
      text_zh: '弹幕',
      text_en: 'Barrage'
     }, {
       id: 13,
-      icon: 'cardboardfill',
+      icon: 'table2',
       type: 'table2',
      text_zh: '表格',
      text_en: 'Table'
     }, {
       id: 14,
-      icon: 'cardboardfill',
+      icon: 'slideview',
       type: 'slideview',
      text_zh: '滑动菜单',
      text_en: 'SlideView'
     }, {
       id: 15,
-      icon: 'cardboardfill',
+      icon: 'divider',
       type: 'divider',
      text_zh: '分割线',
      text_en: 'Divider'
       }, {
         id: 16,
-        icon: 'cardboardfill',
+        icon: 'keyboard',
         type: 'keyboard',
        text_zh: '车牌键盘',
        text_en: 'KeyBoard'
       }, {
         id: 17,
-        icon: 'cardboardfill',
+        icon: 'verifycode',
         type: 'verifycode',
        text_zh: '验证码输入',
        text_en: 'VerifyCode'

@@ -1,0 +1,66 @@
+<!--pages/score/scorelog/scorelog.wxml-->
+<view class="h-score-box">
+  <view class="h-score h-bg-default h-corner-blr-md"></view>
+</view>
+
+<!-- 卡片 -->
+<view class="h-score-card h-bg-yellow h-corner-md m h-shadow">
+  <view class="m-lr-lg p-tb-lg">
+    <view class="h-score-content h-fl">
+      <view class="h-score-tit h-text-sm h-text-red">当前积分</view>
+      <view class="h-score-num h-text-white h-text-bold">24512</view>
+      <view class="h-score-btn"><button class="h-btn h-bg-white h-corner-md p-lr-lg"><text class="h-text-red">立即兑换</text></button></view>
+    </view>
+    <view class="h-score-img h-fl">
+      <image class="h-corner-sm " mode="aspectFill" src="http://demo.geekxz.com/images/category/zhubao/14.png"></image>
+    </view>
+  </view>
+</view>
+
+<!-- 积分明细 -->
+<view class="h-list card-menu menu-avatar h-bg-white">
+  <view class="h-item h-border-bottom">
+    <view class="content">
+      <view class="h-text-black h-text-sm">签到领取积分</view>
+      <view class="h-text-grey h-text-s h-flex">
+        <text class="h-text-cut">2020-12-07 13:4547</text>
+      </view>
+    </view>
+    <view class="action">
+      <view class="h-text-red h-text-lg">+2</view>
+    </view>
+  </view>
+  <view class="h-item h-border-bottom">
+    <view class="content">
+      <view class="h-text-black h-text-sm">签到领取积分</view>
+      <view class="h-text-grey h-text-s h-flex">
+        <text class="h-text-cut">2020-12-07 13:4547</text>
+      </view>
+    </view>
+    <view class="action">
+      <view class="h-text-red h-text-lg">+2</view>
+    </view>
+  </view>
+  <view class="h-item h-border-bottom">
+    <view class="content">
+      <view class="h-text-black h-text-sm">签到领取积分</view>
+      <view class="h-text-grey h-text-s h-flex">
+        <text class="h-text-cut">2020-12-07 13:4547</text>
+      </view>
+    </view>
+    <view class="action">
+      <view class="h-text-red h-text-lg">+2</view>
+    </view>
+  </view>
+  <view class="h-item h-border-bottom">
+    <view class="content">
+      <view class="h-text-black h-text-sm">签到领取积分</view>
+      <view class="h-text-grey h-text-s h-flex">
+        <text class="h-text-cut">2020-12-07 13:4547</text>
+      </view>
+    </view>
+    <view class="action">
+      <view class="h-text-red h-text-lg">+2</view>
+    </view>
+  </view>
+</view>

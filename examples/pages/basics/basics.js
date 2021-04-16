@@ -7,49 +7,49 @@ Page({
   data: {
     componentList: [{
       id: 1,
-      icon: 'cardboardfill',
+      icon: 'color',
       type: 'color',
       text_en: 'Color',
       text_zh: '颜色'
     }, {
       id: 2,
-      icon: 'cardboardfill',
+      icon: 'text',
       type: 'text',
       text_zh: '文字',
       text_en: 'Text'
     }, {
       id: 3,
-      icon: 'cardboardfill',
+      icon: 'shadow',
       type: 'shadow',
       text_zh: '阴影',
       text_en: 'Shadow'
     }, {
       id: 4,
-      icon: 'cardboardfill',
+      icon: 'icon',
       type: 'icon',
       text_zh: '图标',
       text_en: 'Icon'
     }, {
       id: 5,
-      icon: 'cardboardfill',
+      icon: 'corner',
       type: 'corner',
       text_zh: '边角',
       text_en: 'Corner'
     }, {
       id: 6,
-      icon: 'cardboardfill',
+      icon: 'mp',
       type: 'mp',
       text_zh: '内外边距',
       text_en: 'Margin-Padding'
     }, {
       id: 7,
-      icon: 'cardboardfill',
+      icon: 'button',
       type: 'button',
       text_zh: '按钮',
       text_en: 'Button'
       }, {
         id: 8,
-        icon: 'cardboardfill',
+        icon: 'theme',
         type: 'theme',
         text_zh: '主题',
         text_en: 'Theme'

@@ -1,0 +1,22 @@
+<!--pages/luckdraw/luckdraw.wxml-->
+<view class="boxx" style='width: {{windowWidth}}px; height: {{windowHeight}}px;background-image: url("https://www.geekxz.com/bg/grid.png");background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+
+<view class="container-out">
+  <view class="circle" wx:for="{{circleList}}" wx:key="item" 
+  style="top:{{item.topCircle}}rpx;left:{{item.leftCircle}}rpx;background-color: {{(index%2==0)?colorCircleFirst:colorCircleSecond}};"></view>
+  <view class="container-in">
+    <view class="box">
+      <view bindtap="cj" class="list {{cjChange > 0 ? 'grey' : ''}}">抽奖</view>
+      <block wx:for="{{prizeList}}" wx:key="item">
+        <view class="list {{cjChange == item.index ? 'change_in' : ''}}">
+          <view class="list_t"><image src="{{item.imgsrc}}"></image></view>
+          <view class="list_b">{{item.prizeName}}</view>
+        </view>
+      </block>
+    </view>
+ 
+  </view>
+</view>
+<button wx:if="{{showAgain}}" style="margin: 50rpx;" bindtap="againBtn">再抽一次</button>
+
+</view>

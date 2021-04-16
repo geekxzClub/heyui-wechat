@@ -7,25 +7,25 @@ Page({
   data: {
     componentList: [{
       id: 1,
-      icon: 'cardboardfill',
+      icon: 'actionsheet',
       type: 'actionsheet',
       text_zh: '底部弹出操作菜单',
       text_en: 'ActionSheet'
     }, {
         id: 2,
-        icon: 'cardboardfill',
+        icon: 'toast',
         type: 'toast',
         text_zh: '提示',
         text_en: 'Toast'
     }, {
       id: 3,
-      icon: 'cardboardfill',
+      icon: 'message',
       type: 'message',
       text_zh: '消息提示',
       text_en: 'Message'
     }, {
       id: 4,
-      icon: 'cardboardfill',
+      icon: 'dialog',
       type: 'dialog',
       text_zh: '模态框',
       text_en: 'Dialog'

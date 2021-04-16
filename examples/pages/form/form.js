@@ -7,49 +7,49 @@ Page({
   data: {
     componentList: [{
       id: 1,
-      icon: 'cardboardfill',
+      icon: 'input',
       type: 'input',
       text_zh: '单行输入框',
       text_en: 'Input'
     }, {
       id: 2,
-      icon: 'cardboardfill',
+      icon: 'textarea',
       type: 'textarea',
       text_zh: '多行输入框',
       text_en: 'Textarea'
     }, {
       id: 3,
-      icon: 'cardboardfill',
+      icon: 'radio',
       type: 'radio',
       text_zh: '单选框',
       text_en: 'Radio'
     }, {
       id: 4,
-      icon: 'cardboardfill',
+      icon: 'checkbox',
       type: 'checkbox',
       text_zh: '多选框',
       text_en: 'Checkbox'
     }, {
       id: 5,
-      icon: 'cardboardfill',
+      icon: 'switch',
       type: 'switch',
       text_zh: '开关',
       text_en: 'Switch'
     }, {
       id: 6,
-      icon: 'cardboardfill',
+      icon: 'picker',
       type: 'picker',
       text_zh: '选择框',
       text_en: 'Picker'
     }, {
       id: 7,
-      icon: 'cardboardfill',
+      icon: 'imagepicker',
       type: 'imagepicker',
       text_zh: '图片选择器',
       text_en: 'Imagepicker'
     }, {
       id: 8,
-      icon: 'cardboardfill',
+      icon: 'rate',
       type: 'rate',
       text_zh: '评分',
       text_en: 'Rate'

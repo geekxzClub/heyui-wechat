@@ -7,8 +7,8 @@ Page({
   data: {
     tplList: [{
       id: 1,
-      icon: 'cardboardfill',
-      type: 'actionsheet',
+      icon: 'buy',
+      type: 'heyui-shop',
       text_zh: '电商购物',
       text_en: 'Hey-Shop'
     }, {
@@ -87,7 +87,14 @@ Page({
       text_en: 'H-Is'
     }]
   },
-
+  goToItem: function (e) {
+    var type = e.currentTarget.dataset.type;
+    if (type == 'heyui-shop') {
+      wx.navigateTo({
+        url: '/heyui-shop/pages/index/index'
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */

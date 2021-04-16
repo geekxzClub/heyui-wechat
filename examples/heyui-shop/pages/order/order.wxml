@@ -1,0 +1,77 @@
+<!--pages/order/order.wxml-->
+<!--订单详情-->
+<view class=" order-container">
+  <!--订单编号和下单时间，如果是旧订单就显示-->
+  <view class="order-basic-info h-border-bottom" wx:if="{{basicInfo}}">
+    <view class="order-time-no">
+      <view class="m-tb-sm">
+        <text class="h-text-gray">下单时间:</text>
+        <text class="h-text-gray m-l-sm h-text-black">2020-10-15 10:26:56</text>
+      </view>
+      <view>
+        <text class="h-text-gray">订单编号:</text>
+        <text class="h-text-gray m-l-sm h-text-black">DEN48723658942</text>
+      </view>
+    </view>
+    <view class="order-status">
+      <text class="h-text-orange" wx:if="{{orderStatus==1}}">待付款</text>
+      <text class="h-text-blue" wx:if="{{orderStatus==2}}">已付款</text>
+      <text class="h-text-green" wx:if="{{orderStatus==3}}">已发货</text>
+    </view>
+  </view>
+
+  <!--地址-->
+  <view class="order-address-info {{orderStatus!=0?'disabled':''}} m-b" bindtap="editAddress">
+    <block wx:if="{{addressInfo}}">
+      <view class="contact-box">
+        <view>
+          <view class="contact">
+              <view>
+                <image class="m-r-sm" src="/images/icon/user.png"></image>
+                <text class="val">{{addressInfo.name}}</text>
+              </view>
+              <view class="mobile-box">
+                <image class="m-r-sm" src="/images/icon/mobile.png"></image>
+                <text>{{addressInfo.mobile}}</text>
+              </view>
+          </view>
+          <view>{{addressInfo.totalDetail}}</view>
+        </view>
+        <view class="contact-icon" wx:if="{{orderStatus==0}}">
+            <image src="/images/icon/arrow@right.png"></image>
+        </view>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="add-new-address">
+        <text class="icon">+</text>
+        <text>添加地址</text></view>
+    </block>
+  </view>
+
+  <!--列表-->
+  <view class="order-main p-lr p-b-lg">
+    <block wx:for="{{productsArr}}" wx:key='item'>
+      <view class="product-item h-border-bottom p-tb" bindtap="goToGoodsDetail">
+        <view class="item-left">
+          <image class="h-corner-sm" src="{{item.main_img_url}}"></image>
+        </view>
+        <view class="item-middle m-l">
+          <view class="h-text-sm m-tb-sm">{{item.name}}</view>
+          <view class="h-text-xs m-tb-sm">￥{{item.price}}</view>
+        </view>
+        <view class="item-right">
+          ×{{item.counts}}
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <!--结算-->
+  <view class="footer-account-box order-accounts">
+    <view class="h-text-red p-l total-account">
+      付款合计：￥51270
+    </view>
+    <view wx:if="{{orderStatus<=1}}" class="h-text-white h-bg-orange pay {{!addressInfo?'disabled':''}}" bindtap="pay">去付款</view>
+  </view>
+</view>
