@@ -1,3 +1,23 @@
 <!--pages/basics/basics.wxml-->
-<import src="../tpl/tpl.wxml" />
-<template is="header" data="{{componentList}}"></template>
+<!-- <import src="../tpl/tpl.wxml" /> -->
+<!-- <template is="header" data="{{componentList}}"></template> -->
+<view class="h-bg-white">
+  <view class="h-bg-white top">
+   <text class="h-text-primary h-text-sm">基本组件</text>
+  </view>
+  <view class="h-list menu">
+    <view class="h-item h-arrow m-lr m-tb-sm h-corner-sm h-shadow-lg h-bg-white" wx:for="{{componentList}}" wx:key='item' bindtap="goToItem" data-type="{{item.type}}">
+      <view class="h-avatar h-avatar-sm" style="background-image:url('https://oss.geekxz.com/hey-ui-oss/icon/{{item.icon}}.png');"></view>
+      <view class="content m-l">
+        <!-- <image src="https://oss.geekxz.com/hey-ui-oss/icon/{{item.type}}.png" class="png" mode="aspectFit"></image> -->
+        <view class="h-text-darkGray">
+          <text class="h-text-cut h-text-xs h-text-bold">{{item.text_en}}</text>
+        </view>
+        <view class="h-text-grey h-text-sm h-flex">
+          <text class="h-text-cut h-text-s">{{item.text_zh}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

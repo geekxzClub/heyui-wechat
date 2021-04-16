@@ -1,6 +1,6 @@
 /* pages/tpl/tpl.wxss */
 .hey-ui-box{
-  height: 520rpx;
+  height: 420rpx;
   background: linear-gradient(to top,#166BD8,#3688FF)
 }
 .tit{
@@ -13,8 +13,6 @@
   opacity: 0.8;
 }
 .heyui-content {
-  position: relative;
-  top: -100rpx;
   opacity: 1;
 }
 .hey-ui-box .h-list.h-grid {

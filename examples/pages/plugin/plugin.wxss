@@ -3,6 +3,9 @@
 .h-list.menu>.h-item{
   height: 120rpx;
 }
+.h-list.menu>.h-item .content{
+  line-height: 1.4em;
+}
 /* 活动Card */
 .h-active{
   height: 560rpx;

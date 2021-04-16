@@ -561,11 +561,11 @@ radio.white[checked] .wx-radio-input {
 	border-left: 1rpx dashed #ddd;
 }
 /* 阴影 */
- .h-shadow[class*='white']{
-	--ShadowSize: 0 1rpx 6rpx;
+ .h-shadow{
+	box-shadow: 0 0rpx 1rpx rgba(0, 0, 0, 0.1);
 }
 .h-shadow-lg {
-	--ShadowSize: 0rpx 40rpx 100rpx 0rpx;
+	box-shadow: 0 0 6rpx rgba(0, 0, 0, 0.1);
 }
 .h-shadow-warp {
 	position: relative;
@@ -607,49 +607,49 @@ radio.white[checked] .wx-radio-input {
 	border-radius: inherit;
 	transform: scale(1, 1);
 }
-.h-shadow[class*="-red"] {
+.h-shadow[class*="h-bg-red"] {
 	box-shadow: var(--ShadowSize) var(--redShadow);
 }
-.h-shadow[class*="-orange"] {
+.h-shadow[class*="h-bg-orange"] {
 	box-shadow: var(--ShadowSize) var(--orangeShadow);
 }
-.h-shadow[class*="-yellow"] {
+.h-shadow[class*="h-bg-yellow"] {
 	box-shadow: var(--ShadowSize) var(--yellowShadow);
 }
-.h-shadow[class*="-olive"] {
+.h-shadow[class*="h-bg-olive"] {
 	box-shadow: var(--ShadowSize) var(--oliveShadow);
 }
-.h-shadow[class*="-green"] {
+.h-shadow[class*="h-bg-green"] {
 	box-shadow: var(--ShadowSize) var(--greenShadow);
 }
-.h-shadow[class*="-cyan"] {
+.h-shadow[class*="h-bg-cyan"] {
 	box-shadow: var(--ShadowSize) var(--cyanShadow);
 }
-.h-shadow[class*="-blue"] {
+.h-shadow[class*="h-bg-blue"] {
 	box-shadow: var(--ShadowSize) var(--blueShadow);
 }
-.h-shadow[class*="-purple"] {
+.h-shadow[class*="h-bg-purple"] {
 	box-shadow: var(--ShadowSize) var(--purpleShadow);
 }
 .h-shadow[class*="-mauve"] {
 	box-shadow: var(--ShadowSize) var(--mauveShadow);
 }
-.h-shadow[class*="-pink"] {
+.h-shadow[class*="h-bg-pink"] {
 	box-shadow: var(--ShadowSize) var(--pinkShadow);
 }
-.h-shadow[class*="-brown"] {
+.h-shadow[class*="h-bg-brown"] {
 	box-shadow: var(--ShadowSize) var(--brownShadow);
 }
-.h-shadow[class*="-grey"] {
+.h-shadow[class*="h-bg-grey"] {
 	box-shadow: var(--ShadowSize) var(--greyShadow);
 }
-.h-shadow[class*="-gray"] {
+.h-shadow[class*="h-bg-gray"] {
 	box-shadow: var(--ShadowSize) var(--grayShadow);
 }
-.h-shadow[class*="-black"] {
+.h-shadow[class*="h-bg-black"] {
 	box-shadow: var(--ShadowSize) var(--blackShadow);
 }
-.h-shadow[class*="-white"] {
+.h-shadow[class*="h-bg-white"] {
 	box-shadow: var(--ShadowSize) var(--blackShadow);
 }
 
@@ -880,7 +880,11 @@ button.icon.icon-lg {
 	height: 48rpx;
 	font-size: 1em;
 }
-
+.h-avatar.h-avatar-md {
+	width: 55rpx;
+	height: 55rpx;
+	font-size: 1em;
+}
 .h-avatar.h-avatar-lg {
 	width: 96rpx;
 	height: 96rpx;

@@ -27,14 +27,9 @@
   </view>
 </view>
 
-<view class="heyui-content h-bg-white m-lr h-corner-sm">
-  <view class="h-bar h-bg-white h-corner-sm">
-    <view class="action">
-      <text class="heyui-titles h-text-blue h-text-bold"> 组件演示</text>
-    </view>
-  </view>
-  <view class="h-grid h-grid-2 h-corner-tlr-sm p-b m-lr">
-    <view class="h-component-item h-bg-white h-corner-sm h-border m-t" wx:for="{{component}}" wx:key='item' bindtap="goToView" data-type="{{item.type}}">
+<view class="heyui-content h-corner-sm m-t-sm">
+  <view class="h-grid h-grid-2 h-corner-tlr-sm p-b-sm m-lr">
+    <view class="h-component-item h-bg-white h-corner-sm h-shadow-lg m-t" wx:for="{{component}}" wx:key='item' bindtap="goToView" data-type="{{item.type}}">
       <view class="p-tb-lg box">      
         <view class="iconfont heyui-{{item.icon}}"></view>
         <view class="h-text-black h-text-xs">{{item.text}}</view>
@@ -42,7 +37,7 @@
     </view>
   </view>
 
-  <view class="footer">
+  <view class="footer p-b-sm">
     <view class="h-divder h-flex h-justify-center h-align-center h-text-gray">@ 极客小站工作室</view>
   </view>
 </view>

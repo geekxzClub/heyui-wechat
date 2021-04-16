@@ -29,17 +29,16 @@
   </view>
 
   <view class="heyui-content h-bg-white m-lr h-corner-sm p-t-sm">
-    <view class="h-bar h-bg-white h-corner-sm">
+    <!-- <view class="h-bar h-bg-white h-corner-sm">
       <view class="action h-text-sm">
         <text class="heyui-titles h-text-blue h-text-bold"> 组件列表</text>
       </view>
-    </view>
+    </view> -->
     <view class="h-list menu p-b">
       <view class="h-item h-arrow" wx:for="{{componentList}}" wx:key='item' bindtap="goToItem" data-type="{{item.type}}">
         <view class="h-avatar h-avatar-sm" style="background-image:url('https://oss.geekxz.com/hey-ui-oss/icon/{{item.icon}}.png');"></view>
         <!-- <view class="h-avatar h-avatar-sm" style="background-image:url('/images/icon/{{item.type}}.png');"></view> -->
         <view class="content">
-          <!-- <image src="/images/icon/{{item.type}}.png" class="png" mode="aspectFit"></image> -->
           <view class="h-text-darkGray">
             <text class="h-text-cut h-text-xs h-text-bold">{{item.text_en}}</text>
           </view>
