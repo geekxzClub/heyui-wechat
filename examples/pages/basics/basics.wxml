@@ -5,7 +5,7 @@
   <view class="h-bg-white top">
    <text class="h-text-primary h-text-sm">基本组件</text>
   </view>
-  <view class="h-list menu">
+  <view class="h-list menu p-b">
     <view class="h-item h-arrow m-lr m-tb-sm h-corner-sm h-shadow-lg h-bg-white" wx:for="{{componentList}}" wx:key='item' bindtap="goToItem" data-type="{{item.type}}">
       <view class="h-avatar h-avatar-sm" style="background-image:url('https://oss.geekxz.com/hey-ui-oss/icon/{{item.icon}}.png');"></view>
       <view class="content m-l">
