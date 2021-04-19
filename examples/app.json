@@ -1,5 +1,7 @@
 {
   "pages": [     
+    "pages/view/tree/tree",
+    "pages/view/pathview/pathview",
     "pages/plugin/plugin",
     "pages/index/index",
     "pages/view/luckdraw/luckdraw", 
@@ -68,8 +70,6 @@
 
     "pages/tpl/top/index",
     "pages/tpl/tpl",
-    "pages/view/tree/tree",
-    "pages/view/pathview/pathview",
     "pages/view/dropdown/dropdown",
     "pages/about/index",
     "pages/about/about/about",  

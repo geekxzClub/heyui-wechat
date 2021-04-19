@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "tree": "/component/tree/tree"
+    "h-tree": "/component/h-tree/index"
   }
 }

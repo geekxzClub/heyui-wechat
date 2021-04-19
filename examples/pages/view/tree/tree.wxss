@@ -1,1 +1,3 @@
-/* pages/view/tree/tree.wxss */
+.h-tree-box{
+  height: 100%;
+}

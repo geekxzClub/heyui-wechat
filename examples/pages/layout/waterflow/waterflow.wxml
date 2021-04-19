@@ -4,9 +4,38 @@
     <text class="heyui-title h-text-red h-text-bold"> 瀑布流</text>
   </view>
 </view>
-<view class='list-masonry m-lr p-tb'>
-  <view class='item-masonry h-corner-sm h-shadow-lg p-sm' wx:for="{{note}}">
-    <image src='{{item.url}}' mode='widthFix'></image>
-    <view class=" h-text-center h-text-sm m-tb-s h-text-cut">{{item.title}}</view>
+<view class="h-watherflow-content m-lr m-t">
+
+  <view class="h-watherflow-left">
+    <view wx:for="{{trips}}" wx:for-item="item" wx:key="" >
+      <view class="h-watherflow-item h-corner-sm m-b-sm" wx:if="{{index%2==0}}">
+        <image class="h-watherflow-item-img h-corner-tlr-sm" src="{{item.cover_image}}" mode="widthFix"></image>
+        <view class="h-watherflow-item-title-box">
+          <view url="url" class="h-watherflow-item-title h-text-sm h-text-cut2 p-sm">{{item.name}}</view> 
+        </view>
+        <view class="auth-name p-lr-sm p-b">
+          <image class="item-ava" src="{{item.cover_image_default}}"></image>    
+          <text class="h-text-s h-text-cut">{{item.desc}}</text>
+          <text class="h-text-s h-text-cut">2018-12-1</text>
+        </view>
+      </view>
+    </view>
   </view>
+
+  <view class="h-watherflow-right">
+    <view wx:for="{{trips}}" wx:for-item="item" wx:key="">
+      <view class="h-watherflow-item h-corner-sm m-b-sm" wx:if="{{index%2==1}}">
+        <image class="h-watherflow-item-img h-corner-tlr-sm" src="{{item.cover_image}}" mode="widthFix"></image>
+        <view class="h-watherflow-item-title-box">
+          <view url="url" class="h-watherflow-item-title h-text-sm h-text-cut2 p-sm">{{item.name}}</view> 
+        </view>
+        <view class="auth-name p-lr-sm p-b">
+          <image class="item-ava" src="{{item.cover_image_default}}"></image>    
+          <text class="h-text-s h-text-cut">{{item.desc}}</text>
+          <text class="h-text-s h-text-cut">2018-12-1</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
 </view>

@@ -1,20 +1,36 @@
 /* pages/layout/waterflow/waterflow.wxss */
-page{
-  background-color: #eee;
+.h-watherflow-content{
+  clear:both;
+  overflow: hidden;
 }
-.list-masonry{
-  -moz-column-count: 2; /* Firefox */
-  -webkit-column-count: 2; /* Safari �� Chrome */
-  column-count: 2;      /* 将 div 元素中的文本分为2列，并规定列间1rem像素的间隔。 */
-
-  /* column-gap: 30rpx; */
+.h-watherflow-content .h-watherflow-left,.h-watherflow-content .h-watherflow-right{
+  width:48%;
 }
-.item-masonry{
-  background-color: #fff;
-  break-inside: avoid; 
-  /* box-sizing: border-box; */
-  margin-bottom: 20rpx;
+.h-watherflow-content .h-watherflow-left{
+  float:left;
 }
-.item-masonry image {
+.h-watherflow-content .h-watherflow-right{
+  float:right;
+}
+.h-watherflow-item{
+  display: inline-block;
+  background:#fff;
+  width:100%;
+}
+.h-watherflow-item-img{
   width: 100%;
+}
+.h-watherflow-item-title{
+  font-family: 'PingFang SC-Medium';
+  color: #1e1e1e;
+}
+.item-ava{
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  float:left;
+  margin-right:10px;
+}
+.auth-name text{
+  display: block;
 }

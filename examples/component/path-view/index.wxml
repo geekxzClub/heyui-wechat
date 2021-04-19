@@ -2,16 +2,9 @@
 <view>
   <block wx:if="{{pathMode === 'mode1'}}">
     <view class="path">
-      <view class="btn"
-            bindtap="toPath">返回上级</view>
-      <view class="btn"
-            data-index="{{0}}"
-            bindtap="toPath">{{firstFloorTxt}}</view>
-      <view class="btn"
-            bindtap="toPath"
-            data-index="{{index+1}}"
-            wx:key="item"
-            wx:for="{{currentPath}}">{{item.text}}</view>
+      <!-- <view class="btn" bindtap="toPath">返回上级</view> -->
+      <view class="btn" data-index="{{0}}" bindtap="toPath">{{firstFloorTxt}}</view>
+      <view class="btn" bindtap="toPath" data-index="{{index+1}}" wx:key="item" wx:for="{{currentPath}}">{{item.text}}</view>
     </view>
   </block>
   

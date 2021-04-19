@@ -1,2 +1,45 @@
-<!--pages/view/tree/tree.wxml-->
-<tree tree="{{tree}}" wx:if="{{tree&&initId}}" init-member-id="{{initId}}" bindselectChange="selectChange"></tree>
+<!--index.wxml-->
+<view class="h-tree-box">  
+  <view class="h-bar h-bg-white h-border-bottom">
+    <view class="action h-text-xs">
+      <text class="h-text-sm h-text-bold h-text-black">全部折叠</text>
+    </view>
+  </view>
+  <h-tree h-tree-class="h-bg-white"
+    dataTree="{{dataTree}}"
+    selectKey="{{selectKey}}"
+    bind:select="handleSelect"
+  >
+  </h-tree>
+
+  <view class="h-bar h-bg-white h-border-bottom m-t">
+    <view class="action h-text-xs">
+      <text class="h-text-sm h-text-bold h-text-black">全部打开</text>
+    </view>
+  </view>
+  <h-tree h-tree-class="h-bg-white"
+    dataTree="{{dataTree}}"
+    selectKey="{{selectKey}}"
+    bind:select="handleSelect"
+    isOpenAll="true"
+  >
+  </h-tree>
+
+  <view class="h-bar h-bg-white h-border-bottom m-t">
+    <view class="action h-text-xs">
+      <text class="h-text-sm h-text-bold h-text-black">必须选着最后一个节点</text>
+    </view>
+  </view>
+  <h-tree h-tree-class="h-bg-white"
+    dataTree="{{dataTree}}"
+    selectKey="{{selectKey2}}"
+    bind:select="handleSelect2"
+    isSelectLastNode="true"
+    isOpenAll="true"
+  >
+  </h-tree>
+
+
+
+  
+</view>
