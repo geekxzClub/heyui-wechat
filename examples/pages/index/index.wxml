@@ -36,8 +36,9 @@
       </view>
     </view>
   </view>
-
-  <view class="footer p-b-sm">
+  
+  <h-footer fixed="{{false}}" copyright="{{copyright}}" navigate="{{navigate}}" tui-footer-class=""></h-footer>
+  <!-- <view class="footer p-b-sm">
     <view class="h-divder h-flex h-justify-center h-align-center h-text-gray">@ 极客小站工作室</view>
-  </view>
+  </view> -->
 </view>

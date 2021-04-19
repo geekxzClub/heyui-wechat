@@ -4,6 +4,16 @@ Page({
    * 页面的初始数据
    */
   data: {
+    navigate: [{
+      url: "/pages/plugin/plugin",
+      type: "switchTab",
+      text: "扩展"
+    }, {
+      url: "/pages/about/index",
+      type: "navigate",
+      text: "Hey UI"
+    }],
+    copyright: " Copyright © 2021-2050 Hey UI.",
     component: [{
       id: 1,
       icon: 'basic',
@@ -39,6 +49,11 @@ Page({
       icon: 'response',
       type: 'response',
       text: '操作反馈'
+    }, {
+      id: 7,
+      icon: 'response',
+      type: 'response',
+      text: '其他'
     } ],
   },
 

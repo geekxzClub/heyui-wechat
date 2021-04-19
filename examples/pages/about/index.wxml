@@ -30,38 +30,38 @@
 <view class="h-list menu card-menu m-tb h-bg-white">
   <view class="h-item h-arrow">
     <view class="content" bindtap="copyLink" data-link="https://github.com/geekxzClub">
-      <text class="heyui-github text-grey"></text>
-      <text class="text-grey">GitHub</text>
+      <text class="heyui-github h-text-grey"></text>
+      <text class="h-text-grey">GitHub</text>
     </view>
   </view>
   <view class="h-item h-arrow">
     <navigator class="content" url="/pages/about/log/log" hover-class="none">
-      <text class="heyui-formfill text-green"></text>
-      <text class="text-grey">日志</text>
+      <text class="heyui-formfill h-text-green"></text>
+      <text class="h-text-grey">日志</text>
     </navigator>
   </view>
   <view class="h-item h-arrow">
     <view class="content" bindtap="showQrcode">
-      <text class="heyui-appreciatefill text-red"></text>
-      <text class="text-grey">赞赏支持</text>
+      <text class="heyui-appreciatefill h-text-red"></text>
+      <text class="h-text-grey">赞赏支持</text>
     </view>
   </view>
   <view class="h-item h-arrow">
     <button class="h-btn content" open-type="feedback">
-      <text class="heyui-writefill text-cyan"></text>
-      <text class="text-grey">意见反馈</text>
+      <text class="heyui-writefill h-text-cyan"></text>
+      <text class="h-text-grey">意见反馈</text>
     </button>
   </view>
   <view class="h-item h-arrow">
     <navigator class="content" target="miniProgram" open-type="navigate" app-id="wx39672304efee4abb" path="" extra-data="" version="release" hover-class="none">
-      <text class="heyui-creativefill text-orange"></text>
-      <text class="text-grey">极客精选官</text>
+      <text class="heyui-creativefill h-text-orange"></text>
+      <text class="h-text-grey">极客精选官</text>
     </navigator>
   </view>
   <view class="h-item h-arrow">
     <navigator class="content" url="/pages/about/about/about" hover-class="none">
-      <text class="heyui-creativefill text-orange"></text>
-      <text class="text-grey">关于heyui</text>
+      <text class="heyui-creativefill h-text-orange"></text>
+      <text class="h-text-grey">关于heyui</text>
     </navigator>
   </view>
 </view>

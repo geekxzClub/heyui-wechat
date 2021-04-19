@@ -6,7 +6,7 @@
   </view>
 </view> -->
 <view class=" h-bg-white">
-  <view class="h-grid h-col-2 h-corner-tlr-sm m-lr p-b">
+  <view class="h-grid h-grid-2 h-corner-tlr-sm m-lr p-b">
     <view class="h-goods-item h-bg-white h-corner-sm h-shadow m-t" wx:for="{{goodsList}}" wx:key='item' bindtap="goToDetail">
       <view class="h-goods-img">
         <image class="h-corner-tlr-sm " mode="aspectFill" src="{{item.img}}"></image>

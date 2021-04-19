@@ -1,5 +1,58 @@
 <!--pages/plugin/plugin.wxml-->
-<view class="h-bar h-bg-white h-border-bottom">
+<view class="hey-ui-box">
+  <view class="m-lr">
+    <view class="h-text-lg h-text-white tit">
+      HeyUI组件库
+      <text class="h-text-sm">v1.0</text>
+    </view>
+    <view class="dec h-text-white h-text-xs">基于微信小程序原生语法 实现的CSS组件库</view>
+    <view class="h-list h-grid h-grid-4 no-border m-t h-corner-sm">
+      <view class="h-item">
+        <view class="heyui h-text-white">100+</view>
+        <text class="h-text-white">组件</text>
+      </view>
+      <view class="h-item">
+        <view class="heyui h-text-white">99+</view>
+        <text class="h-text-white">源码模板</text>
+      </view>
+      <view class="h-item">
+        <view class="heyui h-text-white">1000+</view>
+        <text class="h-text-white">金典案例</text>
+      </view>
+      <view class="h-item">
+        <view class="heyui- h-text-white">10000+</view>
+        <text class="h-text-white">用户</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="page_bd page_bd_spacing m-t-sm m-lr">
+  <view class="kind-list">
+    <block wx:for-items="{{list}}" wx:key="item">
+      <view class="kind-list_item">
+        <view id="{{item.id}}" class="h-flex kind-list_item-hd {{item.open ? 'kind-list_item-hd_show' : ''}}" bindtap="kindToggle">
+          <view class="h-flex_item h-text-sm">{{item.name}}</view>
+          <image class="kind-list_img tui-img-{{index}}" src="/images/plugin/{{item.icon}}.png"></image>
+        </view>
+        <view class="kind-list_item-bd {{item.open ? 'kind-list_item-bd_show' : ''}}">
+          <view class="h-cells {{item.open ? 'h-cells_show' : ''}}">
+            <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="item">
+              <view class="h-cell h-cell_access" hover-class="hover" hover-stay-time="150">
+                <view class="h-cell_bd" bindtap="goToItem" data-type="{{page.page}}">{{page.name}}</view>
+                <view class="h-cell_ft h-cell_ft_in-access"></view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<h-footer fixed="{{false}}" copyright="{{copyright}}" navigate="{{navigate}}" tui-footer-class=""></h-footer>
+
+<!-- <view class="h-bar h-bg-white h-border-bottom">
   <view class="action h-text-xs">
     <text class="heyui-title h-text-blue"> 函数</text>
   </view>
@@ -8,7 +61,6 @@
   <view class="h-item h-arrow m-lr m-tb-sm h-corner-sm h-shadow-lg  h-bg-white" wx:for="{{funList}}" wx:key='item' bindtap="goToItem" data-type="{{item.type}}">
     <view class="h-avatar h-avatar-sm" style="background-image:url('https://oss.geekxz.com/hey-ui-oss/icon/{{item.type}}.png');"></view>
     <view class="content">
-      <!-- <image src="/images/icon/{{item.type}}.png" class="png" mode="aspectFit"></image> -->
       <view class="h-text-darkGray">
         <text class="h-text-cut h-text-xs h-text-bold">{{item.text_en}}</text>
       </view>
@@ -29,7 +81,6 @@
   <view class="h-item h-arrow m-lr m-tb-sm h-corner-sm h-shadow-lg h-bg-white" wx:for="{{tplList}}" wx:key='item' bindtap="goToItem" data-type="{{item.type}}">
     <view class="h-avatar h-avatar-sm" style="background-image:url('/images/icon/{{item.icon}}.png');"></view>
     <view class="content">
-      <!-- <image src="/images/icon/{{item.type}}.png" class="png" mode="aspectFit"></image> -->
       <view class="h-text-darkGray">
         <text class="h-text-cut h-text-xs h-text-bold">{{item.text_en}}</text>
       </view>
@@ -38,7 +89,7 @@
       </view>
     </view>
   </view>
-</view>
+</view> -->
 
 
 

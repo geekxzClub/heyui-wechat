@@ -70,3 +70,133 @@
     border-left: 10px solid #ffffff;
     left: 0;
 }
+
+
+
+
+
+
+
+
+/* 折叠面板 */
+.h-cell {
+  padding: 10px 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.h-cell:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 1px solid #eaeef1;
+  color: #eaeef1;
+  left: 15px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.h-cell:first-child:before {
+  display: none;
+}
+.h-cell_active {
+  background-color: #f7f7f9;
+}
+.h-cell_bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.h-cell_ft {
+  text-align: right;
+  color: #999;
+}
+.h-cell_access {
+  color: inherit;
+}
+.h-cell_ft_in-access {
+  padding-right: 13px;
+  position: relative;
+}
+.h-cell_ft_in-access:after {
+  content: " ";
+  height: 11px;
+  width: 11px;
+  border-width: 2px 2px 0 0;
+  border-color: #b2b2b2;
+  border-style: solid;
+  -webkit-transform: matrix(0.5, 0.5, -0.5, 0.5, 0, 0);
+  transform: matrix(0.5, 0.5, -0.5, 0.5, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  right: 2px;
+}
+.h-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.h-flex_item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.h-flex {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.h-cells {
+  margin-top: 0;
+  opacity: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.h-cells:before, .h-cells:after {
+  display: none;
+}
+.h-cells_show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.h-cell:before {
+  right: 15px;
+}
+.kind-list_item {
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.kind-list_item:first-child {
+  margin-top: 0;
+}
+.kind-list_img {
+  width: 30px;
+  height: 30px;
+}
+.kind-list_item-hd {
+  padding: 20px;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.kind-list_item-hd_show {
+  opacity: 0.4;
+}
+.kind-list_item-bd {
+  height: 0;
+  overflow: hidden;
+}
+.kind-list_item-bd_show {
+  height: auto;
+}

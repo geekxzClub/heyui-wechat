@@ -5,6 +5,175 @@ Page({
    * 页面的初始数据
    */
   data: {
+    list: [{
+      id: 'function',
+      icon: 'fun',
+      name: '函数',
+      open: false,
+      pages: [{
+        name: "数组函数",
+        page: "h-array"
+      },{
+        name: "字符串",
+        page: "h-string"
+      },{
+        name: "判断",
+        page: "h-is"
+      }]
+    }, {
+      id: 'shop',
+      icon: "shop",
+      name: '商城源码',
+      open: false,
+      pages: [{
+        name: "小商城",
+        page: "heyui-shop"
+      }, {
+        name: "B2C商城",
+        page: "heyui-mall"
+      }]
+    },
+    {
+      id: 'appointment',
+      icon: "shop",
+      name: '预约源码',
+      open: false,
+      pages: [{
+        name: "驾校练车",
+        page: "car"
+      }, {
+      name: "实验室",
+      page: "laboratory"
+      }, {
+        name: "课程预约",
+        page: "course"
+      }, {
+        name: "运动场地",
+        page: "course"
+      }, {
+        name: "美容服务",
+        page: "course"
+      }, {
+        name: "培训班",
+        page: "course"
+      }, {
+        name: "酒店预约",
+        page: "hotel"
+      }]
+    },
+    {
+      id: 'blog',
+      icon: "shop",
+      name: '个人博客',
+      open: false,
+      pages: [{
+        name: "简单主题",
+        page: "simple"
+      },{
+        name: "全屏主题",
+        page: "full"
+      }]
+    },
+    {
+      id: 'canvas',
+      icon: "shop",
+      name: '公司官网',
+      open: false,
+      pages: [{
+        name: "简单主题",
+        page: "qrcode"
+      }]
+    },
+    {
+      id: 'drawer',
+      icon: "shop",
+      name: '问卷调查',
+      open: false,
+      pages: [{
+        name: "产品使用满意度",
+        page: "drawer"
+      }]
+    },
+    {
+      id: 'vote',
+      icon: "shop",
+      name: '投票模板',
+      open: false,
+      pages: [{
+        name: "少儿才艺大赛",
+        page: "children"
+      },{
+        name: "最佳摄影作品",
+        page: "photography"
+      },{
+        name: "优秀员工评选",
+        page: "staff"
+      }]
+    },
+    {
+      id: 'prize',
+      icon: "shop",
+      name: '抽奖模板',
+      open: false,
+      pages: [{
+        name: "开心大转盘",
+        page: "turntable"
+      },{
+        name: "幸运九宫格",
+        page: "nine-grid"
+      },{
+        name: "欢乐扭蛋机",
+        page: "staff"
+      },{
+        name: "开心刮刮乐",
+        page: "staff"
+      },{
+        name: "手机摇一摇",
+        page: "staff"
+      },{
+        name: "欢乐砸金蛋",
+        page: "staff"
+      },{
+        name: "好运上上签",
+        page: "staff"
+      },{
+        name: "翻滚吧老虎机",
+        page: "staff"
+      }]
+    },
+    {
+      id: 'active',
+      icon: "shop",
+      name: '开奖模板',
+      open: false,
+      pages: [{
+        name: "活动开奖",
+        page: "active"
+      }]
+    },
+    {
+      id: 'swipe',
+      icon: "shop",
+      name: '其他',
+      open: false,
+      pages: [{
+        name: "拼图游戏",
+        page: "swipe-action"
+      }]
+    }
+    ],
+    
+    navigate: [{
+      url: "/pages/index/index",
+      type: "switchTab",
+      text: "返回首页"
+    }, {
+      url: "/pages/about/index",
+      type: "navigate",
+      text: "Hey UI"
+    }],
+    copyright: " Copyright © 2021-2050 Hey UI.",
+
     tplList: [{
       id: 1,
       icon: 'buy',
@@ -93,7 +262,40 @@ Page({
       wx.navigateTo({
         url: '/heyui-shop/pages/index/index'
       })
+    }else{
+      this.dialog()
     }
+  },
+  dialog(e) {
+    wx.showModal({
+      title: '亲爱的',
+      content: '小哥哥正在努力开发中！',
+      cancelText: '等待',
+      confirmText: '再会',
+      success: res => {
+        if (res.confirm) {
+          this.data.imgList.splice(e.currentTarget.dataset.index, 1);
+          this.setData({
+            imgList: this.data.imgList
+          })
+        }
+      }
+    })
+  },
+
+  kindToggle: function(e) {
+    var id = e.currentTarget.id,
+      list = this.data.list;
+    for (var i = 0, len = list.length; i < len; ++i) {
+      if (list[i].id == id) {
+        list[i].open = !list[i].open
+      } else {
+        list[i].open = false
+      }
+    }
+    this.setData({
+      list: list
+    });
   },
   /**
    * 生命周期函数--监听页面加载

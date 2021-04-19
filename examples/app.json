@@ -1,7 +1,7 @@
 {
   "pages": [     
-    "pages/index/index",
     "pages/plugin/plugin",
+    "pages/index/index",
     "pages/view/luckdraw/luckdraw", 
     
     "pages/view/view",
@@ -134,5 +134,8 @@
   "navigateToMiniProgramAppIdList": [
     "wx39672304efee4abb"
   ],
+  "usingComponents": {
+    "h-footer": "/component/h-footer/footer"
+  },
   "sitemapLocation": "sitemap.json"
 }
