@@ -1,62 +1,40 @@
-// pages/view/table/table.js
+// pages/view/table/table2.js
+import { tableHeader, tableHeader2, row } from './data.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    config: {
-      content: [],
-      titles: ['id', '名字', '年龄', '学校', '年薪'],
-      props: ['id', 'name', 'age', 'school', 'price'],
-      columnWidths: ['14%', '20%', '20%', '32%', '14%'],
-      border: true,
-      stripe: true,
-      // headbgcolor : '#dddddd'
-    }
+    month: '',
+    user_name: '',
+    tableHeader,
+    tableHeader2,
+    stripe: true,
+    border: true,
+    outBorder: true,
+    height: '150px',
+    row,
+    row2: [],
+    msg: '没有打卡记录哦～'
+  },
+  /** 
+     * 点击表格一行
+     */
+  onRowClick: function (e) {
+    console.log('e: ', e.detail.currentTarget.dataset.column)
+
+    wx.showToast({
+      title: '您点击了这一行：' + e.detail.currentTarget.dataset.column,
+      icon: 'none'
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let content = [
-      {
-        id: 1,
-        name: '阿狗',
-        age: 23,
-        school: '暨南大学计算机',
-        price: '100k'
-      },
-      {
-        id: 2,
-        name: '阿花',
-        age: 22,
-        school: '中山大学',
-        price: '90k'
-      },
-      {
-        id: 3,
-        name: '阿强',
-        age: 22,
-        school: '华南农业大学',
-        price: '90k'
-      },
-      {
-        id: 4,
-        name: '阿林',
-        age: 24,
-        school: '上海交通大学',
-        price: '90k'
-      }
-    ]
-    let that = this
-    // 此处模拟网络请求
-    setTimeout(function () {
-      that.setData({
-        'config.content': content
-      })
-    }, 1000)
+
   },
 
   /**

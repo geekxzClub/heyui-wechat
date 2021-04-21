@@ -21,11 +21,9 @@ Page({
   },
   goToItem: function (e) {
     var type = e.currentTarget.dataset.type;
-    if (type == 'tree') {
-      wx.navigateTo({
-        url: '/pages/other/'+type+'/'+type
-      })
-    }
+    wx.navigateTo({
+      url: '/pages/other/'+type+'/'+type
+    })
   },
 
   /**

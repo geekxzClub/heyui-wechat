@@ -51,8 +51,8 @@ Page({
       text: '操作反馈'
     }, {
       id: 7,
-      icon: 'response',
-      type: 'response',
+      icon: 'other',
+      type: 'other',
       text: '其他'
     } ],
   },
@@ -65,41 +65,10 @@ Page({
   },
   goToView: function (e) {
     var type = e.currentTarget.dataset.type;
-    if (type == 'basics') {
-      wx.navigateTo({
-        url: '/pages/basics/basics'
-      })
-    }
-    if (type == 'layout') {
-      wx.navigateTo({
-        url: '/pages/layout/layout'
-      })
-    }
-    if (type == 'view') {
-      wx.navigateTo({
-        url: '/pages/view/view'
-      })
-    }
-    if (type == 'form') {
-      wx.navigateTo({
-        url: '/pages/form/form'
-      })
-    }
-    if (type == 'animation') {
-      wx.navigateTo({
-        url: '/pages/animation/animation'
-      })
-    }
-    if (type == 'nav') {
-      wx.navigateTo({
-        url: '/pages/nav/nav'
-      })
-    }
-    if (type == 'response') {
-      wx.navigateTo({
-        url: '/pages/response/response'
-      })
-    }
+    wx.navigateTo({
+      url: '/pages/'+type+'/'+type
+    })
+   
   },
 
   /**

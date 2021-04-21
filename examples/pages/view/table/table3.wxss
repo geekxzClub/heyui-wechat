@@ -1,0 +1,5 @@
+/* pages/view/table/table.wxss */
+@import '/pages/tpl/top/index.wxss';
+page{
+  background-color: #fff;
+}

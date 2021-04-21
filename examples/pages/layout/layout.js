@@ -59,41 +59,9 @@ Page({
 
   goToItem: function (e) {
     var type = e.currentTarget.dataset.type;
-    if (type =='flex'){
-      wx.navigateTo({
-        url: '/pages/layout/flex/flex'
-      })
-    }
-    if (type == 'grid') {
-      wx.navigateTo({
-        url: '/pages/layout/grid/grid'
-      })
-    }
-    if (type == 'float') {
-      wx.navigateTo({
-        url: '/pages/layout/float/float'
-      })
-    }
-    if (type == 'list') {
-      wx.navigateTo({
-        url: '/pages/layout/list/list'
-      })
-    }
-    if (type == 'indexlist') {
-      wx.navigateTo({
-        url: '/pages/layout/indexlist/indexlist'
-      })
-    }
-    if (type == 'collapse') {
-      wx.navigateTo({
-        url: '/pages/layout/collapse/collapse'
-      })
-    }
-    if (type == 'waterflow') {
-      wx.navigateTo({
-        url: '/pages/layout/waterflow/waterflow'
-      })
-    }
+    wx.navigateTo({
+      url: '/pages/layout/'+type+'/'+type
+    })
   },
 
   /**

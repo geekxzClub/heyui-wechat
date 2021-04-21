@@ -22,11 +22,9 @@ Page({
   },
   goToItem: function (e) {
     var type = e.currentTarget.dataset.type;
-    if (type == 'animation') {
-      wx.navigateTo({
-        url: '/pages/animation/transition/transition'
-      })
-    }
+    wx.navigateTo({
+      url: '/pages/animation/'+type+'/'+type
+    })
   },
 
   /**

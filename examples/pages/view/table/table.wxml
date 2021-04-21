@@ -1,26 +1,145 @@
-<!--pages/view/table/table.wxml-->
+<!--pages/view/table/table2.wxml-->
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="h-text-sm h-text-bold h-text-black"> 基础表格</text>
+  </view>
+</view>
+<view class="h-flex h-justify-center p">
+    <h-table  
+        headers="{{tableHeader}}" 
+        data="{{ row }}" 
+    />
+</view>
 
 <view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-xs">
-    <text class="h-text-sm h-text-bold h-text-black"> 居中</text>
+  <view class="action h-text-sm">
+    <text class="h-text-sm h-text-bold h-text-black"> 带斑马纹表格</text>
   </view>
 </view>
-<view class="p">
-  <h-table config="{{config}}" h-tit-text="h-text-center p-tb-sm" h-td-text="h-text-center p-tb-sm"></h-table>
+<view class="h-flex h-justify-center p">
+    <h-table  
+        headers="{{tableHeader}}" 
+        data="{{ row }}" 
+        stripe="{{ stripe }}"
+    />
 </view>
+
 <view class="h-bar h-bg-white h-border-bottom">
   <view class="action h-text-sm">
-    <text class="h-text-sm h-text-bold h-text-black"> 靠左</text>
+    <text class="h-text-sm h-text-bold h-text-black"> 带间隔边框表格</text>
   </view>
 </view>
-<view class="p">
-  <h-table config="{{config}}" h-tit-text="h-text-left p-l-sm p-tb-sm" h-td-text="h-text-left p-l-sm  p-tb-sm"></h-table>
+<view class="h-flex h-justify-center p">
+    <h-table  
+        headers="{{tableHeader}}" 
+        data="{{ row }}" 
+        border="{{ border }}"
+    />
 </view>
+
 <view class="h-bar h-bg-white h-border-bottom">
   <view class="action h-text-sm">
-    <text class="h-text-sm h-text-bold h-text-black"> 靠右</text>
+    <text class="h-text-sm h-text-bold h-text-black"> 自定义无数据的提示文案</text>
+  </view>
+</view>
+<view class="h-flex h-justify-center p">
+    <h-table  
+        headers="{{tableHeader}}" 
+        data="{{ row2 }}" 
+        no-data-msg="{{ msg }}"
+    />
+</view>
+
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="h-text-sm h-text-bold h-text-black"> 固定表头</text>
+  </view>
+</view>
+<view class="h-flex h-justify-center p">
+    <h-table  
+        header-row-class-name="header-class"
+        headers="{{tableHeader}}" 
+        data="{{ row }}" 
+        height="{{ height }}"
+        border="{{ border }}"
+    />
+</view>
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="h-text-sm h-text-bold h-text-black"> 自定义表格头样式</text>
+  </view>
+</view>
+<view class="h-flex h-justify-center p">
+    <h-table  
+        header-row-class-name="header-class"
+        headers="{{tableHeader}}" 
+        data="{{ row }}" 
+        stripe="{{ stripe }}"
+        border="{{ border }}"
+    />
+</view>
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="h-text-sm h-text-bold h-text-black"> 表格横向滑动</text>
   </view>
 </view>
 <view class="p">
-  <h-table config="{{config}}" h-tit-text="h-text-right p-r-sm p-tb-sm" h-td-text="h-text-right p-r-sm  p-tb-sm"></h-table>
+    <h-table  
+        header-row-class-name="header-class"
+        headers="{{tableHeader2}}" 
+        data="{{ row }}" 
+        height="{{ height }}"
+        border="{{ border }}"
+    />
 </view>
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="h-text-sm h-text-bold h-text-black"> 自定义表格行和单元格样式</text>
+  </view>
+</view>
+<view class="h-flex h-justify-center p">
+    <h-table  
+        row-class-name="row-class"
+        headers="{{tableHeader}}" 
+        data="{{ row }}" 
+    />
+</view>
+
+<view class="h-bar h-bg-white h-border-bottom">
+  <view class="action h-text-sm">
+    <text class="h-text-sm h-text-bold h-text-black"> 当某一行被点击时会触发该事件</text>
+  </view>
+</view>
+<view class="h-flex h-justify-center p">
+    <h-table  
+        headers="{{tableHeader}}" 
+        data="{{ row }}" 
+        bind:rowClick="onRowClick"
+    />
+</view>
+
+<!-- <view class="group">
+    <view class="group-title">other</view>
+    <view class="group-explain"></view>
+    <view class="table-wrap">
+        <h-table  
+            header-row-class-name="header-class"
+            row-class-name="row-class"
+            cell-class-name="cell-class"
+            headers="{{tableHeader}}" 
+            data="{{ row }}" 
+            stripe="{{ stripe }}"
+            height="{{ height }}"
+            border="{{ border }}"
+            offsetTop="{{ offsetTop }}"  
+            bind:rowClick="onRowClick"
+            bind:cellClick="onCellClick" 
+            no-data-msg="{{ msg }}"
+        />
+    </view>
+</view> -->
+

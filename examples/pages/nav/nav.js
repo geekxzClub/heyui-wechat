@@ -53,41 +53,9 @@ Page({
   },
   goToItem: function (e) {
     var type = e.currentTarget.dataset.type;
-    if (type == 'tabbar') {
-      wx.navigateTo({
-        url: '/pages/nav/tabbar/tabbar'
-      })
-    }
-    if (type == 'navbar') {
-      wx.navigateTo({
-        url: '/pages/nav/navbar/navbar'
-      })
-    }
-    if (type == 'tabs') {
-      wx.navigateTo({
-        url: '/pages/nav/tabs/tabs'
-      })
-    }
-    if (type == 'menu') {
-      wx.navigateTo({
-        url: '/pages/nav/menu/menu'
-      })
-    }
-    if (type == 'category') {
-      wx.navigateTo({
-        url: '/pages/nav/category/category'
-      })
-    }
-    if (type == 'category-2') {
-      wx.navigateTo({
-        url: '/pages/nav/category-2/category-2'
-      })
-    }
-    if (type == 'footer') {
-      wx.navigateTo({
-        url: '/pages/nav/footer/footer'
-      })
-    }
+    wx.navigateTo({
+      url: '/pages/nav/'+type+'/'+type
+    })
   },
 
   /**

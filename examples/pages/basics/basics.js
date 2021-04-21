@@ -64,48 +64,9 @@ Page({
   },
   goToItem: function (e) {
     var type = e.currentTarget.dataset.type;
-    switch (type) {
-      case 'color':
-        wx.navigateTo({
-          url: '/pages/basics/background/background'
-        })
-        break;
-      case 'text':
-        wx.navigateTo({
-          url: '/pages/basics/text/text'
-        })
-        break;
-      case 'shadow':
-        wx.navigateTo({
-          url: '/pages/basics/shadow/shadow'
-        })
-        break;
-      case 'icon':
-        wx.navigateTo({
-          url: '/pages/basics/icon/icon'
-        })
-        break;
-      case 'corner':
-        wx.navigateTo({
-          url: '/pages/basics/corner/corner'
-        })
-        break;
-      case 'mp':
-        wx.navigateTo({
-          url: '/pages/basics/mp/mp'
-        })
-        break;
-      case 'button':
-        wx.navigateTo({
-          url: '/pages/basics/button/button'
-        })
-        break;
-      case 'theme':
-        wx.navigateTo({
-          url: '/pages/basics/theme/theme'
-        })
-        break;
-    }
+    wx.navigateTo({
+      url: '/pages/basics/'+type+'/'+type
+    })
   },
 
 

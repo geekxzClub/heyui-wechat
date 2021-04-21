@@ -64,46 +64,9 @@ Page({
   },
   goToItem: function (e) {
     var type = e.currentTarget.dataset.type;
-    if (type == 'input') {
-      wx.navigateTo({
-        url: '/pages/form/input/input'
-      })
-    }
-    if (type == 'textarea') {
-      wx.navigateTo({
-        url: '/pages/form/textarea/textarea'
-      })
-    }
-    if (type == 'radio') {
-      wx.navigateTo({
-        url: '/pages/form/radio/radio'
-      })
-    }
-    if (type == 'checkbox') {
-      wx.navigateTo({
-        url: '/pages/form/checkbox/checkbox'
-      })
-    }
-    if (type == 'switch') {
-      wx.navigateTo({
-        url: '/pages/form/switch/switch'
-      })
-    }
-    if (type == 'picker') {
-      wx.navigateTo({
-        url: '/pages/form/picker/picker'
-      })
-    }
-    if (type == 'imagepicker') {
-      wx.navigateTo({
-        url: '/pages/form/imagepicker/imagepicker'
-      })
-    }
-    if (type == 'rate') {
-      wx.navigateTo({
-        url: '/pages/form/rate/rate'
-      })
-    }
+    wx.navigateTo({
+      url: '/pages/form/'+type+'/'+type
+    })
   },
 
   /**

@@ -21,12 +21,11 @@
     "pages/view/popup/popup",
     "pages/view/notic/notic",
     "pages/view/barrage/barrage",
-    "pages/view/table/table2",
+    "pages/view/table/table",
     "pages/view/slideview/slideview",
     "pages/view/divider/divider",
     "pages/view/keyboard/keyboard",
     "pages/view/verifycode/verifycode",
-    "pages/view/table/table",
 
     "pages/layout/layout",
     "pages/layout/waterflow/waterflow",
@@ -60,7 +59,7 @@
     "pages/animation/transition/transition",
 
     "pages/basics/basics",
-    "pages/basics/background/background",
+    "pages/basics/color/color",
     "pages/basics/button/button",
     "pages/basics/corner/corner",
     "pages/basics/text/text",

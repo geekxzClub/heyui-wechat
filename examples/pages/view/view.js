@@ -38,13 +38,13 @@ Page({
     }, {
       id: 6,
       icon: 'titlebar',
-      type: 'titlebar',
+      type: 'title',
      text_zh: '标题栏',
      text_en: 'TitleBar'
     }, {
       id: 7,
       icon: 'searchbar',
-      type: 'searchbar',
+      type: 'search',
      text_zh: '搜索栏',
      text_en: 'SearchBar'
     }, {
@@ -80,7 +80,7 @@ Page({
     }, {
       id: 13,
       icon: 'table2',
-      type: 'table2',
+      type: 'table',
      text_zh: '表格',
      text_en: 'Table'
     }, {
@@ -107,12 +107,6 @@ Page({
         type: 'verifycode',
        text_zh: '验证码输入',
        text_en: 'VerifyCode'
-      }, {
-        id: 17,
-        icon: 'tree',
-        type: 'tree',
-       text_zh: '数据树',
-       text_en: 'Tree'
       }],
     val: 50,
   },
@@ -139,101 +133,9 @@ Page({
   }, 
   goToItem: function (e) {
     var type = e.currentTarget.dataset.type;
-    if (type == 'avatar') {
-      wx.navigateTo({
-        url: '/pages/view/avatar/avatar'
-      })
-    }
-    if (type == 'tag') {
-      wx.navigateTo({
-        url: '/pages/view/tag/tag'
-      })
-    }
-    if (type == 'progress') {
-      wx.navigateTo({
-        url: '/pages/view/progress/progress'
-      })
-    }
-    if (type == 'swiper') {
-      wx.navigateTo({
-        url: '/pages/view/swiper/swiper'
-      })
-    }
-    if (type == 'loading') {
-      wx.navigateTo({
-        url: '/pages/view/loading/loading'
-      })
-    }
-    if (type == 'titlebar') {
-      wx.navigateTo({
-        url: '/pages/view/title/title'
-      })
-    }
-    if (type == 'searchbar') {
-      wx.navigateTo({
-        url: '/pages/view/search/search'
-      })
-    }
-    if (type == 'addtips') {
-      wx.navigateTo({
-        url: '/pages/view/addtips/addtips'
-      })
-    }
-    if (type == 'card') {
-      wx.navigateTo({
-        url: '/pages/view/card/card'
-      })
-    }
-    if (type == 'popup') {
-      wx.navigateTo({
-        url: '/pages/view/popup/popup'
-      })
-    }
-    if (type == 'notic') {
-      wx.navigateTo({
-        url: '/pages/view/notic/notic'
-      })
-    }
-    if (type == 'barrage') {
-      wx.navigateTo({
-        url: '/pages/view/barrage/barrage'
-      })
-    }
-    if (type == 'table') {
-      wx.navigateTo({
-        url: '/pages/view/table/table'
-      })
-    }
-    if (type == 'table2') {
-      wx.navigateTo({
-        url: '/pages/view/table/table2'
-      })
-    }
-    if (type == 'slideview') {
-      wx.navigateTo({
-        url: '/pages/view/slideview/slideview'
-      })
-    }
-    if (type == 'divider') {
-      wx.navigateTo({
-        url: '/pages/view/divider/divider'
-      })
-    } 
-    if (type == 'keyboard') {
-      wx.navigateTo({
-        url: '/pages/view/keyboard/keyboard'
-      })
-    }
-    if (type == 'verifycode') {
-      wx.navigateTo({
-        url: '/pages/view/verifycode/verifycode'
-      })
-    }
-    if (type == 'tree') {
-      wx.navigateTo({
-        url: '/pages/view/tree/tree'
-      })
-    }
+    wx.navigateTo({
+      url: '/pages/view/'+type+'/'+type
+    })
   },
 
   /**
