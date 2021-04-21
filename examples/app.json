@@ -5,7 +5,6 @@
     "pages/other/tree/tree",
     "pages/view/pathview/pathview",
     "pages/plugin/plugin",
-    "pages/view/luckdraw/luckdraw", 
     "pages/view/dropdown/dropdown",
     
     "pages/view/view",
@@ -114,8 +113,8 @@
       },
       {
         "pagePath": "pages/plugin/plugin",
-        "iconPath": "images/tabbar/plugin.png",
-        "selectedIconPath": "images/tabbar/plugin_cur.png",
+        "iconPath": "images/tabbar/component.png",
+        "selectedIconPath": "images/tabbar/component_cur.png",
         "text": "扩展"
       },
       {

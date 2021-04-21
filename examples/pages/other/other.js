@@ -11,12 +11,6 @@ Page({
       type: 'tree',
       text_zh: '节点树',
       text_en: 'tree'
-    }, {
-      id: 2,
-      icon: 'tabbar',
-      type: 'tabbar',
-      text_zh: '底部导航',
-      text_en: 'TabBar'
     }]
   },
   goToItem: function (e) {
