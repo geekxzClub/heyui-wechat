@@ -5,7 +5,7 @@
       <text class="h-text-sm h-text-bold h-text-black">全部折叠</text>
     </view>
   </view>
-  <h-tree h-tree-class="h-bg-white"
+  <h-tree h-tree-class="h-bg-green-light p-tb"
     dataTree="{{dataTree}}"
     selectKey="{{selectKey}}"
     bind:select="handleSelect"
@@ -17,10 +17,10 @@
       <text class="h-text-sm h-text-bold h-text-black">全部打开</text>
     </view>
   </view>
-  <h-tree h-tree-class="h-bg-white"
+  <h-tree h-tree-class="h-bg-white p-tb"
     dataTree="{{dataTree}}"
-    selectKey="{{selectKey}}"
-    bind:select="handleSelect"
+    selectKey="{{selectKey2}}"
+    bind:select="handleSelect2"
     isOpenAll="true"
   >
   </h-tree>
@@ -30,10 +30,10 @@
       <text class="h-text-sm h-text-bold h-text-black">必须选着最后一个节点</text>
     </view>
   </view>
-  <h-tree h-tree-class="h-bg-white"
+  <h-tree h-tree-class="h-bg-white p-tb"
     dataTree="{{dataTree}}"
-    selectKey="{{selectKey2}}"
-    bind:select="handleSelect2"
+    selectKey="{{selectKey3}}"
+    bind:select="handleSelect3"
     isSelectLastNode="true"
     isOpenAll="true"
   >

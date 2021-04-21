@@ -107,6 +107,12 @@ Page({
         type: 'verifycode',
        text_zh: '验证码输入',
        text_en: 'VerifyCode'
+      }, {
+        id: 17,
+        icon: 'tree',
+        type: 'tree',
+       text_zh: '数据树',
+       text_en: 'Tree'
       }],
     val: 50,
   },
@@ -221,6 +227,11 @@ Page({
     if (type == 'verifycode') {
       wx.navigateTo({
         url: '/pages/view/verifycode/verifycode'
+      })
+    }
+    if (type == 'tree') {
+      wx.navigateTo({
+        url: '/pages/view/tree/tree'
       })
     }
   },

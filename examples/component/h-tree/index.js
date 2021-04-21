@@ -51,9 +51,9 @@
       })
     },
     select(e) {
-      const item = e.currentTarget.dataset.item
+      const item = e.currentTarget.dataset.item      
+      // console.log(item)
       if(this.properties.isSelectLastNode) {
-        console.log(item)
         if (!item.children || item.children.length == 0) {
           this.triggerEvent('select', { item: item }, { bubbles: true, composed: true })
         } else {

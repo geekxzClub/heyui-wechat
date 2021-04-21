@@ -274,10 +274,7 @@ Page({
       confirmText: '再会',
       success: res => {
         if (res.confirm) {
-          this.data.imgList.splice(e.currentTarget.dataset.index, 1);
-          this.setData({
-            imgList: this.data.imgList
-          })
+         
         }
       }
     })
