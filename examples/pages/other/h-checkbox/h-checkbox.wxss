@@ -1,0 +1,5 @@
+/* pages/other/h-checkbox/h-checkbox.wxss */
+.h-radio-view{
+  height: 110rpx;
+  line-height: 110rpx;   
+}

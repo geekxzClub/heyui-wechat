@@ -1,37 +1,33 @@
-// pages/other/other.js
+// pages/other/h-radio/h-radio.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    componentList: [{
-      id: 1,
-      icon: 'tree',
-      type: 'tree',
-      text_zh: '节点树',
-      text_en: 'tree'
-    },{
-      id: 1,
-      icon: 'h-radio',
-      type: 'h-radio',
-      text_zh: '未使用radio单选',
-      text_en: 'h-radio'
-    },{
-      id: 1,
-      icon: 'h-checkbox',
-      type: 'h-checkbox',
-      text_zh: '未使用checkbox多选',
-      text_en: 'h-checkbox'
-    }]
-  },
-  goToItem: function (e) {
-    var type = e.currentTarget.dataset.type;
-    wx.navigateTo({
-      url: '/pages/other/'+type+'/'+type
-    })
-  },
-
+    idx: '',
+    applyList:[
+        {item_id: "10", item_name: "公司"},
+        {item_id: "11", item_name: "职务"},
+        {item_id: "12", item_name: "行业"},
+        {item_id: "13", item_name: "住址"}
+      ]
+    },
+    selectApply:function(e){
+      let id = e.target.dataset.id
+       this.setData({
+         idx: id
+       })
+       for (const elem of this.data.applyList) {
+        if(elem['item_id'] == id){
+          wx.showToast({
+            title: elem['item_name'],
+            icon: 'none',
+            duration: 1500
+          })
+        }
+       }
+   },
   /**
    * 生命周期函数--监听页面加载
    */

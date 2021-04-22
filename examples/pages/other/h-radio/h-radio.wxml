@@ -1,0 +1,28 @@
+<!--pages/other/h-radio/h-radio.wxml-->
+<view class="h-bg-white m">
+  <view class="h-grid h-grid-4">
+    <view class="h-radio-view h-text-center {{idx==item.item_id?'h-bg-red h-text-white':'h-bg-white'}}" wx:for="{{applyList}}" wx:key="item" bindtap='selectApply' data-id="{{item.item_id}}">{{item.item_name}}</view>
+  </view>
+</view>
+
+<view class="h-bg-white m">
+  <view class="h-grid h-grid-4">
+      <view class="h-radio-view h-text-center {{idx==item.item_id?'h-bg-red h-text-white':'h-bg-white'}}" wx:for="{{applyList}}" wx:key="item" bindtap='selectApply' data-id="{{item.item_id}}">{{item.item_name}}</view>
+  </view>
+</view>
+
+<view class="h-bg-white m">
+  <view class="h-grid h-grid-4">
+    <view class="h-radio-view h-text-center {{idx==item.item_id?'h-bg-primary':'h-bg-white'}}" wx:for="{{applyList}}" wx:key="item" bindtap='selectApply' data-id="{{item.item_id}}">{{item.item_name}}</view>
+  </view>
+</view>
+
+<view class="h-bg-white m">
+  <view class="h-grid h-grid-4">
+    <view class="h-radio-view h-text-center {{idx==item.item_id?'h-bg-yellow':'h-bg-primary'}}" wx:for="{{applyList}}" wx:key="item" bindtap='selectApply' data-id="{{item.item_id}}">{{item.item_name}}</view>
+  </view>
+</view>
+
+<view class="h-text-center">       
+  <view class="h-btn fl m-lr-sm h-btn-lg h-corner-sm {{idx==item.item_id?'h-bg-yellow':'h-bg-teanslucent'}}" wx:for="{{applyList}}" wx:key="item" bindtap='selectApply' data-id="{{item.item_id}}">{{item.item_name}}</view>
+</view>

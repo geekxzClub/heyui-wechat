@@ -1,7 +1,10 @@
 {
   "pages": [     
+    "pages/other/poster/poster",
     "pages/index/index",
     "pages/other/other",
+    "pages/other/h-checkbox/h-checkbox",
+    "pages/other/h-radio/h-radio",
     "pages/other/tree/tree",
     "pages/view/pathview/pathview",
     "pages/plugin/plugin",

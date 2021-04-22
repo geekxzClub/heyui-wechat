@@ -1,0 +1,5 @@
+/* pages/other/h-radio/h-radio.wxss */
+.h-radio-view{
+  height: 110rpx;
+  line-height: 110rpx;   
+}
