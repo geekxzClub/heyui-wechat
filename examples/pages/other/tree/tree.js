@@ -78,19 +78,24 @@ Page({
     }
   },
   dialog(data){
-    wx.showModal({
-      title: '你选择啦',
-      content: data,        
-      cancelText: '重选',
-      confirmText: '好的',
-      success (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
-        } else if (res.cancel) {
-          console.log('用户点击取消')
-        }
-      }
+    wx.showToast({
+      title: data,
+      icon: 'none',
+      duration: 1500
     })
+    // wx.showModal({
+    //   title: '你选择啦',
+    //   content: data,        
+    //   cancelText: '重选',
+    //   confirmText: '好的',
+    //   success (res) {
+    //     if (res.confirm) {
+    //       console.log('用户点击确定')
+    //     } else if (res.cancel) {
+    //       console.log('用户点击取消')
+    //     }
+    //   }
+    // })
   },
   // 通过子节点找父节点
   findPatentValue(tree, value, valueName = 'valuename', childrenName = 'children'){

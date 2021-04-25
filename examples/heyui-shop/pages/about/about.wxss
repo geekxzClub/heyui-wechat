@@ -4,6 +4,7 @@
 }
 .user-box{
   height: 300rpx;
+  background: linear-gradient(to top,#166BD8,#3688FF);
 }
 .vip-box{  
   position: relative;

@@ -1,17 +1,17 @@
 <!--pages/about/about.wxml-->
 <!-- 个人信息 -->
-<view class="user-box h-bg-primary h-corner-blr-md">
+<view class="user-box h-corner-blr-md">
   <view class="h-list menu-avatar p-t-sm">
     <view class="h-item">
       <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a5.jpg);"></view>
       <view class="content">
         <view class="h-text-white">
           <text class="h-text-cut h-text-md">Hey-ui</text>
-          <view class="h-tag h-tag-sm h-corner-lg h-bg-gray m-l-sm">设置手机号</view>
+          <view class="h-tag h-tag-sm h-corner-lg h-bg-yellow h-text-white h-text-l m-l-sm">设置手机号</view>
         </view>
         <view class="h-text-white h-text-s h-flex">
           <text class="h-text-cut">
-              <text class="h-text-white"></text> 我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
+              <text class="h-text-white"></text> 这家伙很懒...
           </text>
         </view>
       </view>

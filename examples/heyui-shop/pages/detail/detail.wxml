@@ -30,17 +30,12 @@
 
 
 <view class="h-list menu h-corner-tlr-sm">
-  <view class="h-item h-arrow" bindtap='showModal' data-target="popupB">
+  <view class="h-item h-arrow h-bg-white" bindtap='showModal' data-target="popupParma">
     <view class="content">
-      <text class="h-text-grey">优惠券</text>
-    </view>
-  </view>
-  <view class="h-item h-arrow" bindtap='showModal' data-target="popupParma">
-    <view class="content">
-      <text class="h-text-grey">商品参数</text>
+      <text class="h-text-black">商品参数</text>
     </view>
     <view class="action">
-      <text class="h-text-grey h-text-s">查看更多</text>
+      <text class="h-text-black h-text-s">查看更多</text>
     </view>
   </view>
   
@@ -48,12 +43,12 @@
 
 <!-- 用户评价 -->
 <view class="h-list menu h-corner-tlr-sm">
-  <view class="h-item  h-arrow">
+  <view class="h-item h-arrow h-bg-white">
     <view class="content">
-        <text class="h-text-grey">用户评价</text>
+        <text class="h-text-black">用户评价</text>
       </view>
       <view class="action">
-        <text class="h-text-grey h-text-xs">40.21k人</text>
+        <text class="h-text-black h-text-xs">40.21k人</text>
       </view>
   </view>
 </view>
@@ -74,12 +69,12 @@
     <button class="h-btn h-bg-gray">发货快99+</button>
   </view>
 </view>
-<view class="h-list menu-avatar menu comment h-bg-white">
+<view class="h-list menu-avatar menu comment h-bg-white h-corner-sm">
   <view class="h-item">
     <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
     <view class="content p-l-sm">
-      <view class="h-text-grey">阿花</view>
-      <view class="h-text-gray text-content h-text-xs">
+      <view class="h-text-black">阿花</view>
+      <view class="h-text-black text-content h-text-xs">
         <h-rate class="" rate="2" disabled="true"></h-rate>
       </view>
       <view class="h-bg-gray h-corner-sm p-sm radius m-t-sm h-text-s">
@@ -100,7 +95,7 @@
   <view class="h-item">
     <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg);"></view>
     <view class="content p-l-sm">
-      <view class="h-text-grey">阿花</view>
+      <view class="h-text-black">烦恼的***的东东</view>
       <view class="h-text-gray text-content h-text-xs">
         <h-rate class="" rate="4" disabled="true"></h-rate>
       </view>
@@ -122,15 +117,15 @@
 </view>
 
 <!-- 为你推荐 -->
-<view class="h-bar h-justify-center h-bg-white p-t-lg m-t h-corner-tlr-sm">
+<view class="h-bar h-justify-center p-t-lg">
   <view class="action sub-title">
-    <text class="h-text-sm h-text-bold h-text-blue">为你推荐</text>
+    <text class="h-text-sm h-text-bold h-text-blue">推荐商品</text>
     <text class="h-bg-yellow" style="width:1rem"></text>
   </view>
 </view>
-<view class=" h-bg-white cart-goods-recommend">
+<view class="cart-goods-recommend">
   <view class="h-grid h-grid-2 h-corner-tlr-sm m-lr p-b">
-    <view class="h-goods-item h-bg-white h-corner-sm h-shadow m-t" wx:for="{{goodsList}}" wx:key='item' bindtap="goToDetail">
+    <view class="h-goods-item h-bg-white h-corner-sm m-t" wx:for="{{goodsList}}" wx:key='item' bindtap="goToDetail">
       <view class="h-goods-img">
         <image class="h-corner-tlr-sm " mode="aspectFill" src="{{item.img}}"></image>
       </view>
@@ -166,51 +161,6 @@
     </view>
     <view class="h-bg-orange submit">加入购物车</view>
     <view class="h-bg-red submit">立即订购</view>
-  </view>
-</view>
-
-
-
-<!-- 优惠券 -->
-<view class="h-modal bottom-modal {{modalName=='popupB'?'show':''}}" bindtap="hideModal" catchtap>
-<!-- <view class="h-modal bottom-modal show" bindtap="hideModal"> -->
-  <view class="h-dialog">
-    <!-- <view class="h-bar h-bg-white">
-      <view class="action text-green">确定</view>
-      <view class="action text-blue" bindtap="hideModal">取消</view>
-    </view> -->
-    <scroll-view class='p' scroll-y="true" style="height:750rpx;padding-bottom:100rpx;">
-      <view class="h-coupon-box h-flex h-text-orange m-b-sm h-corner-sm">
-        <view class="h-coupon-item h-flex h-align-center h-justify-center">
-          <view class="h-text-lg">双12购物满减券</view>
-          <view class="h-text-sm">2021-12-12~2019-12-30</view>
-        </view>
-        <view class="h-coupon-item h-flex h-align-center h-justify-center h-bg-orange h-corner-rtb-sm">
-          <view class="h-text-lg">$50</view>
-          <view class="h-text-sm">满51可用</view>
-        </view>
-      </view>
-      <view class="h-coupon-box h-flex h-text-orange m-b-sm h-corner-sm">
-        <view class="h-coupon-item h-flex h-align-center h-justify-center">
-          <view class="h-text-lg">双12购物满减券</view>
-          <view class="h-text-sm">2021-12-12~2019-12-30</view>
-        </view>
-        <view class="h-coupon-item h-flex h-align-center h-justify-center h-bg-orange h-corner-rtb-sm">
-          <view class="h-text-lg">$50</view>
-          <view class="h-text-sm">满51可用</view>
-        </view>
-      </view>
-      <view class="h-coupon-box h-flex h-text-orange m-b-sm h-corner-sm">
-        <view class="h-coupon-item h-flex h-align-center h-justify-center">
-          <view class="h-text-lg">双12购物满减券</view>
-          <view class="h-text-sm">2021-12-12~2019-12-30</view>
-        </view>
-        <view class="h-coupon-item h-flex h-align-center h-justify-center h-bg-orange h-corner-rtb-sm">
-          <view class="h-text-lg">$50</view>
-          <view class="h-text-sm">满51可用</view>
-        </view>
-      </view>
-    </scroll-view>
   </view>
 </view>
 

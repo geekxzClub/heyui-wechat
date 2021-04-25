@@ -14,7 +14,7 @@
 <!-- 用于吸顶后 占位用的 -->
 <view class="column" wx:if="{{isFixedTop}}"></view>
 
-<view class="h-bg-white p-b m-b">
+<view class="h-bg-white p-b">
   <!-- 轮播图 -->
   <swiper class="screen-swiper square-dot h-corner-sm m-lr" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
     <swiper-item wx:for="{{swiperList}}" wx:key='item'>
@@ -24,7 +24,7 @@
   </swiper>
 
   <!-- 分类 -->
-  <view class="h-list h-grid h-grid-5 no-border m-t-sm">
+  <view class="h-list h-grid h-grid-4 no-border m-t-sm">
     <view class="h-item" bindtap="goToCategory" data-tid="1">
       <view class="heyui-picfill h-text-yellow"></view>
       <text>珠宝</text>
@@ -54,18 +54,12 @@
 
 
 <!-- 营销活动 -->
-<view class="h-bar h-bg-white p-tb-lg">
+<view class="h-bar p-tb-lg">
   <view class="action">
     <text class="heyui-titles h-text-lg h-text-red"> 营销活动</text>
   </view>
 </view>
-<!-- <view class="h-bar h-justify-center h-bg-white p-tb-lg">
-  <view class="action sub-title">
-    <text class="h-text-md h-text-bold h-text-green">营销活动</text>
-    <text class="h-bg-green" style="width:2rem"></text>
-  </view>
-</view> -->
-<view class="h-bg-white p-b h-border-bottom">
+<view class="p-b h-border-bottom">
   <view class="h-flex m-lr p-b">
     <view class="h-flex-sub h-corner-sm active-left">
       <view class=" h-shadow h-marry-img">
@@ -84,14 +78,14 @@
 </view>
 
 <!-- 精选推荐 -->
-<view class="h-bar h-bg-white p-tb-lg">
+<view class="h-bar p-tb-lg">
   <view class="action">
     <text class="heyui-titles h-text-lg h-text-red"> 精选推荐</text>
   </view>
 </view>
-<scroll-view scroll-x class="h-bg-white h-nav p-b h-border-bottom " scroll-with-animation scroll-left="{{scrollLeft}}">
+<scroll-view scroll-x class="h-nav p-b h-border-bottom " scroll-with-animation scroll-left="{{scrollLeft}}">
   <view class="h-item h-boutique" wx:for="{{goodsList}}" wx:key="item" bindtap="selectTab" data-id="{{index}}">
-    <view class="h-goods-item h-bg-white h-corner-sm m-b-sm h-shadow" bindtap="goToDetail">
+    <view class="h-goods-item h-bg-white h-corner-sm m-b-sm" bindtap="goToDetail">
       <view class="h-goods-img">
         <image class="h-corner-tlr-sm " mode="aspectFill" src="{{item.img}}"></image>
       </view>
@@ -111,15 +105,15 @@
 </scroll-view>
 
 <!-- 主题 -->
-<!-- <view class="h-bar h-justify-center h-bg-white p-t-lg">
+<view class="h-bar h-justify-center h-bg-gray4 p-t-lg">
   <view class="action sub-title">
-    <text class="h-text-md h-text-bold h-text-green">主题系列</text>
-    <text class="h-bg-green" style="width:2rem"></text>
+    <text class="h-text-sm h-text-bold h-text-blue">主题推荐</text>
+    <text class="h-bg-yellow" style="width:1rem"></text>
   </view>
-</view> -->
-<view class="h-bg-white p-tb m-b">
+</view>
+<view class="">
   <view class="h-flex h-corner-tlr-sm p-t m-lr" bindtap="goToMore" data-sid="1" data-sname="婚嫁系列">
-    <view class="h-series h-flex-sub h-bg-white h-corner-sm h-shadow">
+    <view class="h-series h-flex-sub h-bg-white h-corner-sm">
       <view class="h-series-img">
         <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-1.png"></image>
       </view>
@@ -142,7 +136,7 @@
   </view>
 
   <view class="h-flex h-corner-tlr-sm p-t m-lr" bindtap="goToMore" data-sid="2" data-sname="国翠系列">
-    <view class="h-series h-flex-sub h-bg-white h-corner-sm h-shadow">
+    <view class="h-series h-flex-sub h-bg-white h-corner-sm">
       <view class="h-series-img">
         <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-2.png"></image>
       </view>
@@ -164,8 +158,8 @@
     </view>  
   </view>
 
-  <view class="h-flex h-corner-tlr-sm p-t m-lr p-b" bindtap="goToMore" data-sid="1" data-sname="童话系列">
-    <view class="h-series h-flex-sub h-bg-white h-corner-sm h-shadow">
+  <view class="h-flex h-corner-tlr-sm p-t m-lr" bindtap="goToMore" data-sid="1" data-sname="童话系列">
+    <view class="h-series h-flex-sub h-bg-white h-corner-sm">
       <view class="h-series-img">
         <image class="h-corner-tlr-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/heyui-shop/theme/sy2-3.png"></image>
       </view>

@@ -1,9 +1,9 @@
 <!--pages/cart/cart.wxml-->
-<view class='cart-box h-bg-white'>
-  <view class='section-good p-lr m-b'>
+<view class='cart-box'>
+  <view class='section-good m-lr'>
     <checkbox-group bindchange="checkboxChange">
-      <view class='cart-item h-border-bottom' wx:for='{{goodList}}' wx:for-item="good" wx:key="item">
-        <label class="cart-checkbox">
+      <view class='cart-item h-bg-white h-corner-sm m-t' wx:for='{{goodList}}' wx:for-item="good" wx:key="item">
+        <label class="cart-checkbox m-l-sm">
           <checkbox value="{{good.id}}" checked="{{good.checked}}" hidden='hidden' />
           <icon type="circle" size="23" wx:if="{{!good.checked}}"></icon>
           <icon type="success" size="23" wx:if="{{good.checked}}"></icon>
@@ -14,7 +14,7 @@
           <view class='h-text-cut h-text-xs m-t-sm h-text-gray'>{{good.desc}}</view>
           <view class='h-text-cut h-text-sm h-text-red m-t-lg'>¥{{good.price}}</view>
         </view>
-        <view class='stepper '>
+        <view class='stepper m-r-sm'>
           <view class='subtract h-corner-sm {{good.count == 1 ? "disabled h-bg-gray4": "h-bg-blue-light"}}' data-index='{{index}}' catchtap='subtracttap'>-</view>
           <input class='count' type='number' disabled value='{{good.count}}'></input>
           <view class='add h-corner-sm h-bg-yellow' data-index="{{index}}" catchtap='addtap'>+</view>
@@ -49,15 +49,15 @@
 
 
 <!-- 推荐商品 -->
-<view class="h-bar h-justify-center h-bg-white p-t-lg m-t">
+<view class="h-bar h-justify-center p-t-lg">
   <view class="action sub-title">
     <text class="h-text-sm h-text-bold h-text-blue">推荐商品</text>
     <text class="h-bg-yellow" style="width:1rem"></text>
   </view>
 </view>
-<view class=" h-bg-white cart-goods-recommend">
+<view class="cart-goods-recommend">
   <view class="h-grid h-grid-2 h-corner-tlr-sm m-lr p-b">
-    <view class="h-goods-item h-bg-white h-corner-sm h-shadow m-t" wx:for="{{goodsList2}}" wx:key='item' bindtap="goToDetail">
+    <view class="h-goods-item h-bg-white h-corner-sm m-t" wx:for="{{goodsList2}}" wx:key='item' bindtap="goToDetail">
       <view class="h-goods-img">
         <image class="h-corner-tlr-sm" mode="aspectFill" src="{{item.img}}"></image>
       </view>
