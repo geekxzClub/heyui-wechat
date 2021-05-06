@@ -11,7 +11,7 @@
         <!--start 内容部分可直接删除-->
         <view class="h-cate-1-list-view">
           <view class="h-cate-1-list-cell p h-border-bottom" hover-class="hover" hover-stay-time="150" bindtap="detail">
-            <view class="h-text-md h-text-cut2">温故知"心"习大大这些话要牢记</view>
+            <view class="h-text-sm h-text-cut2">温故知"心"习大大这些话要牢记</view>
             <view class="h-cate-1-img-container p-t">
               <view class="h-cate-1-cell-img">
                 <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner1.jpg' class="h-cate-1img"></image>
@@ -23,22 +23,22 @@
                 <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner3.jpg' class="h-cate-1img"></image>
               </view>
             </view>
-            <view class="h-cate-1-sub-title h-text-gray t-text-s p-t">
-              <text class="h-tag h-bg-red m-r-sm">要闻</text>
-              <text>央视网新闻</text>
+            <view class="h-cate-1-sub-title h-text-gray p-t">
+              <text class="h-tag h-bg-red h-corner-sm m-r-sm">要闻</text>
+              <text class="h-text-s">央视网新闻</text>
             </view>
           </view>
 
           <view class="h-cate-1-list-cell p h-border-bottom" hover-class="hover" hover-stay-time="150">
-            <view class="h-text-md h-text-cut2">美国会表决通过新驻华大使 月底有望赴华</view>
-            <view class="h-cate-1-sub-title h-text-gray t-text-s p-t">
-              <text class="h-tag h-bg-blue m-r-sm">朋友都看过</text>
-              <text>百科故事大全</text>
+            <view class="h-text-sm h-text-cut2">美国会表决通过新驻华大使 月底有望赴华</view>
+            <view class="h-cate-1-sub-title h-text-gray p-t">
+              <text class="h-tag h-bg-blue h-corner-sm m-r-sm">朋友都看过</text>
+              <text class="h-text-s">百科故事大全</text>
             </view>
           </view>
 
           <view class="h-cate-1-list-cell p h-border-bottom" hover-class="hover" hover-stay-time="150">
-            <view class="h-text-md h-text-cut2">哪些专业毕业后收入高?计算机、金融专业排前列金融专业排前列金融专业排前列金融专业排前列金融专业排前列</view>
+            <view class="h-text-sm h-text-cut2">哪些专业毕业后收入高?计算机、金融专业排前列金融专业排前列金融专业排前列金融专业排前列金融专业排前列</view>
             <view class="h-cate-1-img-container p-t">
               <view class="h-cate-1-cell-img">
                 <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner4.jpg' class="h-cate-1img"></image>
@@ -50,22 +50,22 @@
                 <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner6.jpg' class="h-cate-1img"></image>
               </view>
             </view>
-            <view class="h-cate-1-sub-title h-text-gray t-text-s p-t">
-              <text class="h-tag h-bg-orange m-r-sm">本地资讯</text>
-              <text>粤港精英联盟</text>
+            <view class="h-cate-1-sub-title h-text-gray p-t">
+              <text class="h-tag h-bg-orange h-corner-sm m-r-sm">本地资讯</text>
+              <text class="h-text-s">粤港精英联盟</text>
             </view>
           </view>
 
           <view class="h-cate-1-list-cell p h-border-bottom" hover-class="hover" hover-stay-time="150">
-            <view class="h-text-md h-text-cut2">科创板交易系统准备就绪,不存在首批名单</view>
-            <view class="h-cate-1-sub-title h-text-gray t-text-s p-t">
+            <view class="h-text-sm h-text-cut2">科创板交易系统准备就绪,不存在首批名单</view>
+            <view class="h-cate-1-sub-title h-text-gray p-t">
               <!-- <text class="h-tag h-bg-blue m-r-sm">朋友都看过</text> -->
-              <text>百科故事大全</text>
+              <text class="h-text-s">百科故事大全</text>
             </view>
           </view>
 
           <view class="h-cate-1-list-cell p h-border-bottom" hover-class="hover" hover-stay-time="150">
-            <view class="h-text-md h-text-cut2">开户大战燎原！加急上线科创板预约开户</view>
+            <view class="h-text-sm h-text-cut2">开户大战燎原！加急上线科创板预约开户</view>
             <view class="h-cate-1-img-container p-t">
               <view class="h-cate-1-cell-img">
                 <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner6.jpg' class="h-cate-1img"></image>
@@ -77,22 +77,22 @@
                 <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner4.jpg' class="h-cate-1img"></image>
               </view>
             </view>
-            <view class="h-cate-1-sub-title h-text-gray t-text-s p-t">
+            <view class="h-cate-1-sub-title h-text-gray p-t">
               <!-- <text class="h-tag h-bg-orange m-r-sm">本地资讯</text> -->
-              <text>粤港精英联盟</text>
+              <text class="h-text-s">粤港精英联盟</text>
             </view>
           </view>
 
           <view class="h-cate-1-list-cell p h-border-bottom" hover-class="hover" hover-stay-time="150">
-            <view class="h-text-md h-text-cut2">3.07财经早报┃头条：推进改革开放创新增进民生福祉，促进经济社会持续健康发展促进经济社会持续健康发展</view>
-            <view class="h-cate-1-sub-title h-text-gray t-text-s p-t">
-              <text class="h-tag h-bg-green m-r-sm">互联网精英看过</text>
-              <text>百科故事大全</text>
+            <view class="h-text-sm h-text-cut2">3.07财经早报┃头条：推进改革开放创新增进民生福祉，促进经济社会持续健康发展促进经济社会持续健康发展</view>
+            <view class="h-cate-1-sub-title h-text-gray p-t">
+              <text class="h-tag h-bg-green h-corner-sm m-r-sm">互联网精英看过</text>
+              <text class="h-text-s">百科故事大全</text>
             </view>
           </view>
 
           <view class="h-cate-1-list-cell p h-border-bottom" hover-class="hover" hover-stay-time="150">
-            <view class="h-text-md h-text-cut2">哪些专业毕业后收入高?计算机、金融专业排前列金融专业排前列</view>
+            <view class="h-text-sm h-text-cut2">哪些专业毕业后收入高?计算机、金融专业排前列金融专业排前列</view>
             <view class="h-cate-1-img-container p-t">
               <view class="h-cate-1-cell-img">
                 <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner1.jpg' class="h-cate-1img"></image>
@@ -104,14 +104,14 @@
                 <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner3.jpg' class="h-cate-1img"></image>
               </view>
             </view>
-            <view class="h-cate-1-sub-title h-text-gray t-text-s p-t">
-              <text class="h-tag h-bg-orange m-r-sm">本地资讯</text>
-              <text>粤港精英联盟</text>
+            <view class="h-cate-1-sub-title h-text-gray p-t">
+              <text class="h-tag h-bg-orange h-corner-sm m-r-sm">本地资讯</text>
+              <text class="h-text-s">粤港精英联盟</text>
             </view>
           </view>
 
           <view class="h-cate-1-list-cell p" hover-class="hover" hover-stay-time="150">
-            <view class="h-text-md h-text-cut2">触手直播“和平精英”星联赛Jstar夺冠 大热</view>
+            <view class="h-text-sm h-text-cut2">触手直播“和平精英”星联赛Jstar夺冠 大热</view>
             <view class="h-cate-1-img-container p-t">
               <view class="h-cate-1-cell-img">
                 <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner2.jpg' class="h-cate-1img"></image>
@@ -123,9 +123,9 @@
                 <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner1.jpg' class="h-cate-1img"></image>
               </view>
             </view>
-            <view class="h-cate-1-sub-title h-text-gray t-text-s p-t">
-              <text class="h-tag h-bg-red m-r-sm">要闻</text>
-              <text>粤港精英联盟</text>
+            <view class="h-cate-1-sub-title h-text-gray p-t">
+              <text class="h-tag h-bg-red h-corner-sm m-r-sm">要闻</text>
+              <text class="h-text-s">粤港精英联盟</text>
             </view>
           </view>
          

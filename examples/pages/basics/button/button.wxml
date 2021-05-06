@@ -3,7 +3,7 @@
   <text class="h-text-sm h-text-bold h-text-black">按钮形状</text>
 </view>
 <view class="h-flex h-flex-wrap h-justify-between h-align-center p-lr p-b-xs">
-  <button class="h-btn h-bg-success">默认</button>
+  <button class="h-btn h-bg-success" hover-class="h-teanslucent-hover">默认</button>
   <button class="h-btn h-corner-lg h-bg-error">圆角</button>
   <button class="h-btn icon h-bg-primary">
     <text class="heyui-emojifill"></text>
@@ -52,7 +52,7 @@
   <button class="h-btn h-btn-block h-bg-primary m-tb-sm h-btn-lg">
     <text class="heyui-loading2 iconfont-spin"></text> 自定义加载图标
   </button>
-  <button class="h-btn h-btn-block h-bg-green m-tb-sm h-btn-lg" loading>微信加载</button>
+  <button class="h-btn h-btn-block h-bg-green m-tb-sm h-btn-lg" hover-class="h-teanslucent-hover" loading>微信加载</button>
 </view>
 <view class="h-bar p-l">
   <text class="h-text-sm h-text-bold h-text-black">特殊能力</text>

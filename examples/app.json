@@ -5,6 +5,7 @@
     "pages/other/other",
     "pages/other/h-checkbox/h-checkbox",
     "pages/other/h-radio/h-radio",
+    "pages/other/h-scale/h-scale",
     "pages/other/tree/tree",
     "pages/view/pathview/pathview",
     "pages/plugin/plugin",

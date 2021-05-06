@@ -154,6 +154,33 @@
   </view>
 </view>
 
+<view class="h-list h-grid h-grid-3 no-border card-menu m-b">
+  <view class="h-item">
+    <view class="h-text-yellow"><image src="https://oss.geekxz.com/hey-ui-oss/avatar/a5.jpg" class="png" mode="aspectFit"></image></view>
+    <text>我们</text>
+  </view>
+  <view class="h-item">
+    <view class="h-text-yellow"><image src="https://oss.geekxz.com/hey-ui-oss/avatar/a6.jpg" class="png" mode="aspectFit"></image></view>
+    <text>都是</text>
+  </view>
+  <view class="h-item">
+    <view class="h-text-yellow"><image src="https://oss.geekxz.com/hey-ui-oss/avatar/a4.jpg" class="png" mode="aspectFit"></image></view>
+    <text>随意</text>
+  </view>
+  <view class="h-item">
+    <view class="h-text-yellow"><image src="https://oss.geekxz.com/hey-ui-oss/avatar/a1.jpg" class="png" mode="aspectFit"></image></view>
+    <text>自定</text>
+  </view>
+  <view class="h-item">
+    <view class="h-text-yellow"><image src="https://oss.geekxz.com/hey-ui-oss/avatar/a2.jpg" class="png" mode="aspectFit"></image></view>
+    <text>义的</text>
+  </view>
+  <view class="h-item">
+    <view class="h-text-yellow"><image src="https://oss.geekxz.com/hey-ui-oss/avatar/a3.jpg" class="png" mode="aspectFit"></image></view>
+    <text>图片</text>
+  </view>
+</view>
+
 <view class="h-bar h-bg-white">
   <view class="action">
     <text class="h-text-sm h-text-bold h-text-black">用户列表</text>
@@ -163,7 +190,7 @@
   <view class="h-item h-bg-white">
     <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a5.jpg);"></view>
     <view class="content">
-      <view class="h-text-grey h-text-sm">阿狗</view>
+      <view class="h-text-black h-text-sm">阿狗</view>
       <view class="h-text-gray h-text-s h-flex">
         <text class="h-text-cut">
             <text class="heyui-infofill h-text-red"></text> 我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
@@ -180,7 +207,7 @@
       <view class="h-tag h-badge">99+</view>
     </view>
     <view class="content">
-      <view class="h-text-grey">
+      <view class="h-text-black">
         <text class="h-text-cut">瓦洛兰之盾-塔里克</text>
         <view class="h-tag h-tag-sm h-corner-lg h-bg-blue m-l-sm">战士</view>
       </view>
@@ -196,7 +223,7 @@
   <view class="h-item h-bg-white">
     <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a2.jpg);"></view>
     <view class="content">
-      <view class="h-text-pink">
+      <view class="h-text-black">
         <text class="h-text-cut h-text-sm">阿花</text>
       </view>
       <view class="h=text-gray h-text-sm h-flex">
@@ -212,7 +239,7 @@
     <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a3.jpg);"></view>
     <view class="content">
       <view>
-        <text class="h-text-cut h-text-sm">阿林</text>
+        <text class="h-text-cut h-text-sm h-text-black">阿林</text>
         <view class="h-tag h-corner-lg h-bg-orange h-tag-sm m-l-sm">断开连接...</view>
       </view>
       <view class="h-text-gray h-text-s h-flex">
@@ -230,7 +257,7 @@
     </view>
     <view class="content">
       <view>
-        <text class="h-text-cut h-text-sm">瓦罗兰大陆-阿强-新手保护营</text>
+        <text class="h-text-cut h-text-sm h-text-black">瓦罗兰大陆-阿强-新手保护营</text>
         <view class="h-tag h-tag-sm h-corner-lg h-bg-orange m-l-sm">6人</view>
       </view>
       <view class="h-text-gray h-text-sm h-flex h-text-s">

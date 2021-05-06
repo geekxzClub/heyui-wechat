@@ -102,7 +102,6 @@ checkbox,
 radio {
 	position: relative;
 }
-
 switch::after,
 switch::before {
 	font-family: "heyui";
@@ -123,28 +122,23 @@ switch::before {
 	height: 26px;
 	margin: auto;
 }
-
 switch::before {
 	content: "\e646";
 	right: 0;
 	transform: scale(1, 1);
 	left: auto;
 }
-
 switch[checked]::after,
 switch.checked::after {
 	transform: scale(1, 1);
 }
-
 switch[checked]::before,
 switch.checked::before {
 	transform: scale(0, 0);
 }
-
 switch[checked]::before {
 	transform: scale(0, 0);
 }
-
 radio::before,
 checkbox::before {
 	font-family: "heyui";
@@ -161,18 +155,15 @@ checkbox::before {
 	transition: all 0.3s ease-in-out 0s;
 	z-index: 9;
 }
-
 radio .wx-radio-input,
 checkbox .wx-checkbox-input {
 	margin: 0;
 	width: 24px;
 	height: 24px;
 }
-
 checkbox.round .wx-checkbox-input {
 	border-radius: 100rpx;
 }
-
 switch .wx-switch-input {
 	border: none;
 	padding: 0 24px;
@@ -181,11 +172,9 @@ switch .wx-switch-input {
 	margin: 0;
 	border-radius: 100rpx;
 }
-
 switch .wx-switch-input:not([class*="h-bg-"]) {
 	background: var(--grey) !important;
 }
-
 switch .wx-switch-input::after {
 	margin: auto;
 	width: 26px;
@@ -198,26 +187,20 @@ switch .wx-switch-input::after {
 	transform: scale(0.9, 0.9);
 	transition: all 0.1s ease-in-out 0s;
 }
-
 switch .wx-switch-input.wx-switch-input-checked::after {
 	margin: auto;
 	left: 22px;
 	box-shadow: none;
 	transform: scale(0.9, 0.9);
 }
-
 radio-group {
 	display: inline-block;
 }
-
-
-
 switch.radius .wx-switch-input::after,
 switch.radius .wx-switch-input,
 switch.radius .wx-switch-input::before {
 	border-radius: 10rpx;
 }
-
 switch .wx-switch-input::before,
 radio.radio::before,
 checkbox .wx-checkbox-input::before,
@@ -253,54 +236,45 @@ radio.radio[checked]::after {
 .switch-sex::before {
 	content: "\e71a";
 }
-
 .switch-sex .wx-switch-input {
 	background: var(--red) !important;
 	border-color: var(--red) !important;
 }
-
 .switch-sex[checked] .wx-switch-input {
 	background: var(--blue) !important;
 	border-color: var(--blue) !important;
 }
-
 switch.red[checked] .wx-switch-input,
 checkbox.red[checked] .wx-checkbox-input,
 radio.red[checked] .wx-radio-input {
 	border-color: var(--red) !important;
 }
-
 switch.orange[checked] .wx-switch-input,
 checkbox.orange[checked] .wx-checkbox-input,
 radio.orange[checked] .wx-radio-input {
 	border-color: var(--orange) !important;
 }
-
 switch.yellow[checked] .wx-switch-input,
 checkbox.yellow[checked] .wx-checkbox-input,
 radio.yellow[checked] .wx-radio-input {
 	border-color: var(--yellow) !important;
 }
-
 switch.olive[checked] .wx-switch-input,
 checkbox.olive[checked] .wx-checkbox-input,
 radio.olive[checked] .wx-radio-input {
 	border-color: var(--olive) !important;
 }
-
 switch.green[checked] .wx-switch-input,
 checkbox.green[checked] .wx-checkbox-input,
 checkbox[checked] .wx-checkbox-input,
 radio.green[checked] .wx-radio-input {
 	border-color: var(--green) !important;
 }
-
 switch.cyan[checked] .wx-switch-input,
 checkbox.cyan[checked] .wx-checkbox-input,
 radio.cyan[checked] .wx-radio-input {
 	border-color: var(--cyan) !important;
 }
-
 switch.blue[checked] .wx-switch-input,
 checkbox.blue[checked] .wx-checkbox-input,
 radio.blue[checked] .wx-radio-input {
@@ -324,7 +298,6 @@ checkbox.pink[checked] .wx-checkbox-input,
 radio.pink[checked] .wx-radio-input {
 	border-color: var(--pink) !important;
 }
-
 switch.brown[checked] .wx-switch-input,
 checkbox.brown[checked] .wx-checkbox-input,
 radio.brown[checked] .wx-radio-input {
@@ -468,7 +441,6 @@ radio.white[checked] .wx-radio-input {
     阴影 Shadow
  ==================== */
  /* -- 实线 -- */
-
 .h-border,
 .h-border-top,
 .h-border-right,
@@ -544,7 +516,6 @@ radio.white[checked] .wx-radio-input {
 	border-left: 8rpx solid #eee;
 }
 /* -- 虚线 -- */
-
 .h-dashed::after {
 	border: 2rpx dashed #ddd;
 }
@@ -676,6 +647,30 @@ radio.white[checked] .wx-radio-input {
 }
 .h-btn::after {
 	display: none;
+}
+.h-success-hover {
+  background: var(--success) !important;
+  color: #e5e5e5 !important;
+}
+.h-error-hover {
+  background: var(--error) !important;
+  color: #e5e5e5 !important;
+}
+.h-warning-hover {
+  background: var(--warning) !important;
+  color: #e5e5e5 !important;
+}
+.h-primary-hover {
+  background: var(--primary) !important;
+  color: #e5e5e5 !important;
+}
+.h-black-hover {
+  background: var(--black) !important;
+  color: #e5e5e5 !important;
+}
+.h-teanslucent-hover {
+  background: var(--teanslucent) !important;
+  color: #e5e5e5 !important;
 }
 .h-btn:not([class*="h-bg-"]) {
 	background-color: #f0f0f0;
@@ -1367,7 +1362,6 @@ button.icon.icon-lg {
 	width: 1.6em;
 	text-align: center
 }
-
 .h-list.menu>.h-item .content>image {
 	display: inline-block;
 	margin-right: 10rpx;
@@ -1375,13 +1369,11 @@ button.icon.icon-lg {
 	height: 1.6em;
 	vertical-align: middle
 }
-
 .h-list.menu>.h-item .content {
 	font-size: 30rpx;
 	line-height: 1.6em;
 	flex: 1
 }
-
 .h-list.menu>.h-item .content .h-tag.sm {
 	display: inline-block;
 	margin-left: 10rpx;
@@ -1389,16 +1381,13 @@ button.icon.icon-lg {
 	font-size: 16rpx;
 	line-height: 32rpx
 }
-
 .h-list.menu>.h-item .action .h-tag:empty {
 	right: 10rpx
 }
-
 .h-list.menu {
 	display: block;
 	overflow: hidden
 }
-
 .h-list.menu.sm-border>.h-item:after {
 	left: 30rpx;
 	width: calc(200% - 120rpx)
@@ -1464,7 +1453,11 @@ button.icon.icon-lg {
 .h-list.h-grid.col-5>.h-item:nth-child(5n):after {
 	border-right-width: 0
 }
-
+.h-list.h-grid>.h-item image{
+	height: 60rpx;
+	width: 60rpx;
+	border-radius: 60rpx;
+}
 
 
 /* ==================

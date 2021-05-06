@@ -1,0 +1,34 @@
+<!--pages/other/h-scale/h-scale.wxml-->
+<view class="h-bar p-l">
+  <text class="h-text-sm h-text-bold h-text-black">你的体重</text>
+</view>
+<view class='scale-value'>{{weight}}kg</view> 
+<h-scale min="30" 
+  max="200" 
+  int="{{false}}" 
+  single="10" 
+  h="60" 
+  active="{{weight}}" 
+  styles="{{styles}}" 
+  id="weight"
+  bindvalue="bindvalue">
+</h-scale>
+  
+<view class="h-bar p-l">
+  <text class="h-text-sm h-text-bold h-text-black">你的身高</text>
+</view>
+<view class='scale-container'>
+<view class='scale-value'>{{height}}cm</view> 
+  <view class='scale-view'>
+    <h-scale min="80" 
+      max="230" 
+      int="{{true}}"
+      single="10" 
+      h="40" 
+      active="{{height}}" 
+      styles="{{styles}}" 
+      direction="vertical"
+      id="height"
+      bindvalue="bindvalueH"></h-scale>
+  </view>
+</view>

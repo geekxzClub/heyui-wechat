@@ -1,43 +1,37 @@
-// pages/other/other.js
+// pages/other/h-scale/h-scale.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    componentList: [{
-      id: 1,
-      icon: 'tree',
-      type: 'tree',
-      text_zh: '节点树',
-      text_en: 'tree'
-    },{
-      id: 2,
-      icon: 'h-radio',
-      type: 'h-radio',
-      text_zh: '未使用radio单选',
-      text_en: 'h-radio'
-    },{
-      id: 3,
-      icon: 'h-checkbox',
-      type: 'h-checkbox',
-      text_zh: '未使用checkbox多选',
-      text_en: 'h-checkbox'
-    },{
-      id: 4,
-      icon: 'h-scale',
-      type: 'h-scale',
-      text_zh: '卡尺',
-      text_en: 'h-scale'
-    }]
+    weight: 70,
+    height: 180,
+    styles: {
+      line: '#dbdbdb',
+      bginner: '#fbfbfb',
+      bgoutside: '#ffffff',
+      font: '#404040',
+      fontColor: '#404040',
+      fontSize: 16
+    }
   },
-  goToItem: function (e) {
-    var type = e.currentTarget.dataset.type;
-    wx.navigateTo({
-      url: '/pages/other/'+type+'/'+type
-    })
+  bindvalue(e) { //滑动回调
+    var that = this;
+    const value = e.detail.value;
+    const key = e.currentTarget.id;
+    const data = {};
+    data[key] = value;
+    that.setData(data);
   },
-
+  bindvalueH(e) { //滑动回调
+    var that = this;
+    const value = e.detail.value;
+    const key = e.currentTarget.id;
+    const data = {};
+    data[key] = value;
+    that.setData(data);
+  },
   /**
    * 生命周期函数--监听页面加载
    */

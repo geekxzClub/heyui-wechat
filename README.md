@@ -87,7 +87,7 @@
 
 ## 讨论交流
 
-![](http://heyui.geekxz.com/logo.png)
+![](https://oss.geekxz.com/hey-ui-oss/communication.png)
 
 
 ## 贡献代码
@@ -104,7 +104,7 @@
 
 ## 赞助
 
-![](http://heyui.geekxz.com/logo.png)
+![](https://oss.geekxz.com/hey-ui-oss/communication.png)
 
 | 时间        	| 名称          | 金额   | 留言  		|
 | ------------- |:-------------:| :-----:|:-------------|
