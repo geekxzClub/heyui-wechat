@@ -87,6 +87,8 @@
 
 ## 讨论交流
 
+微信群：加入微信群请先添加开发者微信，备注HeyUI。QQ群：689112212 或扫描二维码。
+
 ![](https://oss.geekxz.com/hey-ui-oss/communication.png)
 
 
