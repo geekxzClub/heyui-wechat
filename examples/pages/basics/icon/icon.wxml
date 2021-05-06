@@ -1,8 +1,10 @@
 <!--pages/basics/icon/icon.wxml-->
-<view class="h-grid h-grid-5">
-  <view class="m-tb h-text-center" wx:for="{{icon}}" wx:key='item'>
-    <button class="h-btn icon">
-      <text class="heyui-{{item.name}}"></text>
-    </button>
+<view class="h-text-center h-text-sm h-shadow-lg p-tb">
+  <view class="h-list h-grid h-grid-3 card-menu">
+    <view class="h-item" wx:for="{{icon}}" wx:key='item'>
+      <view class="heyui-{{item.name}}"></view>
+      <text>{{item.name}}</text>
+    </view>
   </view>
 </view>
+
