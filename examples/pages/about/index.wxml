@@ -1,10 +1,10 @@
 <!--pages/about/about.wxml-->
 <view class="UCenter-bg">
   <image src="/images/logo.jpg" class="png" mode="widthFix"></image>
-  <view class="h-text-lg h-text-black">HeyUI组件库
+  <view class="h-text-lg m-t-sm h-text-white">HeyUI组件库
     <text class="h-text-sm">v1.0</text>
   </view>
-  <view class="m-t-sm h-text-black">
+  <view class="m-t-sm h-text-white">
     <text>By:陈东东</text>
   </view>
   <!-- <image src="https://raw.githubusercontent.com/weilanwl/HeyUI/master/demo/images/wave.gif" mode="scaleToFill" class="gif-wave"></image> -->
