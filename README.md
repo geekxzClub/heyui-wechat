@@ -89,14 +89,15 @@
 
 微信群：加入微信群请先添加开发者微信，备注HeyUI。QQ群：689112212 或扫描二维码。
 
-![](https://oss.geekxz.com/hey-ui-oss/communication.png)
-
+<p align="center">
+    <img width="150" class="QR-img" src="https://oss.geekxz.com/hey-ui-oss/communication.png">
+</p>
 
 ## 贡献代码
 
-  我们的代码基于 develop 分支开发，欢迎提交 Pull Request 进行代码贡献。
+我们的代码基于 develop 分支开发，欢迎提交 Pull Request 进行代码贡献。
 
-  在提交 Pull Request 之前，请详细阅读我们的[开发规范](http://heyui.geekxz.com/start/contribute.html)，否则可能因为 Commit 信息不规范等原因被关闭 Pull Request。
+在提交 Pull Request 之前，请详细阅读我们的[开发规范](http://heyui.geekxz.com/start/contribute.html)，否则可能因为 Commit 信息不规范等原因被关闭 Pull Request。
 
 
 ## 开源协议
