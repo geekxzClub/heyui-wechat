@@ -8,7 +8,7 @@ Page({
     componentList: [{
       id: 1,
       icon: 'actionsheet',
-      type: 'actionsheet',
+      type: 'hsheet',
       text_zh: '底部弹出操作菜单',
       text_en: 'ActionSheet'
     }, {
@@ -29,7 +29,13 @@ Page({
       type: 'dialog',
       text_zh: '模态框',
       text_en: 'Dialog'
-    }]
+    }, {
+      id: 10,
+      icon: 'popup',
+      type: 'popup',
+     text_zh: '弹出层',
+     text_en: 'Popup'
+    },]
   },
 
   /**
@@ -40,26 +46,9 @@ Page({
   },
   goToItem: function (e) {
     var type = e.currentTarget.dataset.type;
-    if (type == 'actionsheet') {
-      wx.navigateTo({
-        url: '/pages/response/hsheet/hsheet'
-      })
-    }
-    if (type == 'toast') {
-      wx.navigateTo({
-        url: '/pages/response/toast/toast'
-      })
-    }
-    if (type == 'dialog') {
-      wx.navigateTo({
-        url: '/pages/response/dialog/dialog'
-      })
-    }    
-    if (type == 'message') {
-      wx.navigateTo({
-        url: '/pages/response/message/message'
-      })
-    }
+    wx.navigateTo({
+      url: '/pages/response/'+type+'/'+type
+    })   
   },
 
   /**

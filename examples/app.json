@@ -21,7 +21,6 @@
     "pages/view/search/search",
     "pages/view/addtips/addtips",
     "pages/view/card/card",
-    "pages/view/popup/popup",
     "pages/view/notic/notic",
     "pages/view/barrage/barrage",
     "pages/view/table/table",
@@ -83,6 +82,7 @@
     "pages/response/dialog/dialog",
     "pages/response/toast/toast",
     "pages/response/message/message",   
+    "pages/response/popup/popup",
 
     "pages/logs/logs"
   ],

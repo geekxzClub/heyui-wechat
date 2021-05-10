@@ -90,7 +90,7 @@
 微信群：加入微信群请先添加开发者微信，备注HeyUI。QQ群：689112212 或扫描二维码。
 
 <p align="center">
-    <img width="800" class="QR-img" src="https://oss.geekxz.com/hey-ui-oss/communications.png">
+    <img width="800" src="https://oss.geekxz.com/hey-ui-oss/communications.png">
 </p>
 
 ## 贡献代码

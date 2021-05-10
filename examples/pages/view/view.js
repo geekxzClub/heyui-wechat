@@ -60,12 +60,6 @@ Page({
      text_zh: '卡片',
      text_en: 'Card'
     }, {
-      id: 10,
-      icon: 'popup',
-      type: 'popup',
-     text_zh: '弹出层',
-     text_en: 'Popup'
-    }, {
       id: 11,
       icon: 'notic',
       type: 'notic',
