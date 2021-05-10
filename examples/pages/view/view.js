@@ -101,6 +101,18 @@ Page({
         type: 'verifycode',
        text_zh: '验证码输入',
        text_en: 'VerifyCode'
+      }, {
+        id: 17,
+        icon: 'timelines',
+        type: 'timelines',
+       text_zh: '时间线',
+       text_en: 'timelines'
+      }, {
+        id: 17,
+        icon: 'steps',
+        type: 'steps',
+       text_zh: '步骤条',
+       text_en: 'steps'
       }],
     val: 50,
   },

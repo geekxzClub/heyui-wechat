@@ -1,0 +1,69 @@
+<!--pages/view/steps/steps.wxml-->
+<view class="h-bar h-bg-white h-solid-bottom">
+  <view class="action">
+    <text class="h-text-sm h-text-bold h-text-black">基本用法</text> 
+  </view>
+  <view class="action">
+    <button class="h-btn h-bg-success h-shadow" bindtap="basicsSteps">下一步</button>
+  </view>
+</view>
+<view class="h-bg-white p-lr">
+  <view class="h-steps">
+    <view class="h-item {{index>basics?'':'h-text-primary'}}" wx:for="{{basicsList}}" wx:key='item'>
+      <text class="heyui-{{item.icon}}"></text> {{item.name}}
+    </view>
+  </view>
+</view>
+<view class="h-bg-white p-lr p-b">
+  <view class="h-steps">
+    <view class="h-item {{index>basics?'':'h-text-success'}}" wx:for="{{basicsList}}" wx:key='item'>
+      <text class="heyui-{{index>basics?'title':item.icon}}"></text> {{item.name}}
+    </view>
+  </view>
+</view>
+<view class="h-bg-white p-lr p-b">
+  <view class="h-steps steps-arrow">
+    <view class="h-item {{index>basics?'':'h-text-warning'}}" wx:for="{{basicsList}}" wx:key='item'>
+      <text class="heyui-{{item.icon}}"></text> {{item.name}}
+    </view>
+  </view>
+</view>
+
+
+
+<view class="h-bar h-bg-white h-solid-bottom m-t">
+  <view class="action">
+    <text class="h-text-sm h-text-bold h-text-black">数字进度</text> 
+  </view>
+  <view class="action">
+    <button class="h-btn h-bg-error h-shadow" bindtap="numSteps">下一步</button>
+  </view>
+</view>
+<view class="h-bg-white p-lr p-b">
+  <view class="h-steps">
+    <view class="h-item {{index>num?'':'h-text-error'}}" wx:for="{{numList}}" wx:key='item'>
+      <text class="num {{index==2?'err':''}}" data-index="{{index + 1}}"></text> {{item.name}}
+    </view>
+  </view>
+</view>
+
+<view class="h-bar h-bg-white h-solid-bottom m-t">
+  <view class="action">
+    <text class="h-text-sm h-text-bold h-text-black">多级显示</text> 
+  </view>
+  <view class="action">
+    <button class="h-btn h-bg-primary h-shadow" bindtap="scrollSteps">下一步</button>
+  </view>
+</view>
+<scroll-view scroll-x class="h-bg-white h-steps steps-bottom p-lr p-t" scroll-into-view="scroll-{{scroll}}" scroll-with-animation>
+  <view class="h-item {{index>scroll?'':'h-text-primary'}} p-lr" wx:for="{{7}}" wx:key='item' id="scroll-{{index}}">
+   <text>第 {{index + 1}} 天</text>
+   <text class="num" data-index="{{index + 1}}"></text>
+  </view>
+</scroll-view>
+<scroll-view scroll-x class="h-bg-white h-steps steps-top p-lr p-b" scroll-into-view="scroll-{{scroll}}" scroll-with-animation>
+  <view class="h-item {{index>scroll?'':'h-text-teanslucent'}} p-lr" wx:for="{{7}}" wx:key='item' id="scroll-{{index}}">
+   <text class="num" data-index="{{index + 1}}"></text>
+   <text>第 {{index + 1}} 天</text>
+  </view>
+</scroll-view>

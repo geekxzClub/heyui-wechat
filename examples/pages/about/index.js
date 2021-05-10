@@ -10,7 +10,7 @@ Page({
     visitTotal: 152450,
   },
   attached() {
-    console.log("success")
+    // console.log("success")
     let that = this;
     wx.showLoading({
       title: '数据加载中',

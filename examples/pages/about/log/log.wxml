@@ -1,0 +1,86 @@
+<!--pages/about/log/log.wxml-->
+<view class="h-timeline">
+  <view class="h-time">2021</view>
+  <view class="h-item h-text-primary">
+    <view class="content h-bg-primary">
+      <view class="h-capsule radius">
+        <view class="h-tag h-bg-cyan">V1.0.5</view>
+        <view class="h-tag h-text-black">2021/05/06</view>
+      </view>
+      <view class="m-t-sm">
+        <view>1.优化瀑布流布局</view>
+        <view>2.优化indexlist索引列表</view>
+        <view>3.新增步骤条功能</view>
+        <view>4.新增时间线功能</view>
+      </view>
+    </view>
+  </view>
+  <view class="h-item h-text-primary">
+    <view class="content h-bg-primary">
+      <view class="h-capsule radius">
+        <view class="h-tag h-bg-cyan">V1.0.4</view>
+        <view class="h-tag h-text-black">2021/03/06</view>
+      </view>
+      <view class="m-t-sm">
+        <view>1.新增tree功能样式</view>
+        <view>2.新增不适用radio做单选功能</view>
+        <view>3.新增不适用checkbox做多选功能</view>
+        <view>4.新增卡尺功能r</view>
+      </view>
+    </view>
+  </view>
+  <view class="h-item h-text-primary">
+    <view class="content h-bg-primary">
+      <view class="h-capsule radius">
+        <view class="h-tag h-bg-cyan">V1.0.3</view>
+        <view class="h-tag h-text-black">2021/02/15</view>
+      </view>
+      <view class="m-t-sm">
+        <view>1.修改整体的布局样式</view>
+        <view>2.新增底部操作导航</view>
+      </view>
+    </view>
+  </view>
+  <view class="h-time">2020</view>
+  <view class="h-item h-text-primary">
+    <view class="content h-bg-primary">
+      <view class="h-capsule radius">
+        <view class="h-tag h-bg-cyan">V1.0.2</view>
+        <view class="h-tag h-text-black">2021/12/02</view>
+      </view>
+      <view class="m-t-sm">
+        <view>1.优化图标UI</view>
+        <view>2.新增message提示</view>
+        <view>3.优化背景颜色配色</view>
+        <view>4.新增优化flex布局</view>
+        <view>5.增加赞赏码！请多多支持！</view>
+        <view>6.新增反馈与Bug测试</view>
+      </view>
+    </view>
+  </view>
+  <view class="h-item h-text-primary">
+    <view class="content h-bg-primary">
+      <view class="h-capsule radius">
+        <view class="h-tag h-bg-cyan">V1.0.1</view>
+        <view class="h-tag h-text-black">2021/09/10</view>
+      </view>
+      <view class="m-t-sm">
+        <view>1.首页增加分享</view>
+        <view>2.卡片页修复switch开关问题</view>
+        <view>3.优化首页动画效果</view>
+        <view>4.表单新增Picker</view>
+      </view>
+    </view>
+  </view>
+  <view class="h-item h-text-primary">
+    <view class="content h-bg-primary">
+      <view class="h-capsule radius">
+        <view class="h-tag h-bg-cyan">V1.0.0</view>
+        <view class="h-tag h-text-black">2021/06/10</view>
+      </view>
+      <view class="m-t-sm">
+        <view>1.0版本上线</view>
+      </view>
+    </view>
+  </view>
+</view>

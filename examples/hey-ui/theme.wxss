@@ -82,6 +82,21 @@ page {
 .h-text-dark4{
 	color: var(--dark4);
 }
+.h-text-success{
+	color: var(--success);
+}
+.h-text-error{
+	color: var(--error);
+}
+.h-text-warning{
+	color: var(--warning);
+}
+.h-text-primary{
+	color: var(--primary);
+}
+.h-text-teanslucent{
+	color: var(--teanslucent);
+}
 
 
 switch.primary[checked] .wx-switch-input,

@@ -1928,6 +1928,81 @@ button.icon.icon-lg {
 }
 
 /* ==================
+         时间轴
+ ==================== */
+ .h-timeline {
+	display: block;
+	background-color: var(--white);
+}
+.h-timeline .h-time {
+	width: 120rpx;
+	text-align: center;
+	padding: 20rpx 0;
+	font-size: 26rpx;
+	color: #888;
+	display: block;
+}
+.h-timeline>.h-item {
+	padding: 30rpx 30rpx 30rpx 120rpx;
+	position: relative;
+	display: block;
+	z-index: 0;
+}
+.h-timeline>.h-item:not([class*="h-text-"]) {
+	color: #ccc;
+}
+.h-timeline>.h-item::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 1rpx;
+	background-color: #ddd;
+	left: 60rpx;
+	height: 100%;
+	top: 0;
+	z-index: 8;
+}
+.h-timeline>.h-item::before {
+	font-family: "heyui";
+	display: block;
+	position: absolute;
+	top: 36rpx;
+	z-index: 9;
+	background-color: var(--white);
+	width: 50rpx;
+	height: 50rpx;
+	text-align: center;
+	border: none;
+	line-height: 50rpx;
+	left: 36rpx;
+}
+.h-timeline>.h-item:not([class*="heyui-"])::before {
+	content: "\e763";
+}
+.h-timeline>.h-item[class*="heyui-"]::before {
+	background-color: var(--white);
+	width: 50rpx;
+	height: 50rpx;
+	text-align: center;
+	border: none;
+	line-height: 50rpx;
+	left: 36rpx;
+}
+.h-timeline>.h-item>.content {
+	padding: 30rpx;
+	border-radius: 6rpx;
+	display: block;
+	line-height: 1.6;
+}
+.h-timeline>.h-item>.content:not([class*="h-bg-"]) {
+	background-color: var(--ghostWhite);
+	color: var(--black);
+}
+.h-timeline>.h-item>.content+.content {
+	margin-top: 20rpx;
+}
+
+/* ==================
          导航栏
  ==================== */
 
@@ -2316,7 +2391,141 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 }
 
 
+/* ==================
+          步骤条
+ ==================== */
 
+ .h-steps {
+	display: flex;
+}
+
+scroll-view.h-steps {
+	display: block;
+	white-space: nowrap;
+}
+
+scroll-view.h-steps .h-item {
+	display: inline-block;
+}
+
+.h-steps .h-item {
+	flex: 1;
+	text-align: center;
+	position: relative;
+	min-width: 100rpx;
+}
+
+.h-steps .h-item:not([class*="text-"]) {
+	color: var(--grey);
+}
+
+.h-steps .h-item [class*="heyui-"],
+.h-steps .h-item .num {
+	display: block;
+	font-size: 40rpx;
+	line-height: 80rpx;
+}
+
+.h-steps .h-item::before,
+.h-steps .h-item::after,
+.h-steps.steps-arrow .h-item::before,
+.h-steps.steps-arrow .h-item::after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 0px;
+	width: calc(100% - 80rpx);
+	border-bottom: 1px solid #ccc;
+	left: calc(0px - (100% - 80rpx) / 2);
+	top: 40rpx;
+	z-index: 0;
+}
+
+.h-steps.steps-arrow .h-item::before,
+.h-steps.steps-arrow .h-item::after {
+	content: "\e6a3";
+	font-family: "heyui";
+	height: 30rpx;
+	border-bottom-width: 0px;
+	line-height: 30rpx;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	color: #ccc;
+}
+
+.h-steps.steps-bottom .h-item::before,
+.h-steps.steps-bottom .h-item::after {
+	bottom: 40rpx;
+	top: initial;
+}
+
+.h-steps .h-item::after {
+	border-bottom: 1px solid currentColor;
+	width: 0px;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.h-steps .h-item[class*="text-"]::after {
+	width: calc(100% - 80rpx);
+	color: currentColor;
+}
+
+.h-steps .h-item:first-child::before,
+.h-steps .h-item:first-child::after {
+	display: none;
+}
+
+.h-steps .h-item .num {
+	width: 40rpx;
+	height: 40rpx;
+	border-radius: 50%;
+	line-height: 40rpx;
+	margin: 20rpx auto;
+	font-size: 24rpx;
+	border: 1px solid currentColor;
+	position: relative;
+	overflow: hidden;
+}
+
+.h-steps .h-item[class*="text-"] .num {
+	background-color: currentColor;
+}
+
+.h-steps .h-item .num::before,
+.h-steps .h-item .num::after {
+	content: attr(data-index);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	transition: all 0.3s ease-in-out 0s;
+	transform: translateY(0rpx);
+}
+
+.h-steps .h-item[class*="text-"] .num::before {
+	transform: translateY(-40rpx);
+	color: var(--white);
+}
+
+.h-steps .h-item .num::after {
+	transform: translateY(40rpx);
+	color: var(--white);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.h-steps .h-item[class*="text-"] .num::after {
+	content: "\e645";
+	font-family: "heyui";
+	color: var(--white);
+	transform: translateY(0rpx);
+}
+
+.h-steps .h-item[class*="text-"] .num.err::after {
+	content: "\e646";
+}
 
 
 

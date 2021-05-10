@@ -1,6 +1,8 @@
 {
-  "pages": [     
+  "pages": [   
     "pages/index/index",
+    "pages/view/timelines/timelines",
+    "pages/view/steps/steps",
     "pages/other/poster/poster",
     "pages/other/other",
     "pages/other/h-checkbox/h-checkbox",
@@ -75,6 +77,7 @@
     "pages/tpl/tpl",
     "pages/about/index",
     "pages/about/about/about",  
+    "pages/about/log/log",    
     "pages/view/comment/comment",
 
     "pages/response/response",
