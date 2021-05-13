@@ -7,7 +7,7 @@ Page({
    */
   data: {
     x: 0,
-    area_width: 85,   //可滑动区域的宽，单位是百分比，设置好后自动居中
+    area_width: 90,   //可滑动区域的宽，单位是百分比，设置好后自动居中
     box_width: 100,   //滑块的宽,单位是 rpx
     maxNum: 0, 
     icon: false,

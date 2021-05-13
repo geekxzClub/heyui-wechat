@@ -12,7 +12,7 @@
     h-bg-class="h-bg-green" 
     h-text-class='h-text-center h-text-white'
     h-track-bg-class='h-bg-grey'
-    h-movable-view-bg-class='h-flex h-justify-center h-align-center h-bg-white'
+    h-movable-view-bg-class='h-flex h-justify-center h-align-center h-bg-warning'
     h-icon-class='heyui-check'    
     h-icon-df-class='heyui-right'
     bind:verify="verify">
@@ -24,7 +24,7 @@
     h-bg-class="h-bg-green" 
     h-text-class='h-text-center h-text-white'
     h-track-bg-class='h-bg-primary'
-    h-movable-view-bg-class='h-flex h-justify-center h-align-center h-bg-white'
+    h-movable-view-bg-class='h-flex h-justify-center h-align-center h-bg-error'
     h-icon-class='heyui-check'    
     h-icon-df-class='heyui-right'
     bind:verify="verify">

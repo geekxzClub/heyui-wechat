@@ -34,18 +34,12 @@
       <text class="h-text-black">GitHub</text>
     </view>
   </view>
-  <view class="h-item h-arrow">
-    <navigator class="content" url="/pages/about/log/log" hover-class="none">
-      <text class="heyui-formfill h-text-green"></text>
-      <text class="h-text-black">日志</text>
-    </navigator>
-  </view>
-  <view class="h-item h-arrow">
+  <!-- <view class="h-item h-arrow">
     <view class="content" bindtap="showQrcode">
       <text class="heyui-appreciatefill h-text-red"></text>
       <text class="h-text-black">赞赏支持</text>
     </view>
-  </view>
+  </view> -->
   <view class="h-item h-arrow">
     <button class="h-btn content" open-type="feedback">
       <text class="heyui-writefill h-text-cyan"></text>
@@ -60,8 +54,14 @@
   </view>
   <view class="h-item h-arrow">
     <navigator class="content" url="/pages/about/about/about" hover-class="none">
-      <text class="heyui-creativefill h-text-orange"></text>
-      <text class="h-text-black">关于heyui</text>
+      <text class="heyui-myfill h-text-primary"></text>
+      <text class="h-text-black">关于heyUI</text>
+    </navigator>
+  </view>  
+  <view class="h-item h-arrow">
+    <navigator class="content" url="/pages/about/log/log" hover-class="none">
+      <text class="heyui-formfill h-text-green"></text>
+      <text class="h-text-black">heyUI更新日志</text>
     </navigator>
   </view>
 </view>
