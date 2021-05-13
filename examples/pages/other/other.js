@@ -29,6 +29,12 @@ Page({
       type: 'h-scale',
       text_zh: '卡尺',
       text_en: 'h-scale'
+    },{
+      id: 4,
+      icon: 'slideverify',
+      type: 'slideverify',
+      text_zh: '滑动验证码',
+      text_en: 'slideverify'
     }]
   },
   goToItem: function (e) {

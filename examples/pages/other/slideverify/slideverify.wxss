@@ -1,0 +1,16 @@
+/* pages/other/slideverify/slideverify.wxss */
+.h-slide-verify{
+  margin: 0 auto;
+  height: 90rpx;
+}
+.h-slide-verify-box{
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h-slide-verify-icon{
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}

@@ -1,0 +1,44 @@
+<!--pages/other/slideverify/slideverify.wxml-->
+<view class="m-tb"> 
+  <movable-area class="h-flex h-justify-center h-align-center h-slide-verify {{icon? 'h-bg-green h-text-white':'h-bg-gray'}}" style="width:{{area_width}}%">{{icon? '验证通过':'拖动滑块验证'}}
+    <movable-view class="h-slide-verify-box {{icon ? 'h-bg-white':'h-bg-blue'}}" style='width:{{box_width}}rpx' friction="{{100}}" direction="horizontal" x="{{x}}" damping="{{500}}" bindchange="drag" bindtouchend="dragOver">
+      <view class='h-slide-verify-icon h-text-center'> <text class="{{icon ? 'heyui-check h-text-green':'heyui-right'}}"></text></view>
+    </movable-view>
+  </movable-area>
+</view>
+
+<view class="m"> 
+  <h-slide-verify 
+    h-bg-class="h-bg-green" 
+    h-text-class='h-text-center h-text-white'
+    h-track-bg-class='h-bg-grey'
+    h-movable-view-bg-class='h-flex h-justify-center h-align-center h-bg-white'
+    h-icon-class='heyui-check'    
+    h-icon-df-class='heyui-right'
+    bind:verify="verify">
+  </h-slide-verify>
+</view>
+
+<view class="m"> 
+  <h-slide-verify 
+    h-bg-class="h-bg-green" 
+    h-text-class='h-text-center h-text-white'
+    h-track-bg-class='h-bg-primary'
+    h-movable-view-bg-class='h-flex h-justify-center h-align-center h-bg-white'
+    h-icon-class='heyui-check'    
+    h-icon-df-class='heyui-right'
+    bind:verify="verify">
+  </h-slide-verify>
+</view>
+
+<view class="m"> 
+  <h-slide-verify 
+    h-bg-class="h-bg-green" 
+    h-text-class='h-text-center h-text-white'
+    h-track-bg-class='h-bg-gray'
+    h-movable-view-bg-class='h-flex h-justify-center h-align-center h-bg-primary h-text-white'
+    h-icon-class='heyui-check'    
+    h-icon-df-class='heyui-right'
+    bind:verify="verify">
+  </h-slide-verify>
+</view>
