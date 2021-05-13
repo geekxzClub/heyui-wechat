@@ -24,6 +24,7 @@
   - [引入](#引入)
 - [讨论交流](#讨论交流)
 - [贡献代码](#贡献代码)
+- [优秀源码演示](#优秀源码演示)
 - [开源协议](#开源协议)
 - [赞助](#赞助)
 
@@ -90,7 +91,7 @@
 微信群：加入微信群请先添加开发者微信，备注HeyUI。QQ群：689112212 或扫描二维码。
 
 <p align="center">
-    <img width="800" src="https://oss.geekxz.com/hey-ui-oss/communications_primary.png">
+    <img width="800" src="https://oss.geekxz.com/hey-ui-oss/communication_primary.png">
 </p>
 
 ## 贡献代码
@@ -99,6 +100,15 @@
 
 在提交 Pull Request 之前，请详细阅读我们的[开发规范](http://heyui.geekxz.com/start/contribute.html)，否则可能因为 Commit 信息不规范等原因被关闭 Pull Request。
 
+## 优秀源码演示
+
+开源不易，需要鼓励。给 HeyUI项目点个 star吧！
+
+HeyUI组件库小程序原生版本，该开源版源码为V1.0.1版本。后续更新更多源码
+
+|  ![微信小程序](https://oss.geekxz.com/hey-ui-oss/logo.jpg) |![HeyUI示例](https://oss.geekxz.com/hey-ui-oss/logo.jpg)  |
+| ------------ | ------------ |
+|  微信小程序  | HeyUI示例    |
 
 ## 开源协议
 
