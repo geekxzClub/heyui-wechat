@@ -72,7 +72,7 @@
 
 <view class='h-grid h-grid-1 h-text-center h-text-dark4 h-qrcode'>
   <view class="h-bg-img m-b-sm">
-    <image class="h-corner-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/geekxz_qrcode.jpg"></image>
+    <image class="h-corner-sm" mode="aspectFill" src="https://oss.geekxz.com/hey-ui-oss/geekxz_qrcode.jpg" bindtap="previewImage"></image>
   </view>
   <view class="h-text-s p-b-xm">关注极客小寨工作室</view>
   <view class="h-text-s p-b">点击图片可保存二维码识别</view>

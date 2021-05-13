@@ -8,6 +8,7 @@ Page({
     starCount: 780,
     forksCount: 75620,
     visitTotal: 152450,
+    imglist:['https://oss.geekxz.com/hey-ui-oss/geekxz_qrcode.jpg']
   },
   attached() {
     // console.log("success")
@@ -57,6 +58,13 @@ Page({
           duration: 1000,
         })
       }
+    })
+  },
+  previewImage: function (e) {
+    var current = e.target.dataset.src;
+    wx.previewImage({
+      current: current, // 当前显示图片的http链接  
+      urls: this.data.imglist // 需要预览的图片http链接列表  
     })
   },
 
