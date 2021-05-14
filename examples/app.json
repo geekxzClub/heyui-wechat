@@ -4,6 +4,7 @@
     "pages/view/timelines/timelines",
     "pages/view/steps/steps",
     "pages/other/poster/poster",
+    "pages/other/select/select",
     "pages/other/other",
     "pages/other/h-checkbox/h-checkbox",
     "pages/other/h-radio/h-radio",
