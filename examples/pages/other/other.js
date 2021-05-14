@@ -30,11 +30,17 @@ Page({
       text_zh: '卡尺',
       text_en: 'h-scale'
     },{
-      id: 4,
+      id: 5,
       icon: 'slideverify',
       type: 'slideverify',
       text_zh: '滑动验证码',
       text_en: 'slideverify'
+    },{
+      id: 6,
+      icon: 'select',
+      type: 'select',
+      text_zh: '自定义下拉选择',
+      text_en: 'select'
     }]
   },
   goToItem: function (e) {
