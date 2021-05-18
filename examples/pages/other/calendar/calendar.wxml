@@ -1,0 +1,21 @@
+<!--pages/other/calendar/calendar.wxml-->
+<h-calendar bind:change="dateChange"
+  spot="{{spot}}" 
+  defaultTime="{{defaultTime}}"
+  h-icon-class="h-text-blue heyui-playfill"
+  h-text-class="h-text-blue"
+  h-spot-class="heyui-check h-text-blue"
+  >
+</h-calendar>
+<view class="h-bg-white h-text-sm h-text-center h-text-blue p-tb m-b">当前选中的日期是：{{dateString}}</view>
+
+<h-calendar bind:change="dateChange2"
+  open
+  spot="{{spot2}}" 
+  defaultTime="{{defaultTime2}}"
+  h-icon-class="h-text-blue heyui-playfill"
+  h-text-class="h-text-blue"
+  h-spot-class="heyui-check h-text-blue"
+  >
+</h-calendar>
+<view class="h-bg-white h-text-sm h-text-center h-text-blue p-tb">当前选中的日期是：{{dateString2}}</view>

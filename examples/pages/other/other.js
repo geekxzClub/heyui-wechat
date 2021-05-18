@@ -37,10 +37,16 @@ Page({
       text_en: 'slideverify'
     },{
       id: 6,
-      icon: 'select',
+      icon: 'select1',
       type: 'select',
       text_zh: '自定义下拉选择',
       text_en: 'select'
+    },{
+      id: 7,
+      icon: 'calendar',
+      type: 'calendar',
+      text_zh: '自定义日历',
+      text_en: 'calendar'
     }]
   },
   goToItem: function (e) {

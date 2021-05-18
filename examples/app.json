@@ -1,8 +1,6 @@
 {
   "pages": [   
     "pages/index/index",
-    "pages/view/timelines/timelines",
-    "pages/view/steps/steps",
     "pages/other/poster/poster",
     "pages/other/select/select",
     "pages/other/other",
@@ -11,6 +9,7 @@
     "pages/other/h-scale/h-scale",
     "pages/other/tree/tree",
     "pages/other/slideverify/slideverify",
+    "pages/other/calendar/calendar", 
     "pages/view/pathview/pathview",
     "pages/plugin/plugin",
     "pages/view/dropdown/dropdown",
@@ -32,6 +31,8 @@
     "pages/view/divider/divider",
     "pages/view/keyboard/keyboard",
     "pages/view/verifycode/verifycode",
+    "pages/view/timelines/timelines",
+    "pages/view/steps/steps",
 
     "pages/layout/layout",
     "pages/layout/waterflow/waterflow",
