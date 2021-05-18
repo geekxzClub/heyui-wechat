@@ -2,11 +2,9 @@
 <view class="calendar">
 	<view class="title flex">
 		<view class="flex">
+			<view class="iconL h-icon-class" bindtap="lastMonth" style="transform:rotate(180deg);"></view>
 			<picker value="{{selectDay.year+'-'+selectDay.month}}" bindchange="editMonth" mode="date" fields="month" class="year-month h-text-class">{{selectDay.year}}.{{selectDay.month>9?selectDay.month:"0"+selectDay.month}}</picker>
-			<view class="icon h-icon-class" bindtap="lastMonth" style="transform:rotate(180deg);">
-			</view>
-			<view class="icon h-icon-class" bindtap="nextMonth">
-			</view>
+			<view class="iconR h-icon-class" bindtap="nextMonth"></view>
 		</view>
 		<view catchtap="openChange" class="flex open h-text-class">
 			<view>{{open?"收起":"展开"}}</view>

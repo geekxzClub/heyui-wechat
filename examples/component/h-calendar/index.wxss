@@ -67,13 +67,17 @@
 }
 
 .calendar .title .year-month {
-  margin-right: 20rpx;
+  margin: 0 25rpx;
 }
 
-.calendar .title .icon {
-  padding: 0 10rpx;
+.calendar .title .iconL {
   font-size: 32rpx;
-  clear: both;
+  line-height: 60rpx;
+  margin-top: -2rpx;
+}
+.calendar .title .iconR {
+  font-size: 32rpx;
+  line-height: 60rpx;
 }
 
 .calendar .title .open {
