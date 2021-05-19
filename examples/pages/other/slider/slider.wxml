@@ -1,0 +1,62 @@
+<!--pages/other/slider/slider.wxml-->
+<view class="h-bar p-l">
+  <text class="h-text-sm h-text-bold h-text-black">设置step,当前设置步伐为5,当前值：{{slider1}}</text>
+</view>
+<view class="p-lr">
+  <slider color='#666666' selected-color='#19be6b' block-size='12' bindchange="changeSlider1" step="5" value="{{slider1}}"/>
+</view>
+
+<view class="h-bar p-l">
+  <text class="h-text-sm h-text-bold h-text-black">是否在右侧显示当前值</text>
+</view>
+<view class="p-lr">
+  <slider color='#666666' selected-color='#ed3f14' block-size='14' bindchange="changeSlider2" value="{{slider2}}" show-value/>
+</view>
+
+<view class="h-bar p-l">
+  <text class="h-text-sm h-text-bold h-text-black">设置最大值、最小值</text>
+</view>
+<view class="p-lr">
+  <slider color='#666666' selected-color='#warning' block-size='20' bindchange="changeSlider3" min="20" max="90" value="{{slider3}}" show-value/>
+</view>
+
+
+<view class="h-bar p-l">
+  <text class="h-text-sm h-text-bold h-text-black">滑动选择器设置名称</text>
+</view>
+<view class="p">
+  <view class="h-fl h-slider-titie m-r-sm">价格 {{slider4}}</view>
+  <slider color='#666666' selected-color='#007aff' block-size='18' bindchanging="changeSlider4" value="{{slider4}}"/>
+</view>
+
+
+
+<view class="h-slider-component">    
+    <view class="h-slider-value">价格 {{value}}</view>
+    <!-- 覆盖slider组件盒子 -->
+    <view class="h-slider-box">
+        <!-- 拖动按钮 -->
+        <view class="h-slider-btn" style="margin-left: {{ (value-min)*(102/(max-min))-2 }}%;" ></view>
+        <!-- 未选中区线 -->
+        <view class="h-slider-line"></view>
+        <!-- 选中区线 -->
+        <view class="h-slider-line-active" style="width: {{ (value-min)*(102/(max-min))-2 }}%;"></view>
+        <!-- 显示数字 -->
+        <view class="h-slider-number" style="{{max>20? 'display: none':''}}">
+            <!-- 最小限制大于等于0 -->
+            <block  wx:if="{{min>=0}}" >
+                <block wx:for="{{max+1}}" wx:key="index" wx:if="{{item>=min}}">
+                    <text class="{{value==item?'active':''}}" style="left:{{ (item-min)*(100/(max-min))-2 }}%" >{{item}}</text>
+                </block>
+            </block>
+            <!-- 最小限制小于0 -->
+            <block wx:else>
+                <block wx:for="{{(max-min)+1}}" wx:key="index">
+                    <text class="{{value==(item+min)?'active':''}}" style="left:{{ (item)*(102/(max-min))-2 }}%" >{{item+min}}</text>
+                </block>
+            </block>
+        </view>
+    </view>
+    <!-- slider组件 -->    
+    <slider class="h-slider" block-size="28" bindchange="sliderchange" bindchanging="sliderchanging" min="{{min}}" max="{{max}}" value="{{value}}" />
+</view>

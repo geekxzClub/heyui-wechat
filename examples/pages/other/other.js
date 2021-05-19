@@ -47,6 +47,12 @@ Page({
       type: 'calendar',
       text_zh: '自定义日历',
       text_en: 'calendar'
+    },{
+      id: 8,
+      icon: 'slider',
+      type: 'slider',
+      text_zh: '滑块组件',
+      text_en: 'slider'
     }]
   },
   goToItem: function (e) {

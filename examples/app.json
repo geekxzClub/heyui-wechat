@@ -1,6 +1,5 @@
 {
   "pages": [   
-    "pages/other/calendar/calendar", 
     "pages/index/index",
     "pages/other/poster/poster",
     "pages/other/select/select",
@@ -10,6 +9,8 @@
     "pages/other/h-scale/h-scale",
     "pages/other/tree/tree",
     "pages/other/slideverify/slideverify",
+    "pages/other/calendar/calendar", 
+    "pages/other/slider/slider",
     "pages/view/pathview/pathview",
     "pages/plugin/plugin",
     "pages/view/dropdown/dropdown",

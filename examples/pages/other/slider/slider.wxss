@@ -1,0 +1,33 @@
+/* pages/other/slider/slider.wxss */
+
+.h-slider-titie{
+  height: 60rpx;
+  line-height: 34rpx;
+}
+slider{
+  margin: 0;
+}
+
+.h-slider-component {width: 90%;position: relative;margin: 0rpx auto 0rpx;padding: 70rpx 0 70rpx;}
+/* 盒子 */
+.h-slider-box { width: 80%;position: absolute;left: 55%; top: 50%;transform: translate(-50%, -50%);margin-top: 0%;}
+/* 未选中区线 */
+.h-slider-line{ width: 100%;height: 10rpx;background: rgba(91, 150, 246, 0.1);position: absolute; left: 50%;top: 50%;transform: translate(-50%, -50%);}
+/* 选中区线 */
+.h-slider-line-active{position: absolute;left: 0;top: 50%;transform: translate(0, -50%); height: 10rpx;background: #5B96F6;}
+/* slider按钮 */
+.h-slider-btn{width: 40rpx;height: 35rpx; background: #5B96F6;border-radius: 20rpx;}
+/* 显示的数字 */
+.h-slider-number { width: 100%;position: absolute;bottom: -10rpx;}
+.h-slider-number text{position: absolute; top: 0;font-size: 24rpx;color: #999999;transition: all 0.3s;}
+/* 当前选中的数字 */
+.h-slider-number text.active {font-size: 32rpx;color: #5B96F6;transition: all 0.3s;
+}
+/* slider组件设置透明 */
+.h-slider{opacity:0;width: 80%;position: absolute;left: 55%; top: 50%;transform: translate(-50%, -50%);margin-top: 0%;}
+.h-slider-value{
+  width: 18%;
+  height: 80rpx;
+  line-height: 80rpx;
+  position: absolute;left: 8%; top: 50%;transform: translate(-50%, -50%);
+}
