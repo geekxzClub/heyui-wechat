@@ -25,12 +25,7 @@ Page({
     // 价格筛选框设置
     leftMin: 0,
     leftMax: 10000, //左边滑块最大值
-    rightMin: 0, //右边滑块的最小值
-    rightMax: 10000, //右边滑块最大值
     leftValue: 1000, //左边滑块默认值
-    rightValue: 6000, //右边滑块默认值
-    leftPer: '50', //左边滑块可滑动长度：百分比
-    rightPer: '50', //右边滑块可滑动长度
 
     pxIndex: 0, //排序内容下拉框，默认第一个
   },
@@ -254,20 +249,10 @@ Page({
       leftValue: e.detail.value //设置左边当前值
     })
   },
-  // 右边滑块滑动的值
-  rightSchange: function(e) {
-    console.log('右边改变的值为：' + e.detail.value);
-    let currentValue = parseInt(e.detail.value);
-    var that = this;
-    that.setData({
-      rightValue: e.detail.value,
-    })
-  },
   // 价格筛选框重置内容
   PriceEmpty: function() {
     this.setData({
       leftValue: 1000, //左边滑块默认值
-      rightValue: 6000, //右边滑块默认值
     })
   },
   // 价格筛选框提交内容

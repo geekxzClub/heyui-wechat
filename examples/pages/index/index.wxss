@@ -1,12 +1,13 @@
 /**index.wxss**/
 @import '/pages/tpl/tpl.wxss';
 .h-component-item{
-  height: 280rpx;
+  height: 300rpx;
   display: flex;
   align-items: center;
   justify-content: center
 }
 .box{
+  width: 120rpx;
   text-align: center;
   font-size: 30rpx;
 }
@@ -23,11 +24,17 @@
 .h-grid .h-component-item:nth-child(2n){
   margin-left: 4%;
 }
-.heyui-titles{
-  font-size: 32rpx;
-  padding-top: 20rpx;
-}
 .footer{
   height: 80rpx;
   line-height: 80rpx;
+}
+
+.icon-box{
+  height: 80rpx;
+  width: 80rpx;
+}
+.icon-box image{
+  height: 80rpx;
+  width: 80rpx;
+  margin-left: 20rpx;
 }

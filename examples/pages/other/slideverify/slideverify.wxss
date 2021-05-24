@@ -1,5 +1,5 @@
 /* pages/other/slideverify/slideverify.wxss */
-.h-slide-verify{
+/* .h-slide-verify{
   margin: 0 auto;
   height: 90rpx;
 }
@@ -13,4 +13,4 @@
   width: 60rpx;
   height: 60rpx;
   line-height: 60rpx;
-}
+} */

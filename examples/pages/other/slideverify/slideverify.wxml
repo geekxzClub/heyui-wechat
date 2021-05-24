@@ -1,11 +1,11 @@
 <!--pages/other/slideverify/slideverify.wxml-->
-<view class="m-tb"> 
+<!-- <view class="m-tb"> 
   <movable-area class="h-flex h-justify-center h-align-center h-slide-verify {{icon? 'h-bg-green h-text-white':'h-bg-gray'}}" style="width:{{area_width}}%">{{icon? '验证通过':'拖动滑块验证'}}
     <movable-view class="h-slide-verify-box {{icon ? 'h-bg-white':'h-bg-blue'}}" style='width:{{box_width}}rpx' friction="{{100}}" direction="horizontal" x="{{x}}" damping="{{500}}" bindchange="drag" bindtouchend="dragOver">
       <view class='h-slide-verify-icon h-text-center'> <text class="{{icon ? 'heyui-check h-text-green':'heyui-right'}}"></text></view>
     </movable-view>
   </movable-area>
-</view>
+</view> -->
 
 <view class="m"> 
   <h-slide-verify 

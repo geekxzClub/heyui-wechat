@@ -16,7 +16,7 @@ Page({
     copyright: " Copyright © 2021-2050 Hey UI.",
     component: [{
       id: 1,
-      icon: 'basic',
+      icon: 'basics',
       type: 'basics',
       text: '基础组件'
     }, {

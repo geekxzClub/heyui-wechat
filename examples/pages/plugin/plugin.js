@@ -35,7 +35,7 @@ Page({
     },
     {
       id: 'appointment',
-      icon: "shop",
+      icon: "appointment",
       name: '预约源码',
       open: false,
       pages: [{
@@ -63,7 +63,7 @@ Page({
     },
     {
       id: 'blog',
-      icon: "shop",
+      icon: "blog",
       name: '个人博客',
       open: false,
       pages: [{
@@ -75,8 +75,8 @@ Page({
       }]
     },
     {
-      id: 'canvas',
-      icon: "shop",
+      id: 'company',
+      icon: "company",
       name: '公司官网',
       open: false,
       pages: [{
@@ -85,18 +85,18 @@ Page({
       }]
     },
     {
-      id: 'drawer',
-      icon: "shop",
+      id: 'questionnaire',
+      icon: "questionnaire",
       name: '问卷调查',
       open: false,
       pages: [{
         name: "产品使用满意度",
-        page: "drawer"
+        page: "questionnaire"
       }]
     },
     {
       id: 'vote',
-      icon: "shop",
+      icon: "vote",
       name: '投票模板',
       open: false,
       pages: [{
@@ -112,7 +112,7 @@ Page({
     },
     {
       id: 'prize',
-      icon: "shop",
+      icon: "prize",
       name: '抽奖模板',
       open: false,
       pages: [{
@@ -143,7 +143,7 @@ Page({
     },
     {
       id: 'active',
-      icon: "shop",
+      icon: "active",
       name: '开奖模板',
       open: false,
       pages: [{
