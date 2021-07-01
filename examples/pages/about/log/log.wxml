@@ -27,9 +27,9 @@
       </view>
       <view class="m-t-sm">
         <view>1.新增tree功能样式</view>
-        <view>2.新增不适用radio做单选功能</view>
-        <view>3.新增不适用checkbox做多选功能</view>
-        <view>4.新增卡尺功能r</view>
+        <view>2.新增不使用radio做单选功能</view>
+        <view>3.新增不使用checkbox做多选功能</view>
+        <view>4.新增卡尺功能</view>
       </view>
     </view>
   </view>
@@ -50,7 +50,7 @@
     <view class="content h-bg-primary">
       <view class="h-capsule radius">
         <view class="h-tag h-bg-cyan">V1.0.2</view>
-        <view class="h-tag h-text-black">2021/12/02</view>
+        <view class="h-tag h-text-black">2020/12/02</view>
       </view>
       <view class="m-t-sm">
         <view>1.优化图标UI</view>
@@ -66,7 +66,7 @@
     <view class="content h-bg-primary">
       <view class="h-capsule radius">
         <view class="h-tag h-bg-cyan">V1.0.1</view>
-        <view class="h-tag h-text-black">2021/09/10</view>
+        <view class="h-tag h-text-black">2020/09/10</view>
       </view>
       <view class="m-t-sm">
         <view>1.首页增加分享</view>
@@ -80,7 +80,7 @@
     <view class="content h-bg-primary">
       <view class="h-capsule radius">
         <view class="h-tag h-bg-cyan">V1.0.0</view>
-        <view class="h-tag h-text-black">2021/06/10</view>
+        <view class="h-tag h-text-black">2020/06/10</view>
       </view>
       <view class="m-t-sm">
         <view>1.0版本上线</view>

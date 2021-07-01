@@ -244,6 +244,9 @@ radio.radio[checked]::after {
 	background: var(--blue) !important;
 	border-color: var(--blue) !important;
 }
+
+
+
 switch.red[checked] .wx-switch-input,
 checkbox.red[checked] .wx-checkbox-input,
 radio.red[checked] .wx-radio-input {
@@ -434,6 +437,12 @@ checkbox.white[checked] .wx-checkbox-input,
 radio.white[checked] .wx-radio-input {
 	background-color: var(--white) !important;
 	color: var(--black) !important;
+}
+switch.error[checked] .wx-switch-input,
+checkbox.error[checked] .wx-checkbox-input,
+radio.error[checked] .wx-radio-input {
+	background-color: var(--error) !important;
+	color: var(--white) !important;
 }
 
 

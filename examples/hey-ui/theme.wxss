@@ -112,14 +112,13 @@ radio.success[checked] .wx-radio-input {
 switch.error[checked] .wx-switch-input,
 checkbox.error[checked] .wx-checkbox-input,
 radio.error[checked] .wx-radio-input {
-	border-color: var(--success) !important;
+	border-color: var(--error) !important;
 }
 switch.warning[checked] .wx-switch-input,
 checkbox.warning[checked] .wx-checkbox-input,
 radio.warning[checked] .wx-radio-input {
-	border-color: var(--success) !important;
+	border-color: var(--warning) !important;
 }
-
 switch.primary[checked] .wx-switch-input,
 checkbox.primary[checked] .wx-checkbox-input,
 radio.primary[checked] .wx-radio-input {	

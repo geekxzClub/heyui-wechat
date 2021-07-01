@@ -5,7 +5,7 @@
   </view>
 </view>
 <view class="h-bar p-l">
-  <text class="h-text-sm h-text-bold h-text-black">1、自定义主题背景颜色</text>
+  <text class="h-text-sm h-text-bold h-text-black">1、主题颜色</text>
 </view>
 <view class="h-grid h-grid-2 p-lr p-b">
   <view class="items h-bg-error h-corner-sm">
@@ -55,7 +55,7 @@
 
 
 <view class="h-bar p-l p-b-xs">
-  <text class="h-text-sm h-text-bold h-text-black">自定义主题背景颜色</text>
+  <text class="h-text-sm h-text-bold h-text-black">背景颜色</text>
 </view>
 <view class="h-grid h-grid-2 p-lr p-b">
   <view class="items h-bg-gray h-corner-sm">
@@ -92,7 +92,7 @@
 
 
 <!-- button -->
-<view class="h-text-sm h-text-bold h-text-xs p-lr">自定义主题按钮颜色</view>
+<view class="h-text-sm h-text-bold h-text-xs p-lr">Button</view>
 <view class="h-grid h-grid-4 p-b-sm p-b">
   <view class="m-tb-sm h-text-center">
     <button class="h-btn h-bg-primary h-btn-lg">默认</button>
@@ -110,7 +110,7 @@
 
 <!-- radio -->
 <radio-group>
-  <view class="h-text-sm h-text-bold p-lr">请选择您的性别?</view>
+  <view class="h-text-sm h-text-bold p-lr">Radio</view>
   <view class="h-form-group">
     <radio class="radio primary" checked></radio>
     <view class="title p-lr">默认</view>
@@ -124,7 +124,7 @@
 </radio-group>
 
 <!-- checkbox -->
-<view class="h-text-sm h-text-bold p-lr p-t-xs">请选一个您喜欢的颜色?</view>
+<view class="h-text-sm h-text-bold p-lr p-t-xs">Checkbox</view>
 <view class="h-form-group h-justify-start">
   <checkbox class="primary"></checkbox>
   <view class="title p-lr">默认</view>
@@ -137,10 +137,10 @@
 </view>
 
 <!-- Switch -->
-<view class="h-text-sm h-text-bold p-lr p-t-xs">请选一个您喜欢的颜色?</view>
+<view class="h-text-sm h-text-bold p-lr p-t-xs">HSwitch</view>
 <view class="h-form-group h-bg-white m-sm">
   <view class="title">默认开关</view>
-  <switch class="default" checked></switch>
+  <switch class="primary" checked></switch>
 </view>
 <view class="h-form-group h-bg-white m-sm">
   <view class="title">成功开关</view>
@@ -153,4 +153,58 @@
 <view class="h-form-group h-bg-white m-sm">
   <view class="title">警告开关</view>
   <switch class="warning" checked></switch>
+</view>
+
+<!-- Steps -->
+<view class="h-bar">
+  <view class="action">
+    <text class="h-text-sm h-text-bold h-text-black">Steps</text> 
+  </view>
+  <view class="action">
+    <button class="h-btn h-bg-success h-shadow" bindtap="basicsSteps">下一步</button>
+  </view>
+</view>
+<view class="p-lr">
+  <view class="h-steps">
+    <view class="h-item {{index>basics?'':'h-text-primary'}}" wx:for="{{basicsList}}" wx:key='item'>
+      <text class="heyui-{{item.icon}}"></text> {{item.name}}
+    </view>
+  </view>
+</view>
+<view class="p-lr p-b">
+  <view class="h-steps">
+    <view class="h-item {{index>basics?'':'h-text-success'}}" wx:for="{{basicsList}}" wx:key='item'>
+      <text class="heyui-{{index>basics?'title':item.icon}}"></text> {{item.name}}
+    </view>
+  </view>
+</view>
+<view class="p-lr p-b">
+  <view class="h-steps steps-arrow">
+    <view class="h-item {{index>basics?'':'h-text-warning'}}" wx:for="{{basicsList}}" wx:key='item'>
+      <text class="heyui-{{item.icon}}"></text> {{item.name}}
+    </view>
+  </view>
+</view>
+
+<view class="h-bar">
+  <view class="action h-text-xs">
+    <text class="h-text-sm h-text-bold h-text-black">Progress</text>
+  </view>
+</view>
+<view class="p-lr p-b">
+  <view class="h-progress h-corner-lg">
+    <view class="h-bg-primary" style="width:{{loading?'88.8%':''}};">88.8%</view>
+  </view>
+  <view class="h-progress h-corner-md m-t">
+    <view class="h-bg-warning" style="width:{{loading?'66.6%':''}};">66.6%</view>
+  </view>
+  <view class="h-progress h-corner-sm m-t">
+    <view class="h-bg-red" style="width:{{loading?'88.8%':''}};">88.8%</view>
+  </view>
+  <view class="h-progress h-corner-xs m-t">
+    <view class="h-bg-error" style="width:{{loading?'66.6%':''}};">66.6%</view>
+  </view>  
+  <view class="h-progress h-corner-l m-t">
+    <view class="h-bg-success" style="width:{{loading?'88.8%':''}};">88.8%</view>
+  </view>
 </view>

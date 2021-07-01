@@ -17,3 +17,6 @@
 .h-grid .items:nth-child(2n){
   margin-left: 4%;
 }
+.h-form-group+.h-form-group {
+	border-top: none;
+}

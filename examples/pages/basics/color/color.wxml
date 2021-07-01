@@ -94,13 +94,52 @@
     <view class="h-bar p-l">
       <text class="h-text-sm h-text-bold h-text-black">基础色</text>
     </view>
+    <view class="h-grid h-grid-2 p-lr p-b">  
+      <view class="items h-bg-red h-corner-sm">
+        <view class="p-sm">          
+          <view>red</view>
+          <view>红色</view>
+        </view>
+      </view>
+      <view class="items h-bg-orange h-corner-sm">
+        <view class="p-sm">
+          <view class="h-text-sm">orange</view>
+          <view class="h-text-Hey">桔橙</view>
+        </view>
+      </view>
+      <view class="items h-bg-yellow h-corner-sm m-t">
+        <view class="p-sm">
+          <view class="h-text-sm">yellow</view>
+          <view class="h-text-Hey">明黄</view>
+        </view>
+      </view>      
+      <view class="items h-bg-olive h-corner-sm m-t">
+        <view class="p-sm">
+          <view>olive</view>
+          <view>橄榄</view>
+        </view>
+      </view>
+      <view class="items h-bg-green h-corner-sm m-t">
+        <view class="p-sm">
+          <view>green</view>
+          <view>森绿</view>
+        </view>
+      </view>
+      <view class="items h-bg-cyan h-corner-sm m-t">
+        <view class="p-sm">
+          <view>cyan</view>
+          <view>天青</view>
+        </view>
+      </view>    
+    </view>
+
     <view class="p-lr h-text-center h-text-Hey h-text-sm">
-      <view class="h-bg-red h-corner-sm p-tb m-b-sm">红色 red</view>
+      <!-- <view class="h-bg-red h-corner-sm p-tb m-b-sm">红色 red</view>
       <view class="h-bg-orange h-corner-sm p-tb m-b-sm">桔橙 orange</view>
       <view class="h-bg-yellow h-corner-sm p-tb m-b-sm">明黄 yellow</view>
       <view class="h-bg-olive h-corner-sm p-tb m-b-sm">橄榄 olive</view>
       <view class="h-bg-green h-corner-sm p-tb m-b-sm">森绿 green</view>
-      <view class="h-bg-cyan h-corner-sm p-tb m-b-sm">天青 cyan</view>
+      <view class="h-bg-cyan h-corner-sm p-tb m-b-sm">天青 cyan</view> -->
       <view class="h-bg-blue h-corner-sm p-tb m-b-sm">海蓝 blue</view>
       <view class="h-bg-purple h-corner-sm p-tb m-b-sm">姹紫 purple</view>
       <view class="h-bg-mauve h-corner-sm p-tb m-b-sm">木槿 mauve</view>
