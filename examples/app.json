@@ -118,25 +118,25 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "images/tabbar/basics.png",
-        "selectedIconPath": "images/tabbar/basics_cur.png",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/home_select.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/plugin/plugin",
-        "iconPath": "images/tabbar/component.png",
-        "selectedIconPath": "images/tabbar/component_cur.png",
+        "iconPath": "images/tabbar/temp.png",
+        "selectedIconPath": "images/tabbar/temp_select.png",
         "text": "扩展"
       },
       {
         "pagePath": "pages/about/index",
-        "iconPath": "images/tabbar/about.png",
-        "selectedIconPath": "images/tabbar/about_cur.png",
+        "iconPath": "images/tabbar/my.png",
+        "selectedIconPath": "images/tabbar/my_select.png",
         "text": "我的"
       }
     ],
     "backgroundColor": "#fff",
-    "selectedColor": "#ff7500",
+    "selectedColor": "#3688FF",
     "color": "#593a25",
     "borderStyle": "white",
     "position": "bottom"

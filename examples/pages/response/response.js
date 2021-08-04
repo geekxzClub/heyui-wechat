@@ -8,30 +8,35 @@ Page({
     componentList: [{
       id: 1,
       icon: 'actionsheet',
+      icons: 'action-sheet',
       type: 'hsheet',
       text_zh: '底部弹出操作菜单',
       text_en: 'ActionSheet'
     }, {
         id: 2,
         icon: 'toast',
+        icons: 'toast',
         type: 'toast',
         text_zh: '提示',
         text_en: 'Toast'
     }, {
       id: 3,
       icon: 'message',
+      icons: 'message',
       type: 'message',
       text_zh: '消息提示',
       text_en: 'Message'
     }, {
       id: 4,
       icon: 'dialog',
+      icons: 'dialog',
       type: 'dialog',
       text_zh: '模态框',
       text_en: 'Dialog'
     }, {
       id: 10,
       icon: 'popup',
+      icons: 'popup',
       type: 'popup',
      text_zh: '弹出层',
      text_en: 'Popup'

@@ -8,42 +8,49 @@ Page({
     componentList: [{
       id: 1,
       icon: 'flex',
+      icons: 'flex',
       type: 'flex',
       text_zh: '弹性布局',
       text_en: 'Flex'
     }, {
       id: 2,
       icon: 'grid',
+      icons: 'grid',
       type: 'grid',
       text_zh: '栅格布局',
       text_en: 'Grid'
     }, {
       id: 3,
       icon: 'float',
+      icons: 'float',
       type: 'float',
       text_zh: '浮动布局',
       text_en: 'Float'
       }, {
         id: 4,
         icon: 'list',
+        icons: 'list',
         type: 'list',
         text_zh: '列表',
         text_en: 'List'
       }, {
       id: 5,
       icon: 'indexlist',
+      icons: 'index-list',
       type: 'indexlist',
       text_zh: '索引列表',
       text_en: 'IndexList'
     }, {
       id: 6,
       icon: 'collapse',
+      icons: 'collapse',
       type: 'collapse',
       text_zh: '折叠面板',
       text_en: 'Collapse'
     }, {
       id: 7,
       icon: 'waterflow',
+      icons: 'waterFlow',
       type: 'waterflow',
       text_zh: '瀑布流',
       text_en: 'WaterFlow'

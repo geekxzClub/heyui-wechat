@@ -8,36 +8,42 @@ Page({
     componentList: [{
       id: 1,
       icon: 'navbar',
+      icons: 'combined-tabs',
       type: 'navbar',
       text_zh: '顶部导航',
       text_en: 'BavBar'
     }, {
       id: 2,
       icon: 'tabbar',
+      icons: 'tabbar',
       type: 'tabbar',
       text_zh: '底部导航',
       text_en: 'TabBar'
     }, {
       id: 3,
       icon: 'tabs',
+      icons: 'tab',
       type: 'tabs',
       text_zh: '选项卡',
       text_en: 'Tabs'
     }, {
       id: 4,
       icon: 'category',
+      icons: 'classnames',
       type: 'category',
       text_zh: '顶部分类菜单',
       text_en: 'Category'
     }, {
       id: 5,
       icon: 'category',
+      icons: 'classnames',
       type: 'category-2',
       text_zh: '侧边分类菜单',
       text_en: 'category-2'
     }, {
       id: 6,
       icon: 'footer',
+      icons: 'navbar',
       type: 'footer',
       text_zh: '底部导航',
       text_en: 'footer'

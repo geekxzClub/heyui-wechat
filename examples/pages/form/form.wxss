@@ -2,6 +2,7 @@
 /* @import '/pages/tpl/tpl.wxss'; */
 .h-list.menu>.h-item{
   height: 120rpx;
+  /* padding: 0 40rpx */
 }
 .h-list.menu>.h-item .content{
   line-height: 1.4em;

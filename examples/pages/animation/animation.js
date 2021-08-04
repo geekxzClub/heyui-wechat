@@ -8,6 +8,7 @@ Page({
     componentList: [{
       id: 1,
       icon: 'animation',
+      icons: 'transition',
       type: 'transition',
       text_zh: '动画',
       text_en: 'Animation'

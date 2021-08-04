@@ -8,48 +8,56 @@ Page({
     componentList: [{
       id: 1,
       icon: 'input',
+      icons: 'input',
       type: 'input',
       text_zh: '单行输入框',
       text_en: 'Input'
     }, {
       id: 2,
       icon: 'textarea',
+      icons: 'textarea',
       type: 'textarea',
       text_zh: '多行输入框',
       text_en: 'Textarea'
     }, {
       id: 3,
       icon: 'radio',
+      icons: 'radio',
       type: 'radio',
       text_zh: '单选框',
       text_en: 'Radio'
     }, {
       id: 4,
       icon: 'checkbox',
+      icons: 'checkbox',
       type: 'checkbox',
       text_zh: '多选框',
       text_en: 'Checkbox'
     }, {
       id: 5,
       icon: 'switch',
+      icons: 'switch',
       type: 'switch',
       text_zh: '开关',
       text_en: 'Switch'
     }, {
       id: 6,
       icon: 'picker',
+      icons: 'radio',
       type: 'picker',
       text_zh: '选择框',
       text_en: 'Picker'
     }, {
       id: 7,
       icon: 'imagepicker',
+      icons: 'imagepicker',
       type: 'imagepicker',
       text_zh: '图片选择器',
       text_en: 'Imagepicker'
     }, {
       id: 8,
       icon: 'rate',
+      icons: 'rate',
       type: 'rate',
       text_zh: '评分',
       text_en: 'Rate'
