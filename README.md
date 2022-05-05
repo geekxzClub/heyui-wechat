@@ -38,7 +38,7 @@
 
   直接通过git下载 Hey UI 源代码，并将 src 目录（所有文件夹）拷贝到自己的项目中.
   ```
-  git clone https://github.com/geekxzClub/hey-ui.git
+  git clone https://github.com/geekxzClub/heyui-wechat.git
   ```
 
 
