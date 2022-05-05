@@ -50,16 +50,16 @@
 
 2.按转Hey UI
 
-  下载源码解压获得`/src`，复制目录下的 `/hey-ui`,`/component`,`/libs` 文件夹到你的项目根目录.
+  下载源码解压获得`/template`，复制目录下的 `/heyui`,`/component`,`/libs`,`/static` 文件夹到你的项目根目录.
 
   `App.wxss` 引入关键Css `main.wxss`,`icon.wxss`.
 
   ```
   /**app.wxss**/
-  @import "hey-ui/heyui.main.wxss";
-  @import "hey-ui/icon.wxss";
+  @import "heyui/heyui.main.wxss";
+  @import "heyui/icon.wxss";
   /* 引入主题色 */
-  @import "hey-ui/theme.wxss";
+  @import "heyui/theme.wxss";
   @import "app.css"; /* 你的项目css */
   ....
   ```

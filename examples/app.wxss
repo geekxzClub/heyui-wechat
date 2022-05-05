@@ -1,17 +1,11 @@
 /**app.wxss**/
-@import "hey-ui/heyui.main.wxss";
-@import "hey-ui/icon.wxss";
+@import "heyui/heyui.main.wxss";
+@import "heyui/icon.wxss";
 /* 引入主题色 */
-@import "hey-ui/theme.wxss";
+@import "heyui/theme.wxss";
 page{
   background-color: rgba(224, 224, 224, 0.2)
 }
-
-
-
-
-
-
 @font-face {font-family: "iconfont";
   src: url('//at.alicdn.com/t/font_2156303_u7sudwsbyy8.eot?t=1603610115885'); /* IE9 */
   src: url('//at.alicdn.com/t/font_2156303_u7sudwsbyy8.eot?t=1603610115885#iefix') format('embedded-opentype'), /* IE6-IE8 */

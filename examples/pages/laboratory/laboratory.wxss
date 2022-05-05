@@ -1,0 +1,38 @@
+/* pages/laboratory/laboratory.wxss */
+@import '/pages/tpl/tpl.wxss';
+page{
+  	/* 渐变色 */
+	--warmFlame: linear-gradient(45deg, #ff9a9e, #fad0c4);
+	--sunnyMorning: linear-gradient(45deg, #f6d365, #fda085);
+	--trueSunset: linear-gradient(45deg, #f6d365, #fda085);
+	--dustyGrass: linear-gradient(45deg, #d4fc79, #96e6a1);
+}
+/* 渐变背景 */
+.h-bg-gradual-warm-flame {
+	background-image: var(--warmFlame);
+	color: var(--white);
+}
+.h-bg-gradual-sunny-morning {
+	background-image: var(--sunnyMorning);
+	color: var(--white);
+}
+.h-bg-gradual-true-sunset {
+	background-image: var(--trueSunset);
+	color: var(--white);
+}
+.h-bg-gradual-dusty-grass {
+	background-image: var(--dustyGrass);
+	color: var(--white);
+}
+.items{
+  height: 260rpx;
+}
+.items view{
+  line-height: 50rpx;
+}
+.h-grid.h-grid-2>view{
+  width: 48%;
+}
+.h-grid .items:nth-child(2n){
+  margin-left: 4%;
+}

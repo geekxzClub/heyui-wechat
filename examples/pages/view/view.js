@@ -60,12 +60,6 @@ Page({
      text_zh: '卡片',
      text_en: 'Card'
     }, {
-      id: 11,
-      icon: 'notic',
-      type: 'notic',
-     text_zh: '通知公告栏',
-     text_en: 'Notic'
-    }, {
       id: 12,
       icon: 'barrage',
       type: 'barrage',

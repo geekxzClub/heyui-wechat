@@ -1,4 +1,0 @@
-/* pages/about/about/index.wxss */
-.text-content{
-  line-height: 50rpx;
-}

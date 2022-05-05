@@ -1,70 +1,14 @@
 {
-  "pages": [   
+  "pages": [  
     "pages/index/index",
-    "pages/other/poster/poster",
-    "pages/other/select/select",
-    "pages/other/other",
-    "pages/other/h-checkbox/h-checkbox",
-    "pages/other/h-radio/h-radio",
-    "pages/other/h-scale/h-scale",
-    "pages/other/tree/tree",
-    "pages/other/slideverify/slideverify",
-    "pages/other/calendar/calendar", 
-    "pages/other/slider/slider",
-    "pages/view/pathview/pathview",
     "pages/plugin/plugin",
-    "pages/view/dropdown/dropdown",
-    
-    "pages/view/view",
-    "pages/view/avatar/avatar",
-    "pages/view/tag/tag",
-    "pages/view/progress/progress",
-    "pages/view/loading/loading",
-    "pages/view/swiper/swiper",
-    "pages/view/title/title",
-    "pages/view/search/search",
-    "pages/view/addtips/addtips",
-    "pages/view/card/card",
-    "pages/view/notic/notic",
-    "pages/view/barrage/barrage",
-    "pages/view/table/table",
-    "pages/view/slideview/slideview",
-    "pages/view/divider/divider",
-    "pages/view/keyboard/keyboard",
-    "pages/view/verifycode/verifycode",
-    "pages/view/timelines/timelines",
-    "pages/view/steps/steps",
-
-    "pages/layout/layout",
-    "pages/layout/waterflow/waterflow",
-    "pages/layout/list/list",
-    "pages/layout/float/float",
-    "pages/layout/collapse/collapse",
-    "pages/layout/indexlist/indexlist",
-    "pages/layout/grid/grid",
-    "pages/layout/flex/flex",
-
-    "pages/form/form",
-    "pages/form/imagepicker/imagepicker",
-    "pages/form/radio/radio",
-    "pages/form/checkbox/checkbox",
-    "pages/form/textarea/textarea",
-    "pages/form/rate/rate",
-    "pages/form/switch/switch",
-    "pages/form/picker/picker",
-    "pages/form/input/input",
-    
-    "pages/nav/nav",
-    "pages/nav/tabbar/tabbar", 
-    "pages/nav/navbar/navbar", 
-    "pages/nav/tabs/tabs",
-    "pages/nav/category-2/category-2",
-    "pages/nav/category/category",
-    "pages/nav/footer/footer",
-    "pages/nav/menu/menu",
-
-    "pages/animation/animation",
-    "pages/animation/transition/transition",
+    "pages/laboratory/laboratory", 
+    "pages/tpl/top/index",
+    "pages/tpl/tpl",
+    "pages/about/index",
+    "pages/about/about/about",  
+    "pages/about/log/log",    
+    "pages/view/comment/comment",
 
     "pages/basics/basics",
     "pages/basics/color/color",
@@ -76,13 +20,55 @@
     "pages/basics/icon/icon",
     "pages/basics/line/line",
     "pages/basics/theme/theme",
+    
+    "pages/layout/layout",
+    "pages/layout/list/list",
+    "pages/layout/float/float",
+    "pages/layout/collapse/collapse",
+    "pages/layout/indexlist/indexlist",
+    "pages/layout/grid/grid",
+    "pages/layout/flex/flex",
 
-    "pages/tpl/top/index",
-    "pages/tpl/tpl",
-    "pages/about/index",
-    "pages/about/about/about",  
-    "pages/about/log/log",    
-    "pages/view/comment/comment",
+    "pages/view/view",
+    "pages/view/avatar/avatar",
+    "pages/view/tag/tag",
+    "pages/view/progress/progress",
+    "pages/view/loading/loading",
+    "pages/view/swiper/swiper",
+    "pages/view/title/title",
+    "pages/view/search/search",
+    "pages/view/addtips/addtips",
+    "pages/view/card/card",
+    "pages/view/barrage/barrage",
+    "pages/view/table/table",
+    "pages/view/slideview/slideview",
+    "pages/view/divider/divider",
+    "pages/view/keyboard/keyboard",
+    "pages/view/verifycode/verifycode",
+    "pages/view/timelines/timelines",
+    "pages/view/steps/steps",
+
+    "pages/form/form",
+    "pages/form/imagepicker/imagepicker",
+    "pages/form/radio/radio",
+    "pages/form/checkbox/checkbox",
+    "pages/form/textarea/textarea",
+    "pages/form/rate/rate",
+    "pages/form/switch/switch",
+    "pages/form/picker/picker",
+    "pages/form/input/input",
+    
+    "pages/animation/animation",
+    "pages/animation/transition/transition",
+    
+    "pages/nav/nav",
+    "pages/nav/tabbar/tabbar", 
+    "pages/nav/navbar/navbar", 
+    "pages/nav/tabs/tabs",
+    "pages/nav/category-2/category-2",
+    "pages/nav/category/category",
+    "pages/nav/footer/footer",
+    "pages/nav/menu/menu",
 
     "pages/response/response",
     "pages/response/hsheet/hsheet",
@@ -90,21 +76,27 @@
     "pages/response/toast/toast",
     "pages/response/message/message",   
     "pages/response/popup/popup",
+    
+    "pages/other/other",
+    "pages/other/h-checkbox/h-checkbox",
+    "pages/other/h-radio/h-radio",
+    "pages/other/h-scale/h-scale",
+    "pages/other/tree/tree",
+    "pages/other/slideverify/slideverify",
+    "pages/other/calendar/calendar", 
+    "pages/other/slider/slider",
 
     "pages/logs/logs"
   ],
   "subpackages": [
     {
-      "root": "heyui-shop",
+      "root": "heyui-laboratory",
+      "name": "laboratory",
       "pages": [
-        "pages/index/index"
-      ]
-    },
-    {
-      "root": "heyui-blog",
-      "name": "pack2",
-      "pages": [
-        "pages/index/index"
+        "pages/banner/banner",
+        "pages/animation/animation",
+        "pages/table/table",
+        "pages/barrage/barrage"
       ]
     }
   ],
@@ -118,20 +110,26 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "images/tabbar/home.png",
-        "selectedIconPath": "images/tabbar/home_select.png",
+        "iconPath": "static/images/tabbar/home.png",
+        "selectedIconPath": "static/images/tabbar/home_select.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/plugin/plugin",
-        "iconPath": "images/tabbar/temp.png",
-        "selectedIconPath": "images/tabbar/temp_select.png",
+        "iconPath": "static/images/tabbar/plugin.png",
+        "selectedIconPath": "static/images/tabbar/plugin_select.png",
         "text": "扩展"
       },
       {
+        "pagePath": "pages/laboratory/laboratory",
+        "iconPath": "static/images/tabbar/laboratory.png",
+        "selectedIconPath": "static/images/tabbar/laboratory_select.png",
+        "text": "实验室"
+      },
+      {
         "pagePath": "pages/about/index",
-        "iconPath": "images/tabbar/my.png",
-        "selectedIconPath": "images/tabbar/my_select.png",
+        "iconPath": "static/images/tabbar/user.png",
+        "selectedIconPath": "static/images/tabbar/user_select.png",
         "text": "我的"
       }
     ],

@@ -1,2 +1,0 @@
-<!--pages/view/addtips/addtips.wxml-->
-<h-add-tips h-class='h-bg-orange-light h-text-pink h-shadow' h-arrow-class="h-arrow-green" h-tips-icon="heyui-close" text='我就是来试试'></h-add-tips>

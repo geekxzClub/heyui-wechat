@@ -1,0 +1,154 @@
+<!--pages/view/barrage/barrage.wxml-->
+
+  <!-- 有序弹幕 -->
+  <view class='h-barrage-gird m'>
+    <view class='h-barrage-group'>
+        <!-- top -->
+        <view class='h-barrage-bottom-group top' style="animation: dmAnimation2 35s linear infinite; ">
+          <view class='h-barrage-bottom-item' wx:for="{{ dmData }}" wx:if="{{ index < 6 }}" wx:key="item">
+            <view class='dm'>
+              <view class='h-barrage-avatar-box'>
+                <image src='{{ item.sex == 0 ? avatarBoy : avatarGirl }}' class='avatar' mode='aspectFit'></image>
+                <image src='{{ item.sex == 0 ? iconBoy : iconGirl }}' class='sex' mode='aspectFit'></image>
+              </view>
+              <text class='content'>{{ item.content }}</text>
+              <image src='{{ iconGood }}' class='icon-zan good' mode='aspectFill'></image>
+              <text>{{ item.zanNumber }}</text>
+            </view>
+          </view>
+        </view>
+
+        <!-- mid -->
+        <view class='h-barrage-bottom-group mid'  style="animation: dmAnimation2 30s linear 1s infinite; ">
+          <view class='h-barrage-bottom-item' wx:for="{{ dmData }}" wx:if="{{ index > 5 && index < 10 }}" wx:key="item">
+            <view class='dm'>
+              <view class='h-barrage-avatar-box'>
+                <image src='{{ item.sex == 0 ? avatarBoy : avatarGirl }}' class='avatar' mode='aspectFit'></image>
+                <image src='{{ item.sex == 0 ? iconBoy : iconGirl }}' class='sex' mode='aspectFit'></image>
+              </view>
+              <text class='content'>{{ item.content }}</text>
+              <image src='{{ iconGood }}' class='icon-zan good' mode='aspectFill'></image>
+              <text>{{ item.zanNumber }}</text>
+            </view>
+          </view>
+        </view>
+
+        <!-- btm -->
+        <view class='h-barrage-bottom-group btm'  style="animation: dmAnimation2 45s linear infinite; ">
+          <view class='h-barrage-bottom-item' wx:for="{{ dmData }}" wx:if="{{ index > 9 }}" wx:key="item">
+            <view class='dm'>
+              <view class='h-barrage-avatar-box'>
+                <image src='{{ item.sex == 0 ? avatarBoy : avatarGirl }}' class='avatar' mode='aspectFit'></image>
+                <image src='{{ item.sex == 0 ? iconBoy : iconGirl }}' class='sex' mode='aspectFit'></image>
+              </view>
+              <text class='content'>{{ item.content }}</text>
+              <image src='{{ iconGood }}' class='icon-zan good' mode='aspectFill'></image>
+              <text>{{ item.zanNumber }}</text>
+            </view>
+          </view>
+        </view>
+
+        <view class='h-barrage-bg-img'>
+          <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner1.jpg' class='img' mode='widthFix'></image>
+        </view>
+        <view class='shadowOverlay'></view>
+      
+    </view>
+  </view>
+
+  <view class='h-barrage-gird m-lr m-b'>
+
+    <view class='h-barrage-group'>
+        <!-- top -->
+        <view class='h-barrage-bottom-group top' style="animation: dmAnimation2 35s linear infinite; ">
+          <view class='h-barrage-bottom-item' wx:for="{{ dmData }}" wx:if="{{ index < 6 }}" wx:key="item">
+            <view class='dm'>
+              <view class='h-barrage-avatar-box'>
+                <image src='{{ item.sex == 0 ? avatarBoy : avatarGirl }}' class='avatar' mode='aspectFit'></image>
+                <image src='{{ item.sex == 0 ? iconBoy : iconGirl }}' class='sex' mode='aspectFit'></image>
+              </view>
+              <text class='content'>{{ item.content }}</text>
+              <image src='{{ iconGood }}' class='icon-zan good' mode='aspectFill'></image>
+              <text>{{ item.zanNumber }}</text>
+            </view>
+          </view>
+        </view>
+
+        <view class='h-barrage-bg-img'>
+          <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner2.jpg' class='img' mode='widthFix'></image>
+        </view>
+        <view class='shadowOverlay'></view>
+      
+    </view>
+
+  </view>
+  <view class='h-barrage-gird m-lr m-b'>
+    <view class='h-barrage-group'>
+        <!-- mid -->
+        <view class='h-barrage-bottom-group mid'  style="animation: dmAnimation2 30s linear 1s infinite; ">
+          <view class='h-barrage-bottom-item' wx:for="{{ dmData }}" wx:if="{{ index > 5 && index < 10 }}" wx:key="item">
+            <view class='dm'>
+              <view class='h-barrage-avatar-box'>
+                <image src='{{ item.sex == 0 ? avatarBoy : avatarGirl }}' class='avatar' mode='aspectFit'></image>
+                <image src='{{ item.sex == 0 ? iconBoy : iconGirl }}' class='sex' mode='aspectFit'></image>
+              </view>
+              <text class='content'>{{ item.content }}</text>
+              <image src='{{ iconGood }}' class='icon-zan good' mode='aspectFill'></image>
+              <text>{{ item.zanNumber }}</text>
+            </view>
+          </view>
+        </view>
+        <view class='h-barrage-bg-img'>
+          <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner3.jpg' class='img' mode='widthFix'></image>
+        </view>
+        <view class='shadowOverlay'></view>    
+    </view>
+  </view>
+  <view class='h-barrage-gird m-lr'>
+    <view class='h-barrage-group'>
+        <!-- btm -->
+        <view class='h-barrage-bottom-group btm'  style="animation: dmAnimation2 45s linear infinite; ">
+          <view class='h-barrage-bottom-item' wx:for="{{ dmData }}" wx:if="{{ index > 9 }}" wx:key="item">
+            <view class='dm'>
+              <view class='h-barrage-avatar-box'>
+                <image src='{{ item.sex == 0 ? avatarBoy : avatarGirl }}' class='avatar' mode='aspectFit'></image>
+                <image src='{{ item.sex == 0 ? iconBoy : iconGirl }}' class='sex' mode='aspectFit'></image>
+              </view>
+              <text class='content'>{{ item.content }}</text>
+              <image src='{{ iconGood }}' class='icon-zan good' mode='aspectFill'></image>
+              <text>{{ item.zanNumber }}</text>
+            </view>
+          </view>
+        </view>
+        <view class='h-barrage-bg-img'>
+          <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner4.jpg' class='img' mode='widthFix'></image>
+        </view>
+        <view class='shadowOverlay'></view>    
+    </view>
+  </view>
+
+  <!-- 无序弹幕 -->
+  <view class='h-barrage-gird m-lr m-t p-b'>
+    
+    <view class='h-barrage-group'>
+        <view class='h-barrage-bottom-group' wx:for="{{ dmData }}" wx:key="item"  style="top:{{ item.top }}%; animation: dmAnimation {{item.time}}s linear {{ index*3 }}s infinite; ">
+          <view class='h-barrage-bottom-item'>
+            <view class='dm'>
+              <view class='h-barrage-avatar-box'>
+                <image src='{{ item.sex == 0 ? avatarBoy : avatarGirl }}' class='avatar' mode='aspectFit'></image>
+                <image src='{{ item.sex == 0 ? iconBoy : iconGirl }}' class='sex' mode='aspectFit'></image>
+              </view>
+              <text class='content'>{{ item.content }}</text>
+              <image src='{{ iconGood }}' class='icon-zan good' mode='aspectFill'></image>
+              <text>{{ item.zanNumber }}</text>
+            </view>
+          </view>
+        </view>
+
+        <view class='h-barrage-bg-img'>
+          <image src='https://oss.geekxz.com/hey-ui-oss/banner/banner5.jpg' class='img' mode='widthFix'></image>
+        </view>
+        <view class='shadowOverlay'></view>
+    </view>
+    
+  </view>

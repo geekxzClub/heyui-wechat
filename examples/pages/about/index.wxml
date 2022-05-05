@@ -1,6 +1,6 @@
 <!--pages/about/about.wxml-->
 <view class="UCenter-bg">
-  <image src="/images/logo.jpg" class="png" mode="widthFix"></image>
+  <image src="/static/images/heyui-logo-black.png" class="png" mode="widthFix"></image>
   <view class="h-text-lg m-t-sm h-text-white">HeyUI组件库
     <text class="h-text-sm">v1.0</text>
   </view>

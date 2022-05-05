@@ -1,5 +1,3 @@
-// pages/layout/indexlist/indexlist.js
-// import list from '../../../utils/list.js'
 import list from '../../../utils/city.js'
 
 Page({
@@ -15,7 +13,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(list)
     this.setData({
       list: list
     })

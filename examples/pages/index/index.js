@@ -16,37 +16,37 @@ Page({
     copyright: " Copyright © 2021-2050 Hey UI.",
     component: [{
       id: 1,
-      icon: 'icon-basic',
+      icon: 'basic',
       type: 'basics',
       text: '基础组件'
     }, {
         id: 2,
-        icon: 'icon-flex',
+        icon: 'layout',
         type: 'layout',
         text: '布局组件'
     }, {
       id: 3,
-      icon: 'icon-view',
+      icon: 'view',
       type: 'view',
       text: '视图组件'
     }, {
       id: 4,
-      icon: 'icon-form',
+      icon: 'form',
       type: 'form',
       text: '表单组件'
     }, {
       id: 5,
-      icon: 'icon-basic',
+      icon: 'animation',
       type: 'animation',
       text: '动画组件'
     }, {
       id: 6,
-      icon: 'icon-navigator',
+      icon: 'nav',
       type: 'nav',
       text: '导航组件'
     }, {
       id: 7,
-      icon: 'icon-action',
+      icon: 'response',
       type: 'response',
       text: '操作反馈'
     }, {

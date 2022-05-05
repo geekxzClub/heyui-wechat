@@ -1,0 +1,115 @@
+<!--pages/laboratory/laboratory.wxml-->
+<view class="hey-ui-box">
+  <view class="m-lr">
+    <view class="h-text-lg h-text-white tit">
+      HeyUI实验室
+      <text class="h-text-sm">v1.0</text>
+    </view>
+    <view class="dec h-text-white h-text-xs">基于微信小程序原生语法 实现的CSS组件库</view>
+    <view class="h-list h-grid h-grid-4 no-border m-t h-corner-sm">
+      <view class="h-item">
+        <view class="heyui h-text-white">100+</view>
+        <text class="h-text-white">研究方向</text>
+      </view>
+      <view class="h-item">
+        <view class="heyui h-text-white">99+</view>
+        <text class="h-text-white">研究成果</text>
+      </view>
+      <view class="h-item">
+        <view class="heyui h-text-white">1000+</view>
+        <text class="h-text-white">研究中</text>
+      </view>
+      <view class="h-item">
+        <view class="heyui- h-text-white">10000+</view>
+        <text class="h-text-white">用户</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="h-grid h-text-s h-grid-2 p-lr p-b">  
+  <view class="items h-bg-gradual-red h-corner-sm m-t h-shadow" bindtap="goToItem"  data-type="banner">
+    <view class="p">
+      <view class="h-text-md">轮播专题</view>
+      <view>产品轮播图展示实验</view>
+    </view>
+    <view class="p h-fr">@东东</view>
+  </view>
+  <view class="items h-bg-gradual-orange h-corner-sm m-t h-shadow" bindtap="goToItem"  data-type="animation">
+    <view class="p">
+      <view class="h-text-md">趣味动画</view>
+      <view>多种有趣动画实验</view>
+    </view>
+    <view class="p h-fr">@东东</view>
+  </view>
+  <view class="items h-bg-gradual-orange h-corner-sm m-t h-shadow" bindtap="goToItem"  data-type="table">
+    <view class="p">
+      <view class="h-text-md">表格组件</view>
+      <view>灵活多变的表格</view>
+    </view>
+    <view class="p h-fr">@东东</view>
+  </view>
+  <view class="items h-bg-gradual-blue h-corner-sm m-t h-shadow" bindtap="goToItem"  data-type="barrage">
+    <view class="p">
+      <view class="h-text-md">弹幕</view>
+      <view>有趣生动的弹幕</view>
+    </view>
+    <view class="p h-fr">@东东</view>
+  </view>
+  <view class="items h-bg-gradual-green h-corner-sm m-t h-shadow" bindtap="goToItem"  data-type="tag">
+    <view class="p">
+      <view class="h-text-md">点标签</view>
+      <view>常见用于事物上的标注</view>
+    </view>
+    <view class="p h-fr">@东东</view>
+  </view>      
+  <view class="items h-bg-gradual-purple h-corner-sm m-t h-shadow" bindtap="goToItem"  data-type="step">
+    <view class="p">
+      <view class="h-text-md">步进器</view>
+      <view>常用于数量加减的组件</view>
+    </view>
+    <view class="p h-fr">@东东</view>
+  </view>
+  <view class="items h-bg-gradual-pink h-corner-sm m-t h-shadow" bindtap="goToItem"  data-type="nav">
+    <view class="p">
+      <view class="h-text-md">自定义导航</view>
+      <view>自定义特色底部导航</view>
+    </view>
+    <view class="p h-fr">@东东</view>
+  </view>
+  <view class="items h-bg-gradual-blue h-corner-sm m-t h-shadow" bindtap="goToItem"  data-type="num">
+    <view class="p">
+      <view class="h-text-md">数字动画</view>
+      <view>数字的跳动与滚动</view>
+    </view>
+    <view class="p h-fr">@东东</view>
+  </view>
+  <view class="items h-bg-gradual-warm-flame h-corner-sm m-t h-shadow" bindtap="goToItem"  data-type="color">
+    <view class="p">
+      <view class="h-text-md">颜色选择器</view>
+      <view>通过调色盘取色</view>
+    </view>
+    <view class="p h-fr">@东东</view>
+  </view>
+  <view class="items .h-bg-gradual-sunny-morning h-corner-sm m-t h-shadow" bindtap="goToItem"  data-type="active">
+    <view class="p">
+      <view class="h-text-md">营销活动</view>
+      <view>营销组件的设计</view>
+    </view>
+    <view class="p h-fr">@东东</view>
+  </view>
+  <view class="items h-bg-gradual-true-sunset h-corner-sm m-t h-shadow" bindtap="goToItem"  data-type="chart">
+    <view class="p">
+      <view class="h-text-md">图表数据</view>
+      <view>echarts可视化图表库</view>
+    </view>
+    <view class="p h-fr">@东东</view>
+  </view>
+  <view class="items .h-bg-gradual-dusty-grass h-corner-sm m-t h-shadow" bindtap="goToItem"  data-type="image">
+    <view class="p">
+      <view class="h-text-md">图片处理</view>
+      <view>CSS图像滤镜特性</view>
+    </view>
+    <view class="p h-fr">@东东</view>
+  </view>
+</view>

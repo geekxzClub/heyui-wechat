@@ -1,0 +1,3 @@
+<view class="h-message">
+  <view class='h-message-anit {{show?"h-message-show":""}}'>{{text}}</view>
+</view>

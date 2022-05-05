@@ -1,6 +1,0 @@
-<!--pages/quasi/quasi.wxml-->
-<view class="h-grid h-col-5 p-sm h-bg-red">
-  <view class="m-tb-sm h-text-center" wx:for="{{ColorList}}" wx:key='item'>
-    <button class="h-btn h-bg-red left">{{item.title}}</button>
-  </view>
-</view>

@@ -6,8 +6,8 @@ Page({
    */
   data: {
     list: [{
-      id: 'function',
-      icon: 'fun',
+      id: 'h-fun',
+      icon: 'h-fun',
       name: '函数',
       open: false,
       pages: [{
@@ -22,7 +22,7 @@ Page({
       }]
     }, {
       id: 'shop',
-      icon: "shop",
+      icon: "h-shop",
       name: '商城源码',
       open: false,
       pages: [{
@@ -35,7 +35,7 @@ Page({
     },
     {
       id: 'appointment',
-      icon: "appointment",
+      icon: "h-appointment",
       name: '预约源码',
       open: false,
       pages: [{
@@ -63,7 +63,7 @@ Page({
     },
     {
       id: 'blog',
-      icon: "blog",
+      icon: "h-blog",
       name: '个人博客',
       open: false,
       pages: [{
@@ -76,7 +76,7 @@ Page({
     },
     {
       id: 'company',
-      icon: "company",
+      icon: "h-company",
       name: '公司官网',
       open: false,
       pages: [{
@@ -86,7 +86,7 @@ Page({
     },
     {
       id: 'questionnaire',
-      icon: "questionnaire",
+      icon: "h-questionnaire",
       name: '问卷调查',
       open: false,
       pages: [{
@@ -96,7 +96,7 @@ Page({
     },
     {
       id: 'vote',
-      icon: "vote",
+      icon: "h-vote",
       name: '投票模板',
       open: false,
       pages: [{
@@ -112,7 +112,7 @@ Page({
     },
     {
       id: 'prize',
-      icon: "prize",
+      icon: "h-gift",
       name: '抽奖模板',
       open: false,
       pages: [{
@@ -143,7 +143,7 @@ Page({
     },
     {
       id: 'active',
-      icon: "active",
+      icon: "h-prize",
       name: '开奖模板',
       open: false,
       pages: [{
@@ -152,8 +152,8 @@ Page({
       }]
     },
     {
-      id: 'swipe',
-      icon: "shop",
+      id: 'other',
+      icon: "other",
       name: '其他',
       open: false,
       pages: [{
@@ -176,13 +176,13 @@ Page({
 
     tplList: [{
       id: 1,
-      icon: 'buy',
+      icon: 'h-shop',
       type: 'heyui-shop',
       text_zh: '电商购物',
       text_en: 'Hey-Shop'
     }, {
         id: 2,
-        icon: 'cardboardfill',
+        icon: 'h-gift',
         type: 'toast',
         text_zh: '抽奖',
         text_en: 'Hey-Prize'
@@ -256,12 +256,15 @@ Page({
       text_en: 'H-Is'
     }]
   },
+
+
   goToItem: function (e) {
     var type = e.currentTarget.dataset.type;
     if (type == 'heyui-shop') {
-      wx.navigateTo({
-        url: '/heyui-shop/pages/index/index'
-      })
+      // wx.navigateTo({
+      //   url: '/heyui-shop/pages/index/index'
+      // })
+      this.dialog()
     }else{
       this.dialog()
     }
@@ -269,7 +272,7 @@ Page({
   dialog(e) {
     wx.showModal({
       title: '亲爱的',
-      content: '小哥哥正在努力开发中！',
+      content: '会员功能，暂未开放！',
       cancelText: '等待',
       confirmText: '再会',
       success: res => {
@@ -282,7 +285,7 @@ Page({
 
   kindToggle: function(e) {
     var id = e.currentTarget.id,
-      list = this.data.list;
+    list = this.data.list;
     for (var i = 0, len = list.length; i < len; ++i) {
       if (list[i].id == id) {
         list[i].open = !list[i].open

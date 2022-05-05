@@ -138,38 +138,4 @@
       <view class="m-t-sm">我不知道为什么，小区整顿说要提升员工文化素质，于是让大家每天练习英语并打卡，可是我会说的只有几句，I like you，I love you ，I miss you very much.我会好好学英语的，然后说给你听，想你了，over !</view>
     </view>
   </view>
-  <view class="h-item">
-    <view class="h-bg-teanslucent h-shadow-blur content">
-      <view class="h-list menu-avatar">
-        <view class="h-item h-bg-primary">
-          <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a2.jpg);"></view>
-          <view class="content">
-            <view class="h-text-white">HeyUI</view>
-            <view class="h-text-white h-text-s">
-              <text class="heyui-infofill h-text-white"></text> 消息未送达</view>
-          </view>
-          <view class="action">
-            <view class="h-text-white h-text-xs">22:20</view>
-            <view class="h-tag h-corner-md h-bg-white sm">5</view>
-          </view>
-        </view>
-        <view class="h-item h-bg-primary">
-          <view class="h-avatar h-avatar-lg h-corner-lg" style="background-image:url(https://oss.geekxz.com/hey-ui-oss/avatar/a5.jpg);">
-            <view class="h-tag h-badge">9+</view>
-          </view>
-          <view class="content">
-            <view class="htext-white">HeyUI
-              <view class="h-tag h-corner-sm h-text-orange sm">SVIP</view>
-            </view>
-            <view class="h-text-white h-text-s">
-              <text class="heyui-redpacket_fill h-text-white"></text> 收到红包</view>
-          </view>
-          <view class="action">
-            <view class="h-text-white h-text-xs">22:20</view>
-            <text class="heyui-notice_forbid_fill h-text-white"></text>
-          </view>
-        </view>
-      </view>
-    </view>
-  </view>
 </view>

@@ -1,0 +1,145 @@
+page {
+  /* Color 可以自定义相关配色 */
+  /* 主题色 */
+  --success: #19be6b;
+  --error: #ed3f14;
+  --warning: #ff7900;
+  --primary: #007aff;
+	--black: #000000;
+	--white: #ffffff;
+	--teanslucent: rgba(0,0,0,0.7);
+  /* 文字颜色 */
+  --dark: #333333;
+  --dark1: #555555;
+  --dark2: #666666;
+  --dark3: #777777;
+  --dark4: #999999;
+  /* 背景颜色 */
+  --gray: #c1c1c1;
+  --gray1: #d3d3d3;
+  --gray2: #eeeeee;
+  --gray3: #f3f3f3;
+  --gray4: #f5f5f5;
+}
+
+ /* 主题色 */
+ .h-bg-primary{
+	background-color: var(--primary);
+	color: var(--white);
+}
+.h-bg-teanslucent{
+	background-color: var(--teanslucent);
+	color: var(--white);
+}
+ .h-bg-primary {
+	background-color: var(--primary);
+	color: var(--white);
+}
+ .h-bg-success {
+	background-color: var(--success);
+	color: var(--white);
+}
+ .h-bg-error {
+	background-color: var(--error);
+	color: var(--white);
+}
+ .h-bg-warning {
+	background-color: var(--warning);
+	color: var(--white);
+}
+ .h-bg-gray {
+	background-color: var(--gray);
+	color: var(--white);
+}
+ .h-bg-gray1 {
+	background-color: var(--gray1);
+	color: var(--white);
+}
+ .h-bg-gray2 {
+	background-color: var(--gray2);
+	color: var(--white);
+}
+ .h-bg-gray3 {
+	background-color: var(--gray3);
+	color: var(--white);
+}
+ .h-bg-gray4 {
+	background-color: var(--gray4);
+}
+/* 文字颜色 */
+.h-text-dark{
+	color: var(--dark);
+}
+.h-text-dark1{
+	color: var(--dark1);
+}
+.h-text-dark2{
+	color: var(--dark2);
+}
+.h-text-dark3{
+	color: var(--dark3);
+}
+.h-text-dark4{
+	color: var(--dark4);
+}
+.h-text-success{
+	color: var(--success);
+}
+.h-text-error{
+	color: var(--error);
+}
+.h-text-warning{
+	color: var(--warning);
+}
+.h-text-primary{
+	color: var(--primary);
+}
+.h-text-teanslucent{
+	color: var(--teanslucent);
+}
+
+
+switch.primary[checked] .wx-switch-input,
+checkbox.primary[checked] .wx-checkbox-input,
+radio.primary[checked] .wx-radio-input {
+	border-color: var(--primary) !important;
+}
+switch.success[checked] .wx-switch-input,
+checkbox.success[checked] .wx-checkbox-input,
+radio.success[checked] .wx-radio-input {
+	border-color: var(--success) !important;
+}
+switch.error[checked] .wx-switch-input,
+checkbox.error[checked] .wx-checkbox-input,
+radio.error[checked] .wx-radio-input {
+	border-color: var(--error) !important;
+}
+switch.warning[checked] .wx-switch-input,
+checkbox.warning[checked] .wx-checkbox-input,
+radio.warning[checked] .wx-radio-input {
+	border-color: var(--warning) !important;
+}
+switch.primary[checked] .wx-switch-input,
+checkbox.primary[checked] .wx-checkbox-input,
+radio.primary[checked] .wx-radio-input {	
+	background-color: var(--primary) !important;
+	color: var(--primary) !important;
+}
+switch.success[checked] .wx-switch-input,
+checkbox.success[checked] .wx-checkbox-input,
+radio.success[checked] .wx-radio-input {
+	background-color: var(--success) !important;
+	color: var(--success) !important;
+}
+switch.error[checked] .wx-switch-input,
+checkbox.error[checked] .wx-checkbox-input,
+radio.error[checked] .wx-radio-input {
+	background-color: var(--error) !important;
+	color: var(--error) !important;
+}
+switch.warning[checked] .wx-switch-input,
+checkbox.warning[checked] .wx-checkbox-input,
+radio.warning[checked] .wx-radio-input {
+	background-color: var(--warning) !important;
+	color: var(--warning) !important;
+}

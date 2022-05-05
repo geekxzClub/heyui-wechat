@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/plugin/plugin",
+    "pages/laboratory/laboratory", 
+    "pages/about/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3688FF",
+    "navigationBarTitleText": "HeyUI组件库",
+    "navigationBarTextStyle": "white"
+  }, 
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/tabbar/home.png",
+        "selectedIconPath": "static/images/tabbar/home_select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/plugin/plugin",
+        "iconPath": "static/images/tabbar/plugin.png",
+        "selectedIconPath": "static/images/tabbar/plugin_select.png",
+        "text": "扩展"
+      },
+      {
+        "pagePath": "pages/laboratory/laboratory",
+        "iconPath": "static/images/tabbar/laboratory.png",
+        "selectedIconPath": "static/images/tabbar/laboratory_select.png",
+        "text": "实验室"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "iconPath": "static/images/tabbar/user.png",
+        "selectedIconPath": "static/images/tabbar/user_select.png",
+        "text": "我的"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "selectedColor": "#3688FF",
+    "color": "#593a25",
+    "borderStyle": "white",
+    "position": "bottom"
+  }, 
+  "usingComponents": {
+    "h-footer": "/component/h-footer/footer"
+  },
+  "sitemapLocation": "sitemap.json"
+}

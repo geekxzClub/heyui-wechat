@@ -1,0 +1,575 @@
+/* heyui-laboratory/pages/animation/animation.wxss */
+.h-loading-item{
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.h-grid.h-grid-3>view{
+  width: 31%;
+  margin-right: 3%;
+}
+.h-grid .h-loading-item:nth-child(3n){
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.h-loading-row{
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+.h-loading-cell{
+width: 100%;
+display: table-cell;
+text-align: center;
+}
+/*动画一：单个渐变  */
+.circle-line{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+}
+.circle-line text{
+  display: block;
+  width: 50%;
+  height: 5px;
+  opacity: .7;
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: 0px;
+  transform-origin: center right; 
+  animation: circle 1.5s linear infinite; 
+}
+.circle-line text::before{
+  content: '';
+  display: block;
+  width: 15px;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: blue;
+}
+.circle-line text:nth-child(1){
+  transform: rotate(0deg);
+  animation-delay: 0.2s;
+}
+.circle-line text:nth-child(2){
+  transform: rotate(45deg);
+  animation-delay: 0.4s;
+}
+.circle-line text:nth-child(3){
+  transform: rotate(90deg);
+  animation-delay: 0.6s;
+}
+.circle-line text:nth-child(4){
+  transform: rotate(135deg);
+  animation-delay: 0.8s;
+}
+.circle-line text:nth-child(5){
+  transform: rotate(180deg);
+  animation-delay: 1s;
+}
+.circle-line text:nth-child(6){
+  transform: rotate(225deg);
+  animation-delay: 1.2s;
+}
+.circle-line text:nth-child(7){
+  transform: rotate(270deg);
+  animation-delay: 1.4s;
+}
+.circle-line text:nth-child(8){
+  transform: rotate(315deg);
+  animation-delay: 1.6s;
+}
+@keyframes circle {
+  0%{
+      opacity: 0.05;
+  }
+  100%{
+      opacity: 0.9;
+  }
+}
+/*动画二：整体旋转  */
+.circle-line-spin{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+  animation: circle-line 1.5s linear infinite;  
+}
+.circle-line-spin text{
+  display: block;
+  width: 50%;
+  height: 5px;
+  opacity: .7;
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: 0px;
+  transform-origin: center right; 
+}
+.circle-line-spin text::before{
+  content: '';
+  display: block;
+  width: 15px;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: #aaaaaa;
+}
+.circle-line-spin text:nth-child(1){
+  transform: rotate(0deg);
+}
+.circle-line-spin text:nth-child(2){
+  transform: rotate(45deg);
+}
+.circle-line-spin text:nth-child(3){
+  transform: rotate(90deg);
+}
+.circle-line-spin text:nth-child(4){
+  transform: rotate(135deg);
+}
+.circle-line-spin text:nth-child(5){
+  transform: rotate(180deg);
+}
+.circle-line-spin text:nth-child(6){
+  transform: rotate(225deg);
+}
+.circle-line-spin text:nth-child(7){
+  transform: rotate(270deg);
+}
+.circle-line-spin text:nth-child(8){
+  transform: rotate(315deg);
+}
+@keyframes circle-line {
+  0%{
+      transform: rotate(0deg);
+  }
+  25%{
+      transform: rotate(90deg);
+  }
+  50%{
+      transform: rotate(180deg);
+  }
+  75%{
+      transform: rotate(270deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+/*动画三：单个渐变  */
+.circle-round{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+}
+.circle-round text{
+  display: block;
+  width: 50%;
+  height: 5px;
+  opacity: .7;
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: 0px;
+  transform-origin: center right; 
+  animation: circle 1.5s linear infinite; 
+}
+.circle-round text::before{
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: -1.5px;
+  right: 15px;
+  background-color: #1ABC9C;
+}
+.circle-round text:nth-child(1){
+  transform: rotate(0deg);
+  animation-delay: 0.2s;
+}
+.circle-round text:nth-child(2){
+  transform: rotate(45deg);
+  animation-delay: 0.4s;
+}
+.circle-round text:nth-child(3){
+  transform: rotate(90deg);
+  animation-delay: 0.6s;
+}
+.circle-round text:nth-child(4){
+  transform: rotate(135deg);
+  animation-delay: 0.8s;
+}
+.circle-round text:nth-child(5){
+  transform: rotate(180deg);
+  animation-delay: 1s;
+}
+.circle-round text:nth-child(6){
+  transform: rotate(225deg);
+  animation-delay: 1.2s;
+}
+.circle-round text:nth-child(7){
+  transform: rotate(270deg);
+  animation-delay: 1.4s;
+}
+.circle-round text:nth-child(8){
+  transform: rotate(315deg);
+  animation-delay: 1.6s;
+}
+/*动画四：单个缩小  */
+.circle-round-fade{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+}
+.circle-round-fade text{
+  display: block;
+  width: 50%;
+  height: 5px;
+  opacity: .7;
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: 0px;
+  transform-origin: center right; 
+}
+.circle-round-fade text::before{
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: -1.5px;
+  right: 15px;
+  background-color: red;
+  animation: circle-fade 1.5s linear infinite; 
+}
+.circle-round-fade text:nth-child(1){
+  transform: rotate(0deg);
+}
+.circle-round-fade text:nth-child(2){
+  transform: rotate(45deg);
+}
+.circle-round-fade text:nth-child(3){
+  transform: rotate(90deg);
+}
+.circle-round-fade text:nth-child(4){
+  transform: rotate(135deg);
+}
+.circle-round-fade text:nth-child(5){
+  transform: rotate(180deg);
+}
+.circle-round-fade text:nth-child(6){
+  transform: rotate(225deg);
+}
+.circle-round-fade text:nth-child(7){
+  transform: rotate(270deg);
+}
+.circle-round-fade text:nth-child(8){
+  transform: rotate(315deg);
+  animation-delay: 1.6s;
+}
+.circle-round-fade text:nth-child(1)::before{
+  animation-delay: 0.2s;
+}
+.circle-round-fade text:nth-child(2)::before{
+  animation-delay: 0.4s;
+}
+.circle-round-fade text:nth-child(3)::before{
+  animation-delay: 0.6s;
+}
+.circle-round-fade text:nth-child(4)::before{
+  animation-delay: 0.8s;
+}
+.circle-round-fade text:nth-child(5)::before{
+  animation-delay: 1s;
+}
+.circle-round-fade text:nth-child(6)::before{
+  animation-delay: 1.2s;
+}
+.circle-round-fade text:nth-child(7)::before{
+  animation-delay: 1.4s;
+}
+.circle-round-fade text:nth-child(8)::before{
+  animation-delay: 1.6s;
+}
+@keyframes circle-fade {
+  0%{
+      transform: scale(.1);
+  }
+  100%{
+      transform: scale(1);
+  }
+}
+/*动画五：依次放大的圆  */
+.line-square{
+width: 100px;
+height: 100px;
+display: inline-block;
+position: relative;
+}
+.line-square text{
+display: block;
+width: 10px;
+height: 10px;
+background-color: blue;
+position: absolute;
+top: calc(50% - 5px);
+animation: line-square 1s infinite linear;
+}
+.line-square text:nth-child(1){
+left:15px;
+animation-delay: 0.1;
+}
+.line-square text:nth-child(2){
+left:30px;
+animation-delay: 0.3s;
+}
+.line-square text:nth-child(3){
+left:45px;
+animation-delay: 0.5s;
+}
+.line-square text:nth-child(4){
+left:60px;
+animation-delay: 0.7s;
+}
+.line-square text:nth-child(5){
+left:75px;
+animation-delay: 0.9s;
+}
+@keyframes line-square{
+0%{
+  opacity: .9;
+  transform: scale(1);
+}
+100%{
+  opacity: .2;
+  transform: scale(.1);
+}
+}
+/*动画六：依次放大的圆  */
+.line-round{
+width: 100px;
+height: 100px;
+display: inline-block;
+position: relative;
+}
+.line-round text{
+display: block;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: green;
+position: absolute;
+top: calc(50% - 5px);
+animation: line-square 1s infinite linear;
+}
+.line-round text:nth-child(1){
+left:15px;
+animation-delay: 0.1;
+}
+.line-round text:nth-child(2){
+left:30px;
+animation-delay: 0.3s;
+}
+.line-round text:nth-child(3){
+left:45px;
+animation-delay: 0.5s;
+}
+.line-round text:nth-child(4){
+left:60px;
+animation-delay: 0.7s;
+}
+.line-round text:nth-child(5){
+left:75px;
+animation-delay: 0.9s;
+}
+/*动画七：长短加载  */
+.line-bounce{
+width: 100px;
+height: 100px;
+display: inline-block;
+position: relative;
+}
+.line-bounce text{
+display: block;
+width: 5px;
+height: 26px;
+background-color: blueviolet;
+position: absolute;
+top: calc(50% - 13px);
+animation: line-bounce 1s infinite linear;
+}
+.line-bounce text:nth-child(1){
+left:15px;
+animation-delay: 0.1;
+}
+.line-bounce text:nth-child(2){
+left:30px;
+animation-delay: 0.3s;
+}
+.line-bounce text:nth-child(3){
+left:45px;
+animation-delay: 0.5s;
+}
+.line-bounce text:nth-child(4){
+left:60px;
+animation-delay: 0.7s;
+}
+.line-bounce text:nth-child(5){
+left:75px;
+animation-delay: 0.9s;
+}
+@keyframes line-bounce{
+0%{
+  transform: scaleY(1);
+}
+50%{
+  transform: scaleY(.3);
+}
+100%{
+  transform: scaleY(1);
+}
+}
+/*动画八：四分之一圆加载动画  */
+.loader-circle{
+width: 100px;
+height: 100px;
+display: inline-block;
+position: relative;
+}
+.loader-circle:after{
+content: '';
+display: block;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: 2px solid #ddd;
+border-top:2px solid yellowgreen;
+position: absolute;
+top: calc(50% - 25px);
+left:calc(50% - 25px);
+animation: loader-circle 1s infinite ease;
+}
+@keyframes loader-circle{
+0%{
+  transform: rotate(0deg);
+}
+100%{
+  transform: rotate(360deg);
+}
+}
+/*动画九：四分之三圆加载动画  */
+.loading-circle{
+width: 100px;
+height: 100px;
+display: inline-block;
+position: relative;
+}
+.loading-circle:after{
+content: '';
+display: block;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: 2px solid brown;
+border-top:2px solid transparent;
+position: absolute;
+top: calc(50% - 25px);
+left:calc(50% - 25px);
+animation: loader-circle 1s infinite ease;
+}
+@keyframes loader-circle{
+0%{
+  transform: rotate(0deg);
+}
+100%{
+  transform: rotate(360deg);
+}
+}
+/*动画十：地球围绕太阳转  */
+.loading-sun{
+width: 50px;
+height: 50px;
+margin: 25px;
+border-radius:50%; 
+display: inline-block;
+position: relative;
+border: 1px solid #000;
+animation: loader-circle 2s infinite linear;
+}
+.loading-sun::before{
+content: '';
+display: block;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: blue;
+position: absolute;
+top: calc(50% - 10px);
+left: calc(50% - 10px);
+}
+.loading-sun::after{
+content: '';
+display: block;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: orange;
+position: absolute;
+top:  -5px;
+left: calc(50% - 5px);
+box-shadow: 0 0 10px orange;
+}
+/*动画十一：心跳  */
+.loading-heart{
+width: 100px;
+height: 100px;
+display: inline-block;
+position: relative;
+animation: loading-heart 1s ease infinite;
+}
+.loading-heart::before{
+content: '';
+display: block;
+width: 20px;
+height: 40px;
+background-color: red;
+border-radius: 10px 10px 0 0;
+position: absolute;
+top: 40%;
+left: calc(40% - 7px) ;
+transform-origin: center bottom;
+transform:translateY(-40%) rotate(45deg);
+}
+.loading-heart::after{
+content: '';
+display: block;
+width: 20px;
+height: 40px;
+background-color: red;
+border-radius: 10px 10px 0 0;
+position: absolute;
+top:40%;
+left: calc(40% + 7px) ;
+transform-origin: center bottom;
+transform:translateY(-40%) rotate(-45deg);
+}
+@keyframes loading-heart{
+0%{
+  transform: scale(.4);
+}
+50%{
+  transform: scale(1);
+}
+100%{
+  transform: scale(.4);
+}
+}

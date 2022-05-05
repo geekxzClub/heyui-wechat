@@ -1,0 +1,56 @@
+.tree {
+  text-align: left;
+  padding-left: 20rpx;
+}
+.tree-item {
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+}
+.tree-item-onOff {
+  width: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tree-item-onOff  image {
+  width: 20rpx;
+  height: 10rpx;
+  display: block;
+  transition: 0.4s;
+}
+.tree-item-onOff-closed {
+  transform: rotate(-90deg);
+}
+.tree-item-onOff-open {
+  transform: rotate(0deg);
+}
+.tree-item-name {
+  width: calc(100% - 40px);
+  display: flex;
+}
+.name {
+  width: calc(100% - 50px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 15rpx;
+}
+.img {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img  image {
+  width: 15px;
+  height: 10px;
+  display: block;
+}
+.tree-item-name-select {
+  background: #ECF7FA;
+  color: #0079FE;
+}
+.tree-item-name-select2 {
+  color: #0079FE;
+}

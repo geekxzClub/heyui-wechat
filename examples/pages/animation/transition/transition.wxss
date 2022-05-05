@@ -1,5 +1,5 @@
 /* pages/animation/transition/transition.wxss */
-@import "../../../hey-ui/animation.wxss";
+@import "../../../heyui/animation.wxss";
 .h-btn{
   height: 120rpx;
   width: 120rpx;

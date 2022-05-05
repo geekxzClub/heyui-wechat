@@ -1,0 +1,15 @@
+<!-- 组件页面 -->
+<view class="h-toast-box" wx:if="{{showToast}}">  
+  <view class="h-toast">  
+    <!-- 默认提示图标 -->
+    <view class="h-toast-icon {{iconType}}" wx:if="{{!isUserImg}}"></view>
+    <!-- 用户自定义提示图片 -->
+    <view class="h-toast-icon-diy" wx:if="{{isUserImg}}">
+      <image src="{{imgPath}}"></image>
+    </view>
+    <!-- 提示内容 -->
+    <view class="h-toast-text">  
+       {{dataText}}
+    </view>  
+  </view>  
+</view> 

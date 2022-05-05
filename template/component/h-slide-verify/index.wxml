@@ -1,0 +1,16 @@
+<view class='h-pathway h-bg-class h-text-class' bindtouchend='onEnd' id='pathway'>
+    <view class="h-tips">
+        <text wx:if="{{isOk}}" style="color: #FFFFFF;">验证通过</text>
+        <text wx:else>拖动滑块验证</text>
+    </view>
+    <view class="h-track h-track-bg-class" style="transform:translateX({{oldx}}px)"></view>
+    <movable-area>
+        <movable-view x="{{x}}"
+          direction="horizontal"
+          bindchange="onChange"  
+          class='{{isOk ? "h-icon-class":"h-icon-df-class"}} h-movable-view-bg-class' 
+          id="track">
+        </movable-view>
+    </movable-area>
+    <view class="disabled" wx:if="{{isOk}}"></view>
+</view>

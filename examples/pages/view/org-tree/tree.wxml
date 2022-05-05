@@ -1,2 +1,0 @@
-<!--pages/view/tree/tree.wxml-->
-<tree tree="{{tree}}" wx:if="{{tree&&initId}}" init-member-id="{{initId}}" bindselectChange="selectChange"></tree>

@@ -29,9 +29,9 @@
 
 <view class="heyui-content h-corner-sm m-t-sm">
   <view class="h-grid h-grid-2 h-corner-tlr-sm p-b-sm m-lr">
-    <view class="h-component-item h-bg-white h-corner-sm h-shadow-lg m-t" wx:for="{{component}}" wx:key='item' bindtap="goToView" data-type="{{item.type}}">
+    <view class="h-component-item h-bg-white h-corner-sm m-t" wx:for="{{component}}" wx:key='item' bindtap="goToView" data-type="{{item.type}}">
       <view class="p-tb-lg box">      
-        <view class="icon-box"> <image class="img" src="/images/plugin/{{item.icon}}.png"></image></view>        
+        <view class="icon-box"> <image class="img" src="/static/images/plugin/{{item.icon}}.png"></image></view>        
         <view class="h-text-black h-text-xs">{{item.text}}</view>
       </view>
     </view>

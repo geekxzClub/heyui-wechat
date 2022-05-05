@@ -1,0 +1,123 @@
+<!--heyui-laboratory/pages/animation/animation.wxml-->
+<view class="h-grid h-grid-3 h-corner-tlr-sm p-b-sm m-lr">
+  <!-- 动画一 -->
+  <view class="h-loading-item h-bg-white h-corner-sm m-t">
+    <view class="p-tb-lg">
+      <view class="circle-line">
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+      </view>
+    </view>
+  </view>
+  <!-- 动画二 -->
+  <view class="h-loading-item h-bg-white h-corner-sm m-t">
+    <view class="p-tb-lg">
+      <view class="circle-line-spin">
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+      </view>
+    </view>
+  </view>
+  <!-- 动画三 -->
+  <view class="h-loading-item h-bg-white h-corner-sm m-t">
+    <view class="p-tb-lg">
+      <view class="circle-round">
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+      </view>
+    </view>
+  </view>  
+  <!-- 动画四 -->
+  <view class="h-loading-item h-bg-white h-corner-sm m-t">
+    <view class="p-tb-lg">
+      <view class="circle-round-fade">
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+      </view>
+    </view>
+  </view>
+  <!-- 动画五 -->
+  <view class="h-loading-item h-bg-white h-corner-sm m-t">
+    <view class="p-tb-lg">
+      <view class="line-square">
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+      </view>
+    </view>
+  </view>
+  <!-- 动画六 -->
+  <view class="h-loading-item h-bg-white h-corner-sm m-t">
+    <view class="p-tb-lg">      
+      <view class="line-round">
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+      </view>
+    </view>
+  </view>
+  <!-- 动画七 -->
+  <view class="h-loading-item h-bg-white h-corner-sm m-t">
+    <view class="p-tb-lg">
+      <view class="line-bounce">
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+      </view>
+    </view>
+  </view>
+  <!-- 动画八 -->
+  <view class="h-loading-item h-bg-white h-corner-sm m-t">
+    <view class="p-tb-lg">
+      <view class="loader-circle"></view>
+    </view>
+  </view>
+  <!-- 动画九 -->
+  <view class="h-loading-item h-bg-white h-corner-sm m-t">
+    <view class="p-tb-lg">
+      <view class="loading-circle"></view>
+    </view>
+  </view>
+  <!-- 动画十 -->
+  <view class="h-loading-item h-bg-white h-corner-sm m-t">
+    <view class="p-tb-lg">
+      <view class="loading-sun"></view>
+    </view>
+  </view>
+  <!-- 动画11 -->
+  <view class="h-loading-item h-bg-white h-corner-sm m-t">
+    <view class="p-tb-lg">
+      <view class="loading-heart"></view>
+    </view>
+  </view>
+</view>

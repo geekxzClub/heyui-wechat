@@ -86,26 +86,26 @@
 <view class="h-bar tabbar h-bg-white">
   <view class="action">
     <view class="heyui-h-image">
-      <image src="/images/tabbar/basics_cur.png"></image>
+      <image src="/static/images/tabbar/home_select.png"></image>
     </view>
-    <view class="h-text-green">元素</view>
+    <view class="h-text-green">首页</view>
   </view>
   <view class="action">
     <view class="heyui-h-image">
-      <image src="/images/tabbar/component.png"></image>
+      <image src="/static/images/tabbar/plugin_select.png"></image>
     </view>
     <view class="h-text-gray">组件</view>
   </view>
   <view class="action">
     <view class="heyui-h-image">
-      <image src="/images/tabbar/plugin.png"></image>
+      <image src="/static/images/tabbar/laboratory_select.png"></image>
       <view class="h-tag h-badge">99</view>
     </view>
     <view class="h-text-gray">扩展</view>
   </view>
   <view class="action">
     <view class="heyui-h-image">
-      <image src="/images/tabbar/about.png"></image>
+      <image src="/static/images/tabbar/user_select.png"></image>
       <view class="h-tag h-badge"></view>
     </view>
     <view class="h-text-gray">关于</view>

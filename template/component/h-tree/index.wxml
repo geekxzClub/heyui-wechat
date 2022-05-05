@@ -1,0 +1,25 @@
+<view class="h-tree-class">
+  <view wx:for="{{tree}}" wx:key="item" class="tree">
+    <view class="tree-item tree-item-select">
+      <view class="tree-item-onOff" wx:if="{{item.children && item.children.length > 0}}"  bindtap="isOpen" data-index="{{index}}"> 
+        <image src="/assets/u1490.svg" class="{{item.open ? 'tree-item-onOff-open' : 'tree-item-onOff-closed'}}"></image>
+      </view>
+      <view class="tree-item-onOff" wx:else>
+      </view>
+      <view class="tree-item-name {{selectKey == item.id ? 'tree-item-name-select' : '' }}" bindtap="select" data-item="{{item}}" data-index="{{index}}">
+        <view class="name">{{item.name}}</view>
+        <view class="img">
+          <!-- <image wx:if="{{selectKey == item.id }}" src="/assets/icon/u435.svg"></image> -->
+        </view>
+      </view>
+    </view>
+    <h-tree
+      wx:if="{{item.children && item.children.length > 0 && item.open }}"
+      dataTree='{{ item.children }}'
+      selectKey="{{selectKey}}"
+      isSelectLastNode="{{isSelectLastNode}}"
+      isOpenAll="{{isOpenAll}}"
+    >
+    </h-tree>
+  </view>
+</view>

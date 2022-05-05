@@ -1,0 +1,146 @@
+/* components/calendar/calendar.wxss */
+
+
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.calendar {
+  background-color: #fff;
+}
+
+.calendar .title {
+  font-size: 40rpx;
+  padding: 30rpx;
+  line-height: 60rpx;
+}
+
+.calendar .title .year-month {
+  margin: 0 25rpx;
+}
+
+.calendar .title .iconL {
+  font-size: 32rpx;
+  line-height: 60rpx;
+  margin-top: -2rpx;
+}
+.calendar .title .iconR {
+  font-size: 32rpx;
+  line-height: 60rpx;
+}
+
+.calendar .title .open {
+  background-color: #f6f6f6;
+  font-size: 22rpx;
+  line-height: 36rpx;
+  border-radius: 10rpx;
+  padding: 8rpx 16rpx;
+}
+
+.calendar .calendar-week {
+  line-height: 40rpx;
+  padding: 0 25rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.calendar .calendar-week .view {
+  width: 100rpx;
+  text-align: center;
+}
+
+.calendar .calendar-main {
+  padding: 30rpx 25rpx;
+  transition: height 0.3s;
+  align-content: flex-start;
+  overflow: hidden;
+}
+
+.calendar .calendar-main .day {
+  position: relative;
+  width: 100rpx;
+  color: #666;
+  text-align: center;
+  height: 72rpx;
+}
+
+.calendar .calendar-main .day .bg {
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.calendar .calendar-main .day .select {
+  width: 56rpx;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(-60deg, #0FDAC5, #1BC7B0);
+  box-shadow: 0px 5px 16px 0px #C6F3ED;
+  margin: 0 auto;
+}
+
+.calendar .calendar-main .day .other-month {
+  color: #ccc;
+}
+
+.calendar .calendar-main .day .spot {
+  width: 22rpx;
+  height: 40rpx;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: -14rpx;
+}

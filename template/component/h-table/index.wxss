@@ -1,0 +1,52 @@
+/* compenents/h-table.wxss */
+
+.h-table-border{
+  border: solid 2rpx #dfdfdf;
+}
+.h-table-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-weight: bold;
+}
+.h-table-header-column{
+  flex-shrink: 0;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.h-table-header-column-border{
+  border-right: solid 2rpx #dfdfdf;
+}
+.h-table-header-column-border:last-child{
+  border-right: solid 0rpx #dfdfdf;
+}
+.h-table-content-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.h-table-content-row-bg1{
+  background-color: #ffffff;
+}
+.h-table-content-row-bg2{
+  background-color: #efefef;
+}
+
+.h-table-content-column{
+  /* padding: 20rpx 0rpx; */
+  flex-shrink: 0;
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.h-table-content-column-border{
+  border-top: solid 2rpx #dfdfdf;
+  border-right: solid 2rpx #dfdfdf;
+}
+
+.h-table-content-column-border:last-child{
+  border-right: solid 0rpx #dfdfdf;
+}

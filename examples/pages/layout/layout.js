@@ -47,13 +47,6 @@ Page({
       type: 'collapse',
       text_zh: '折叠面板',
       text_en: 'Collapse'
-    }, {
-      id: 7,
-      icon: 'waterflow',
-      icons: 'waterFlow',
-      type: 'waterflow',
-      text_zh: '瀑布流',
-      text_en: 'WaterFlow'
     }],
   },
 

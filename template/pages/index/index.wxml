@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="h-container">
+  <image src="/static/images/heyui-logo-black.png" class="png" mode="widthFix"></image>
+  <view class="h-text-lg m-t-sm">HeyUI组件库
+    <text class="h-text-sm">v1.0</text>
+  </view>
+  <view class="m-t-sm">
+    <text>By:陈东东</text>
+  </view>
+</view>
+<h-footer fixed="{{true}}" copyright="{{copyright}}" navigate="{{navigate}}"></h-footer>

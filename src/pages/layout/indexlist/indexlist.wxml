@@ -1,7 +1,0 @@
-<!--pages/layout/indexlist/indexlist.wxml-->
-<view class="h-bar h-bg-white h-border-bottom">
-  <view class="action h-text-sm">
-    <text class="heyui-title h-text-blue"> 索引组件 IndexList</text>
-  </view>
-</view>
-<h-index-list list="{{list}}"></h-index-list>

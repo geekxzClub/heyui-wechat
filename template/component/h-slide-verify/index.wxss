@@ -1,0 +1,46 @@
+.h-pathway {
+  height: 80rpx;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+} 
+.h-pathway .h-tips {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 80rpx;
+  text-align: center;
+  z-index: 3;
+} 
+.h-pathway .h-track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 0;
+  box-sizing: content-box;
+  transform: translateX(0);
+} 
+.h-pathway movable-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: none;
+  z-index: 5;
+} 
+.h-pathway movable-view {
+  height: 100%;
+  width: 100rpx;
+}
+.h-pathway .disabled {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}

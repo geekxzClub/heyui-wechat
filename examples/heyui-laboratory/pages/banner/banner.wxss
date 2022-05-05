@@ -1,0 +1,2 @@
+/* pages/view/swiper/swiper.wxss */
+@import '/pages/tpl/top/index.wxss';
